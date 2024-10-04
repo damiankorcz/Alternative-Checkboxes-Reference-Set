@@ -675,24 +675,24 @@ Repo: https://github.com/ashwinjadhav818/obsidian-aura
 Docs: None (I guessed the uses based on other implementations)
 Code: https://github.com/ashwinjadhav818/obsidian-aura/blob/925571586651e756bf38632178cc4a387f5a6c98/src/features/checkbox.scss
 
-- [x] Check `- [>]`
-- [X] Alt Check? `- [>]`
-- [?] Question `- [>]`
-- [-] Cancelled? `- [>]`
-- [!] Important  `- [>]`
+- [x] Check `- [x]`
+- [X] Alt Check? `- [X]`
+- [?] Question `- [?]`
+- [-] Cancelled? `- [-]`
+- [!] Important  `- [!]`
 - [>] Deffered?  `- [>]`
-- [/] Settings? `- [>]`
-- [R] Clock / Time `- [>]`
-- [+] Add? `- [>]`
-- [b] Bookmark `- [>]`
-- [B] Bolt?  `- [>]`
-- [D] Date / Callendar ? `- [>]`
-- [I] Information `- [>]`
-- [i] Idea / Light Bulb `- [>]`
-- [N] Note `- [>]`
-- [Q] Quote `- [>]`
-- [P] Thumbs Up `- [>]`
-- [C] Thumbs Down `- [>]`
+- [/] Settings? `- [/]`
+- [R] Clock / Time `- [R]`
+- [+] Add? `- [+]`
+- [b] Bookmark `- [b]`
+- [B] Bolt?  `- [B]`
+- [D] Date / Callendar ? `- [D]`
+- [I] Information `- [I]`
+- [i] Idea / Light Bulb `- [i]`
+- [N] Note `- [N]`
+- [Q] Quote `- [Q]`
+- [P] Thumbs Up `- [P]`
+- [C] Thumbs Down `- [C]`
 
 ---
 
