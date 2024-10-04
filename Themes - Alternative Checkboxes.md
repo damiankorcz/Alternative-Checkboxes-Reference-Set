@@ -328,10 +328,48 @@ Code: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/src/scss/featu
 ---
 
 # ITS Theme
-['dark', 'light']
 Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
-Docs: 
-Code: 
+Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
+Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Checkboxes.scss
+
+- [ ] Unchecked `- [ ]`
+- [x] Regular `- [x]`
+- [X] Checked  `- [X]`
+- [-] Dropped  `- [-]`
+- [>] Forward  `- [>]`
+- [<] Migrated  `- [<]`
+- [D] Date  `- [D]`
+- [?] Question  `- [?]`
+- [/] Half Done  `- [/]`
+- [+] Add  `- [+]`
+- [R] Research  `- [R]`
+- [!] Important  `- [!]`
+- [i] Idea  `- [i]`
+- [B] Brainstorm  `- [B]`
+- [P] Pro  `- [P]`
+- [C] Con  `- [C]`
+- [Q] Quote  `- [Q]`
+- [N] Note  `- [N]`
+- [b] Bookmark  `- [b]`
+- [I] Information  `- [I]`
+- [p] Paraphrase  `- [p]`
+- [L] Location  `- [L]`
+- [E] Example  `- [E]`
+- [A] Answer  `- [A]`
+- [r] Reward `- [r]`
+- [c] Choice  `- [c]`
+- [d] Doing  `- [d]`
+- [T] Time  `- [T]`
+- [@] Character / Person  `- [@]`
+- [t] Talk  `- [t]`
+- [O] Outline / Plot  `- [O]`
+- [~] Conflict  `- [~]`
+- [W] World  `- [W]`
+- [f] Clue / Find  `- [f]`
+- [F] Foreshadow  `- [F]`
+- [H] Favorite / Health  `- [H]`
+- [&] Symbolism  `- [&]`
+- [s] Secret  `- [s]`
 
 ---
 
@@ -360,18 +398,64 @@ Code:
 ---
 
 # Primary
-['light', 'dark']
+
 Repo: https://github.com/primary-theme/obsidian
-Docs: 
-Code: 
+Docs: https://primary-theme.github.io/features/checkboxes/#checklists
+Code: https://github.com/primary-theme/obsidian/blob/main/src/scss/40_editor/_alt-checkboxes.scss
+
+- [/] In Progress `- [/]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [!] Important `- [!]`
+- [-] Cancelled `- [-]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [n] Note `- [n]`
+- [l] Location `- [l]`
+- [i] Information `- [i]`
+- [S] Amount `- [S]`
+- ["] Quote `- ["]`
+- [I] Idea `- [I]`
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+- [b] Bookmark  `- [b]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [r] Rule/Law  `- [r]`
+- [L] Language/Translation  `- [L]`
+- [t] Time/Clock `- [t]`
+- [T] Telephone `- [T]`
 
 ---
 
 # Tokyo Night
-['dark', 'light']
+
 Repo: https://github.com/tcmmichaelb139/obsidian-tokyonight
-Docs: 
-Code: 
+Docs: None (Appears to have used ones from Border theme)
+Code: https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/ea79aba4359704497be7e40d15628636c81a9a0d/theme.css#L562
+
+- [ ] To Do `- [ ]`
+- [/] In Progress `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduling `- [<]`
+
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [i] Information `- [i]`
+- [S] Amount `- [S]`
+- [*] Star `- [*]`
+- [b] Bookmark `- [b]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [n] Note `- [n]`
 
 ---
 
@@ -384,10 +468,33 @@ Code:
 ---
 
 # Border
-['dark', 'light']
+
 Repo: https://github.com/Akifyss/obsidian-border
-Docs: 
-Code: 
+Docs: https://github.com/Akifyss/obsidian-border?tab=readme-ov-file#alternate-checkboxes
+Code: https://github.com/Akifyss/obsidian-border/blob/2771957ab92e6faddd7edad4e0cf65b7e8ef66bb/theme.css#L7844
+
+- [ ] To Do `- [ ]`
+- [/] In Progress `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduling `- [<]`
+
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [i] Information `- [i]`
+- [S] Amount `- [S]`
+- [*] Star `- [*]`
+- [b] Bookmark `- [b]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [n] Note `- [n]`
 
 ---
 
@@ -424,10 +531,37 @@ Code:
 ---
 
 # Cyber Glow
-['dark', 'light']
 Repo: https://github.com/ArtexJay/Obsidian-CyberGlow
-Docs: 
-Code: 
+Docs: https://github.com/ArtexJay/Obsidian-CyberGlow?tab=readme-ov-file#what-to-expect
+Code: https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/theme.css#L3436
+
+
+- [x] Checkmark `- [x]`
+- [?] Question `- [?]`
+- [-] Removed `- [-]`
+- [!] Important  `- [!]`
+- [>] Delayed `- [>]`
+- [/] Half-done/WIP  `- [/]`
+- [R] Review  `- [R]`
+- [+] Archived `- [+]`
+- [b] Bookmark  `- [b]`
+- [B] Brainstorm `- [B]`
+- [D] Planned `- [D]`
+- [i] Idea `- [i]`
+- [I] Info `- [I]`
+- [N] Note `- [N]`
+- [<] Scheduling `- [<]`
+- [P] Positive  `- [P]` or `- [p]`
+- [C] Negative  `- [C]` or `- [c]`
+- [Q] Quote `- [Q]` or `- ["]`
+- [S] Savings `- [S]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [l] Location `- [l]`
+- [*] Star `- [*]`
 
 ---
 
