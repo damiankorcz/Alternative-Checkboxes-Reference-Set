@@ -1901,10 +1901,29 @@ Code:
 ---
 
 # Underwater
-['dark', 'light']
 Repo: https://github.com/Seniblue/Underwater
-Docs: 
-Code: 
+Docs: https://github.com/Seniblue/Underwater?tab=readme-ov-file#formatting
+Code: https://github.com/Seniblue/Underwater/blob/30ac787f0c178674e2f838471b487bc2649b223f/theme.css#L1341
+
+Uses 'Tweaked' Minimal.
+
+- [ ] Task  `- [ ]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+- [i] Info `- [i]`
+
+- [!] Important `- [!]`
+- [l] Location `- [l]`
+- [*] Star `- [*]`
+- [H] Heart `- [H]`
+- [b] Bookmark `- [b]`
+- [<] Scheduled `- [<]`
+- [e] Energy `- [e]`
+- [T] Timer `- [T]`
+- [I] Idea `- [I]`
+- [s] Sparkles `- [s]`
+- [w] Wave `- [w]`
 
 ---
 
@@ -1933,10 +1952,33 @@ Code:
 ---
 
 # Reshi
-['dark', 'light']
 Repo: https://github.com/contrapasso3/Reshi
-Docs: 
-Code: 
+Docs: https://github.com/contrapasso3/Reshi?tab=readme-ov-file#features
+Code: https://github.com/contrapasso3/Reshi/blob/879377560c0661822d3cb217165c998f9c231812/theme.css#L591
+
+"Feature inspiration pulled from AnuPpuccin"
+
+- [/] In Progress `- [/]`
+- [-] Cancelled `- [-]`
+- [<] Scheduled `- [<]`
+- [>] Rescheduled `- [>]`
+
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [i] Information `- [i]`
+- [S] Amount `- [S]`
+
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+
+- [n] Note `- [n]`
+- [I] Idea `- [I]`
+- [b] Bookmark `- [b]`
+- [*] Star `- [*]`
+- [k] Key `- [k]`
+- [t] Time `- [t]`
+- [l] Location `- [l]`
+- ["] Quote `- ["]`
 
 ---
 
@@ -1957,10 +1999,39 @@ Code:
 ---
 
 # Shade Sanctuary
-['dark', 'light']
 Repo: https://github.com/Elevict/Shade-Sanctuary
-Docs: 
-Code: 
+Docs: None
+Code: https://github.com/Elevict/Shade-Sanctuary/blob/8aa1fcde7b3ab7be6475dc0bb978bf156d617779/theme.css#L614
+
+Mentions using Minimal but has the Git parts from Things.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [D] Draft Pull Request `- [D]`
+- [P] Open Pull Request `- [P]`
+- [M] Merged Pull Request `- [M]`
 
 ---
 
@@ -2005,10 +2076,16 @@ Code:
 ---
 
 # Sparkling Day
-['light']
 Repo: https://github.com/isax785/obsidian-sparkling-day
-Docs: 
-Code: 
+Docs: https://github.com/isax785/obsidian-sparkling-day?tab=readme-ov-file#sparkling-checkboxes
+Code: https://github.com/isax785/obsidian-sparkling-day/blob/0dbcf1f4bcf660db7b17b6b0c376f9e3511cd71b/theme.css#L223
+
+Only works in Live Preview.
+
+- [>] Working Progress `- [>]`
+- [-] Pause / Stand-By `- [-]`
+- [/] Stop `- [/]`
+- [<] To Be Scheduled `- [<]`
 
 ---
 
@@ -2101,10 +2178,40 @@ Code:
 ---
 
 # Oreo
-['light', 'dark']
 Repo: https://github.com/carols12352/Oreo-theme
-Docs: 
-Code: 
+Docs: https://github.com/carols12352/Oreo-theme?tab=readme-ov-file#check-box
+Code: https://github.com/carols12352/Oreo-theme/blob/1d4806a2c39ac46f6efbf3805652a52c695e3b04/theme.css#L752
+
+Uses the same set as Things / Minimal themes.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [D] Draft Pull Request `- [D]`
+- [P] Open Pull Request `- [P]`
+- [M] Merged Pull Request `- [M]`
+
 
 ---
 
@@ -2140,11 +2247,23 @@ Code:
 
 ---
 
-# Gummy-Revived
-['dark', 'light']
+# Gummy Revived
 Repo: https://github.com/WinnerWind/gummy-revived
-Docs: 
-Code: 
+Docs: None (Partially based on Sanctum theme)
+Code: https://github.com/WinnerWind/gummy-revived/blob/bce022a254fa86645182f6f906a03a197629cf81/theme.css#L2235
+
+- [x] Done `- [x]`
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [/] Progress `- [/]`
+- [-] Cancel `- [-]`
+- [>] Defer `- [>]`
+- [<] Scheduling `- [<]`
+- [X] Failed `- [X]`
+- [i] Idea `- [i]`
+- [b] Brainstorm `- [b]`
+- [B] Bookmark  `- [B]`
+
 
 ---
 
