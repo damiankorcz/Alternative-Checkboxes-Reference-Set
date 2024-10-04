@@ -522,11 +522,18 @@ Code:
 
 ---
 
-# Spectrum
-['dark', 'light']
-Repo: https://github.com/Braweria/Spectrum
-Docs: 
-Code: 
+# Spectrum (Unmaintained Pre-1.0 Release)
+
+Repo: https://github.com/wiktoriavh/Spectrum
+Docs: https://github.com/wiktoriavh/Spectrum/wiki/Different-Task-Checkboxes
+Code: https://github.com/wiktoriavh/Spectrum/blob/6c24513a3af57a7ebaeff63df7e62bf47513efac/SCSS/_blocks/_listings/_task-list.scss#L63
+
+- [>] Forward `- [>]`
+- [+] Plus `- [+]`
+- [-] Minus `- [-]`
+- [!] Exclamation `- [!]`
+- [?] Question `- [?]`
+- [x] Normal `- [x]`
 
 ---
 
