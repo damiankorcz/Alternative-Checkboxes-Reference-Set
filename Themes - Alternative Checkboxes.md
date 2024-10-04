@@ -89,7 +89,7 @@
 > - [Rosé Pine](https://github.com/sspaeti/obsidian_rose_pine)
 > - [Origin](https://github.com/Bluemoondragon07/Obsidian-Origin)
 > - [Neovim](https://github.com/slavamak/obsidian-neovim)
-> - [Phoenix](https://github.com/ryzenfromfire/obsidian-phoenix) Recommends using their Snippet: [[Alternative Checkboxes - Snippets#Phoenix]]
+> - [Phoenix](https://github.com/ryzenfromfire/obsidian-phoenix) Recommends using their Snippet: [[Snippets - Alternative Checkboxes#Phoenix]]
 > - [W95](https://github.com/phchang/W95)
 > - [Pure](https://github.com/lychileng/Obsidian-Theme-Pure)
 > - [Tiniri](https://github.com/vladstudio/tiniri-obsidian) (Readme doesn't show in Obsidian)

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternative Checkboxes - Themes.md",
+                "file": "Themes - Alternative Checkboxes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alternative Checkboxes - Themes"
+              "title": "Themes - Alternative Checkboxes"
             }
           }
         ]
@@ -93,10 +93,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alternative Checkboxes - Themes.md"
+                "file": "Themes - Alternative Checkboxes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Alternative Checkboxes - Themes"
+              "title": "Outline of Themes - Alternative Checkboxes"
             }
           },
           {
@@ -161,10 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "851b54dc17ca1445",
+  "active": "779763bf7eca6624",
   "lastOpenFiles": [
-    "Alternative Checkboxes - Snippets.md",
-    "Alternative Checkboxes - Themes.md",
+    "README.md",
+    "Themes - Alternative Checkboxes.md",
+    "Snippets - Alternative Checkboxes.md",
     "Welcome.md"
   ]
 }
