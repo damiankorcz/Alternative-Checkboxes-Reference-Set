@@ -1057,10 +1057,16 @@ Code:
 ---
 
 # Sparkling Night
-['dark', 'light']
 Repo: https://github.com/isax785/obsidian-sparkling-night
-Docs: 
-Code: 
+Docs: https://github.com/isax785/obsidian-sparkling-night
+Code: https://github.com/isax785/obsidian-sparkling-night/blob/e7436b653c0c287a5f8a3c246d8a301107a4edfa/theme.css#L256
+
+Only works in Live Preview.
+
+- [>] Working Progress `- [>]`
+- [-] Pause / Stand-By `- [-]`
+- [/] Stop `- [/]`
+- [<] To Be Scheduled `- [<]`
 
 ---
 
@@ -1073,10 +1079,19 @@ Code:
 ---
 
 # Kakano
-['dark', 'light']
+
 Repo: https://github.com/isaacfreeman/kakano-obsidian-theme
-Docs: 
-Code: 
+Docs: https://github.com/isaacfreeman/kakano-obsidian-theme?tab=readme-ov-file#selected-alternate-checkboxes
+Code: https://github.com/isaacfreeman/kakano-obsidian-theme/blob/2e4e869043eca019839ef8b6b774196edb81211b/theme.css#L2082
+
+"Idea borrowed from Minimal theme"
+
+- [/] Partially `- [/]`
+- [<] Scheduling `- [<]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [!] Important `- [!]`
+- [?] Question `- [?]`
 
 ---
 
@@ -1097,18 +1112,79 @@ Code:
 ---
 
 # Neo
-['dark', 'light']
 Repo: https://github.com/lab-do/obsidian-neo
-Docs: 
-Code: 
+Docs: https://github.com/lab-do/obsidian-neo?tab=readme-ov-file#alternate-checkboxes
+Code: https://github.com/lab-do/obsidian-neo/blob/0955f59136e498461a2de78655eef42cbcf66606/theme.css#L999
+
+- [ ] Checkbox `- [ ]`
+- [x] Complete `- [x]`
+- [/] Incomplete `- [/]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Schedule `- [<]`
+
+- [i] Info `- [i]`
+- [I] Idea `- [I]`
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+
+- [f] Fire `- [f]`
+- [*] Star `- [*]`
+- [b] Bookmark `- [b]`
+- [u] Trend Up `- [u]`
+- [d] Trend Down `- [d]`
+- [w] Win `- [w]`
+
+- [k] Key `- [k]`
+- ["] Quote `- ["]`
+- [S] Money `- [S]`
+- [l] Location `- [l]`
+- [n] New `- [n]`
+
+- [0] Progress 0 `- [0]`
+- [1] Progress 1 `- [1]`
+- [2] Progress 2 `- [2]`
+- [3] Progress 3 `- [3]`
+- [4] Progress 4 `- [4]`
 
 ---
 
 # Feather
-['dark', 'light']
-Repo: https://github.com/MFdev-coder/obsidian-feather
-Docs: 
-Code: 
+Repo: https://github.com/zfmohammed/obsidian-feather
+Docs: https://github.com/zfmohammed/obsidian-feather?tab=readme-ov-file#themes (Screenshots)
+Code: https://github.com/zfmohammed/obsidian-feather/blob/da83afd4dd10ba387a7eee59c00f0b8e022d3748/theme.css#L162
+
+Mentions using Things Theme for Checkboxes.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [D] Draft Pull Request `- [D]`
+- [P] Open Pull Request `- [P]`
+- [M] Merged Pull Request `- [M]`
 
 ---
 
@@ -1153,18 +1229,99 @@ Code:
 ---
 
 # Listive
-['dark', 'light']
 Repo: https://github.com/efemkay/obsidian-listive-theme
-Docs: 
-Code: 
+Docs: https://github.com/efemkay/obsidian-listive-theme?tab=readme-ov-file#list-related-features (Mentions taking Checkboxes from Border Theme)
+Code: https://github.com/efemkay/obsidian-listive-theme/blob/698f27ce12d23ee451712639df9c4b429019f751/theme.css#L1070
+
+- [/] Partial / Incomplete `- [/]`
+- [>] Defer / Reschedule `- [>]`
+- [-] Cancelled `- [-]`
+- [<] Schedule / Meeting `- [<]`
+- [I] Idea / Light Bulb `- [I]`
+- [i] Info `- [i]`
+- [!] Warning `- [!]`
+- ["] Citation, my version `- ["]`
+- [r] Reference `- [r]`
+- [*] Star / Favourites `- [*]`
 
 ---
 
 # MagicUser
-['dark', 'light']
 Repo: https://github.com/drbap/magicuser-theme-for-obsidian
-Docs: 
-Code: 
+Docs: https://github.com/drbap/magicuser-theme-for-obsidian?tab=readme-ov-file#custom-checkbox-icons
+Code: https://github.com/drbap/magicuser-theme-for-obsidian/blob/33ebb74f4355cd4a46725415ea328ad9781ad46e/theme.css#L1382
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [-] Cancelled `- [-]`
+
+- [/] Work in Progress `- [/]`
+- [g] Results / Graphics / Stats `- [g]`
+
+- [!] Important `- [!]`
+- [?] Question  `- [?]`
+- [i] Information `- [i]`
+- [I] Idea `- [I]`
+
+- [<] Date - Scheduled `- [<]`
+- [>] Date - Rescheduled `- [>]`
+- [e] Email `- [e]`
+- [t] Time `- [t]`
+- [f] Phone `- [f]`
+- [F] Flight `- [F]`
+
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [q] Quote `- [q]` or `- ["]`
+
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+
+- [1] Arrow Up - Increase `- [1]`
+- [2] Arrow Down - Decrease `- [2]`
+- [3] Arrow Right `- [3]`
+
+- [s] Star `- [s]` or `- [*]`
+- [S] Price / Money `- [S]`
+- [n] Note `- [n]`
+
+- [m] Magic Wand `- [m]`
+
+**Extra 1**
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [D] Draft Pull Request `- [D]`
+- [P] Open Pull Request `- [P]`
+- [M] Merged Pull Request  `- [M]`
+
+**Extra 2**
+- [B] Branch `- [B]`
+- [T] Test `- [T]`
+
+- [o] Issue `- [o]`
+- [O] Closed Issue `- [O]`
+
+- [U] User `- [U]`
+- [W] Password `- [W]`
+- [C] Cart / Buy `- [C]`
+- [a] Add / Plus `- [a]`
+- [r] Remove / Minus  `- [r]`
+
+**Extra 3**
+- [G] Group / Users `- [G]`
+
+- [R] Reference / Repository `- [R]`
+- [E] Eye / View `- [E]`
+- [A] Activity `- [A]`
+- [L] Lesson / Presentation `- [L]`
+
+- [h] Home `- [h]`
+- [H] Health / Fitness `- [H]`
+
+- [Q] Quality `- [Q]`
 
 ---
 
@@ -1345,10 +1502,16 @@ Code:
 ---
 
 # Qlean
-['dark', 'light']
 Repo: https://github.com/Fro-Q/Qlean
-Docs: 
-Code: 
+Docs: https://github.com/Fro-Q/Qlean/blob/main/assets/checkbox_style.png
+Code: https://github.com/Fro-Q/Qlean/blob/619efd313553e6cb6ce7a8c12cc05cf080e8e8df/theme.css#L672
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [-] Cancelled? `- [-]`
+- [?] Question? `- [?]`
+- [!] Important? `- [!]`
+- [i] Information? `- [i]`
 
 ---
 
@@ -1369,10 +1532,35 @@ Code:
 ---
 
 # Yue
-['light', 'dark']
-Repo: https://github.com/thegixo/YueObsidian
-Docs: 
-Code: 
+Repo:https://github.com/GixoXYZ/YueObsidian
+Docs: https://github.com/GixoXYZ/YueObsidian?tab=readme-ov-file#checkbox-styling
+Code: https://github.com/GixoXYZ/YueObsidian/blob/fb138cf9b31396b20110c32082a76bd5d6cd8d1d/theme.css#L634
+
+Same as Minimal.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
 
 ---
 
@@ -1401,10 +1589,28 @@ Code:
 ---
 
 # sQdthOne
-['dark', 'light']
 Repo: https://github.com/KeithLerner/ObsidianMDsQdthOne
-Docs: 
-Code: 
+Docs: None
+Code: https://raw.githubusercontent.com/KeithLerner/ObsidianMDsQdthOne/refs/heads/main/theme.css
+
+- [>] Forwarded `- [>]`
+- [<] Schedule `- [<]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [/] Incomplete `- [/]`
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [i] Info `- [i]`
+- [*] Star `- [*]`
+- [+] Added `- [+]`
+- [-] Cancelled `- [-]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [b] Bookmark `- [b]`
+- [l] Location `- [l]`
+- [s] Smile :) `- [s]`
+- [k] Key `- [k]`
+- [f] Fire `- [f]`
 
 ---
 
@@ -1569,10 +1775,49 @@ Code:
 ---
 
 # Prime
-['dark', 'light']
 Repo: https://github.com/rivea0/obsidian-prime
-Docs: 
-Code: 
+Docs: https://github.com/rivea0/obsidian-prime?tab=readme-ov-file#custom-checkbox-styling
+Code: https://github.com/rivea0/obsidian-prime/blob/main/theme.css#L1774
+
+Uses the same set as Minimal theme and some from Things theme.
+
+- [ ] to do `- [ ]`
+- [/] incomplete `- [/]`
+- [x] done `- [x]`
+- [-] cancelled `- [-]`
+- [>] forwarded `- [>]`
+- [<] scheduling `- [<]`
+
+- [?] question `- [?]`
+- [!] important `- [!]`
+- [*] star `- [*]`
+- ["] quote `- ["]`
+- [l] location `- [l]`
+- [b] bookmark `- [b]`
+- [i] information `- [i]`
+- [S] savings `- [S]`
+- [I] idea `- [I]`
+- [p] pros `- [p]`
+- [c] cons `- [c]`
+- [f] fire `- [f]`
+- [k] key `- [k]`
+- [w] win `- [w]`
+- [u] up `- [u]`
+- [d] down `- [d]`
+- [D] draft pull request `- [D]`
+- [P] open pull request `- [P]`
+- [M] merged pull request `- [M]`
+
+- [m] mail `- [m]`
+- [h] heart `- [h]`
+- [a] archive `- [a]`
+- [e] eye `- [e]`
+- [s] search `- [s]`
+- [r] rocket `- [r]`
+- [8] infinity `- [8]`
+- [g] goal `- [g]`
+- [+] positive `- [+]`
+- [n] negative `- [n]`
 
 ---
 
@@ -1600,11 +1845,42 @@ Code:
 
 ---
 
-# Sanctum reborn
-['dark', 'light']
+# Sanctum Reborn
 Repo: https://github.com/antoKeinanen/obsidian-sanctum-reborn
-Docs: 
-Code: 
+Docs: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/documentation/Theme_Guide.md#features
+Code: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/src/scss/features/custom-checkboxes.scss
+
+- [*] Star `- [*]`
+- [a] Reminder `- [a]`
+- [f] Favorite `- [f]`
+- [S] Savings `- [S]`
+- [-] Cancelled `- [-]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [l] Location `- [l]`
+- [B] Bug `- [B]`
+- [X] Failure `- [X]`
+- [n] Annotation `- [n]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [w] Win `- [w]`
+- [b] Bookmark `- [b]`
+- [I] Idea `- [I]`
+- [!] Warning `- [!]`
+- [?] Question `- [?]`
+- [i] Info `- [i]`
+- [/] In Progress `- [/]`
+- [u] Trend Up `- [u]`
+- [d] Trend Down `- [d]`
+- [F] Feature `- [F]`
+- [r] Law `- [r]`
+- [m] Measurement `- [m]`
+- [M] Medical `- [M]`
+- [L] Language `- [L]`
+- [t] Time `- [t]`
+- [T] Call `- [T]`
+- [P] Person `- [P]`
+- [s] Money `- [s]`
 
 ---
 
