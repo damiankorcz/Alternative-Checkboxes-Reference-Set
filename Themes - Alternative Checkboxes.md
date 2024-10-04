@@ -985,14 +985,6 @@ Code: https://github.com/zaheralmajed/vicious-theme-obsidian/blob/686d487e0705fd
 
 ---
 
-# Simple
-['dark', 'light']
-Repo: https://github.com/diegoeis/simple-obsidian
-Docs: 
-Code: 
-
----
-
 # Elegance
 
 Repo: https://github.com/Victologo/elegance-theme
@@ -1022,6 +1014,41 @@ Code: https://github.com/Victologo/elegance-theme/blob/83947941e3f44fb4f37df291c
 - [w] Win `- [w]`
 - [u] Up `- [u]`
 - [d] Down `- [d]`
+
+---
+
+# Simple
+Repo: https://github.com/diegoeis/simple-obsidian
+Docs: https://github.com/diegoeis/simple-obsidian?tab=readme-ov-file#checklists-styles
+Code: https://github.com/diegoeis/simple-obsidian/blob/2b45f172c7c0840dcf94d173ddf89b2a1ba53aa0/theme.css#L733
+
+Uses the same set as Things / Minimal themes.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+---
 
 # Aurora
 ['dark']
