@@ -140,34 +140,155 @@ Themes are ordered from most popular to least popular at the time of writing.
 ---
 
 # Minimal
-['dark', 'light']
 Repo: https://github.com/kepano/obsidian-minimal
-Docs: 
-Code: 
+Docs: https://minimal.guide/checklists
+Code: https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/checklist-icons.scss
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
 
 ---
 
 # Things
-['light', 'dark']
 Repo: https://github.com/colineckert/obsidian-things
-Docs: 
-Code: 
+Docs: https://github.com/colineckert/obsidian-things?tab=readme-ov-file#checkbox-styling
+Code: https://github.com/colineckert/obsidian-things/blob/9d0a8b44007a335ee829a0d3843ab579051eeb70/theme.css#L661
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [D] Draft Pull Request `- [D]`
+- [P] Open Pull Request `- [P]`
+- [M] Merged Pull Request `- [M]`
 
 ---
 
 # Blue Topaz
-['dark', 'light']
-Repo: https://github.com/whyt-byte/Blue-Topaz_Obsidian-css
-Docs: 
-Code: 
+Repo: https://github.com/PKM-er/Blue-Topaz_Obsidian-css
+Docs: https://github.com/PKM-er/Blue-topaz-example/blob/96ecdaa485f0b4e4b8c22c7fea4394be1b882c83/Demo%20Note.md?plain=1#L144
+Code:
+- https://github.com/PKM-er/Blue-Topaz_Obsidian-css/blob/d55ba0b88ee2d91b49bd5cce66039685c27073f4/theme.css#L11739
+- https://github.com/PKM-er/Blue-Topaz_Obsidian-css/blob/d55ba0b88ee2d91b49bd5cce66039685c27073f4/theme.css#L29306
+
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [!] Important `- [!]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+
+- ["] Quote`- ["]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [n] Note `- [n]`
+- [l] Location `- [l]`
+- [i] Information `- [i]`
+- [I] Idea / Light bulb `- [I]`
+- [S] Amount `- [S]`
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+- [b] Bookmark `- [b]`
+- [f] Fire `- [f]`
+- [w] Win `- [w]`
+- [k] Key `- [k]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [F] Feature `- [F]`
+- [r] Rule / Law `- [r]`
+- [m] Measurement `- [m]`
+- [M] Medical `- [M]`
+- [L] Translate / Language `- [L]`
+- [t] Clock / Time `- [t]`
+- [T] Telephone `- [T]`
+- [P] Person `- [P]`
+- [#] Tags `- [#]`
+- [W] World `- [W]`
+- [U] Universe `- [U]`
 
 ---
 
 # AnuPpuccin
-['dark', 'light']
+
 Repo: https://github.com/AnubisNekhet/AnuPpuccin
-Docs: 
-Code: 
+Docs: https://github.com/AnubisNekhet/AnuPpuccin?tab=readme-ov-file#custom-checkboxes--speech-bubbles
+Code: https://github.com/AnubisNekhet/AnuPpuccin/blob/main/src/modules/Features/custom-checkboxes.scss
+
+Style Settings Required: `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes`
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [!] Important `- [!]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [n] Note `- [n]`
+- [l] Location `- [l]`
+- [i] Information `- [i]`
+- [I] Idea `- [I]`
+- [S] Amount `- [S]`
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+- [b] Bookmark `- [b]`
+- ["] Quote `- ["]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [w] Win `- [w]`
+- [k] Key `- [k]`
+- [f] Fire `- [f]`
+- [0] Speech bubble 0 `- [0]`
+- [1] Speech bubble 1 `- [1]`
+- [2] Speech bubble 2 `- [2]`
+- [3] Speech bubble 3 `- [3]`
+- [4] Speech bubble 4 `- [4]`
+- [5] Speech bubble 5 `- [5]`
+- [6] Speech bubble 6 `- [6]`
+- [7] Speech bubble 7 `- [7]`
+- [8] Speech bubble 8 `- [8]`
+- [9] Speech bubble 9 `- [9]`
 
 ---
 
@@ -180,10 +301,29 @@ Code:
 ---
 
 # Sanctum
-['dark', 'light']
 Repo: https://github.com/jdanielmourao/obsidian-sanctum
-Docs: 
-Code: 
+Docs: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/documentation/Theme_Guide.md
+Code: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/src/scss/features/custom-checkboxes.scss
+
+- [i] Information `- [i]`
+- [-] Cancelled `- [-]`
+- [<] Scheduled `- [<]`
+- [>] Rescheduled/Forwarded `- [>]`
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [l] Location `- [l]`
+- [x] Task `- [x]`
+- [ ] Task `- [ ]`
+- [I] Idea `- [I]`
+- [p] Thumbs up `- [p]`
+- [c] Thumbs down `- [c]`
+- [S] Piggy bank `- [S]`
+- [s] Money `- [s]`
+- [a] Bell `- [a]`
+- [b] Bookmark `- [b]`
+- [n] Pin `- [n]`
+- [B] Bug `- [B]`
+- [W] Reward `- [W]`
 
 ---
 
