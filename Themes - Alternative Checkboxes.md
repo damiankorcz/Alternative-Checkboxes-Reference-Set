@@ -574,18 +574,47 @@ Code:
 ---
 
 # Shiba Inu
-['dark', 'light']
+
 Repo: https://github.com/faroukx/Obsidian-shiba-inu-theme
-Docs: 
-Code: 
+Docs: https://github.com/faroukx/Obsidian-shiba-inu-theme?tab=readme-ov-file#personalized-checkboxes
+Code: https://github.com/faroukx/Obsidian-shiba-inu-theme/blob/main/theme.css (Only minified available)
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [!] Important `- [!]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [n] Note `- [n]`
+- [l] Location `- [l]`
+- [i] Information `- [i]`
+- [I] Idea `- [I]`
+- [S] Amount `- [S]`
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+- [b] Bookmark `- [b]`
+- [s] Study `- [s]`
+- [r] Reminder `- [r]`
 
 ---
 
-# PLN
-['dark', 'light']
+# PLN (Pipe Loves Nord)
+
 Repo: https://github.com/PipeItToDevNull/PLN
-Docs: 
-Code: 
+Docs: https://github.com/PipeItToDevNull/PLN?tab=readme-ov-file#custom-checkboxes
+Code: https://github.com/PipeItToDevNull/PLN/blob/master/snippets/checkboxes.css
+
+- [ ] Open `- [ ]`
+- [x] Complete `- [x]`
+- [!] Important `- [!]`
+- [>] Deferred `- [>]`
+- [?] Question `- [?]`
+- [i] Info `- [i]`
+- [-] Cancelled  `- [-]`
+- [/] Partial `- [/]`
 
 ---
 
@@ -614,10 +643,38 @@ Code:
 ---
 
 # Obsidianotion
-['dark', 'light']
+
 Repo: https://github.com/diegoeis/obsidianotion
-Docs: 
-Code: 
+Docs: https://github.com/diegoeis/obsidianotion?tab=readme-ov-file#checklists-styles
+Code: https://github.com/diegoeis/obsidianotion/blob/092b29b9aaece2d5a0975ffe4d6b4c75b62e44fd/theme.css#L1221
+
+Uses the same set as Things / Minimal themes.
+
+- [ ] Normal `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Exclamation `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Thumbs Up `- [p]`
+- [c] Thumbs Down `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [s] Thread? / String?  `- [s]` (Specified incorrectly in Docs as Forwarded but available with no label in code)
 
 ---
 
@@ -646,18 +703,52 @@ Code:
 ---
 
 # Maple
-['dark', 'light']
+
 Repo: https://github.com/subframe7536/obsidian-theme-maple
-Docs: 
-Code: 
+Docs:
+Code: https://github.com/subframe7536/obsidian-theme-maple/blob/bb117504f9fe91e804442f175d9a94f67bb8dbf0/src/editor/checkbox.scss
+
+Uses code from Border theme.
+
+- [ ] To Do `- [ ]`
+- [/] In Progress `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduling `- [<]`
+
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [i] Information `- [i]`
+- [S] Amount `- [S]`
+- [*] Star `- [*]`
+- [b] Bookmark `- [b]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+- [n] Note `- [n]` 
 
 ---
 
-# Ebullientworks
-['dark', 'light']
+# EbullientWorks
 Repo: https://github.com/ebullient/obsidian-theme-ebullientworks
-Docs: 
-Code: 
+Docs: https://github.com/ebullient/obsidian-theme-ebullientworks?tab=readme-ov-file#alternative-checkboxes
+Code: https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/src/fragments/_06a-checkbox-mixin.scss
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+- [>] Deferred `- [>]`
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [r] Review `- [r]` or `- [R]` (Capital R - Not mentioned in docs)
+- [b] Bookmark `- [b]` (Not mentioned in docs)
 
 ---
 
@@ -669,19 +760,60 @@ Code:
 
 ---
 
-# Pine Forest Berry
-['dark', 'light']
-Repo: https://github.com/Nilahn/pine_forest_berry
-Docs: 
-Code: 
+# Forest Pine Berry (Unmaintained?)
+Repo: https://github.com/Nilahn/pine_forest_berry/
+Docs: None (Appears to use Minimal snippet)
+Code: https://github.com/Nilahn/pine_forest_berry/blob/e74bd849e654c22b857229ef0f9c6c6834090d2a/obsidian.css#L999
+
+Doesn't install correctly since it only has `obsidian.css` and no `theme.css`.
+
+- [>] Forwarded `- [>]`
+- [<] Schedule `- [<]`
+- [?] Question `- [?]`
+- [/] Incomplete `- [/]`
+- [!] Important `- [!]`
+- ["] Quote `- ["]`
+- [-] Cancelled `- [-]`
+- [*] Star `- [*]`
+- [l] Location `- [l]`
+- [i] Info `- [i]`
+- [S] Amount / Savings / Money `- [S]`
+- [I] Idea / Light Bulb `- [I]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [w] Win  `- [w]`
+- [p] Pros `- [p]`
+- [c] Cons  `- [c]`
+- [b] Bookmark `- [b]`
 
 ---
 
 # Aura
-['dark', 'light']
+
 Repo: https://github.com/ashwinjadhav818/obsidian-aura
-Docs: 
-Code: 
+Docs: None (I guessed the uses based on other implementations)
+Code: https://github.com/ashwinjadhav818/obsidian-aura/blob/925571586651e756bf38632178cc4a387f5a6c98/src/features/checkbox.scss
+
+- [x] Check `- [x]`
+- [X] Alt Check? `- [X]`
+- [?] Question `- [?]`
+- [-] Cancelled? `- [-]`
+- [!] Important  `- [!]`
+- [>] Deffered?  `- [>]`
+- [/] Settings? `- [/]`
+- [R] Clock / Time `- [R]`
+- [+] Add? `- [+]`
+- [b] Bookmark `- [b]`
+- [B] Bolt?  `- [B]`
+- [D] Date / Callendar ? `- [D]`
+- [I] Information `- [I]`
+- [i] Idea / Light Bulb `- [i]`
+- [N] Note `- [N]`
+- [Q] Quote `- [Q]`
+- [P] Thumbs Up `- [P]`
+- [C] Thumbs Down `- [C]`
 
 ---
 
@@ -774,10 +906,75 @@ Code:
 ---
 
 # Vicious
-['light', 'dark']
+
 Repo: https://github.com/zaheralmajed/vicious-theme-obsidian
-Docs: 
-Code: 
+Docs: https://github.com/zaheralmajed/vicious-theme-obsidian?tab=readme-ov-file#enhanced-checkboxes
+Code: https://github.com/zaheralmajed/vicious-theme-obsidian/blob/686d487e0705fd6b7aced4451400512bba919f56/theme.css#L2547
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [-] Cancelled `- [-]`
+- [)] Good `- [)]`
+- [:] Pin `- [:]`
+- [(] Bad `- [(]`
+- [}] High `- [}]`
+- [=] Normal `- [=]`
+- [{] Low `- [{]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [!] Important `- [!]`
+- [>] Forward `- [>]`
+- [<] Backward `- [<]`
+- [/] Pause `- [/]`
+- [+] Upward `- [+]`
+- [_] Downward `- [_]`
+- [%] Recurring `- [%]`
+- [&] Trash `- [&]`
+- [.] Lock `- [.]`
+- [@] At `- [@]`
+- [#] Hashtag `- [#]`
+- ['] Quote `- [']`
+- [a] Archive `- [a]`
+- [A] Alarm  `- [A]`
+- [b] Bookmark `- [b]`
+- [B] Birthday `- [B]`
+- [c] Comment `- [c]`
+- [C] Clip `- [C]`
+- [d] Diamond `- [d]`
+- [D] Document `- [D]`
+- [e] Envelope `- [e]`
+- [E] Eye `- [E]`
+- [f] Flame `- [f]`
+- [F] Financial `- [F]`
+- [g] Gaming `- [g]`
+- [G] GYM `- [G]`
+- [h] Home `- [h]`
+- [H] Heart `- [H]`
+- [i] Info `- [i]`
+- [I] Idea `- [I]`
+- [m] Music `- [m]`
+- [M] Medical `- [M]`
+- [p] Person `- [p]`
+- [P] Plane `- [P]`
+- [s] Sport `- [s]`
+- [S] Search `- [S]`
+- [u] URL `- [u]`
+- [v] Video `- [v]`
+- [w] World `- [w]`
+- [W] Work `- [W]`
+- [z] Moon `- [z]`
+- [Z] Sun `- [Z]`
+- [0] Text Highlight 0 `- [0]`
+- [1] Text Highlight 1 `- [1]`
+- [2] Text Highlight 2 `- [2]`
+- [3] Text Highlight 3 `- [3]`
+- [4] Text Highlight 4 `- [4]`
+- [5] Text Highlight 5 `- [5]`
+- [6] Text Highlight 6 `- [6]`
+- [7] Text Highlight 7 `- [7]`
+- [8] Text Highlight 8 `- [8]`
+- [9] Text Highlight 9 `- [9]`
+- [§] Text Highlight § `- [§]`
 
 ---
 
@@ -790,12 +987,34 @@ Code:
 ---
 
 # Elegance
-['dark', 'light']
-Repo: https://github.com/Victologo/elegance-theme
-Docs: 
-Code: 
 
----
+Repo: https://github.com/Victologo/elegance-theme
+Docs: https://github.com/Victologo/elegance-theme?tab=readme-ov-file#checboxes-minimal-theme-by-kepano
+Code: https://github.com/Victologo/elegance-theme/blob/83947941e3f44fb4f37df291c8cff08f299cc2fc/theme.css#L3644
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]` (Not mentioned in Docs)
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
 
 # Aurora
 ['dark']
