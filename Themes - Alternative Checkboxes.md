@@ -292,6 +292,14 @@ Style Settings Required: `AnuPpuccin -> File Editor & Markdown Elements -> Check
 
 ---
 
+# Obsidianite
+['dark']
+Repo: https://github.com/bennyxguo/Obsidian-Obsidianite
+Docs: 
+Code: 
+
+---
+
 # Sanctum
 Repo: https://github.com/jdanielmourao/obsidian-sanctum
 Docs: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/documentation/Theme_Guide.md
@@ -365,6 +373,30 @@ Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Ch
 
 ---
 
+# Dracula for Obsidian
+['dark']
+Repo: https://github.com/jarodise/Dracula-for-Obsidian.md
+Docs: 
+Code: 
+
+---
+
+# Everforest
+['dark', 'light']
+Repo: https://github.com/mrglitchbyte/obsidian_everforest
+Docs: 
+Code: 
+
+---
+
+# Cybertron
+['dark']
+Repo: https://github.com/nickmilo/Cybertron
+Docs: 
+Code: 
+
+---
+
 # Primary
 
 Repo: https://github.com/primary-theme/obsidian
@@ -427,6 +459,14 @@ Code: https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/ea79aba43597044
 
 ---
 
+# Yin and Yang
+['dark', 'light']
+Repo: https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme
+Docs: 
+Code: 
+
+---
+
 # Border
 
 Repo: https://github.com/Akifyss/obsidian-border
@@ -455,6 +495,30 @@ Code: https://github.com/Akifyss/obsidian-border/blob/2771957ab92e6faddd7edad4e0
 - [d] Down `- [d]`
 
 - [n] Note `- [n]`
+
+---
+
+# Obuntu
+['dark', 'light']
+Repo: https://github.com/DubininDmitry/Obuntu-theme-for-Obsidian
+Docs: 
+Code: 
+
+---
+
+# Terminal
+['dark']
+Repo: https://github.com/zcysxy/Obsidian-Terminal-Theme
+Docs: 
+Code: 
+
+---
+
+# Dracula Official
+['dark']
+Repo: https://github.com/dracula/obsidian
+Docs: 
+Code: 
 
 ---
 
@@ -508,6 +572,14 @@ Code: https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/theme.css#L3436
 
 ---
 
+# LYT Mode
+['dark']
+Repo: https://github.com/nickmilo/LYT-Mode
+Docs: 
+Code: 
+
+---
+
 # Shiba Inu
 
 Repo: https://github.com/faroukx/Obsidian-shiba-inu-theme
@@ -553,6 +625,30 @@ Code: https://github.com/PipeItToDevNull/PLN/blob/master/snippets/checkboxes.css
 
 ---
 
+# Dark Moss
+['dark']
+Repo: https://github.com/sergey900553/obsidian_githublike_theme
+Docs: 
+Code: 
+
+---
+
+# Discordian
+['dark']
+Repo: https://github.com/radekkozak/discordian
+Docs: 
+Code: 
+
+---
+
+# Sodalite
+['dark']
+Repo: https://github.com/tomzorz/Sodalite
+Docs: 
+Code: 
+
+---
+
 # Obsidianotion
 
 Repo: https://github.com/diegoeis/obsidianotion
@@ -586,6 +682,30 @@ Uses the same set as Things / Minimal themes.
 - [d] Down `- [d]`
 
 - [s] Thread? / String?  `- [s]` (Specified incorrectly in Docs as Forwarded but available with no label in code)
+
+---
+
+# Bubble Space
+['dark', 'light']
+Repo: https://github.com/Emrie-Candera/Bubble-Space-Theme
+Docs: 
+Code: 
+
+---
+
+# Gitsidian
+['dark', 'light']
+Repo: https://github.com/ishgunacar/gitsidian
+Docs: 
+Code: 
+
+---
+
+# Blackbird
+['dark']
+Repo: https://github.com/vanadium23/obsidian-blackbird-theme
+Docs: 
+Code: 
 
 ---
 
@@ -636,6 +756,14 @@ Code: https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/src/f
 - [?] Question `- [?]`
 - [r] Review `- [r]` or `- [R]` (Capital R - Not mentioned in docs)
 - [b] Bookmark `- [b]` (Not mentioned in docs)
+
+---
+
+# Ars Magna
+['dark', 'light']
+Repo: https://github.com/mediapathic/obsidian-arsmagna-theme
+Docs: 
+Code: 
 
 ---
 
@@ -693,6 +821,94 @@ Code: https://github.com/ashwinjadhav818/obsidian-aura/blob/925571586651e756bf38
 - [Q] Quote `- [Q]`
 - [P] Thumbs Up `- [P]`
 - [C] Thumbs Down `- [C]`
+
+---
+
+# Dracula + LYT
+['dark']
+Repo: https://github.com/xRyul/ObsidianMD_Dracula_x_LYT
+Docs: 
+Code: 
+
+---
+
+# Pisum
+['dark']
+Repo: https://github.com/GuangluWu/obsidian-pisum
+Docs: 
+Code: 
+
+---
+
+# Comfort color dark
+['dark']
+Repo: https://github.com/obsidian-ezs/obsidian-comfort-color-dark
+Docs: 
+Code: 
+
+---
+
+# Nebula
+['dark']
+Repo: https://github.com/dlccyes/obsidian-nebula
+Docs: 
+Code: 
+
+---
+
+# Harmonic
+['dark', 'light']
+Repo: https://github.com/Thiews/Obsidian-Harmonic
+Docs: 
+Code: 
+
+---
+
+# Vanilla AMOLED
+['dark']
+Repo: https://github.com/SakuraIsayeki/vanilla-amoled-theme
+Docs: 
+Code: 
+
+---
+
+# Dawn
+['dark', 'light']
+Repo: https://github.com/minheeyoon/Dawn
+Docs: 
+Code: 
+
+---
+
+# Firefly
+['dark']
+Repo: https://github.com/lazercaveman/obsidian-firefly-theme
+Docs: 
+Code: 
+
+---
+
+# Comfort Smooth
+['dark']
+Repo: https://github.com/sparklau/comfort-smooth
+Docs: 
+Code: 
+
+---
+
+# Faded
+['dark']
+Repo: https://github.com/JoshKasap/Obsidian-Faded-Theme
+Docs: 
+Code: 
+
+---
+
+# Mammoth
+['dark']
+Repo: https://github.com/Wittionary/mammoth-obsidian-theme
+Docs: 
+Code: 
 
 ---
 
@@ -834,6 +1050,46 @@ Uses the same set as Things / Minimal themes.
 
 ---
 
+# Aurora
+['dark']
+Repo: https://github.com/auroral-ui/aurora-obsidian-md
+Docs: 
+Code: 
+
+---
+
+# Material Ocean
+['dark']
+Repo: https://github.com/dragonwocky/obsidian-material-ocean
+Docs: 
+Code: 
+
+---
+
+# Hipstersmoothie
+['dark']
+Repo: https://github.com/hipstersmoothie/hipstersmoothie-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# Obsidian Windows 98 Edition
+['dark', 'light']
+Repo: https://github.com/SMUsamaShah/Obsidian-Win98-Edition
+Docs: 
+Code: 
+
+---
+
+# Behave dark
+['dark']
+Repo: https://github.com/Chrismettal/Obsidian-Behave-dark
+Docs: 
+Code: 
+
+---
+
 # Sparkling Night
 Repo: https://github.com/isax785/obsidian-sparkling-night
 Docs: https://github.com/isax785/obsidian-sparkling-night
@@ -845,6 +1101,14 @@ Only works in Live Preview.
 - [-] Pause / Stand-By `- [-]`
 - [/] Stop `- [/]`
 - [<] To Be Scheduled `- [<]`
+
+---
+
+# Purple Aurora
+['dark']
+Repo: https://github.com/AndreasStandar/Obsidian-Theme---Purple-Aurora
+Docs: 
+Code: 
 
 ---
 
@@ -862,6 +1126,22 @@ Code: https://github.com/isaacfreeman/kakano-obsidian-theme/blob/2e4e869043eca01
 - [>] Forwarded `- [>]`
 - [!] Important `- [!]`
 - [?] Question `- [?]`
+
+---
+
+# Rosé Pine Moon
+['dark']
+Repo: https://github.com/mimishahzad/rose-pine-moon-obsidian
+Docs: 
+Code: 
+
+---
+
+# deeper work
+['dark']
+Repo: https://github.com/lucas-fern/obsidian-deeper-work-theme
+Docs: 
+Code: 
 
 ---
 
@@ -939,6 +1219,46 @@ Mentions using Things Theme for Checkboxes.
 - [D] Draft Pull Request `- [D]`
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
+
+---
+
+# Theme-That-Shall-Not-Be-Named
+['dark']
+Repo: https://github.com/ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named
+Docs: 
+Code: 
+
+---
+
+# Darkyan
+['dark']
+Repo: https://github.com/johackim/obsidian-darkyan
+Docs: 
+Code: 
+
+---
+
+# Dracula Gemini
+['dark']
+Repo: https://github.com/clbn/dracula-gemini
+Docs: 
+Code: 
+
+---
+
+# Obsdn-Dark-Rmx
+['dark', 'light']
+Repo: https://github.com/cannibalox/Obsdn-dark-rmx
+Docs: 
+Code: 
+
+---
+
+# Hulk
+['dark']
+Repo: https://github.com/pgalliford/Obsidian-theme-Incredible-Hulk
+Docs: 
+Code: 
 
 ---
 
@@ -1039,6 +1359,182 @@ Code: https://github.com/drbap/magicuser-theme-for-obsidian/blob/33ebb74f4355cd4
 
 ---
 
+# AbsoluteGruv
+['dark']
+Repo: https://github.com/kkYrusobad/AbsoluteGruv
+Docs: 
+Code: 
+
+---
+
+# ion
+['dark']
+Repo: https://github.com/zamsyt/obsidian-ion
+Docs: 
+Code: 
+
+---
+
+# Amethyst
+['dark', 'light']
+Repo: https://github.com/cotemaxime/obsidian-amethyst
+Docs: 
+Code: 
+
+---
+
+# Purple Owl
+['dark']
+Repo: https://github.com/zacharyc/purple-owl-theme
+Docs: 
+Code: 
+
+---
+
+# Violet Evening
+['dark']
+Repo: https://github.com/aitaDev/Violet-Evening-for-Obsidian
+Docs: 
+Code: 
+
+---
+
+# Dracula Slim
+['dark']
+Repo: https://github.com/bLaCkwEw/Dracula-Slim
+Docs: 
+Code: 
+
+---
+
+# Ayu Mirage
+['dark']
+Repo: https://github.com/bcdavasconcelos/Obsidian-Ayu_Mirage
+Docs: 
+Code: 
+
+---
+
+# Apatheia
+['dark']
+Repo: https://github.com/AmadeusWM/Obsidian-Apatheia
+Docs: 
+Code: 
+
+---
+
+# Everblush
+['dark']
+Repo: https://github.com/Everblush/Obsidian
+Docs: 
+Code: 
+
+---
+
+# Traffic Lights
+['dark', 'light']
+Repo: https://github.com/elliotboyd/obsidian-traffic-lights
+Docs: 
+Code: 
+
+---
+
+# Dark Graphite
+['dark']
+Repo: https://github.com/bcdavasconcelos/Obsidian-Graphite
+Docs: 
+Code: 
+
+---
+
+# Zenburn
+['dark']
+Repo: https://github.com/danyim/obsidian-zenburn
+Docs: 
+Code: 
+
+---
+
+# Micro Mike
+['dark']
+Repo: https://github.com/ThisTheThe/MicroMike
+Docs: 
+Code: 
+
+---
+
+# monochroYOU
+['dark', 'light']
+Repo: https://github.com/GuiMar10/monochroYOU
+Docs: 
+Code: 
+
+---
+
+# Panic Mode
+['dark']
+Repo: https://github.com/bcdavasconcelos/Obsidian-Panic_Mode
+Docs: 
+Code: 
+
+---
+
+# Creature
+['dark']
+Repo: https://github.com/marcusolsson/obsidian-creature-theme
+Docs: 
+Code: 
+
+---
+
+# Emerald
+['dark']
+Repo: https://github.com/gracejoseph1236/obsidian-emerald
+Docs: 
+Code: 
+
+---
+
+# Charcoal
+['dark']
+Repo: https://github.com/bcdavasconcelos/Obsidian-Charcoal
+Docs: 
+Code: 
+
+---
+
+# halcyon
+['dark']
+Repo: https://github.com/dbarenholz/halcyon-obsidian
+Docs: 
+Code: 
+
+---
+
+# Base2Tone
+['dark']
+Repo: https://github.com/deathau/Base2Tone-For-Obsidian.md
+Docs: 
+Code: 
+
+---
+
+# ProtocolBlue
+['dark']
+Repo: https://github.com/PrettyBoyCosmo/ProtocolBlue
+Docs: 
+Code: 
+
+---
+
+# Dekurai
+['dark']
+Repo: https://github.com/sergey900553/obsidian_dekurai_theme
+Docs: 
+Code: 
+
+---
+
 # Qlean
 Repo: https://github.com/Fro-Q/Qlean
 Docs: https://github.com/Fro-Q/Qlean/blob/main/assets/checkbox_style.png
@@ -1050,6 +1546,22 @@ Code: https://github.com/Fro-Q/Qlean/blob/619efd313553e6cb6ce7a8c12cc05cf080e8e8
 - [?] Question? `- [?]`
 - [!] Important? `- [!]`
 - [i] Information? `- [i]`
+
+---
+
+# Ruby
+['dark']
+Repo: https://github.com/gracejoseph1236/obsidian-ruby
+Docs: 
+Code: 
+
+---
+
+# GitHubDHC
+['dark']
+Repo: https://github.com/ScottKirvan/GitHubDHC
+Docs: 
+Code: 
 
 ---
 
@@ -1086,6 +1598,30 @@ Same as Minimal.
 
 ---
 
+# Higlighter
+['light']
+Repo: https://github.com/lukauskas/obsidian-highlighter-theme
+Docs: 
+Code: 
+
+---
+
+# Rmaki
+['dark']
+Repo: https://github.com/luke-rmaki/rmaki-obsidian
+Docs: 
+Code: 
+
+---
+
+# Nightfox
+['dark', 'light']
+Repo: https://github.com/mbromell/obsidian-nightfox
+Docs: 
+Code: 
+
+---
+
 # sQdthOne
 Repo: https://github.com/KeithLerner/ObsidianMDsQdthOne
 Docs: None
@@ -1109,6 +1645,166 @@ Code: https://raw.githubusercontent.com/KeithLerner/ObsidianMDsQdthOne/refs/head
 - [s] Smile :) `- [s]`
 - [k] Key `- [k]`
 - [f] Fire `- [f]`
+
+---
+
+# Lizardmen Zettelkasten
+['light']
+Repo: https://github.com/dogwaddle/lizardmen-zettelkasten
+Docs: 
+Code: 
+
+---
+
+# SynthWave
+['dark']
+Repo: https://github.com/marcoluzi/obsidian-synthwave
+Docs: 
+Code: 
+
+---
+
+# Cybertron Shifted
+['dark']
+Repo: https://github.com/JorgEdmundo/cybertron-shifted
+Docs: 
+Code: 
+
+---
+
+# Iceberg
+['dark']
+Repo: https://github.com/izumin5210/obsidian-iceberg
+Docs: 
+Code: 
+
+---
+
+# WilcoxOne
+['dark']
+Repo: https://github.com/MattWilcox/obsidian-wilcox-one
+Docs: 
+Code: 
+
+---
+
+# Tokyo Night Storm
+['dark']
+Repo: https://github.com/arozx/obsidian_tokyo-night-storm
+Docs: 
+Code: 
+
+---
+
+# Dracula Plus
+['dark']
+Repo: https://github.com/saket61195/Dracula_obsidian_theme
+Docs: 
+Code: 
+
+---
+
+# Gastown
+['light']
+Repo: https://github.com/dogwaddle/obsidian-gastown-theme.md
+Docs: 
+Code: 
+
+---
+
+# Lemons Theme
+['dark']
+Repo: https://github.com/mProjectsCode/obsidian-lemons-theme
+Docs: 
+Code: 
+
+---
+
+# Novadust
+['dark']
+Repo: https://github.com/mmartamg/novadust-obsidian
+Docs: 
+Code: 
+
+---
+
+# Wombat
+['dark']
+Repo: https://github.com/hush-hush/obsidian_wombat
+Docs: 
+Code: 
+
+---
+
+# GDCT Dark
+['dark']
+Repo: https://github.com/bcdavasconcelos/Obsidian-GDCT_Dark
+Docs: 
+Code: 
+
+---
+
+# Synthwave '84
+['dark']
+Repo: https://github.com/G2Jose/synthwave-84-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# Viridian
+['dark', 'light']
+Repo: https://github.com/mulfok/obsidian-viridian
+Docs: 
+Code: 
+
+---
+
+# Ayu
+['light']
+Repo: https://github.com/bcdavasconcelos/Obsidian-Ayu
+Docs: 
+Code: 
+
+---
+
+# Solitude
+['dark']
+Repo: https://github.com/MajorEnkidu/solitude-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# Carpe Noctem
+['dark']
+Repo: https://github.com/operator-axel/obsdian_theme--Carpe_Noctem
+Docs: 
+Code: 
+
+---
+
+# Carnelian
+['dark']
+Repo: https://github.com/gracejoseph1236/obsidian-carnelian
+Docs: 
+Code: 
+
+---
+
+# Comfort Dark
+['dark']
+Repo: https://github.com/Ooopz/obsidianmd-theme-comfort-dark
+Docs: 
+Code: 
+
+---
+
+# Aura Dark
+['dark']
+Repo: https://github.com/Possibly-Matt/obsidian-aura-theme
+Docs: 
+Code: 
 
 ---
 
@@ -1159,6 +1855,30 @@ Uses the same set as Minimal theme and some from Things theme.
 
 ---
 
+# Carbon
+['dark', 'light']
+Repo: https://github.com/vhbelvadi/obsidian-carbon
+Docs: 
+Code: 
+
+---
+
+# Modern Dark
+['dark']
+Repo: https://github.com/roberts-code/obsidian-theme-modern-dark
+Docs: 
+Code: 
+
+---
+
+# Atomus
+['dark']
+Repo: https://github.com/PedroHenrique17/Atomus
+Docs: 
+Code: 
+
+---
+
 # Sanctum Reborn
 Repo: https://github.com/antoKeinanen/obsidian-sanctum-reborn
 Docs: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/documentation/Theme_Guide.md#features
@@ -1198,6 +1918,22 @@ Code: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/src/scss
 
 ---
 
+# Rezin
+['dark']
+Repo: https://github.com/NicolasGHS/Rezin-theme
+Docs: 
+Code: 
+
+---
+
+# Tomorrow Night Bright
+['dark']
+Repo: https://github.com/gbraad/obsidian-tomorrow-night-bright-theme
+Docs: 
+Code: 
+
+---
+
 # Underwater
 Repo: https://github.com/Seniblue/Underwater
 Docs: https://github.com/Seniblue/Underwater?tab=readme-ov-file#formatting
@@ -1222,6 +1958,30 @@ Uses 'Tweaked' Minimal.
 - [I] Idea `- [I]`
 - [s] Sparkles `- [s]`
 - [w] Wave `- [w]`
+
+---
+
+# Celestial Night
+['dark']
+Repo: https://github.com/Bluemoondragon07/Obsidian-Celestial-Night-Theme
+Docs: 
+Code: 
+
+---
+
+# Nightingale
+['dark']
+Repo: https://github.com/frank0713/nightingale-obsidian
+Docs: 
+Code: 
+
+---
+
+# Sanguine
+['dark']
+Repo: https://github.com/Satchelmouth/Obsidian-Theme-Sanguine
+Docs: 
+Code: 
 
 ---
 
@@ -1253,6 +2013,22 @@ Code: https://github.com/contrapasso3/Reshi/blob/879377560c0661822d3cb217165c998
 - [t] Time `- [t]`
 - [l] Location `- [l]`
 - ["] Quote `- ["]`
+
+---
+
+# Transient
+['dark']
+Repo: https://github.com/GeorgeAzma/Transient
+Docs: 
+Code: 
+
+---
+
+# Arcane
+['dark']
+Repo: https://github.com/xRyul/obsidian-arcane-theme
+Docs: 
+Code: 
 
 ---
 
@@ -1293,6 +2069,46 @@ Mentions using Minimal but has the Git parts from Things.
 
 ---
 
+# Green Nightmare
+['dark']
+Repo: https://github.com/prradox/green-nightmare
+Docs: 
+Code: 
+
+---
+
+# Oldsidian Purple
+['dark']
+Repo: https://github.com/ltctceplrm/oldsidian-purple
+Docs: 
+Code: 
+
+---
+
+# Vibrant
+['dark']
+Repo: https://github.com/JamesLemony/obsidian_vibrant
+Docs: 
+Code: 
+
+---
+
+# Vanilla Palettes
+['light', 'dark']
+Repo: https://github.com/GnRlLeclerc/Vanilla-Theme-Palettes
+Docs: 
+Code: 
+
+---
+
+# Minimal-Resources
+['dark']
+Repo: https://github.com/jonsnow231/Minimal-Resources
+Docs: 
+Code: 
+
+---
+
 # Sparkling Day
 Repo: https://github.com/isax785/obsidian-sparkling-day
 Docs: https://github.com/isax785/obsidian-sparkling-day?tab=readme-ov-file#sparkling-checkboxes
@@ -1304,6 +2120,94 @@ Only works in Live Preview.
 - [-] Pause / Stand-By `- [-]`
 - [/] Stop `- [/]`
 - [<] To Be Scheduled `- [<]`
+
+---
+
+# Covert
+['dark']
+Repo: https://github.com/schrunchee/obsidian-covert-theme
+Docs: 
+Code: 
+
+---
+
+# Focus
+['dark']
+Repo: https://github.com/mProjectsCode/obsidian-focus-theme
+Docs: 
+Code: 
+
+---
+
+# Nier
+['dark']
+Repo: https://github.com/exloseur3d/nier-theme
+Docs: 
+Code: 
+
+---
+
+# EvilRed
+['dark']
+Repo: https://github.com/tu2-atmanand/EvilRed-ObsidianTheme
+Docs: 
+Code: 
+
+---
+
+# Venom
+['dark']
+Repo: https://github.com/fatiger92/obsidian_venom_theme
+Docs: 
+Code: 
+
+---
+
+# Poimandres
+['dark']
+Repo: https://github.com/yoGhastly/poimandres-obsidian
+Docs: 
+Code: 
+
+---
+
+# Sea Glass
+['dark']
+Repo: https://github.com/KStew1017/obsidian-sea-glass-theme
+Docs: 
+Code: 
+
+---
+
+# mono black (monochrome, charcoal)
+['dark']
+Repo: https://github.com/ZeChArtiahSaher/obsidian-mono-black
+Docs: 
+Code: 
+
+---
+
+# Oozy
+['dark']
+Repo: https://github.com/zaklezaja/obsidian-oozy
+Docs: 
+Code: 
+
+---
+
+# Strict
+['dark']
+Repo: https://github.com/Nikolai2038/strict-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# Prussian Blue
+['dark']
+Repo: https://github.com/EddieTheEd/Prussian-Blue
+Docs: 
+Code: 
 
 ---
 
@@ -1342,6 +2246,39 @@ Uses the same set as Things / Minimal themes.
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
 
+
+---
+
+# Space
+['dark']
+Repo: https://github.com/bhappen/obsidian-space
+Docs: 
+Code: 
+
+---
+
+# Vanilla AMOLED Color
+['dark']
+Repo: https://github.com/Sskki-exe/vanilla-amoled-theme-color
+Docs: 
+Code: 
+
+---
+
+# Tomorrow
+['dark']
+Repo: https://github.com/deudz/obsidian-tomorrow-theme
+Docs: 
+Code: 
+
+---
+
+# DarkNebula
+['dark']
+Repo: https://github.com/HW9636/DarkNebulaObsidianTheme
+Docs: 
+Code: 
+
 ---
 
 # Gummy Revived
@@ -1361,4 +2298,155 @@ Code: https://github.com/WinnerWind/gummy-revived/blob/bce022a254fa86645182f6f90
 - [b] Brainstorm `- [b]`
 - [B] Bookmark  `- [B]`
 
+
 ---
+
+# Lorens
+['dark']
+Repo: https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme
+Docs: 
+Code: 
+
+---
+
+# Dark Castle
+['dark']
+Repo: https://github.com/scottgriv/Dark-Castle-Obsidian
+Docs: 
+Code: 
+
+---
+
+# Neon Synthwave
+['dark']
+Repo: https://github.com/grjsmith/Neon-Synthwave
+Docs: 
+Code: 
+
+---
+
+# Midnight
+['dark']
+Repo: https://github.com/SemiCirkle/Midnight-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# Eldritch
+['dark']
+Repo: https://github.com/eldritch-theme/eldritch-obsidian
+Docs: 
+Code: 
+
+---
+
+# Rift
+['dark']
+Repo: https://github.com/NoahBoos/Obsidian-Theme-Rift
+Docs: 
+Code: 
+
+---
+
+# Blossom
+['dark']
+Repo: https://github.com/BlossomTheme/Obsidian
+Docs: 
+Code: 
+
+---
+
+# Kurokula
+['dark']
+Repo: https://github.com/Indyandie/kurokula-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# Muted-Blue
+['dark']
+Repo: https://github.com/HasanTheSyrian/Muted-Blue-Obsidian
+Docs: 
+Code: 
+
+---
+
+# Cobalt Peacock
+['dark']
+Repo: https://github.com/dpavaoman/cobalt-peacock-obmd
+Docs: 
+Code: 
+
+---
+
+# Spectrum Blue
+['dark']
+Repo: https://github.com/ryanjrman/Spectrum-Blue
+Docs: 
+Code: 
+
+---
+
+# Evergreen-Shadow
+['dark']
+Repo: https://github.com/Quinta0/Evergreen-Shadow
+Docs: 
+Code: 
+
+---
+
+# Trace Labs
+['dark']
+Repo: https://github.com/humandecoded/Trace-Labs-Obsidian-Theme
+Docs: 
+Code: 
+
+---
+
+# Bossidian
+['dark']
+Repo: https://github.com/BossElijah/bossidian
+Docs: 
+Code: 
+
+---
+
+# Black
+['dark']
+Repo: https://github.com/b3h3m0th/black-obsidian-theme
+Docs: 
+Code: 
+
+---
+
+# nobb
+['dark']
+Repo: https://github.com/buluw/nobb-obsidian
+Docs: 
+Code: 
+
+---
+
+# Velvet-Moon
+['dark']
+Repo: https://github.com/Quinta0/Velvet-Moon
+Docs: 
+Code: 
+
+---
+
+# Midnight-Fjord
+['dark']
+Repo: https://github.com/Quinta0/Midnight-Fjord
+Docs: 
+Code: 
+
+---
+
+# Rose Red
+['dark']
+Repo: https://github.com/tu2-atmanand/RoseRed-ObsidianTheme
+Docs: 
+Code: 
