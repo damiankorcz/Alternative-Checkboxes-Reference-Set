@@ -1,7 +1,6 @@
 {
   "cssTheme": "",
   "enabledCssSnippets": [
-    "phoenix-checkboxes",
-    "Phoenix Checkboxes"
+    "phoenix-checkboxes"
   ]
 }
