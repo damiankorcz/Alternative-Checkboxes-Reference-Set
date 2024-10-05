@@ -2,5 +2,6 @@
   "cssTheme": "",
   "enabledCssSnippets": [
     "phoenix-checkboxes"
-  ]
+  ],
+  "theme": "obsidian"
 }
