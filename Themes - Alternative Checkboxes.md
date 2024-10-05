@@ -733,7 +733,7 @@ Uses the same set as Things / Minimal themes.
 # Maple
 
 Repo: https://github.com/subframe7536/obsidian-theme-maple
-Docs:
+Docs: None
 Code: https://github.com/subframe7536/obsidian-theme-maple/blob/bb117504f9fe91e804442f175d9a94f67bb8dbf0/src/editor/checkbox.scss
 
 Uses code from Border theme.
