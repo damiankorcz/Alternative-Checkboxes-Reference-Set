@@ -92,6 +92,9 @@ This repository contains Themes, CSS Snippets and Plugins which were added for c
 
 - [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) - Distributed under the [GPL-3.0 License](https://github.com/mgmeyers/obsidian-style-settings/blob/main/LICENSE.md)
 - [Editor Shortcuts](https://github.com/timhor/obsidian-editor-shortcuts) - Distributed under the [MIT License](https://github.com/timhor/obsidian-editor-shortcuts)
+- [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) - Distributed under the [MIT License](https://github.com/obsidian-tasks-group/obsidian-tasks/blob/main/LICENSE)
+- [Snippetor](https://github.com/ebullient/obsidian-snippetor) - Distributed under the [AGPL-3.0 License](https://github.com/ebullient/obsidian-snippetor/blob/main/LICENSE)
+- [ToggleList](https://github.com/thingnotok/obsidian-toggle-list) - Distributed under the [MIT License](https://github.com/thingnotok/obsidian-toggle-list/blob/master/LICENSE)
 
 </details>
 

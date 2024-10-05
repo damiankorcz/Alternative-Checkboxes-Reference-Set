@@ -1,3 +1,6 @@
 # Exclude OS settings and caches
 .trash/
 .DS_Store
+
+# Prevents updating it all the time
+.obsidian/workspace.json

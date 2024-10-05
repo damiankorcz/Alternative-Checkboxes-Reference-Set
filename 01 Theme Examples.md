@@ -147,7 +147,7 @@
 > - [GDCT Dark](https://github.com/bcdavasconcelos/Obsidian-GDCT_Dark) Unmaintained (Pre 1.0 Release)
 > - [Synthwave '84](https://github.com/G2Jose/synthwave-84-obsidian-theme)
 > - [Neovim](https://github.com/slavamak/obsidian-neovim)
-> - [Phoenix](https://github.com/ryzenfromfire/obsidian-phoenix) Recommends using their Snippet: [[Snippets - Alternative Checkboxes#Phoenix]]
+> - [Phoenix](https://github.com/ryzenfromfire/obsidian-phoenix) Recommends using their Snippet: [[02 CSS Snippet Examples#Phoenix]]
 > - [Comfort Dark](https://github.com/Ooopz/obsidianmd-theme-comfort-dark)
 > - [Aura Dark](https://github.com/Possibly-Matt/obsidian-aura-theme)
 > - [W95](https://github.com/phchang/W95)
@@ -431,7 +431,7 @@ Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
 Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
 Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Checkboxes.scss
 
-Included in the theme. **Do not use snippet version with the ITS Theme enabled**. Snippet version here: [[Snippets - Alternative Checkboxes#ITS Alternative Checkboxes]]
+Included in the theme. **Do not use snippet version with the ITS Theme enabled**. Snippet version here: [[02 CSS Snippet Examples#ITS Alternative Checkboxes]]
 
 - [ ] Unchecked `- [ ]`
 - [x] Regular `- [x]`

@@ -3,7 +3,7 @@ Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
 Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
 Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Checkboxes.scss
 
-Same as the theme [[Themes - Alternative Checkboxes#ITS Theme]]
+Same as the theme [[01 Theme Examples#ITS Theme]]
 
 - [ ] Unchecked `- [ ]`
 - [x] Regular `- [x]`
