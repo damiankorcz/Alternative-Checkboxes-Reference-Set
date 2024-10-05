@@ -1,4 +1,51 @@
 
+# ITS Alternative Checkboxes
+Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
+Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
+Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Checkboxes.scss
+
+Same as the theme [[Themes - Alternative Checkboxes#ITS Theme]]
+
+- [ ] Unchecked `- [ ]`
+- [x] Regular `- [x]`
+- [X] Checked  `- [X]`
+- [-] Dropped  `- [-]`
+- [>] Forward  `- [>]`
+- [<] Migrated  `- [<]`
+- [D] Date  `- [D]`
+- [?] Question  `- [?]`
+- [/] Half Done  `- [/]`
+- [+] Add  `- [+]`
+- [R] Research  `- [R]`
+- [!] Important  `- [!]`
+- [i] Idea  `- [i]`
+- [B] Brainstorm  `- [B]`
+- [P] Pro  `- [P]`
+- [C] Con  `- [C]`
+- [Q] Quote  `- [Q]`
+- [N] Note  `- [N]`
+- [b] Bookmark  `- [b]`
+- [I] Information  `- [I]`
+- [p] Paraphrase  `- [p]`
+- [L] Location  `- [L]`
+- [E] Example  `- [E]`
+- [A] Answer  `- [A]`
+- [r] Reward `- [r]`
+- [c] Choice  `- [c]`
+- [d] Doing  `- [d]`
+- [T] Time  `- [T]`
+- [@] Character / Person  `- [@]`
+- [t] Talk  `- [t]`
+- [O] Outline / Plot  `- [O]`
+- [~] Conflict  `- [~]`
+- [W] World  `- [W]`
+- [f] Clue / Find  `- [f]`
+- [F] Foreshadow  `- [F]`
+- [H] Favorite / Health  `- [H]`
+- [&] Symbolism  `- [&]`
+- [s] Secret  `- [s]`
+
+
 ---
 # Phoenix
 Repo: https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes

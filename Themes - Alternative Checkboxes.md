@@ -431,6 +431,8 @@ Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
 Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
 Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Checkboxes.scss
 
+Included in the theme. **Do not use snippet version with the ITS Theme enabled**. Snippet version here: [[Snippets - Alternative Checkboxes#ITS Alternative Checkboxes]]
+
 - [ ] Unchecked `- [ ]`
 - [x] Regular `- [x]`
 - [X] Checked  `- [X]`
