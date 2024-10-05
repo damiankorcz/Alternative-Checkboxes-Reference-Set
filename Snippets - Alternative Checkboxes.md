@@ -1,4 +1,3 @@
-
 # ITS Alternative Checkboxes
 Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
 Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
@@ -45,8 +44,8 @@ Same as the theme [[Themes - Alternative Checkboxes#ITS Theme]]
 - [&] Symbolism  `- [&]`
 - [s] Secret  `- [s]`
 
-
 ---
+
 # Phoenix
 Repo: https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes
 Docs: https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes?tab=readme-ov-file#source-mode-raw-input
