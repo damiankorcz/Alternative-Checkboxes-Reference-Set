@@ -19,6 +19,9 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 	- [x] Add the theme to the vault if it has Alternative Checkboxes.
 	- [x] Include link for the Repository, Documentation (if any) and Code used to implement them.
 > **Outcome:** Identified 44/282 themes which use a form of Alternative Checkboxes (at the time).
+> - The results for Themes are in: 01 Theme Examples.md
+> - The results for CSS Snippets are in: 02 CSS Snippet Example.md
+> - The results for Plugins which interact with Alternative Checkboxes are in (WIP): 03 Plugin Examples.md 
 
 - [ ] 📌 Review collected data to identify the current "standard" use cases for each checkbox type; given syntax and it's assigned meaning. Also, take note of other alternative meanings and how many themes use those.
 - [ ] 📌 Review the CSS from each theme to identify the patterns used to implement the feature.
