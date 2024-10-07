@@ -47,7 +47,7 @@ This repository contains Themes, CSS Snippets and Plugins which were added for c
 - [Shiba Inu](https://github.com/faroukx/Obsidian-shiba-inu-theme) - Distributed under the [MIT License](https://github.com/faroukx/Obsidian-shiba-inu-theme/blob/main/LICENSE.txt) 
 - [PLN](https://github.com/PipeItToDevNull/PLN) - Distributed under the [GPL-3.0 License](https://github.com/PipeItToDevNull/PLN/blob/master/LICENSE.md)
 - [Obsidianotion](https://github.com/diegoeis/obsidianotion) - Distributed under the [Unlicense License](https://github.com/diegoeis/obsidianotion/blob/master/LICENSE)
-- [Mapel](https://github.com/subframe7536/obsidian-theme-maple) - Distributed under the [MIT License](https://github.com/subframe7536/obsidian-theme-maple/blob/main/LICENSE)
+- [Maple](https://github.com/subframe7536/obsidian-theme-maple) - Distributed under the [MIT License](https://github.com/subframe7536/obsidian-theme-maple/blob/main/LICENSE)
 - [Ebullientworks](https://github.com/ebullient/obsidian-theme-ebullientworks) - Distributed under the [CC0-1.0 License](https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/LICENSE)
 - [Pine Forest Berry](https://github.com/Nilahn/pine_forest_berry/) - Distributed under the [MIT License](https://github.com/Nilahn/pine_forest_berry/blob/main/LICENSE)
 - [Aura](https://github.com/ashwinjadhav818/obsidian-aura) - Distributed under the [GPL-2.0 License](https://github.com/ashwinjadhav818/obsidian-aura/blob/master/LICENSE)
