@@ -25,7 +25,7 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 
 ## Creating a Reference Set
 - [ ] Decide on the initial set of Checkboxes.
-	- [ ] Possibly use a Tier system which rates the checkboxes based on the percentage of the cross theme support therefore their popularity.
+	- [ ] Possibly use a Tier system which rates the checkboxes based on their current popularity / percentage of use across themes.
 - [ ] Best practices / conventions.
 	- [ ] Agreed syntax / meaning.
 	- [ ] Agreed icons to represent the checkbox?
