@@ -9,6 +9,42 @@ This is an initiative to help standardize the Alternative Checkboxes feature com
 Currently, all discussion regarding this is carried out in a thread within the Official Obsidian Discord. For more information please head over there:
 https://discord.com/channels/686053708261228577/1291469509336502272
 
+# ✅ Current Progress
+
+(All current goals are subject to change and are provided as a general idea so far. 📌 = Currently being worked on.)
+
+## Understanding the Current State 
+- [x] Round up all currently available Obsidian themes in the Theme Store and check for Alternative Checkboxes implementations. If Alternative Checkboxes present:
+	- [x] Define the use case (Syntax and Meaning).
+	- [x] Add the theme to the vault if it has Alternative Checkboxes.
+	- [x] Include link for the Repository, Documentation (if any) and Code used to implement them.
+> **Outcome:** Identified 44/282 themes which use a form of Alternative Checkboxes (at the time).
+
+- [ ] 📌 Review collected data to identify the current "standard" use cases for each checkbox type; given syntax and it's assigned meaning. Also, take note of other alternative meanings and how many themes use those.
+- [ ] 📌 Review the CSS from each theme to identify the patterns used to implement the feature.
+
+## Creating a Reference Set
+- [ ] Decide on the initial set of Checkboxes.
+	- [ ] Possibly use a Tier system which rates the checkboxes based on the percentage of the cross theme support therefore their popularity.
+- [ ] Best practices / conventions.
+	- [ ] Agreed syntax / meaning.
+	- [ ] Agreed icons to represent the checkbox?
+	- [ ] Agreed colours?
+- [ ] Assure that all plugins which interact with Alternative Checkboxes are setup to support the Reference Set. Provide any help / adapt based on feedback.
+
+## CSS Guidelines for Implementation
+- [ ] Barebones CSS Implementation of the Reference Set.
+	- [ ] Decide if the implementation provides example icons (likely [Lucide](https://lucide.dev/) to match existing Obsidian icons).
+	- [ ] Naming convention for CSS Variables.
+- [ ] General guidelines for Theme Developers to help users with using the Checkboxes they want to use.
+	- [ ] Allow users to fully disable the Theme's Checkbox implementation if the user prefers to use their own (likely a CSS snippet). This might include adding a Style Settings Toggle, providing the Alternative Checkbox feature as an optional CSS Snippet independent of the Theme's CSS or making sure the implementation within the Theme is easily overwritable by a CSS Snippet.
+
+## Adaptation Guidelines / Tools
+- [ ] Reach out to Theme Developers which Alternative Checkbox implementation doesn't align with the Reference Set to see if they are willing to adapt. 
+- [ ] Create a plan for helping uses to convert their notes when a theme changes the Alternative Checkbox/es.
+	- [ ] Methods / Plugins / Tools required to convert user's existing notes to match the Reference Set or adapt to the changes which a theme implements to align with the Reference Set.
+	- [ ] Methods of effectively notifying changes by Theme devs to users: Notes in Settings, Changelogs, hovering over Help icon, etc.
+
 # 🗃️ Usage
 
 This repository serves as a central place for all the files relevant to the discussion. It's intended to be used directly as an Obsidian Vault. All themes and snippets that include Alternative Checkboxes are pre-installed for ease of testing. The following Community plugins are also included:
@@ -24,6 +60,14 @@ For convenience, I've pinned `Change theme` in the Command Palette for a quicker
 # 🛠 Contributing
 
 At the moment, there are no direct guidelines for contributing to this repository. Ideally, any contributions should be mentioned in the Discussion thread first.
+
+# 📣 Acknowledgments
+
+Special thanks to the following people for their direct contributions to this repository:
+- [**claremacrae** ](https://github.com/claremacrae) - For assisting in parsing through all available themes in Obsidian's Community Themes Store.
+- [**ElsaTam**](https://github.com/ElsaTam) - For reviewing the CSS in each theme to identify the patterns used to implement the feature.
+
+Also, big thanks to everyone that contributed feedback over in the Discord Thread.
 
 # 📝 License
 
@@ -100,4 +144,4 @@ This repository contains Themes, CSS Snippets and Plugins which were added for c
 
 The inclusion of the Themes / CSS Snippets / Plugins in this repository is strictly for research purposes. If you are an author of any of them and would like me to remove them from this repository, please let me know by creating an issue.
 
-The Documentation itself (Markdown files) are under the [Unlicense License](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE).
+The Documentation itself (Markdown files) are under the [Unlicense License](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE), unless another license is noted, especially next to code snippets from the themes.
