@@ -272,6 +272,10 @@ Code: https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/c
 - [u] Up `- [u]`
 - [d] Down `- [d]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Minimal Light Theme.png]] | ![[Minimal Dark Theme.png]] |
+
 ---
 
 # Things
@@ -307,6 +311,10 @@ Code: https://github.com/colineckert/obsidian-things/blob/9d0a8b44007a335ee829a0
 - [D] Draft Pull Request `- [D]`
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Things Light Theme.png]] | ![[Things Dark Theme.png]] |
 
 ---
 
@@ -352,6 +360,10 @@ Code:
 - [W] World `- [W]`
 - [U] Universe `- [U]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Blue Topaz Light Theme.png]] | ![[Blue Topaz Dark Theme.png]] |
+
 ---
 
 # AnuPpuccin
@@ -360,7 +372,9 @@ Repo: https://github.com/AnubisNekhet/AnuPpuccin
 Docs: https://github.com/AnubisNekhet/AnuPpuccin?tab=readme-ov-file#custom-checkboxes--speech-bubbles
 Code: https://github.com/AnubisNekhet/AnuPpuccin/blob/main/src/modules/Features/custom-checkboxes.scss
 
-Style Settings Required: `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes`
+Style Settings Required. Need to enable the following in Style Settings:
+- `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes`
+- `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Speech Bubbles`
 
 - [ ] Unchecked `- [ ]`
 - [x] Checked `- [x]`
@@ -396,6 +410,10 @@ Style Settings Required: `AnuPpuccin -> File Editor & Markdown Elements -> Check
 - [8] Speech bubble 8 `- [8]`
 - [9] Speech bubble 9 `- [9]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[AnuPpuccin Light Theme.png]] | ![[AnuPpuccin Dark Theme.png]] |
+
 ---
 # Sanctum
 
@@ -422,6 +440,10 @@ Code: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/src/scss/featu
 - [n] Pin `- [n]`
 - [B] Bug `- [B]`
 - [W] Reward `- [W]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Sanctum Light Theme.png]] | ![[Sanctum Dark Theme.png]] |
 
 ---
 
@@ -472,6 +494,10 @@ Included in the theme. **Do not use snippet version with the ITS Theme enabled**
 - [&] Symbolism  `- [&]`
 - [s] Secret  `- [s]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[ITS Light Theme.png]] | ![[ITS Dark Theme.png]] |
+
 ---
 
 # Primary
@@ -502,6 +528,10 @@ Code: https://github.com/primary-theme/obsidian/blob/main/src/scss/40_editor/_al
 - [L] Language/Translation  `- [L]`
 - [t] Time/Clock `- [t]`
 - [T] Telephone `- [T]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Primary Light Theme.png]] | ![[Primary Dark Theme.png]] |
 
 ---
 
@@ -534,6 +564,11 @@ Code: https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/ea79aba43597044
 
 - [n] Note `- [n]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Tokyo Night Light Theme.png]] | ![[Tokyo Night Dark Theme.png]] |
+
+
 ---
 
 # Border
@@ -565,6 +600,10 @@ Code: https://github.com/Akifyss/obsidian-border/blob/2771957ab92e6faddd7edad4e0
 
 - [n] Note `- [n]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Border Light Theme.png]] | ![[Border Dark Theme.png]] |
+
 ---
 
 # Spectrum (Unmaintained Pre-1.0 Release)
@@ -579,6 +618,11 @@ Code: https://github.com/wiktoriavh/Spectrum/blob/6c24513a3af57a7ebaeff63df7e62b
 - [!] Exclamation `- [!]`
 - [?] Question `- [?]`
 - [x] Normal `- [x]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Spectrum Light Theme.png]] | ![[Spectrum Dark Theme.png]] |
+
 
 ---
 
@@ -615,6 +659,10 @@ Code: https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/theme.css#L3436
 - [l] Location `- [l]`
 - [*] Star `- [*]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Cyber Glow Light Theme.png]] | ![[Cyber Glow Dark Theme.png]] |
+
 ---
 
 # LYT Mode
@@ -649,6 +697,10 @@ Same as Minimal.
 - [u] Up `- [u]`
 - [d] Down `- [d]`
 
+| Light Theme | Dark Theme                           |
+| ----------- | ------------------------------------ |
+| N / A       | ![[LYT Mode Dark Theme.png]] |
+
 ---
 
 # Shiba Inu
@@ -677,6 +729,10 @@ Code: https://github.com/faroukx/Obsidian-shiba-inu-theme/blob/main/theme.css (O
 - [s] Study `- [s]`
 - [r] Reminder `- [r]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Shiba Inu Light Theme.png]] | ![[Shiba Inu Dark Theme.png]] |
+
 ---
 
 # PLN (Pipe Loves Nord)
@@ -693,6 +749,10 @@ Code: https://github.com/PipeItToDevNull/PLN/blob/master/snippets/checkboxes.css
 - [i] Info `- [i]`
 - [-] Cancelled  `- [-]`
 - [/] Partial `- [/]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[PLN Light Theme.png]] | ![[PLN Dark Theme.png]] |
 
 ---
 
@@ -730,6 +790,10 @@ Uses the same set as Things / Minimal themes.
 
 - [s] Thread? / String?  `- [s]` (Specified incorrectly in Docs as Forwarded but available with no label in code)
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Obsidianotion Light Theme.png]] | ![[Obsidianotion Dark Theme.png]] |
+
 ---
 
 # Maple
@@ -763,6 +827,10 @@ Uses code from Border theme.
 
 - [n] Note `- [n]` 
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Maple Light Theme.png]] | ![[Maple Dark Theme.png]] |
+
 ---
 
 # EbullientWorks
@@ -779,7 +847,10 @@ Code: https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/src/f
 - [!] Important `- [!]`
 - [?] Question `- [?]`
 - [r] Review `- [r]` or `- [R]` (Capital R - Not mentioned in docs)
-- [b] Bookmark `- [b]` (Not mentioned in docs)
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[EbullientWorks Light Theme.png]] | ![[EbullientWorks Dark Theme.png]] |
 
 ---
 
@@ -812,6 +883,10 @@ Doesn't install correctly since it only has `obsidian.css` and no `theme.css`.
 - [c] Cons  `- [c]`
 - [b] Bookmark `- [b]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Forest Pine Berry Light Theme.png]] | ![[Forest Pine Berry Dark Theme.png]] |
+
 ---
 
 # Aura
@@ -825,19 +900,23 @@ Code: https://github.com/ashwinjadhav818/obsidian-aura/blob/925571586651e756bf38
 - [?] Question `- [?]`
 - [-] Cancelled? `- [-]`
 - [!] Important  `- [!]`
-- [>] Deffered?  `- [>]`
+- [>] Deferred?  `- [>]`
 - [/] Settings? `- [/]`
 - [R] Clock / Time `- [R]`
 - [+] Add? `- [+]`
 - [b] Bookmark `- [b]`
 - [B] Bolt?  `- [B]`
-- [D] Date / Callendar ? `- [D]`
+- [D] Date / Calendar ? `- [D]`
 - [I] Information `- [I]`
 - [i] Idea / Light Bulb `- [i]`
 - [N] Note `- [N]`
 - [Q] Quote `- [Q]`
 - [P] Thumbs Up `- [P]`
 - [C] Thumbs Down `- [C]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Aura Light Theme.png]] | ![[Aura Dark Theme.png]] |
 
 ---
 
@@ -912,6 +991,10 @@ Code: https://github.com/zaheralmajed/vicious-theme-obsidian/blob/686d487e0705fd
 - [9] Text Highlight 9 `- [9]`
 - [§] Text Highlight § `- [§]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Vicious Light Theme.png]] | ![[Vicious Dark Theme.png]] |
+
 ---
 
 # Simple
@@ -946,6 +1029,10 @@ Uses the same set as Things / Minimal themes.
 - [u] Up `- [u]`
 - [d] Down `- [d]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Simple Light Theme.png]] | ![[Simple Dark Theme.png]] |
+
 ---
 
 # Elegance
@@ -978,6 +1065,10 @@ Code: https://github.com/Victologo/elegance-theme/blob/83947941e3f44fb4f37df291c
 - [u] Up `- [u]`
 - [d] Down `- [d]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Elegance Light Theme.png]] | ![[Elegance Dark Theme.png]] |
+
 ---
 
 # Material Ocean
@@ -987,7 +1078,11 @@ Docs: https://github.com/dragonwocky/obsidian-material-ocean?tab=readme-ov-file#
 Code: https://github.com/dragonwocky/obsidian-material-ocean/blob/main/theme.css#L471
 
 - [/] Incomplete `- [/]` 
-- [-] Cancelled `- [-]` 
+- [-] Cancelled `- [-]`
+
+| Light Theme | Dark Theme                           |
+| ----------- | ------------------------------------ |
+| N / A       | ![[Material Ocean Dark Theme.png]] |
 
 ---
 
@@ -1003,6 +1098,10 @@ Only works in Live Preview.
 - [-] Pause / Stand-By `- [-]`
 - [/] Stop `- [/]`
 - [<] To Be Scheduled `- [<]`
+
+| Light Theme | Dark Theme                           |
+| ----------- | ------------------------------------ |
+| N / A       | ![[Sparkling Night Dark Theme.png]] |
 
 ---
 
@@ -1020,6 +1119,10 @@ Code: https://github.com/isaacfreeman/kakano-obsidian-theme/blob/2e4e869043eca01
 - [>] Forwarded `- [>]`
 - [!] Important `- [!]`
 - [?] Question `- [?]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Kakano Light Theme.png]] | ![[Kakano Dark Theme.png]] |
 
 ---
 
@@ -1062,6 +1165,10 @@ Code: https://github.com/lab-do/obsidian-neo/blob/0955f59136e498461a2de78655eef4
 - [3] Progress 3 `- [3]`
 - [4] Progress 4 `- [4]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Neo Light Theme.png]] | ![[Neo Dark Theme.png]] |
+
 ---
 
 # Feather
@@ -1100,6 +1207,10 @@ Mentions using Things Theme for Checkboxes.
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Feather Light Theme.png]] | ![[Feather Dark Theme.png]] |
+
 ---
 
 # Listive
@@ -1118,6 +1229,10 @@ Code: https://github.com/efemkay/obsidian-listive-theme/blob/698f27ce12d23ee4517
 - ["] Citation, my version `- ["]`
 - [r] Reference `- [r]`
 - [*] Star / Favourites `- [*]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Listive Light Theme.png]] | ![[Listive Dark Theme.png]] |
 
 ---
 
@@ -1199,6 +1314,10 @@ Code: https://github.com/drbap/magicuser-theme-for-obsidian/blob/33ebb74f4355cd4
 
 - [Q] Quality `- [Q]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[MagicUser Light Theme.png]] | ![[MagicUser Dark Theme.png]] |
+
 ---
 
 # Qlean
@@ -1213,6 +1332,10 @@ Code: https://github.com/Fro-Q/Qlean/blob/619efd313553e6cb6ce7a8c12cc05cf080e8e8
 - [?] Question? `- [?]`
 - [!] Important? `- [!]`
 - [i] Information? `- [i]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Qlean Light Theme.png]] | ![[QLean Dark Theme.png]] |
 
 ---
 
@@ -1248,6 +1371,10 @@ Same as Minimal.
 - [u] Up `- [u]`
 - [d] Down `- [d]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Yue Light Theme.png]] | ![[Yue Dark Theme.png]] |
+
 ---
 
 # sQdthOne
@@ -1274,6 +1401,10 @@ Code: https://raw.githubusercontent.com/KeithLerner/ObsidianMDsQdthOne/refs/head
 - [s] Smile :) `- [s]`
 - [k] Key `- [k]`
 - [f] Fire `- [f]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[sQdthOne Light Theme.png]] | ![[sQdthOne Dark Theme.png]] |
 
 ---
 
@@ -1315,6 +1446,10 @@ Same as Things theme*.
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
 
+| Light Theme | Dark Theme                           |
+| ----------- | ------------------------------------ |
+| N / A       | ![[Dracula Plus Dark Theme.png]] |
+
 ---
 
 # Solitude
@@ -1336,6 +1471,10 @@ Code: https://github.com/KyleKlus/solitude-obsidian-theme/blob/f2e6d6e2a65a32189
 - [C] Prioritize `- [C]`
 - [D] Prioritize `- [D]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Solitude Light Theme.png]] | ![[Solitude Dark Theme.png]] |
+
 ---
 
 # Prime
@@ -1346,43 +1485,47 @@ Code: https://github.com/rivea0/obsidian-prime/blob/main/theme.css#L1774
 
 Uses the same set as Minimal theme and some from Things theme.
 
-- [ ] to do `- [ ]`
-- [/] incomplete `- [/]`
-- [x] done `- [x]`
-- [-] cancelled `- [-]`
-- [>] forwarded `- [>]`
-- [<] scheduling `- [<]`
+- [ ] To Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Cone `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
 
-- [?] question `- [?]`
-- [!] important `- [!]`
-- [*] star `- [*]`
-- ["] quote `- ["]`
-- [l] location `- [l]`
-- [b] bookmark `- [b]`
-- [i] information `- [i]`
-- [S] savings `- [S]`
-- [I] idea `- [I]`
-- [p] pros `- [p]`
-- [c] cons `- [c]`
-- [f] fire `- [f]`
-- [k] key `- [k]`
-- [w] win `- [w]`
-- [u] up `- [u]`
-- [d] down `- [d]`
-- [D] draft pull request `- [D]`
-- [P] open pull request `- [P]`
-- [M] merged pull request `- [M]`
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [D] Draft pull request `- [D]`
+- [P] Open pull request `- [P]`
+- [M] Merged pull request `- [M]`
 
-- [m] mail `- [m]`
-- [h] heart `- [h]`
-- [a] archive `- [a]`
-- [e] eye `- [e]`
-- [s] search `- [s]`
-- [r] rocket `- [r]`
-- [8] infinity `- [8]`
-- [g] goal `- [g]`
-- [+] positive `- [+]`
-- [n] negative `- [n]`
+- [m] Mail `- [m]`
+- [h] Heart `- [h]`
+- [a] Archive `- [a]`
+- [e] Eye `- [e]`
+- [s] Search `- [s]`
+- [r] Rocket `- [r]`
+- [8] Infinity `- [8]`
+- [g] Goal `- [g]`
+- [+] Positive `- [+]`
+- [n] Negative `- [n]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Prime Light Theme.png]] | ![[Prime Dark Theme.png]] |
 
 ---
 
@@ -1424,6 +1567,10 @@ Code: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/src/scss
 - [P] Person `- [P]`
 - [s] Money `- [s]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Sanctum Reborn Light Theme.png]] | ![[Sanctum Reborn Dark Theme.png]] |
+
 ---
 
 # Underwater
@@ -1452,13 +1599,17 @@ Uses 'Tweaked' Minimal.
 - [s] Sparkles `- [s]`
 - [w] Wave `- [w]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Underwater Light Theme.png]] | ![[Underwater Dark Theme.png]] |
+
 ---
 
 # Nightingale
 
 Repo: https://github.com/frank0713/nightingale-obsidian
 Docs: https://github.com/frank0713/nightingale-obsidian?tab=readme-ov-file#illustrations
-Code: 
+Code: https://github.com/frank0713/nightingale-obsidian/blob/a05d55d86b9f5b7b5fe62990b82a29f4f88564f1/theme.css#L549
 
 Uses the some from Things / Minimal themes. Some custom ones.
 
@@ -1493,6 +1644,10 @@ Uses the some from Things / Minimal themes. Some custom ones.
 - [k] Key, Password `- [k]`
 - [f] Document Folder, Path `- [f]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Nightingale Light Theme.png]] | ![[Nightingale Dark Theme.png]] |
+
 ---
 
 # Reshi
@@ -1524,6 +1679,10 @@ Code: https://github.com/contrapasso3/Reshi/blob/879377560c0661822d3cb217165c998
 - [t] Time `- [t]`
 - [l] Location `- [l]`
 - ["] Quote `- ["]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Reshi Light Theme.png]] | ![[Reshi Dark Theme.png]] |
 
 ---
 
@@ -1563,6 +1722,10 @@ Mentions using Minimal but has the Git parts from Things.
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Shade Sanctuary Light Theme.png]] | ![[Shade Sanctuary Dark Theme.png]] |
+
 ---
 
 # Sparkling Day
@@ -1577,6 +1740,10 @@ Only works in Live Preview.
 - [-] Pause / Stand-By `- [-]`
 - [/] Stop `- [/]`
 - [<] To Be Scheduled `- [<]`
+
+| Light Theme                          | Dark Theme |
+| ------------------------------------ | ---------- |
+| ![[Sparkling Day Light Theme.png]] | N / A      |
 
 ---
 
@@ -1616,6 +1783,10 @@ Uses the same set as Things / Minimal themes.
 - [P] Open Pull Request `- [P]`
 - [M] Merged Pull Request `- [M]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Oreo Light Theme.png]] | ![[Oreo Dark Theme.png]] |
+
 ---
 
 # Gummy Revived
@@ -1636,6 +1807,9 @@ Code: https://github.com/WinnerWind/gummy-revived/blob/bce022a254fa86645182f6f90
 - [b] Brainstorm `- [b]`
 - [B] Bookmark  `- [B]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Gummy Revived Light Theme.png]] | ![[Gummy Revived Dark Theme.png]] |
 
 ---
 
@@ -1664,6 +1838,10 @@ Code: https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme/blob/ae219e77a02
 - [i] Information `- [i]`
 - [?] Question `- [?]`
 - [!] Important `- [!]`
+
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[Lorens Light Theme.png]] | ![[Lorens Dark theme.png]] |
 
 ---
 
