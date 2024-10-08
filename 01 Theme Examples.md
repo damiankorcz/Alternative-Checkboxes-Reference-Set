@@ -457,42 +457,42 @@ Included in the theme. **Do not use snippet version with the ITS Theme enabled**
 
 - [ ] Unchecked `- [ ]`
 - [x] Regular `- [x]`
-- [X] Checked  `- [X]`
-- [-] Dropped  `- [-]`
-- [>] Forward  `- [>]`
-- [<] Migrated  `- [<]`
-- [D] Date  `- [D]`
-- [?] Question  `- [?]`
-- [/] Half Done  `- [/]`
-- [+] Add  `- [+]`
-- [R] Research  `- [R]`
-- [!] Important  `- [!]`
-- [i] Idea  `- [i]`
-- [B] Brainstorm  `- [B]`
-- [P] Pro  `- [P]`
-- [C] Con  `- [C]`
-- [Q] Quote  `- [Q]`
-- [N] Note  `- [N]`
-- [b] Bookmark  `- [b]`
-- [I] Information  `- [I]`
-- [p] Paraphrase  `- [p]`
-- [L] Location  `- [L]`
-- [E] Example  `- [E]`
-- [A] Answer  `- [A]`
+- [X] Checked `- [X]`
+- [-] Dropped `- [-]`
+- [>] Forward `- [>]`
+- [<] Migrated `- [<]`
+- [D] Date `- [D]`
+- [?] Question `- [?]`
+- [/] Half Done `- [/]`
+- [+] Add `- [+]`
+- [R] Research `- [R]`
+- [!] Important `- [!]`
+- [i] Idea `- [i]`
+- [B] Brainstorm `- [B]`
+- [P] Pro `- [P]`
+- [C] Con `- [C]`
+- [Q] Quote `- [Q]`
+- [N] Note `- [N]`
+- [b] Bookmark `- [b]`
+- [I] Information `- [I]`
+- [p] Paraphrase `- [p]`
+- [L] Location `- [L]`
+- [E] Example `- [E]`
+- [A] Answer `- [A]`
 - [r] Reward `- [r]`
-- [c] Choice  `- [c]`
-- [d] Doing  `- [d]`
-- [T] Time  `- [T]`
-- [@] Character / Person  `- [@]`
-- [t] Talk  `- [t]`
-- [O] Outline / Plot  `- [O]`
-- [~] Conflict  `- [~]`
-- [W] World  `- [W]`
-- [f] Clue / Find  `- [f]`
-- [F] Foreshadow  `- [F]`
-- [H] Favorite / Health  `- [H]`
-- [&] Symbolism  `- [&]`
-- [s] Secret  `- [s]`
+- [c] Choice `- [c]`
+- [d] Doing `- [d]`
+- [T] Time `- [T]`
+- [@] Character / Person `- [@]`
+- [t] Talk `- [t]`
+- [O] Outline / Plot `- [O]`
+- [~] Conflict `- [~]`
+- [W] World `- [W]`
+- [f] Clue / Find `- [f]`
+- [F] Foreshadow `- [F]`
+- [H] Favorite / Health `- [H]`
+- [&] Symbolism `- [&]`
+- [s] Secret `- [s]`
 
 | Light Theme                          | Dark Theme                           |
 | ------------------------------------ | ------------------------------------ |
