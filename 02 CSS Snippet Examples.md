@@ -44,6 +44,10 @@ Same as the theme [[01 Theme Examples#ITS Theme]]
 - [&] Symbolism  `- [&]`
 - [s] Secret  `- [s]`
 
+| Light Theme                          | Dark Theme                           |
+| ------------------------------------ | ------------------------------------ |
+| ![[ITS Light Theme.png]] | ![[ITS Dark Theme.png]] |
+
 ---
 
 # Phoenix
