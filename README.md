@@ -26,9 +26,11 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 - [x] Review collected data to identify the current "standard" use cases for each checkbox type; given syntax and it's assigned meaning. Also, take note of other alternative meanings and how many themes use those.
 > **Outcome:** Filtered through all themes with Alternative Checkboxes using the data collected in [01 Theme Examples.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/01%20Theme%20Examples.md), outlined their usage and highlighted the themes which have an alternative meaning assigned to the specific syntax. 
 > 
-> You can see the breakdown for that in: [07 Impact Breakdown.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/07%20Impact%20Breakdown.md)
+> You can see the entire breakdown for all checkbox types in: [06 Syntax and Meaning Review.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/06%20Syntax%20and%20Meaning%20Review.md)
 > 
 > Overall, the equivalent of Minimal Theme's Alternative Checkboxes implementation (syntax in conjunction with meaning) are the most popular uses across other themes. The breakdown above highlights the differences in other themes to help see what those theme's wouldn't support if this set was used as the Reference. It should also help see how much impact it might have if one of those themes chooses to align with the Reference Set. I've included the download count for each theme as a rough estimation of theme's use by users.
+> 
+> You can see the breakdown for that in: [07 Impact Breakdown.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/07%20Impact%20Breakdown.md)
 
 - [ ] 📌 Review the CSS from each theme to identify the patterns used to implement the feature.
 
