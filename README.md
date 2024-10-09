@@ -19,11 +19,17 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 	- [x] Add the theme to the vault if it has Alternative Checkboxes.
 	- [x] Include link for the Repository, Documentation (if any) and Code used to implement them.
 > **Outcome:** Identified 44/282 themes which use a form of Alternative Checkboxes (at the time).
-> - The results for Themes are in: 01 Theme Examples.md
-> - The results for CSS Snippets are in: 02 CSS Snippet Example.md
-> - The results for Plugins which interact with Alternative Checkboxes are in (WIP): 03 Plugin Examples.md 
+> - The results for Themes are in: [01 Theme Examples.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/01%20Theme%20Examples.md)
+> - The results for CSS Snippets are in: [02 CSS Snippet Example.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/02%20CSS%20Snippet%20Examples.md)
+> - The results for Plugins which interact with Alternative Checkboxes are in (WIP): [03 Plugin Examples.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/03%20Plugin%20Examples.md)
 
-- [ ] 📌 Review collected data to identify the current "standard" use cases for each checkbox type; given syntax and it's assigned meaning. Also, take note of other alternative meanings and how many themes use those.
+- [x] Review collected data to identify the current "standard" use cases for each checkbox type; given syntax and it's assigned meaning. Also, take note of other alternative meanings and how many themes use those.
+> **Outcome:** Filtered through all themes with Alternative Checkboxes using the data collected in [01 Theme Examples.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/01%20Theme%20Examples.md), outlined their usage and highlighted the themes which have an alternative meaning assigned to the specific syntax. 
+> 
+> You can see the breakdown for that in: [07 Impact Breakdown.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/07%20Impact%20Breakdown.md)
+> 
+> Overall, the equivalent of Minimal Theme's Alternative Checkboxes implementation (syntax in conjunction with meaning) are the most popular uses across other themes. The breakdown above highlights the differences in other themes to help see what those theme's wouldn't support if this set was used as the Reference. It should also help see how much impact it might have if one of those themes chooses to align with the Reference Set. I've included the download count for each theme as a rough estimation of theme's use by users.
+
 - [ ] 📌 Review the CSS from each theme to identify the patterns used to implement the feature.
 
 ## Creating a Reference Set
@@ -39,8 +45,8 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 - [ ] Barebones CSS Implementation of the Reference Set.
 	- [ ] Decide if the implementation provides example icons (likely [Lucide](https://lucide.dev/) to match existing Obsidian icons).
 	- [ ] Naming convention for CSS Variables.
-- [ ] General guidelines for Theme Developers to help users with using the Checkboxes they want to use.
-	- [ ] Allow users to fully disable the Theme's Checkbox implementation if the user prefers to use their own (likely a CSS snippet). This might include adding a Style Settings Toggle, providing the Alternative Checkbox feature as an optional CSS Snippet independent of the Theme's CSS or making sure the implementation within the Theme is easily overwritable by a CSS Snippet.
+- [ ] 📌 General guidelines for Theme Developers to help users with using the Checkboxes they want to use.
+	- [ ] 📌 Allow users to fully disable the Theme's Checkbox implementation if the user prefers to use their own (likely a CSS snippet). This might include adding a Style Settings Toggle, providing the Alternative Checkbox feature as an optional CSS Snippet independent of the Theme's CSS or making sure the implementation within the Theme is easily overwritable by a CSS Snippet.
 
 ## Adaptation Guidelines / Tools
 - [ ] Reach out to Theme Developers which Alternative Checkbox implementation doesn't align with the Reference Set to see if they are willing to adapt. 
