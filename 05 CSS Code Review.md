@@ -1,3 +1,66 @@
+> [!info]- Overview
+> Methods used:
+> - 45 codes: 44 themes + 1 snippet
+> - 38/45 use `-webkit-mask-image`
+> - 14/45 use `background-image`
+> - 5/45 use `content`
+> - 2/45 use `background-color` (Sparkling Night/Day, from the same dev)
+> - 19/45 use a specific approach for `- [/]`
+> - 1/45 use a special approach for progress icons
+> 
+> Mix inside the same theme:
+> - 13/45 use both `-webkit-mask-image` and `background-image`. They are mostly inspired/copied from [[#Minimal]].
+> - 1/45 use both `-webkit-mask-image` and `content` (Listive)
+>
+> > [!NOTE]- Tableau
+> > |                        | `-webkit-mask-image` | `background-image` | `content` | `background-color` | Special `- [/]` | Special progress |
+> > | ---------------------- | -------------------- | ------------------ | --------- | ------------------ | --------------- | ---------------- |
+> > | [[#Minimal]]           | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Things]]            | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Blue Topaz]]        | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#AnuPpuccin]]        | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Sanctum]]           | 1                    |                    |           |                    |                 |                  |
+> > | [[#ITS]]               | 1                    |                    |           |                    |                 |                  |
+> > | [[#Primary]]           | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Tokyo Night]]       | 1                    |                    |           |                    |                 |                  |
+> > | [[#Border]]            | 1                    |                    |           |                    |                 |                  |
+> > | [[#Spectrum]]          |                      | 1                  |           |                    |                 |                  |
+> > | [[#Cyber Glow]]        | 1                    |                    |           |                    |                 |                  |
+> > | [[#LYT Mode]]          | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Shiba Inu]]         | 1                    |                    |           |                    |                 |                  |
+> > | [[#PLN]]               | 1                    |                    |           |                    |                 |                  |
+> > | [[#Obsidianotion]]     | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Maple]]             | 1                    |                    |           |                    |                 |                  |
+> > | [[#EbullientWorks]]    |                      |                    | 1         |                    | 1               |                  |
+> > | [[#Pine Forest Berry]] | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Aura]]              | 1                    |                    |           |                    |                 |                  |
+> > | [[#Vicious]]           | 1                    |                    |           |                    |                 |                  |
+> > | [[#Simple]]            | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Elegance]]          | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Material Ocean]]    | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Sparkling Night]]   |                      |                    |           | 1                  |                 |                  |
+> > | [[#Kakano]]            | 1                    |                    |           |                    |                 |                  |
+> > | [[#Neo]]               | 1                    |                    |           |                    |                 | 1                |
+> > | [[#Feather]]           | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Listive]]           | 1                    |                    | 1         |                    |                 |                  |
+> > | [[#MagicUser]]         |                      |                    | 1         |                    |                 |                  |
+> > | [[#Qlean]]             | 1                    |                    |           |                    |                 |                  |
+> > | [[#Yue]]               | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#sQdthOne]]          | 1                    |                    |           |                    |                 |                  |
+> > | [[#Dracula Plus]]      | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Solitude]]          |                      |                    | 1         |                    |                 |                  |
+> > | [[#Prime]]             | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Sanctum Reborn]]    | 1                    |                    |           |                    |                 |                  |
+> > | [[#Underwater]]        | 1                    |                    |           |                    |                 |                  |
+> > | [[#Nightingale]]       | 1                    |                    |           |                    |                 |                  |
+> > | [[#Reshi]]             | 1                    |                    |           |                    |                 |                  |
+> > | [[#Shade Sanctuary]]   | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Sparkling Day]]     |                      |                    |           | 1                  |                 |                  |
+> > | [[#Oreo]]              | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Gummy Revived]]     | 1                    |                    |           |                    |                 |                  |
+> > | [[#Lorens]]            | 1                    |                    |           |                    |                 |                  |
+> > | [[#Phoenix (snippet)]] |                      |                    | 1         |                    | 1               |                  |
+
 # Minimal
 
 Distributed under the [MIT License](https://github.com/kepano/obsidian-minimal/blob/master/LICENSE)
