@@ -55,7 +55,7 @@ Repo: https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes
 Docs: https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes?tab=readme-ov-file#source-mode-raw-input
 Code: https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes/blob/main/phoenix-checkboxes.css
 
-Doesn't seem to render all icons? In Default Theme or in Phoenix Theme.
+Needs the [remixicon](https://remixicon.com/) font (installed on the computer or coming from another snippet) to properly render all icons.
 
 - [x] Default
 - [>] Deferred or rescheduled task (no strikethrough in preview)

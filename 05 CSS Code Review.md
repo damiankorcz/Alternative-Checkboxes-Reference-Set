@@ -1,3 +1,66 @@
+> [!info]- Overview
+> Methods used:
+> - 45 codes: 44 themes + 1 snippet
+> - 38/45 use `-webkit-mask-image`
+> - 14/45 use `background-image`
+> - 5/45 use `content`
+> - 2/45 use `background-color` (Sparkling Night/Day, from the same dev)
+> - 19/45 use a specific approach for `- [/]`
+> - 1/45 use a special approach for progress icons
+> 
+> Mix inside the same theme:
+> - 13/45 use both `-webkit-mask-image` and `background-image`. They are mostly inspired/copied from [[#Minimal]].
+> - 1/45 use both `-webkit-mask-image` and `content` (Listive)
+>
+> > [!NOTE]- Tableau
+> > |                        | `-webkit-mask-image` | `background-image` | `content` | `background-color` | Special `- [/]` | Special progress |
+> > | ---------------------- | -------------------- | ------------------ | --------- | ------------------ | --------------- | ---------------- |
+> > | [[#Minimal]]           | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Things]]            | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Blue Topaz]]        | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#AnuPpuccin]]        | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Sanctum]]           | 1                    |                    |           |                    |                 |                  |
+> > | [[#ITS]]               | 1                    |                    |           |                    |                 |                  |
+> > | [[#Primary]]           | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Tokyo Night]]       | 1                    |                    |           |                    |                 |                  |
+> > | [[#Border]]            | 1                    |                    |           |                    |                 |                  |
+> > | [[#Spectrum]]          |                      | 1                  |           |                    |                 |                  |
+> > | [[#Cyber Glow]]        | 1                    |                    |           |                    |                 |                  |
+> > | [[#LYT Mode]]          | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Shiba Inu]]         | 1                    |                    |           |                    |                 |                  |
+> > | [[#PLN]]               | 1                    |                    |           |                    |                 |                  |
+> > | [[#Obsidianotion]]     | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Maple]]             | 1                    |                    |           |                    |                 |                  |
+> > | [[#EbullientWorks]]    |                      |                    | 1         |                    | 1               |                  |
+> > | [[#Pine Forest Berry]] | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Aura]]              | 1                    |                    |           |                    |                 |                  |
+> > | [[#Vicious]]           | 1                    |                    |           |                    |                 |                  |
+> > | [[#Simple]]            | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Elegance]]          | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Material Ocean]]    | 1                    |                    |           |                    | 1               |                  |
+> > | [[#Sparkling Night]]   |                      |                    |           | 1                  |                 |                  |
+> > | [[#Kakano]]            | 1                    |                    |           |                    |                 |                  |
+> > | [[#Neo]]               | 1                    |                    |           |                    |                 | 1                |
+> > | [[#Feather]]           | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Listive]]           | 1                    |                    | 1         |                    |                 |                  |
+> > | [[#MagicUser]]         |                      |                    | 1         |                    |                 |                  |
+> > | [[#Qlean]]             | 1                    |                    |           |                    |                 |                  |
+> > | [[#Yue]]               | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#sQdthOne]]          | 1                    |                    |           |                    |                 |                  |
+> > | [[#Dracula Plus]]      | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Solitude]]          |                      |                    | 1         |                    |                 |                  |
+> > | [[#Prime]]             | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Sanctum Reborn]]    | 1                    |                    |           |                    |                 |                  |
+> > | [[#Underwater]]        | 1                    |                    |           |                    |                 |                  |
+> > | [[#Nightingale]]       | 1                    |                    |           |                    |                 |                  |
+> > | [[#Reshi]]             | 1                    |                    |           |                    |                 |                  |
+> > | [[#Shade Sanctuary]]   | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Sparkling Day]]     |                      |                    |           | 1                  |                 |                  |
+> > | [[#Oreo]]              | 1                    | 1                  |           |                    | 1               |                  |
+> > | [[#Gummy Revived]]     | 1                    |                    |           |                    |                 |                  |
+> > | [[#Lorens]]            | 1                    |                    |           |                    |                 |                  |
+> > | [[#Phoenix (snippet)]] |                      |                    | 1         |                    | 1               |                  |
+
 # Minimal
 
 Distributed under the [MIT License](https://github.com/kepano/obsidian-minimal/blob/master/LICENSE)
@@ -106,7 +169,7 @@ li[data-task="/"] > p > input, {
 
 Distributed under the [MIT License](https://github.com/colineckert/obsidian-things/blob/main/LICENSE)
 
-From [[#Minimal]]
+From [[#Minimal]], with additional git icons
 
 # Blue Topaz
 
@@ -819,3 +882,754 @@ li[data-task="#{$character}"] > p > input[type=checkbox]:checked {
 }
 ```
 
+
+# Pine Forest Berry
+
+Distributed under the [MIT License](https://github.com/Nilahn/pine_forest_berry/blob/main/LICENSE)
+
+Based on an old version of [[#Minimal]], but not working anymore.
+
+# Aura
+
+Distributed under the [GPL-2.0 License](https://github.com/ashwinjadhav818/obsidian-aura/blob/master/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+.aura-custom-checkbox .task-list-item-checkbox[data-task=">"],
+.aura-custom-checkbox
+	ul
+	> li.task-list-item[data-task=">"]
+	.task-list-item-checkbox {
+	background-color: rgb(var(--cpt-blue));
+	border: 1px solid rgb(var(--cpt-blue));
+}
+.aura-custom-checkbox .task-list-item-checkbox[data-task=">"]:hover,
+.aura-custom-checkbox
+	ul
+	> li.task-list-item[data-task=">"]
+	.task-list-item-checkbox:hover {
+	background-color: rgba(var(--cpt-blue), 0.7);
+	border: 1px solid rgba(var(--cpt-blue), 0.7);
+}
+.aura-custom-checkbox [data-task=">"] input[type="checkbox"]:checked:after,
+.aura-custom-checkbox [data-task=">"][type="checkbox"]:checked:after {
+	-webkit-mask-image: url("data:image/svg+xml,...");
+	-webkit-mask-size: 50%;
+}
+```
+
+# Vicious
+
+Distributed under the [MIT License](https://github.com/zaheralmajed/vicious-theme-obsidian/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+[data-task=">"] > input[type="checkbox"]:checked,
+[data-task=">"] > p > input[type="checkbox"]:checked,
+[data-task=">"][type="checkbox"]:checked {
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+	/* Only [x] and [-] have a colored background */
+}
+
+[data-task=">"] > input[type="checkbox"]:checked:after,
+[data-task=">"] > p > input[type="checkbox"]:checked:after,
+[data-task=">"][type="checkbox"]:checked:after {
+	background: var(--C001);
+	-webkit-mask-size: 100%;
+	-webkit-mask-image: url("data:image/svg+xml,...");
+}
+```
+
+# Simple
+
+Distributed under the [Unlicense License](https://github.com/diegoeis/simple-obsidian/blob/main/LICENSE)
+
+From [[#Minimal]]
+
+# Elegance
+
+Distributed under the [MIT License](https://github.com/Victologo/elegance-theme/blob/main/LICENSE)
+
+From [[#Minimal]]
+
+# Material Ocean
+
+Distributed under the [MIT License](https://github.com/dragonwocky/obsidian-material-ocean/blob/main/LICENSE)
+
+## With mask image
+
+- [-] Cancelled `- [-]`
+
+```css
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked,
+body.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked {
+	background-color: var(--text-muted);
+	-webkit-mask-image: var(--lucide-minus);
+	-webkit-mask-size: cover;
+}
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked:after,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="-"]:checked:after,
+body.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked:after,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="-"] input[type="checkbox"]:checked:after {
+	background: transparent;
+}
+```
+
+## Other method(s)
+
+- [/] Incomplete `- [/]`
+
+```css
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked,
+body.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked {
+	background-color: transparent;
+	overflow: hidden;
+}
+body.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked:after,
+body.is-mobile.theme-dark .HyperMD-task-line .task-list-item-checkbox[data-task="/"]:checked:after,
+body.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked:after,
+body.is-mobile.theme-dark .markdown-rendered .task-list-item[data-task="/"] input[type="checkbox"]:checked:after {
+	-webkit-mask-image: none;
+	background-color: var(--checkbox-color);
+	width: 50%;
+}
+```
+
+# Sparkling Night
+
+Distributed under the [MIT License](https://github.com/isax785/obsidian-sparkling-night/blob/master/LICENSE)
+
+## With background color
+
+All icons
+
+```css
+.HyperMD-task-line[data-task=">"] .task-list-item-checkbox::after {
+	-webkit-mask-image: none;
+	mask-image: none;
+	background-color: transparent;
+}
+.HyperMD-task-line[data-task=">"] .task-list-item-checkbox,
+.HyperMD-task-line[data-task=">"] .task-list-item-checkbox:hover {
+	background-color: var(--bright-green);
+	border-color: var(--checkbox-border-color);
+}
+```
+
+# Kakano
+
+Distributed under the [MIT License](https://github.com/isaacfreeman/kakano-obsidian-theme)
+
+## With mask image
+
+All icons
+
+```css
+/* Complete states (with background) */
+input.task-list-item-checkbox[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+	background-image: none;
+	border-color: var(--theme-color-controlContentArea);
+	position: relative;
+	overflow: hidden;
+	background-color: var(--theme-color-controlContentArea);
+	color: white;
+}
+
+input[data-task=">"]:checked:after,
+li[data-task=">"] > input:checked:after,
+li[data-task=">"] > p > input:checked:after {
+	content: "";
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	display: block;
+	background-color: var(--checkbox-marker-color);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: 50% 50%;
+	-webkit-mask-size: 100%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-image: url('data:image/svg+xml; utf8, ...');
+}
+
+/* Incomplete states (no background) */
+input.task-list-item-checkbox[data-task="!"]:checked
+li[data-task="!"] > input:checked
+li[data-task="!"] > p > input:checked{
+	background-image: none;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+}
+input[data-task="!"]:checked:after,
+li[data-task="!"] > input:checked:after,
+li[data-task="!"] > p > input:checked:after {
+	-webkit-mask-image: url('data:image/svg+xml, ...');
+}
+```
+
+# Neo
+
+Distributed under the [MIT License](https://github.com/lab-do/obsidian-neo/blob/main/LICENCE)
+
+## With mask image
+
+All icons except progress
+
+```css
+input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+	--checkbox-marker-color: transparent;
+	--checkbox-image: none;
+	--checkbox-position: 50% 50%;
+	
+	border: none;
+	border-radius: 0;
+	background-image: none;
+	background-color: currentColor;
+	mask-size: var(--checkbox-icon);
+	-webkit-mask-size: var(--checkbox-icon);
+	mask-position: var(--checkbox-image);
+	-webkit-mask-position: var(--checkbox-image);
+	mask-image: var(--checkbox-image);
+	-webkit-mask-image: var(--checkbox-image);
+	
+	/* variation part */
+	color: var(--color-green);
+	--checkbox-image: url('data:image/svg+xml, ...');
+}
+```
+
+## Other method(s)
+
+- [0] Progress 0 `- [0]`
+- [1] Progress 1 `- [1]`
+- [2] Progress 2 `- [2]`
+- [3] Progress 3 `- [3]`
+- [4] Progress 4 `- [4]`
+
+```css
+input[data-task="0"]:checked,
+li[data-task="0"] > input:checked,
+li[data-task="0"] > p > input:checked {
+	background: transparent;
+	background-image: none;
+	width: var(--checkbox-progress-width);
+	height: 14px;
+	border: 2px solid var(--interactive-accent);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	mask-image: none;
+	-webkit-mask-image: none;
+}
+	
+input[data-task="0"]:checked:hover,
+li[data-task="0"] > input:checked:hover,
+li[data-task="0"] > p > input:checked:hover {
+	background-color: transparent;
+}
+
+input[data-task="0"]:checked:hover::after,
+li[data-task="0"] > input:checked:hover::after,
+li[data-task="0"] > p > input:checked:hover::after {
+	background: var(--interactive-accent-hover);
+}
+	
+input[data-task="0"]:checked::after,
+li[data-task="0"] > input:checked::after,
+li[data-task="0"] > p > input:checked::after {
+	content: " ";
+	display: block;
+	background: var(--interactive-accent);
+	width: calc(var(--checkbox-progress-width) * var(--checkbox-progress-frac));
+	height: 100%;
+	top: 0;
+	border-radius: 10px;
+	mask-image: none;
+	-webkit-mask-image: none;
+	transition: width 0.15s ease-out;
+}
+
+input[data-task="0"],
+li[data-task="0"] {
+	--checkbox-progress-frac: 0;
+}
+```
+
+# Feather
+
+Distributed under the [MIT License](https://github.com/zfmohammed/obsidian-feather/blob/main/LICENSE)
+
+From [[#Things]], which is from [[#Minimal]]
+
+# Listive
+
+Distributed under the [MIT License](https://github.com/efemkay/obsidian-listive-theme/blob/master/LICENSE.md)
+
+## With mask image
+
+- [>] Defer / Reschedule `- [>]`
+- [-] Cancelled `- [-]`
+- [<] Schedule / Meeting `- [<]`
+- [I] Idea / Light Bulb `- [I]`
+- [i] Info `- [i]`
+- [!] Warning `- [!]`
+- [*] Star / Favourites `- [*]`
+
+```css
+input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+	--checkbox-marker-color: transparent;
+	background-color: currentColor;
+	color: var(--text-faint);
+	transform: rotate(90deg);
+	-webkit-mask-position: 50% 100%;
+	-webkit-mask-image: url("data:image/svg+xml, ...");
+}
+```
+
+## With content
+
+- ["] Citation, my version `- ["]`
+- [r] Reference `- [r]`
+
+```css
+input[type=checkbox][data-task="“"]:is(*,:hover,:active),
+li[data-task="“"] > input:checked,
+li[data-task="“"] > p > input:checked {
+	background-color: transparent;
+}
+
+input[type=checkbox][data-task="“"]:checked::after,
+li[data-task="“"] > input:checked::after,
+li[data-task="“"] > p > input:checked::after {
+	content: "❝";
+	font-size: 1.6em;
+	text-align: center;
+	top: -5px;
+	left: 0;
+	color: rgba(var(--callout-quote), 1);
+	background-color: transparent;
+	-webkit-mask-image: revert;
+}
+```
+
+## Other method(s)
+
+- [/] Partial / Incomplete `- [/]`
+
+```css
+.HyperMD-list-line input[data-task="/"]:checked,
+.markdown-preview-view li[data-task="/"]>input[type="checkbox"]:checked {
+	background-image: linear-gradient(135deg, var(--interactive-accent) 50%, var(--background-primary) 50%);
+}
+
+input[data-task="/"]:checked:after,
+li[data-task="/"] > input:checked:after,
+li[data-task="/"] > p > input:checked:after {
+	background-color: var(--background-modifier-accent);
+	-webkit-mask-image: none;
+}
+```
+
+# MagicUser
+
+Distributed under the [MIT License](https://github.com/drbap/magicuser-theme-for-obsidian/blob/main/LICENSE)
+
+## With content
+
+All icons
+
+```css
+input[data-task=">"]:checked,
+li[data-task=">"]>input:checked,
+li[data-task=">"]>p>input:checked {
+	--checkbox-color-hover: transparent;
+	--checkbox-color: transparent;
+	border-width: 0;
+}
+
+input[data-task=">"]:checked::after,
+li[data-task=">"]>input:checked::after,
+li[data-task=">"]>p>input:checked::after {
+	content: url("data:image/svg+xml, ...);
+	vertical-align: middle;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+```
+
+# Qlean
+
+Distributed under the [MIT License](https://github.com/Fro-Q/Qlean/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox,
+.style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox {
+	border-color: var(--color-warning);
+	background-color: var(--color-warning);
+}
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox:after,
+.markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after,
+.style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
+	-webkit-mask-image: url('data:image/svg+xml;charset=utf8, ...');
+	mask-image: url('data:image/svg+xml;charset=utf8, ...');
+}
+```
+
+# Yue
+
+Distributed under the [MIT License](https://github.com/GixoXYZ/YueObsidian/blob/main/LICENSE)
+
+From [[#Minimal]]
+
+# sQdthOne
+
+Distributed under the [GPL-3.0 License](https://github.com/KeithLerner/ObsidianMDsQdthOne/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+	  --checkbox-marker-color: transparent;
+	border: none;
+	border-radius: 0;
+	background-image: none;
+	background-color: currentColor;
+	-webkit-mask-size: calc(var(--size-icon) * 1.1);
+	-webkit-mask-position: 50% 50%;
+	
+	background-color: var(--text-faint);
+	-webkit-mask-image: url("data:image/svg+xml, ...);
+}
+
+input[data-task=">"]:checked:hover,
+li[data-task=">"]>input:checked:hover,
+li[data-task=">"]>p>input:checked:hover {
+	--checkbox-marker-color: transparent;
+	border: none;
+	border-radius: 0;
+	background-image: none;
+	background-color: hsl(var(--color-hovered));
+	-webkit-mask-size: calc(var(--size-icon) * 1.1);
+	-webkit-mask-position: 50% 50%;
+}
+```
+
+# Dracula Plus
+
+Distributed under the [MIT License](https://github.com/saket61195/Dracula_obsidian_theme/blob/main/LICENSE)
+
+From [[#Things]]* , which is from [[#Minimal]].
+
+- [t] Time `- [t]` * This one is unique, but follow the same pattern
+
+# Solitude
+
+Distributed under the [MIT License](https://github.com/KyleKlus/solitude-obsidian-theme/blob/main/LICENCE)
+
+## With content
+
+All icons
+
+```css
+.HyperMD-task-line[data-task=A] .task-list-item-checkbox,
+.HyperMD-task-line[data-task=A] .task-list-item-checkbox:hover {
+	background-color: var(--color-red);
+	border-color: var(--color-red);
+}
+
+.HyperMD-task-line[data-task=A] .task-list-item-checkbox::after {
+	-webkit-mask-image: none;
+	mask-image: none;
+	background-color: transparent;
+	top: 1px;
+	left: 3px;
+	position: relative;
+}
+```
+
+# Prime
+
+Distributed under the [GPL-3.0 License](https://github.com/rivea0/obsidian-prime/blob/main/LICENSE)
+
+From [[#Minimal]] and [[#Things]], with additional icons
+
+# Sanctum Reborn
+
+Distributed under the [MIT License](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/LICENSE)
+
+From [[#Sanctum]]
+
+# Underwater
+
+Distributed under the [MIT License](https://github.com/Seniblue/Underwater/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+input[data-task="!"]:checked,
+li[data-task="!"] > input:checked,
+li[data-task="!"] > p > input:checked {
+	--checkbox-marker-color: transparent;
+	border: none;
+	border-radius: 0px;
+	background-color: currentColor;
+	background-image: none;
+	-webkit-mask-size: 100%;
+	mask-size: 100%;
+	-webkit-mask-position: 50% 50%;
+	mask-position: 50% 50%;
+	
+	color: var(--color-red);
+	-webkit-mask-image: url('data:image/svg+xml, ...');
+	mask-image: url('data:image/svg+xml, ...');
+}
+```
+
+# Nightingale
+
+Distributed under the [MIT License](https://github.com/frank0713/nightingale-obsidian/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+input[data-task='>']:checked,
+li[data-task='>']>input:checked,
+li[data-task='>']>p>input:checked {
+    --checkbox-marker-color: transparent;
+    border: 0.5px solid var(--text-faint);
+    border-radius: 2px 2px 2px 2px;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    background-color: currentColor;
+    
+    border: none;
+    color: var(--text-accent);
+    transform: scale(1.1);
+    -webkit-mask-image: url("data:image/svg+xml, ...");
+}
+```
+
+# Reshi
+
+Distributed under the [GPL-3.0 License](https://github.com/contrapasso3/Reshi/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+.theme-light input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+    --checkbox-color: transparent;
+    --checkbox-color-hover: transparent;
+    border-width: 0;
+}
+
+.theme-light input[data-task=">"]:checked::after,
+li[data-task=">"] > input:checked::after,
+li[data-task=">"] > p > input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml, ...");
+	-webkit-mask-size: 100%;
+    background-color: var(--green-04);
+}
+
+.theme-dark input[data-task=">"]:checked,
+li[data-task=">"] > input:checked,
+li[data-task=">"] > p > input:checked {
+    --checkbox-color: transparent;
+    --checkbox-color-hover: transparent;
+    border-width: 0;
+}
+
+.theme-dark input[data-task=">"]:checked::after,
+li[data-task=">"] > input:checked::after,
+li[data-task=">"] > p > input:checked::after {
+    -webkit-mask-image: url("data:image/svg+xml, ...");
+	-webkit-mask-size: 100%;
+    background-color: var(--green-11);
+    left: 0;
+}
+```
+
+# Shade Sanctuary
+
+Distributed under the [MIT License](https://github.com/Elevict/Shade-Sanctuary/blob/main/LICENSE)
+
+From [[#Minimal]] (and probably [[#Things]]).
+
+# Sparkling Day
+
+Distributed under the [MIT License](https://github.com/isax785/obsidian-sparkling-day/blob/master/LICENSE)
+
+Same as [[#Sparkling Night]]
+
+# Oreo
+
+Distributed under the [GPL-3.0 License](https://github.com/carols12352/Oreo-theme/blob/master/LICENSE)
+
+From [[#Minimal]] and [[#Things]].
+
+# Gummy Revived
+
+Distributed under the [MIT License](https://github.com/WinnerWind/gummy-revived/blob/main/LICENSE)
+
+## With mask image
+
+All icons
+
+```css
+li.is-checked:where(li[data-task=">"]) input[type="checkbox"],
+.markdown-source-view input[type="checkbox"]:where(li[data-task=">"]):checked {
+	background: transparent;
+	border-width: 0;
+	pointer-events: none;
+}
+
+li.is-checked:where(li[data-task=">"]) input[type="checkbox"]:hover,
+.markdown-source-view input[type="checkbox"]:where(li[data-task=">"]):checked:hover {
+	box-shadow: none;
+	border-color: transparent;
+	pointer-events: none;
+}
+
+li.is-checked:where(li[data-task=">"]) input[type="checkbox"]::after,
+.markdown-source-view input[type="checkbox"]:where(li[data-task=">"]):checked::after {
+	left: 0;
+	-webkit-mask-size: 110%;
+	pointer-events: none;
+}
+
+li[data-task=">"] input[type="checkbox"]:checked::after,
+input[type="checkbox"][data-task=">"]::after {
+	background: var(--color-orange);
+	-webkit-mask-image: url("data:image/svg+xml, ...");
+}
+```
+
+# Lorens
+
+Distributed under the [MIT License](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme/blob/master/LICENSE)
+
+From [[#Border]]
+
+
+# Phoenix (snippet)
+
+Distributed under the [MIT License](https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes/blob/main/LICENSE)
+
+## With content
+
+All icons except `- [/]`
+
+```css
+input.task-list-item-checkbox {
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	border: 1px solid var(--text-faint);
+	border-radius: 50%;
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	filter: none; /* this is very important, otherwise colors will display incorrectly */
+	display: inline-block;
+}
+
+input[type=checkbox]:checked:after {
+	background-color: transparent;
+}
+
+input[data-task='>'].task-list-item-checkbox:checked,
+.markdown-preview-view li[data-task='>'] > .task-list-item-checkbox:checked {
+	border: none;
+	background-color: var(--base-color);
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=">"]::before,
+.markdown-preview-view li[data-task=">"] > .task-list-item-checkbox:checked::before,
+.cm-embed-block .callout .callout-content li[data-task=">"] > .task-list-item-checkbox:checked::before {
+	font-family: "remixicon";
+	content: "\ea6e"; /* ri-arrow-right-s-line */
+	color: white;
+	position: absolute;
+	transform: scale(1.6) translate(20%, 1.5pt);
+}
+```
+
+## Other method(s)
+
+- [/] Half Done Task (no strikethrough in preview)
+
+```css
+.markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked,
+.markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"],
+.cm-embed-block .callout .callout-content li[data-task="/"]>.task-list-item-checkbox:checked {
+    background-color: transparent;
+    border-color: var(--text-faint) !important;
+}
+
+.markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked.task-list-item-checkbox:checked::before {
+	content: ' ';
+	position: absolute;
+	top: 1%;
+	left: -21%;
+	height: 0.8em;
+	width: 1.55em;
+	border-radius: 150px 150px 0 0;
+	background-color: var(--base-color) !important;
+	transform: rotate(-45deg);
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"]::before,
+.cm-embed-block .callout .callout-content li[data-task="/"]>.task-list-item-checkbox:checked::before {
+	content: ' ';
+	position: absolute;
+	height: 0.8em;
+	width: 1.55em;
+	border-radius: 150px 150px 0 0;
+	background-color: var(--base-color);
+	transform: translate(-21%, 8%) rotate(-45deg);
+}
+```

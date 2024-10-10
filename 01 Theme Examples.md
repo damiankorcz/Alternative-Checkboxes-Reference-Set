@@ -854,7 +854,7 @@ Code: https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/src/f
 
 ---
 
-# Forest Pine Berry (Unmaintained?)
+# Pine Forest Berry (Unmaintained?)
 
 Repo: https://github.com/Nilahn/pine_forest_berry/
 Docs: None (Appears to use Minimal snippet)
