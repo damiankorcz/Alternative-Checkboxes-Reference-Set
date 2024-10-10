@@ -1491,3 +1491,82 @@ input[type="checkbox"][data-task=">"]::after {
 Distributed under the [MIT License](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme/blob/master/LICENSE)
 
 From [[#Border]]
+
+
+# Phoenix (snippet)
+
+Distributed under the [MIT License](https://github.com/RyzenFromFire/obsidian-phoenix-checkboxes/blob/main/LICENSE)
+
+## With content
+
+All icons except `- [/]`
+
+```css
+input.task-list-item-checkbox {
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	border: 1px solid var(--text-faint);
+	border-radius: 50%;
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	filter: none; /* this is very important, otherwise colors will display incorrectly */
+	display: inline-block;
+}
+
+input[type=checkbox]:checked:after {
+	background-color: transparent;
+}
+
+input[data-task='>'].task-list-item-checkbox:checked,
+.markdown-preview-view li[data-task='>'] > .task-list-item-checkbox:checked {
+	border: none;
+	background-color: var(--base-color);
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=">"]::before,
+.markdown-preview-view li[data-task=">"] > .task-list-item-checkbox:checked::before,
+.cm-embed-block .callout .callout-content li[data-task=">"] > .task-list-item-checkbox:checked::before {
+	font-family: "remixicon";
+	content: "\ea6e"; /* ri-arrow-right-s-line */
+	color: white;
+	position: absolute;
+	transform: scale(1.6) translate(20%, 1.5pt);
+}
+```
+
+## Other method(s)
+
+- [/] Half Done Task (no strikethrough in preview)
+
+```css
+.markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked,
+.markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"],
+.cm-embed-block .callout .callout-content li[data-task="/"]>.task-list-item-checkbox:checked {
+    background-color: transparent;
+    border-color: var(--text-faint) !important;
+}
+
+.markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked.task-list-item-checkbox:checked::before {
+	content: ' ';
+	position: absolute;
+	top: 1%;
+	left: -21%;
+	height: 0.8em;
+	width: 1.55em;
+	border-radius: 150px 150px 0 0;
+	background-color: var(--base-color) !important;
+	transform: rotate(-45deg);
+}
+
+.markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"]::before,
+.cm-embed-block .callout .callout-content li[data-task="/"]>.task-list-item-checkbox:checked::before {
+	content: ' ';
+	position: absolute;
+	height: 0.8em;
+	width: 1.55em;
+	border-radius: 150px 150px 0 0;
+	background-color: var(--base-color);
+	transform: translate(-21%, 8%) rotate(-45deg);
+}
+```
