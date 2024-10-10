@@ -820,7 +820,7 @@ li[data-task="#{$character}"] > p > input[type=checkbox]:checked {
 ```
 
 
-# Pine Forest Berry (Unmaintained?)
+# Pine Forest Berry
 
 Distributed under the [MIT License](https://github.com/Nilahn/pine_forest_berry/blob/main/LICENSE)
 
@@ -1052,7 +1052,7 @@ li[data-task=">"] > p > input:checked {
 }
 ```
 
-# Other method(s)
+## Other method(s)
 
 - [0] Progress 0 `- [0]`
 - [1] Progress 1 `- [1]`
@@ -1119,7 +1119,7 @@ From [[#Things]], which is from [[#Minimal]]
 
 Distributed under the [MIT License](https://github.com/efemkay/obsidian-listive-theme/blob/master/LICENSE.md)
 
-# With mask image
+## With mask image
 
 - [>] Defer / Reschedule `- [>]`
 - [-] Cancelled `- [-]`
@@ -1142,7 +1142,7 @@ li[data-task=">"] > p > input:checked {
 }
 ```
 
-# With content
+## With content
 
 - ["] Citation, my version `- ["]`
 - [r] Reference `- [r]`
@@ -1168,7 +1168,7 @@ li[data-task="“"] > p > input:checked::after {
 }
 ```
 
-# Other method(s)
+## Other method(s)
 
 - [/] Partial / Incomplete `- [/]`
 
