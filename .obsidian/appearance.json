@@ -1,7 +1,5 @@
 {
   "cssTheme": "",
-  "enabledCssSnippets": [
-    "phoenix-checkboxes"
-  ],
+  "enabledCssSnippets": [],
   "theme": "obsidian"
 }
