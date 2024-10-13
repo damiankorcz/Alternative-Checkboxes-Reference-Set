@@ -247,6 +247,7 @@ Themes are ordered from most popular to least popular at the time of writing.
 Repo: https://github.com/kepano/obsidian-minimal
 Docs: https://minimal.guide/checklists
 Code: https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/checklist-icons.scss
+Style Settings: yes
 
 - [ ] To-Do `- [ ]`
 - [/] Incomplete `- [/]`
@@ -283,6 +284,7 @@ Code: https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/c
 Repo: https://github.com/colineckert/obsidian-things
 Docs: https://github.com/colineckert/obsidian-things?tab=readme-ov-file#checkbox-styling
 Code: https://github.com/colineckert/obsidian-things/blob/9d0a8b44007a335ee829a0d3843ab579051eeb70/theme.css#L661
+Style Settings: yes
 
 - [ ] To-Do `- [ ]`
 - [/] Incomplete `- [/]`
@@ -325,6 +327,7 @@ Docs: https://github.com/PKM-er/Blue-topaz-example/blob/96ecdaa485f0b4e4b8c22c7f
 Code:
 - https://github.com/PKM-er/Blue-Topaz_Obsidian-css/blob/d55ba0b88ee2d91b49bd5cce66039685c27073f4/theme.css#L11739
 - https://github.com/PKM-er/Blue-Topaz_Obsidian-css/blob/d55ba0b88ee2d91b49bd5cce66039685c27073f4/theme.css#L29306
+Style Settings: yes
 
 - [>] Rescheduled `- [>]`
 - [<] Scheduled `- [<]`
@@ -371,8 +374,9 @@ Code:
 Repo: https://github.com/AnubisNekhet/AnuPpuccin
 Docs: https://github.com/AnubisNekhet/AnuPpuccin?tab=readme-ov-file#custom-checkboxes--speech-bubbles
 Code: https://github.com/AnubisNekhet/AnuPpuccin/blob/main/src/modules/Features/custom-checkboxes.scss
+Style Settings: yes
 
-Style Settings Required. Need to enable the following in Style Settings:
+Need to enable the following in Style Settings:
 - `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes`
 - `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Speech Bubbles`
 
@@ -420,6 +424,7 @@ Style Settings Required. Need to enable the following in Style Settings:
 Repo: https://github.com/jdanielmourao/obsidian-sanctum
 Docs: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/documentation/Theme_Guide.md
 Code: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/src/scss/features/custom-checkboxes.scss
+Style Settings: yes
 
 - [i] Information `- [i]`
 - [-] Cancelled `- [-]`
@@ -452,6 +457,7 @@ Code: https://github.com/jdanielmourao/obsidian-sanctum/blob/main/src/scss/featu
 Repo: https://github.com/SlRvb/Obsidian--ITS-Theme
 Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
 Code: https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/SCSS/Alternate%20Checkboxes.scss
+Style Settings: yes
 
 Included in the theme. **Do not use snippet version with the ITS Theme enabled**. Snippet version here: [[02 CSS Snippet Examples#ITS Alternative Checkboxes]]
 
@@ -505,6 +511,7 @@ Included in the theme. **Do not use snippet version with the ITS Theme enabled**
 Repo: https://github.com/primary-theme/obsidian
 Docs: https://primary-theme.github.io/features/checkboxes/#checklists
 Code: https://github.com/primary-theme/obsidian/blob/main/src/scss/40_editor/_alt-checkboxes.scss
+Style Settings: yes
 
 - [/] In Progress `- [/]`
 - [>] Rescheduled `- [>]`
@@ -540,6 +547,7 @@ Code: https://github.com/primary-theme/obsidian/blob/main/src/scss/40_editor/_al
 Repo: https://github.com/tcmmichaelb139/obsidian-tokyonight
 Docs: None (Appears to have used ones from Border theme)
 Code: https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/ea79aba4359704497be7e40d15628636c81a9a0d/theme.css#L562
+Style Settings: yes
 
 - [ ] To Do `- [ ]`
 - [/] In Progress `- [/]`
@@ -576,6 +584,7 @@ Code: https://github.com/tcmmichaelb139/obsidian-tokyonight/blob/ea79aba43597044
 Repo: https://github.com/Akifyss/obsidian-border
 Docs: https://github.com/Akifyss/obsidian-border?tab=readme-ov-file#alternate-checkboxes
 Code: https://github.com/Akifyss/obsidian-border/blob/2771957ab92e6faddd7edad4e0cf65b7e8ef66bb/theme.css#L7844
+Style Settings: yes
 
 - [ ] To Do `- [ ]`
 - [/] In Progress `- [/]`
@@ -611,6 +620,7 @@ Code: https://github.com/Akifyss/obsidian-border/blob/2771957ab92e6faddd7edad4e0
 Repo: https://github.com/wiktoriavh/Spectrum
 Docs: https://github.com/wiktoriavh/Spectrum/wiki/Different-Task-Checkboxes
 Code: https://github.com/wiktoriavh/Spectrum/blob/6c24513a3af57a7ebaeff63df7e62bf47513efac/SCSS/_blocks/_listings/_task-list.scss#L63
+Style Settings: no
 
 - [>] Forward `- [>]`
 - [+] Plus `- [+]`
@@ -631,6 +641,7 @@ Code: https://github.com/wiktoriavh/Spectrum/blob/6c24513a3af57a7ebaeff63df7e62b
 Repo: https://github.com/ArtexJay/Obsidian-CyberGlow
 Docs: https://github.com/ArtexJay/Obsidian-CyberGlow?tab=readme-ov-file#what-to-expect
 Code: https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/theme.css#L3436
+Style Settings: yes
 
 - [x] Checkmark `- [x]`
 - [?] Question `- [?]`
@@ -670,6 +681,7 @@ Code: https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/theme.css#L3436
 Repo: https://github.com/nickmilo/LYT-Mode
 Docs: https://github.com/nickmilo/LYT-Mode?tab=readme-ov-file#icon-bullets
 Code: https://github.com/nickmilo/LYT-Mode/blob/28f67f18a24f5c8d3b58954eb8374bf2ecffbb50/theme.css#L1448
+Style Settings: no
 
 Same as Minimal.
 
@@ -708,6 +720,7 @@ Same as Minimal.
 Repo: https://github.com/faroukx/Obsidian-shiba-inu-theme
 Docs: https://github.com/faroukx/Obsidian-shiba-inu-theme?tab=readme-ov-file#personalized-checkboxes
 Code: https://github.com/faroukx/Obsidian-shiba-inu-theme/blob/main/theme.css (Only minified available)
+Style Settings: yes
 
 - [ ] Unchecked `- [ ]`
 - [x] Checked `- [x]`
@@ -740,6 +753,7 @@ Code: https://github.com/faroukx/Obsidian-shiba-inu-theme/blob/main/theme.css (O
 Repo: https://github.com/PipeItToDevNull/PLN
 Docs: https://github.com/PipeItToDevNull/PLN?tab=readme-ov-file#custom-checkboxes
 Code: https://github.com/PipeItToDevNull/PLN/blob/master/snippets/checkboxes.css
+Style Settings: yes
 
 - [ ] Open `- [ ]`
 - [x] Complete `- [x]`
@@ -761,6 +775,8 @@ Code: https://github.com/PipeItToDevNull/PLN/blob/master/snippets/checkboxes.css
 Repo: https://github.com/diegoeis/obsidianotion
 Docs: https://github.com/diegoeis/obsidianotion?tab=readme-ov-file#checklists-styles
 Code: https://github.com/diegoeis/obsidianotion/blob/092b29b9aaece2d5a0975ffe4d6b4c75b62e44fd/theme.css#L1221
+Style Settings: yes
+
 
 Uses the same set as Things / Minimal themes.
 
@@ -801,6 +817,7 @@ Uses the same set as Things / Minimal themes.
 Repo: https://github.com/subframe7536/obsidian-theme-maple
 Docs: None
 Code: https://github.com/subframe7536/obsidian-theme-maple/blob/bb117504f9fe91e804442f175d9a94f67bb8dbf0/src/editor/checkbox.scss
+Style Settings: yes
 
 Uses code from Border theme.
 
@@ -838,6 +855,8 @@ Uses code from Border theme.
 Repo: https://github.com/ebullient/obsidian-theme-ebullientworks
 Docs: https://github.com/ebullient/obsidian-theme-ebullientworks?tab=readme-ov-file#alternative-checkboxes
 Code: https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/src/fragments/_06a-checkbox-mixin.scss
+Style Settings: yes
+
 
 - [ ] Unchecked `- [ ]`
 - [x] Checked `- [x]`
@@ -859,6 +878,7 @@ Code: https://github.com/ebullient/obsidian-theme-ebullientworks/blob/main/src/f
 Repo: https://github.com/Nilahn/pine_forest_berry/
 Docs: None (Appears to use Minimal snippet)
 Code: https://github.com/Nilahn/pine_forest_berry/blob/e74bd849e654c22b857229ef0f9c6c6834090d2a/obsidian.css#L999
+Style Settings: no
 
 Doesn't install correctly since it only has `obsidian.css` and no `theme.css`.
 
@@ -894,6 +914,7 @@ Doesn't install correctly since it only has `obsidian.css` and no `theme.css`.
 Repo: https://github.com/ashwinjadhav818/obsidian-aura
 Docs: None (I guessed the uses based on other implementations)
 Code: https://github.com/ashwinjadhav818/obsidian-aura/blob/925571586651e756bf38632178cc4a387f5a6c98/src/features/checkbox.scss
+Style Settings: yes
 
 - [x] Check `- [x]`
 - [X] Alt Check? `- [X]`
@@ -925,6 +946,7 @@ Code: https://github.com/ashwinjadhav818/obsidian-aura/blob/925571586651e756bf38
 Repo: https://github.com/zaheralmajed/vicious-theme-obsidian
 Docs: https://github.com/zaheralmajed/vicious-theme-obsidian?tab=readme-ov-file#enhanced-checkboxes
 Code: https://github.com/zaheralmajed/vicious-theme-obsidian/blob/686d487e0705fd6b7aced4451400512bba919f56/theme.css#L2547
+Style Settings: yes
 
 - [ ] Unchecked `- [ ]`
 - [x] Checked `- [x]`
@@ -1002,6 +1024,7 @@ Code: https://github.com/zaheralmajed/vicious-theme-obsidian/blob/686d487e0705fd
 Repo: https://github.com/diegoeis/simple-obsidian
 Docs: https://github.com/diegoeis/simple-obsidian?tab=readme-ov-file#checklists-styles
 Code: https://github.com/diegoeis/simple-obsidian/blob/2b45f172c7c0840dcf94d173ddf89b2a1ba53aa0/theme.css#L733
+Style Settings: yes
 
 Uses the same set as Things / Minimal themes.
 
@@ -1040,6 +1063,7 @@ Uses the same set as Things / Minimal themes.
 Repo: https://github.com/Victologo/elegance-theme
 Docs: https://github.com/Victologo/elegance-theme?tab=readme-ov-file#checboxes-minimal-theme-by-kepano
 Code: https://github.com/Victologo/elegance-theme/blob/83947941e3f44fb4f37df291c8cff08f299cc2fc/theme.css#L3644
+Style Settings: no
 
 - [ ] To-Do `- [ ]`
 - [/] Incomplete `- [/]` (Not mentioned in Docs)
@@ -1076,6 +1100,7 @@ Code: https://github.com/Victologo/elegance-theme/blob/83947941e3f44fb4f37df291c
 Repo: https://github.com/dragonwocky/obsidian-material-ocean
 Docs: https://github.com/dragonwocky/obsidian-material-ocean?tab=readme-ov-file#features
 Code: https://github.com/dragonwocky/obsidian-material-ocean/blob/main/theme.css#L471
+Style Settings: no
 
 - [/] Incomplete `- [/]` 
 - [-] Cancelled `- [-]`
@@ -1091,6 +1116,7 @@ Code: https://github.com/dragonwocky/obsidian-material-ocean/blob/main/theme.css
 Repo: https://github.com/isax785/obsidian-sparkling-night
 Docs: https://github.com/isax785/obsidian-sparkling-night
 Code: https://github.com/isax785/obsidian-sparkling-night/blob/e7436b653c0c287a5f8a3c246d8a301107a4edfa/theme.css#L256
+Style Settings: no
 
 Only works in Live Preview.
 
@@ -1110,6 +1136,7 @@ Only works in Live Preview.
 Repo: https://github.com/isaacfreeman/kakano-obsidian-theme
 Docs: https://github.com/isaacfreeman/kakano-obsidian-theme?tab=readme-ov-file#selected-alternate-checkboxes
 Code: https://github.com/isaacfreeman/kakano-obsidian-theme/blob/2e4e869043eca019839ef8b6b774196edb81211b/theme.css#L2082
+Style Settings: yes
 
 "Idea borrowed from Minimal theme"
 
@@ -1131,6 +1158,7 @@ Code: https://github.com/isaacfreeman/kakano-obsidian-theme/blob/2e4e869043eca01
 Repo: https://github.com/lab-do/obsidian-neo
 Docs: https://github.com/lab-do/obsidian-neo?tab=readme-ov-file#alternate-checkboxes
 Code: https://github.com/lab-do/obsidian-neo/blob/0955f59136e498461a2de78655eef42cbcf66606/theme.css#L999
+Style Settings: yes
 
 - [ ] Checkbox `- [ ]`
 - [x] Complete `- [x]`
@@ -1176,6 +1204,7 @@ Code: https://github.com/lab-do/obsidian-neo/blob/0955f59136e498461a2de78655eef4
 Repo: https://github.com/zfmohammed/obsidian-feather
 Docs: https://github.com/zfmohammed/obsidian-feather?tab=readme-ov-file#themes (Screenshots)
 Code: https://github.com/zfmohammed/obsidian-feather/blob/da83afd4dd10ba387a7eee59c00f0b8e022d3748/theme.css#L162
+Style Settings: yes
 
 Mentions using Things Theme for Checkboxes.
 
@@ -1218,6 +1247,7 @@ Mentions using Things Theme for Checkboxes.
 Repo: https://github.com/efemkay/obsidian-listive-theme
 Docs: https://github.com/efemkay/obsidian-listive-theme?tab=readme-ov-file#list-related-features (Mentions taking Checkboxes from Border Theme)
 Code: https://github.com/efemkay/obsidian-listive-theme/blob/698f27ce12d23ee451712639df9c4b429019f751/theme.css#L1070
+Style Settings: yes
 
 - [/] Partial / Incomplete `- [/]`
 - [>] Defer / Reschedule `- [>]`
@@ -1241,6 +1271,7 @@ Code: https://github.com/efemkay/obsidian-listive-theme/blob/698f27ce12d23ee4517
 Repo: https://github.com/drbap/magicuser-theme-for-obsidian
 Docs: https://github.com/drbap/magicuser-theme-for-obsidian?tab=readme-ov-file#custom-checkbox-icons
 Code: https://github.com/drbap/magicuser-theme-for-obsidian/blob/33ebb74f4355cd4a46725415ea328ad9781ad46e/theme.css#L1382
+Style Settings: yes
 
 - [ ] Unchecked `- [ ]`
 - [x] Checked `- [x]`
@@ -1325,6 +1356,7 @@ Code: https://github.com/drbap/magicuser-theme-for-obsidian/blob/33ebb74f4355cd4
 Repo: https://github.com/Fro-Q/Qlean
 Docs: https://github.com/Fro-Q/Qlean/blob/main/assets/checkbox_style.png
 Code: https://github.com/Fro-Q/Qlean/blob/619efd313553e6cb6ce7a8c12cc05cf080e8e8df/theme.css#L672
+Style Settings: yes
 
 - [ ] Unchecked `- [ ]`
 - [x] Checked `- [x]`
@@ -1344,6 +1376,7 @@ Code: https://github.com/Fro-Q/Qlean/blob/619efd313553e6cb6ce7a8c12cc05cf080e8e8
 Repo:https://github.com/GixoXYZ/YueObsidian
 Docs: https://github.com/GixoXYZ/YueObsidian?tab=readme-ov-file#checkbox-styling
 Code: https://github.com/GixoXYZ/YueObsidian/blob/fb138cf9b31396b20110c32082a76bd5d6cd8d1d/theme.css#L634
+Style Settings: yes
 
 Same as Minimal.
 
@@ -1382,6 +1415,7 @@ Same as Minimal.
 Repo: https://github.com/KeithLerner/ObsidianMDsQdthOne
 Docs: None
 Code: https://raw.githubusercontent.com/KeithLerner/ObsidianMDsQdthOne/refs/heads/main/theme.css
+Style Settings: yes
 
 - [>] Forwarded `- [>]`
 - [<] Schedule `- [<]`
@@ -1413,6 +1447,7 @@ Code: https://raw.githubusercontent.com/KeithLerner/ObsidianMDsQdthOne/refs/head
 Repo: https://github.com/saket61195/Dracula_obsidian_theme
 Docs: https://github.com/saket61195/Dracula_obsidian_theme?tab=readme-ov-file#checkbox-styling
 Code: https://github.com/saket61195/Dracula_obsidian_theme/blob/6d9fc6b60f008b3e283d27867e72316c7c53199a/theme.css#L568
+Style Settings: yes
 
 Same as Things theme*.
 
@@ -1457,6 +1492,7 @@ Same as Things theme*.
 Repo: https://github.com/MajorEnkidu/solitude-obsidian-theme
 Docs: https://github.com/KyleKlus/solitude-obsidian-theme?tab=readme-ov-file#alternate-checkboxes
 Code: https://github.com/KyleKlus/solitude-obsidian-theme/blob/f2e6d6e2a65a321897c41fc04f5ea974ec393fd5/theme.css#L970
+Style Settings: yes
 
 - [ ] To-Do `- [ ]`
 - [/] Incomplete `- [/]`
@@ -1482,6 +1518,7 @@ Code: https://github.com/KyleKlus/solitude-obsidian-theme/blob/f2e6d6e2a65a32189
 Repo: https://github.com/rivea0/obsidian-prime
 Docs: https://github.com/rivea0/obsidian-prime?tab=readme-ov-file#custom-checkbox-styling
 Code: https://github.com/rivea0/obsidian-prime/blob/main/theme.css#L1774
+Style Settings: yes
 
 Uses the same set as Minimal theme and some from Things theme.
 
@@ -1534,6 +1571,7 @@ Uses the same set as Minimal theme and some from Things theme.
 Repo: https://github.com/antoKeinanen/obsidian-sanctum-reborn
 Docs: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/documentation/Theme_Guide.md#features
 Code: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/src/scss/features/custom-checkboxes.scss
+Style Settings: yes
 
 - [*] Star `- [*]`
 - [a] Reminder `- [a]`
@@ -1578,6 +1616,7 @@ Code: https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/src/scss
 Repo: https://github.com/Seniblue/Underwater
 Docs: https://github.com/Seniblue/Underwater?tab=readme-ov-file#formatting
 Code: https://github.com/Seniblue/Underwater/blob/30ac787f0c178674e2f838471b487bc2649b223f/theme.css#L1341
+Style Settings: yes
 
 Uses 'Tweaked' Minimal.
 
@@ -1610,6 +1649,7 @@ Uses 'Tweaked' Minimal.
 Repo: https://github.com/frank0713/nightingale-obsidian
 Docs: https://github.com/frank0713/nightingale-obsidian?tab=readme-ov-file#illustrations
 Code: https://github.com/frank0713/nightingale-obsidian/blob/a05d55d86b9f5b7b5fe62990b82a29f4f88564f1/theme.css#L549
+Style Settings: no
 
 Uses the some from Things / Minimal themes. Some custom ones.
 
@@ -1655,6 +1695,7 @@ Uses the some from Things / Minimal themes. Some custom ones.
 Repo: https://github.com/contrapasso3/Reshi
 Docs: https://github.com/contrapasso3/Reshi?tab=readme-ov-file#features
 Code: https://github.com/contrapasso3/Reshi/blob/879377560c0661822d3cb217165c998f9c231812/theme.css#L591
+Style Settings: no
 
 "Feature inspiration pulled from AnuPpuccin"
 
@@ -1691,6 +1732,7 @@ Code: https://github.com/contrapasso3/Reshi/blob/879377560c0661822d3cb217165c998
 Repo: https://github.com/Elevict/Shade-Sanctuary
 Docs: None
 Code: https://github.com/Elevict/Shade-Sanctuary/blob/8aa1fcde7b3ab7be6475dc0bb978bf156d617779/theme.css#L614
+Style Settings: no
 
 Mentions using Minimal but has the Git parts from Things.
 
@@ -1733,6 +1775,7 @@ Mentions using Minimal but has the Git parts from Things.
 Repo: https://github.com/isax785/obsidian-sparkling-day
 Docs: https://github.com/isax785/obsidian-sparkling-day?tab=readme-ov-file#sparkling-checkboxes
 Code: https://github.com/isax785/obsidian-sparkling-day/blob/0dbcf1f4bcf660db7b17b6b0c376f9e3511cd71b/theme.css#L223
+Style Settings: no
 
 Only works in Live Preview.
 
@@ -1752,6 +1795,7 @@ Only works in Live Preview.
 Repo: https://github.com/carols12352/Oreo-theme
 Docs: https://github.com/carols12352/Oreo-theme?tab=readme-ov-file#check-box
 Code: https://github.com/carols12352/Oreo-theme/blob/1d4806a2c39ac46f6efbf3805652a52c695e3b04/theme.css#L752
+Style Settings: yes
 
 Uses the same set as Things / Minimal themes.
 
@@ -1794,6 +1838,7 @@ Uses the same set as Things / Minimal themes.
 Repo: https://github.com/WinnerWind/gummy-revived
 Docs: None (Partially based on Sanctum theme)
 Code: https://github.com/WinnerWind/gummy-revived/blob/bce022a254fa86645182f6f906a03a197629cf81/theme.css#L2235
+Style Settings: no
 
 - [x] Done `- [x]`
 - [!] Important `- [!]`
@@ -1818,6 +1863,7 @@ Code: https://github.com/WinnerWind/gummy-revived/blob/bce022a254fa86645182f6f90
 Repo: https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme
 Docs: None (Credits Border theme and the checkboxes match)
 Code: https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme/blob/ae219e77a02bd29d2d66c5060de6dbb742f99b5f/theme.css#L4131
+Style Settings: no
 
 - [I] Idea `- [I]`
 - [*] New / Star `- [*]`
