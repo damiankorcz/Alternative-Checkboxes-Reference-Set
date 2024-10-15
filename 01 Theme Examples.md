@@ -1507,8 +1507,8 @@ Style Settings: yes
 - [C] Prioritize `- [C]`
 - [D] Prioritize `- [D]`
 
-| Light Theme                          | Dark Theme                           |
-| ------------------------------------ | ------------------------------------ |
+| Light Theme                   | Dark Theme                   |
+| ----------------------------- | ---------------------------- |
 | ![[Solitude Light Theme.png]] | ![[Solitude Dark Theme.png]] |
 
 ---
