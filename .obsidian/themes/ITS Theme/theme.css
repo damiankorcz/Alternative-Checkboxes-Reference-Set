@@ -348,10 +348,20 @@ settings:
         id: file-explorer-flat
         type: class-toggle
     -
-        title: Display Folder Arrow On Hover
-        id: folder-arrow
-        type: class-toggle
-        default: false
+        title: Folder Arrows
+        id: ITS-folder-arrows
+        type: class-select
+        default: folder-arrow-hidden
+        options: 
+            -
+                label: Hidden
+                value: folder-arrow-hidden
+            -
+                label: Display
+                value: folder-arrow-display
+            -
+                label: Display On Hover
+                value: folder-arrow
     - 
         title: Disable Bold Folder & Hover 
         description: Remove bold styling from folders & hovering on items
@@ -3652,6 +3662,7 @@ body {
   --folder-weight-hover: var(--folder-weight);
 }
 
+body:not(.folder-arrow-display) .nav-folder .tree-item-icon.collapse-icon,
 .nav-folder-collapse-indicator,
 .tree-item-icon.nav-folder-collapse-indicator {
   display: none;
@@ -3694,10 +3705,6 @@ body {
 
 .nav-file-tag {
   margin-left: auto;
-}
-
-.nav-folder.mod-root > .nav-folder-title {
-  font-family: var(--vault-font);
 }
 
 .nav-folder.mod-root > .nav-folder-children .nav-folder > .nav-folder-title, .nav-folder.mod-root > .nav-folder-children .nav-file > .nav-file-title {
@@ -3975,6 +3982,17 @@ body {
   text-transform: unset;
 }
 
+.is-rtl.is-rtl, .rtl {
+  --header-text-align: end;
+  --h1-text-align: var(--header-text-align);
+  --h2-text-align: var(--header-text-align);
+  --h3-text-align: var(--header-text-align);
+  --h4-text-align: var(--header-text-align);
+  --h5-text-align: var(--header-text-align);
+  --h6-text-align: var(--header-text-align);
+  --header-border-line-align: auto 0 auto auto;
+}
+
 body {
   --h1-size: 34px;
   --h2-size: calc(var(--h1-size) - 4px);
@@ -4003,7 +4021,7 @@ body {
   --h4-color: var(--headers);
   --h5-color: var(--headers);
   --h6-color: var(--headers);
-  --header-text-align: left;
+  --header-text-align: start;
   --h1-text-align: var(--header-text-align);
   --h2-text-align: var(--header-text-align);
   --h3-text-align: var(--header-text-align);
@@ -6895,7 +6913,7 @@ body {
   color: var(--folder-open-text-color);
 }
 
-body.folder-arrow .nav-files-container .nav-folder-title:hover .nav-folder-collapse-indicator, body.folder-arrow .nav-files-container .nav-folder-title:hover .tree-item-icon.nav-folder-collapse-indicator {
+body.folder-arrow .nav-files-container .nav-folder-title:hover .tree-item-icon.collapse-icon, body.folder-arrow .nav-files-container .nav-folder-title:hover .nav-folder-collapse-indicator, body.folder-arrow .nav-files-container .nav-folder-title:hover .tree-item-icon.nav-folder-collapse-indicator {
   display: flex;
   margin-left: -2px;
 }
@@ -6904,6 +6922,10 @@ body.folder-arrow .nav-files-container .tree-item-self.is-active .collapse-icon 
 }
 body.folder-arrow .nav-files-container .nav-folder-children .nav-folder-title:hover .nav-folder-title-content::before {
   margin-left: var(--file-icon-margin);
+}
+
+body.folder-arrow-display .nav-folder .tree-item-icon.collapse-icon {
+  margin-right: 4px;
 }
 
 .file-explorer-boldless {
