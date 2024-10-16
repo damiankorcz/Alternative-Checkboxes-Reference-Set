@@ -1,6 +1,6 @@
-**32/44 Themes use Style Settings**
+**33/45 Themes use Style Settings**
 
-Of those, 8 offer a toggle/s to disable the Alternative Checkboxes feature:
+Of those, 9 offer a toggle/s to disable the Alternative Checkboxes feature:
 - AnuPpuccin
     - `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes / Enable Speech Bubbles` (Not checked by Default)
 - ITS Theme
@@ -19,6 +19,8 @@ Of those, 8 offer a toggle/s to disable the Alternative Checkboxes feature:
     - `Listive Theme Settings -> Content Elements look and feel -> Alternate Checkboxes -> Background Option` (Checked by default)
 - Qlean
     - `Inline Elements -> Cheekbox Style -> Circle Cheekbox` (Checked by default)
+- Fancy-a-Story
+	- `Fancy-a-Story -> Features -> Alternative checkboxes` (Checked by default)
 
 
 24 offer no option to turn off the Alternative Checkboxes feature:

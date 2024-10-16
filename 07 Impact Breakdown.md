@@ -1,14 +1,13 @@
 # ⚠️ This is not final. Very much WIP. Don't rely on this yet
 # Overall Summary
 Assuming the Reference Set would use the same Syntax / Meaning combo as the Minimal theme, which was identified to align with the most popular set of Checkboxes across all themes:
-- 10 of 44 Themes with Alternative Checkbox implementation would be impacted *IF* they decided to align their themes with the Reference Set (detailed breakdowns below).
+- 13 of 45 Themes with Alternative Checkbox implementation would be impacted *IF* they decided to align their themes with the Reference Set (detailed breakdowns below).
 - Of the impacted themes, 1 Theme is Officially Unmaintained and 2 Themes are Light / Dark variants of the same theme.
 - Of the impacted themes, judging by download count as an indicator of theme's use, impact is relatively low with the exception to Spectrum (Officially Unmaintained), ITS Theme and Cyber Glow.
 - The following Syntax and Meaning parings have no conflicts:
 	- `- [!]` Important / Warning / Exclamation
 	- `- [?]` Question
 	- `- [*]` Star / Favourites
-	- `- [l]` Location / Navigation
 	- `- [S]` Savings / Amount / Piggy Bank / Money / Price
 	- `- [k]` Key
 
@@ -17,18 +16,19 @@ Assuming the Reference Set would use the same Syntax / Meaning combo as the Mini
 
 `?` = Next to the meaning indicates that the theme doesn't provide any meaning indication. It's being assumed based on the icon used for that checkbox.
 
+ITS Theme / Snippet (Downloads: 160972 + impact of ITS CSS Snippet)
+- `- [i]` "Idea" instead of "Information"
+- `- [I]` "Information" instead of "Idea / Light Bulb"
+- `- [p]` "Paraphrase" instead of "Pros"
+- `- [c]` "Choice" instead of "Cons"
+- `- [d]` "Doing" instead of "Down / Trend Down"
+- `- [f]` "Clue / Find" instead of "Fire / Flame"
+
 Spectrum (Downloads: 50762) *Officially Unmaintained*
 - `- [-]` "Minus" instead of "Cancelled"
 
-Sparkling Night (Downloads: 9251)
-- `- [-]`"Pause / Stand-by" instead of "Cancelled"
-- `- [/]` "Stop" instead of "In Complete"
-- `- [>]` "Working Progress" instead of "Forwarded"
-
-Sparkling Day (Downloads: 1790) *Same developer as above*
-- `- [-]`"Pause / Stand-by" instead of "Cancelled"
-- `- [/]` "Stop" instead of "In Complete"
-- `- [>]` "Working Progress" instead of "Forwarded"
+Cyber Glow (Downloads: 49299)
+- `- [i]` "Idea" instead of "Information"
 
 Aura (Downloads: 17680)
 - `- [/]` "Settings?" instead of "In Complete"
@@ -44,26 +44,40 @@ Vicious (Downloads: 10588)
 - `- [u]` "URL" instead of "Up"
 - `- [w]` "World" instead of "Win"
 
+Sparkling Night (Downloads: 9251)
+- `- [-]`"Pause / Stand-by" instead of "Cancelled"
+- `- [/]` "Stop" instead of "In Complete"
+- `- [>]` "Working Progress" instead of "Forwarded"
+
+MagicUser (Downloads: 6972)
+- `- [f]` "Phone" instead of "Fire / Flame"
+
+Sanctum Reborn (Downloads: 2628)
+- `- [f]` "Favorite" instead of "Fire / Flame"
+
+Underwater (Downloads: 2522)
+- `- [w]` "Wave" instead of "Win"
+
 Nightingale (Downloads: 2297)
 - `- [>]` "Right" instead of "Forwarded"
 - `- [<]` "Left" instead of "Scheduling"
 - `- [d]` "Date / Calendar" instead of "Down"
+- `- [f]` "Document Folder / Path" instead of "Fire / Flame"
 
-ITS Theme / Snippet (Downloads: 160972 + impact of ITS CSS Snippet)
-- `- [i]` "Idea" instead of "Information"
-- `- [I]` "Information" instead of "Idea / Light Bulb"
-- `- [p]` "Paraphrase" instead of "Pros"
-- `- [c]` "Choice" instead of "Cons"
-
-Cyber Glow (Downloads: 49299)
-- `- [i]` "Idea" instead of "Information"
+Sparkling Day (Downloads: 1790) *Same developer as Sparkling Night*
+- `- [-]`"Pause / Stand-by" instead of "Cancelled"
+- `- [/]` "Stop" instead of "In Complete"
+- `- [>]` "Working Progress" instead of "Forwarded"
 
 Gummy Revived (Downloads: 921)
 - `- [b]` "Brainstorm" instead of "Bookmark"
 - `- [i]` "Idea" instead of "Information"
 
-Underwater (Downloads: 2522)
-- `- [w]` "Wave" instead of "Win"
+Fancy-a-Story (Downloads: 28)
+- `- [-]` "Failure" instead of "Cancelled / Dropped"
+- `- [i]` "Idea" instead of "Information"
+- `- [b]` "Blood" instead of "Bookmark"
+- `- [l]` "Link" instead of "Location / Navigation"
 
 # Per Syntax Breakdown
 
@@ -75,7 +89,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 41     | 3         | -        |
+| 41     | 4         | -        |
 
 **Disagreed:**
 - Spectrum (Officially Unmaintained)
@@ -87,6 +101,9 @@ Underwater (Downloads: 2522)
 - Sparkling Day
 	- Meaning: Pause / Stand-by
 	- Downloads: 1790
+- Fancy-a-Story
+	- Meaning: Failure
+	- Downloads: 28
 
 ---
 
@@ -94,7 +111,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 37     | 4         | 3        |
+| 38     | 4         | 3        |
 
 **Disagreed:**
 - Aura
@@ -116,7 +133,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 38     | 3         | 3        |
+| 39     | 3         | 3        |
 
 **Disagreed:**
 - Sparkling Night
@@ -135,7 +152,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 41     | -         | 3        |
+| 42     | -         | 3        |
 
 ---
 
@@ -143,7 +160,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 39     | -         | 5        |
+| 40     | -         | 5        |
 
 ---
 
@@ -151,7 +168,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 36     | 2         | 6        |
+| 37     | 2         | 6        |
 
 **Disagreed:**
 - Nightingale
@@ -167,7 +184,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 33     | 4         | 7        |
+| 33     | 5         | 7        |
 
 **Disagreed:**
 - ITS Theme
@@ -182,18 +199,24 @@ Underwater (Downloads: 2522)
 - Gummy Revived
 	- Meaning: Idea
 	- Downloads: 921
+- Fancy-a-Story
+	- Meaning: Idea
+	- Downloads: 28
 
 ---
 ## `- [b]` Bookmark / Book
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 34     | 1         | 9        |
+| 34     | 2         | 9        |
 
 **Disagreed:**
 - Gummy Revived
 	- Meaning: Brainstorm
 	- Downloads: 921
+- Fancy-a-Story
+	- Meaning: Blood
+	- Downloads: 28
 
 ---
 
@@ -201,7 +224,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 31     | 2         | 11       |
+| 31     | 2         | 12       |
 
 **Disagreed:**
 - ITS Theme
@@ -213,19 +236,11 @@ Underwater (Downloads: 2522)
 
 ---
 
-## `- [*]` Star / Favourites
-
-| Agreed | Disagreed | Not Used |
-| ------ | --------- | -------- |
-| 30     | -         | 14       |
-
----
-
 ## `- [p]` Pros / Thumbs Up / Like / Positive
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 29     | 2         | 13       |
+| 30     | 2         | 13       |
 
 **Disagreed:**
 - ITS Theme
@@ -241,7 +256,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 29     | 2         | 13       |
+| 30     | 2         | 13       |
 
 **Disagreed:**
 - ITS Theme
@@ -253,11 +268,22 @@ Underwater (Downloads: 2522)
 
 ---
 
+## `- [*]` Star / Favourites
+
+| Agreed | Disagreed | Not Used |
+| ------ | --------- | -------- |
+| 31     | -         | 14       |
+
+---
+
 ## `- [l]` Location / Navigation
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 30     | -         | 14       |
+| 30     | 1         | 14       |
+- Fancy-a-Story
+	- Meaning: Link
+	- Downloads: 28
 
 ---
 
@@ -265,9 +291,12 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 25     | 3         | 16       |
+| 26     | 3         | 16       |
 
 **Disagreed:**
+- ITS Theme
+	- Meaning: Doing
+	- Downloads: 160972 (+ impact of ITS CSS Snippet)
 -  Vicious
 	- Meaning: Diamond
 	- Downloads: 10588
@@ -281,7 +310,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 28     | -         | 16       |
+| 28     | -         | 17       |
 
 ---
 
@@ -289,7 +318,7 @@ Underwater (Downloads: 2522)
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 25     | 1         | 18       |
+| 26     | 1         | 18       |
 
 **Disagreed:**
 -  Vicious
@@ -298,11 +327,32 @@ Underwater (Downloads: 2522)
 
 ---
 
-## `- [k]` Key
+## `- ["]` Quote / Citation
 
 | Agreed | Disagreed | Not Used |
 | ------ | --------- | -------- |
-| 21     | -         | 23       |
+| 24     | -         | 21       |
+
+---
+
+
+## `- [f]` Fire / Flame
+
+| Agreed | Disagreed | Not Used |
+| ------ | --------- | -------- |
+| 20     | 4         | 21       |
+- ITS Theme
+	- Meaning: Clue / Find
+	- Downloads: 160972 (+ impact of ITS CSS Snippet)
+- MagicUser
+	- Meaning: Phone
+	- Downloads: 6972
+- Sanctum Reborn
+	- Meaning: Favorite
+	- Downloads: 2628
+- Nightingale
+	- Meaning: Document Folder / Path
+	- Downloads: 2297
 
 ---
 
@@ -319,3 +369,14 @@ Underwater (Downloads: 2522)
 - Underwater
 	- Meaning: Wave
 	- Downloads: 2522
+
+---
+
+## `- [k]` Key
+
+| Agreed | Disagreed | Not Used |
+| ------ | --------- | -------- |
+| 21     | -         | 23       |
+
+---
+

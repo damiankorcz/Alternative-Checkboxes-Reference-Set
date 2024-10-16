@@ -235,6 +235,13 @@
 > - [Midnight-Fjord](https://github.com/Quinta0/Midnight-Fjord)
 > - [Refined Default](https://github.com/FaisalTamanoJr/Refined-Default)
 > - [Rose Red](https://github.com/tu2-atmanand/RoseRed-ObsidianTheme)
+> - [Lagom](https://github.com/LeslyeCream/Lagom-Obsidian-Theme)
+> - [Simply Colorful](https://github.com/LorenzoPegorari/SimplyColorful)
+> - [Transparent](https://github.com/Oczko24/Obsidian-transparent)
+> - [Hackthebox](https://github.com/golam71/obsidian-hackthebox)
+> - [Flexoki Warm](https://github.com/ofalvai/flexoki-warm)
+> - [AMOLED Serenity](https://github.com/darthdemono/AMOLED-Serenity)
+> - [OneNice](https://github.com/Sunhaloo/OneNice)
 
 ---
 
@@ -1658,7 +1665,7 @@ Uses the some from Things / Minimal themes. Some custom ones.
 - [/] Incompleted, Working `- [/]`
 - [-] Cancel `- [-]`
 - [?] Question `- [?]`
-- [!] Important, Notice, Warning `- [!]`
+- [!] Important / Notice / Warning `- [!]`
 - [n] Up `- [n]`
 - [v] Down `- [v]`
 - [<] Left `- [<]`
@@ -1681,8 +1688,8 @@ Uses the some from Things / Minimal themes. Some custom ones.
 - [m] Finance `- [m]`
 - [p] Pros `- [p]`
 - [c] Cons `- [c]`
-- [k] Key, Password `- [k]`
-- [f] Document Folder, Path `- [f]`
+- [k] Key / Password `- [k]`
+- [f] Document Folder / Path `- [f]`
 
 | Light Theme                          | Dark Theme                           |
 | ------------------------------------ | ------------------------------------ |
@@ -1890,4 +1897,53 @@ Style Settings: no
 | ![[Lorens Light Theme.png]] | ![[Lorens Dark theme.png]] |
 
 ---
+# Fancy-a-Story
+
+Repo: https://github.com/ElsaTam/obsidian-fancy-a-story
+Docs: https://elsatam.github.io/obsidian-fancy-a-story/docs/lists/tasks.html
+Code: https://github.com/ElsaTam/obsidian-fancy-a-story/blob/a329e6bf506592daadf8fb7cdba4c200fd236279/scss/editor/lists/tasks/_tasks-alternative-icons.scss
+Style Settings: yes
+
+- [ ] Incomplete `- [ ]`
+- [x] Complete / Done `- [x]`
+- [/] In Progress `- [/]`
+- [-] Failure `- [-]`
+- [<] Scheduled `- [<]`
+- [>] Forwarded `- [>]`
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [$] Dollar `- [$]`
+- [a] Anchor `- [a]`
+- [b] Blood `- [b]`
+- [B] Bookmark `- [B]`
+- [e] Error `- [e]`
+- [f] Fire `- [f]`
+- [g] Goal `- [g]`
+- [h] Health `- [h]`
+- [H] Heart `- [H]`
+- [i] Idea `- [i]`
+- [l] Link `- [l]`
+- [L] Location `- [L]`
+- [m] Mail `- [m]`
+- [M] Music `- [M]`
+- [n] Note `- [n]`
+- [*] Star `- [*]`
+- [t] Trash `- [t]`
+- [T] Travel `- [T]`
+- [U] User `- [U]`
+- [w] Win `- [w]`
+- [W] Write `- [W]`
+- [z] Zap `- [z]`
+
+**Pro / Con List:**
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+
+**Trend List:**
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+| ![[Fancy-a-Story Light Theme.png]] | ![[Fancy-a-Story Dark Theme.png]] |
 
