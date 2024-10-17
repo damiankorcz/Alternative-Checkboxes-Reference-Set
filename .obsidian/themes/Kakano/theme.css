@@ -468,6 +468,7 @@ body {
   --theme-length-collapseIndicatorSize: 1.5rem;
   --theme-length-controlSetSpacing: 0.5rem;
   --theme-length-statusBarHeight: 2rem;
+  --theme-length-closeButtonWidth: 1.5rem;
   --theme-value-sidebarFontScalingFactor: 0.8;
 }
 /* #endregion */
@@ -2246,6 +2247,7 @@ li[data-task=">"] > p > input:checked:after {
 .is-mobile .workspace > .mod-root {
   padding: 0 var(--theme-spacing-mobileHorizontalSpacing) 0.5rem
     var(--theme-spacing-mobileHorizontalSpacing);
+  background: transparent;
 }
 .is-mobile .workspace-split.mod-root .workspace-tabs {
   padding: 0;
@@ -2305,18 +2307,6 @@ li[data-task=">"] > p > input:checked:after {
     var(--tab-radius) * min(var(--theme-setting-mobileHorizontalPadding), 0.5) /
       0.5
   );
-}
-.is-phone .workspace-split.mod-root .workspace-tabs .workspace-tab-container {
-  box-shadow: none;
-  /* Bottom margin the same as height of .mobile-navbar, to avoid overlap */
-  margin-bottom: calc(
-    max(var(--size-4-2), var(--safe-area-inset-bottom)) + var(--size-4-2) +
-      var(--size-2-2) * 4 + var(--icon-size)
-  );
-}
-.is-phone.mod-toolbar-open .mod-root .workspace-tabs .workspace-tab-container {
-  /* ...except when the toolbar is open. Using this as a proxy for detecting that the on-screen keyboard is present. */
-  margin-bottom: 0;
 }
 .mobile-navbar {
   background-color: transparent;
@@ -2447,8 +2437,38 @@ li[data-task=">"] > p > input:checked:after {
 }
 /* #endregion */
 /* #region   Mobile modals */
+.is-phone {
+  --theme-length-closeButtonWidth: 2rem;
+}
 .is-phone .modal-container {
-  padding: max(calc(2 * var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
+  padding-top: max(
+    calc(
+      var(--safe-area-inset-top) + 2 *
+        var(--theme-spacing-mobileHorizontalSpacing)
+    ),
+    calc(var(--safe-area-inset-top) + 0.5rem)
+  );
+  padding-right: max(
+    calc(
+      var(--safe-area-inset-right) + 2 *
+        var(--theme-spacing-mobileHorizontalSpacing)
+    ),
+    calc(var(--safe-area-inset-right) + 0.5rem)
+  );
+  padding-bottom: max(
+    calc(
+      var(--safe-area-inset-bottom) + 2 *
+        var(--theme-spacing-mobileHorizontalSpacing)
+    ),
+    calc(var(--safe-area-inset-bottom) + 0.5rem)
+  );
+  padding-left: max(
+    calc(
+      var(--safe-area-inset-left) + 2 *
+        var(--theme-spacing-mobileHorizontalSpacing)
+    ),
+    calc(var(--safe-area-inset-left) + 0.5rem)
+  );
 }
 .is-phone .mod-confirmation .modal {
   left: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
@@ -2464,7 +2484,6 @@ li[data-task=">"] > p > input:checked:after {
 .is-phone .modal .modal-title {
   margin-left: 2rem;
   margin-right: 2rem;
-  position: relative;
 }
 .is-phone .modal.mod-sidebar-layout .modal-content > * {
   padding: 1em calc(1em + var(--safe-area-inset-right)) 1em
@@ -2473,6 +2492,9 @@ li[data-task=">"] > p > input:checked:after {
 .is-phone .vertical-tab-header-group {
   margin: 0 auto;
   width: 100%;
+}
+.is-phone .modal.mod-settings .vertical-tab-header {
+  background: transparent;
 }
 .is-phone .modal.mod-settings .vertical-tab-nav-item {
   display: flex;
@@ -2496,6 +2518,9 @@ li[data-task=">"] > p > input:checked:after {
   padding: var(--size-4-5) max(var(--size-4-5), var(--safe-area-inset-right))
     100px max(var(--size-4-5), var(--safe-area-inset-left));
   border-radius: var(--radius-m);
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
 }
 .is-phone {
   & .modal .modal-nav-action {
@@ -2512,12 +2537,23 @@ li[data-task=">"] > p > input:checked:after {
 .is-phone .mod-confirmation .modal .modal-title {
   border-bottom: none;
 }
-.is-phone.theme-setting-mobileCardsUI .modal.mod-lg .modal-close-button,
-.is-phone.theme-setting-mobileCardsUI
-  .modal.mod-sidebar-layout
-  .modal-close-button {
+.is-phone .modal.mod-lg .modal-close-button,
+.is-phone .modal.mod-sidebar-layout .modal-close-button {
   top: 0.5rem;
+  width: var(--theme-length-closeButtonWidth);
+  height: var(--theme-length-closeButtonWidth);
 }
+.is-phone .modal-setting-back-button {
+  top: 0.5rem;
+  padding: 0;
+  left: var(--theme-length-closeButtonWidth);
+
+  .modal-setting-back-button-icon {
+    width: var(--theme-length-closeButtonWidth);
+    height: var(--theme-length-closeButtonWidth);
+  }
+}
+
 .is-phone.theme-setting-mobileCardsUI
   .modal.mod-sidebar-layout
   .modal-setting-back-button {
@@ -2533,6 +2569,13 @@ li[data-task=">"] > p > input:checked:after {
 }
 .is-phone .mod-community-modal .community-modal-controls {
   padding: 1em;
+}
+.is-phone .modal.mod-lg .modal-header,
+.is-phone .modal.mod-sidebar-layout .modal-header {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
 }
 /* #endregion */
 /* #region   Mobile scaling */
@@ -2589,10 +2632,8 @@ body.is-phone.theme-setting-mobileCardsUI:has(.modal-container)
 /* Style similarly to mobile prompt */
 .is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
   width: min(
-    calc(
-      100vw - 2 * var(--theme-spacing-mobileHorizontalSpacing),
-      calc(100vw - 1rem)
-    )
+    calc(100vw - 2 * var(--theme-spacing-mobileHorizontalSpacing)),
+    calc(100vw - 1rem)
   );
   margin-right: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
   margin-left: max(calc(var(--theme-spacing-mobileHorizontalSpacing)), 0.5rem);
@@ -3482,8 +3523,10 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   color: var(--theme-color-control);
   /* Above .modal-title */
   z-index: 2;
-  width: 1.5rem;
-  height: auto;
+  width: var(--theme-length-closeButtonWidth);
+  height: var(--theme-length-closeButtonWidth);
+  display: flex;
+  align-content: center;
 }
 .workspace-tab-header-inner-close-button .svg-icon {
   stroke: var(--theme-color-control);
@@ -3525,12 +3568,15 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   --icon-stroke: var(--icon-s-stroke-width);
   text-align: center;
   justify-content: center;
-  line-height: 20px;
+  line-height: var(--theme-length-closeButtonWidth);
 }
 .document-search-close-button:before,
 .modal-close-button:before {
   /* This uses a text cross instead of an SVG. Hack for visual alignment. */
-  margin-top: -1px;
+  margin-top: -3px;
+  line-height: var(--theme-length-closeButtonWidth);
+  width: var(--theme-length-closeButtonWidth);
+  height: var(--theme-length-closeButtonWidth);
 }
 
 /* Tab close button on left, macOS standard */
@@ -4495,10 +4541,14 @@ input[type="text"].prompt-input::placeholder {
   border-top: 0;
 }
 
-/********** Modals **********/
-
 /* Default modal */
 
+.modal-container {
+  padding-top: var(--safe-area-inset-top);
+  padding-right: var(--safe-area-inset-right);
+  padding-bottom: var(--safe-area-inset-bottom);
+  padding-left: var(--safe-area-inset-left);
+}
 .modal {
   padding: 0;
   overflow: hidden;
