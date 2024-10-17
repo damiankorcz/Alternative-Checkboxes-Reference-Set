@@ -131,6 +131,7 @@ This repository contains Themes, CSS Snippets and Plugins which were added for c
 - [Oreo](https://github.com/carols12352/Oreo-theme) - Distributed under the [GPL-3.0 License](https://github.com/carols12352/Oreo-theme/blob/master/LICENSE)
 - [Gummy Revived](https://github.com/WinnerWind/gummy-revived) - Distributed under the [MIT License](https://github.com/WinnerWind/gummy-revived/blob/main/LICENSE)
 - [Lorens](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme) - Distributed under the [MIT License](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme/blob/master/LICENSE)
+- [Fancy-a-Story](https://github.com/ElsaTam/obsidian-fancy-a-story) - Distributed under the [MIT License](https://github.com/ElsaTam/obsidian-fancy-a-story/blob/main/LICENSE)
 
 </details>
 
