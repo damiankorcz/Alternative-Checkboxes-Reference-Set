@@ -42,7 +42,7 @@ Of those, 9 offer a toggle/s to disable the Alternative Checkboxes feature:
 | Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Open        |                                                                    |
 | Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Open        | Happy to implement once they have some time                        |
 | Feather        | https://github.com/zfmohammed/obsidian-feather/issues/2           | Open        |                                                                    |
-| MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Open        |                                                                    |
+| MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Open        | Will implement soon                                                |
 | Yue            | https://github.com/GixoXYZ/YueObsidian/issues/4                   | Open        |                                                                    |
 | sQdthOne       | https://github.com/KeithLerner/ObsidianMDsQdthOne/issues/22       | Open        | Busy ATM. Can implement before end of year. Possibly help with PR? |
 | Dracula Plus   | https://github.com/saket61195/Dracula_obsidian_theme/issues/13    | Open        |                                                                    |
