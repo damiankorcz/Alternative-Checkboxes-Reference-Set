@@ -2324,6 +2324,10 @@ li[data-task=">"] > p > input:checked:after {
     /* Override weirdness in app theme */
     background: none;
   }
+
+  .nav-header {
+    border: none;
+  }
 }
 .workspace-drawer-inner {
   background-color: var(--background-secondary);
@@ -2480,6 +2484,11 @@ li[data-task=">"] > p > input:checked:after {
     )
   );
 }
+.is-phone .modal,
+.is-phone .modal.mod-lg,
+.is-phone .modal.mod-sidebar-layout {
+  border-radius: var(--modal-radius);
+}
 
 .is-phone .modal .modal-title {
   margin-left: 2rem;
@@ -2492,6 +2501,17 @@ li[data-task=">"] > p > input:checked:after {
 .is-phone .vertical-tab-header-group {
   margin: 0 auto;
   width: 100%;
+
+  .vertical-tab-header-group-items {
+    border-radius: var(--radius-m);
+    overflow: hidden;
+  }
+}
+.is-phone
+  .modal.mod-settings
+  .vertical-tab-header
+  > .vertical-tab-header-group:last-child {
+  padding-bottom: inherit;
 }
 .is-phone .modal.mod-settings .vertical-tab-header {
   background: transparent;
@@ -2506,6 +2526,14 @@ li[data-task=">"] > p > input:checked:after {
   border-radius: 0;
   border: none;
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+@media (hover: hover) {
+  .is-phone .modal.mod-settings .vertical-tab-nav-item:hover {
+    background-color: var(--theme-color-controlBgHover);
+    .vertical-tab-nav-item-chevron {
+      color: var(--theme-color-controlHover);
+    }
+  }
 }
 .is-phone .modal.mod-sidebar-layout .modal-title {
   border-bottom: none;
@@ -2546,7 +2574,7 @@ li[data-task=">"] > p > input:checked:after {
 .is-phone .modal-setting-back-button {
   top: 0.5rem;
   padding: 0;
-  left: var(--theme-length-closeButtonWidth);
+  left: calc(2 * var(--theme-length-closeButtonWidth));
 
   .modal-setting-back-button-icon {
     width: var(--theme-length-closeButtonWidth);
