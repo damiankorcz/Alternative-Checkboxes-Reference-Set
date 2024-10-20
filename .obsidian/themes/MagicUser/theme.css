@@ -124,8 +124,9 @@ body {
   --code-value: #ffa300;
 
   /* Collapse icons */
-  --collapse-icon-color: var(--text-faint);
-  --collapse-icon-color-collapsed: var(--text-normal);
+  --mu-collapse-icon-size: 1.2;
+  --collapse-icon-color: #0072d3;
+  --collapse-icon-color-collapsed: #d300ff;
 
   /* Cursor */
   --cursor: default;
@@ -784,7 +785,7 @@ body {
   --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
 
   --mu-titlebar-button-fg: var(--mu-icon);
-  --mu-menu-separator-color: #a3a3a322;
+  --mu-menu-separator-color: #0072d322;
 
   --mu-scrollbar-width-value: 16;
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value)*1px);
@@ -1086,7 +1087,6 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
 
-  --mu-menu-separator-color: #a3a3a322;
   --mu-modal-background: #000;
   --mu-column-stripped-background: #00000082;
   --mu-scrollbar-thumb-bg: #84848422;
@@ -1270,7 +1270,6 @@ span.obsidian-search-match-highlight {
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
 
-  --mu-menu-separator-color: #a3a3a338;
   --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
@@ -7870,6 +7869,12 @@ body.mu-global-font-mode {
   --h6-font: var(--mu-global-font);
 }
 
+/* Indicator size */
+
+.collapse-indicator.collapse-icon {
+  transform: scale(var(--mu-collapse-icon-size));
+}
+
 /* Style Settings */
 
 /* @settings
@@ -8200,11 +8205,83 @@ settings:
         default-light: '#007fff'
         default-dark: '#007fff'
     -
+        id: mu-menu-separator-color
+        title: Menu and settings separators color
+        type: variable-themed-color
+        description: Color of menu and settings separators
+        format: hex
+        opacity: true
+        default-light: '#0072d322'
+        default-dark: '#0072d322'
+    -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
         type: heading
         level: 3
         collapsed: true
+    -
+        id: mu-rainbow-folders
+        title: Rainbow colored folders
+        description: Special rainbow colored folders (001-,01- to 008-,08-) 
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-hide-folders
+        title: Hide folder icons
+        description:  Toggle folder icons
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-hide-file-icons
+        title: Hide file icons
+        description:  Toggle file icons
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-sidebar-folder
+        title: Folder name color
+        type: variable-themed-color
+        description: Folder name color
+        format: hex
+        opacity: false
+        default-light: '#0048a3'
+        default-dark: '#72a3ff'
+    - 
+        id: mu-folder-color-hue-value
+        title: Folder icons color
+        description: Select folder icons color
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 360
+        step: 1
+    -
+        id: mu-folder-color-saturation
+        title: Folder icons color saturation
+        description: Folder icons color saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.1
+    - 
+        id: mu-file-color-hue-value
+        title: File icons color
+        description: Select file icons color
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 360
+        step: 1
+    -
+        id: mu-file-color-saturation
+        title: File icons color saturation
+        description: File icons color saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.1
     -
         id: mu-icon
         title: Icon color
@@ -8269,12 +8346,6 @@ settings:
         default-light: '#007fff30'
         default-dark: '#007fff40'
     -
-        id: mu-rainbow-folders
-        title: Rainbow colored folders
-        description: Special rainbow colored folders (001-,01- to 008-,08-) 
-        type: class-toggle
-        addCommand: true
-    -
         id: mu-folder-area-border
         title: Sidebar open folder area border
         type: variable-themed-color
@@ -8303,15 +8374,6 @@ settings:
         description: Slanted breadcrumb (view header breadcrumb)
         type: class-toggle
     -
-        id: mu-sidebar-folder
-        title: Folder name color
-        type: variable-themed-color
-        description: Folder name color
-        format: hex
-        opacity: false
-        default-light: '#0048a3'
-        default-dark: '#72a3ff'
-    -
         id: nav-collapse-icon-color
         title: Sidebars collapse icon color
         type: variable-themed-color
@@ -8320,54 +8382,33 @@ settings:
         opacity: false
         default-light: '#0072d3'
         default-dark: '#0072d3'
-    - 
-        id: mu-folder-color-hue-value
-        title: Folder icons color
-        description: Select folder icons color
-        type: variable-number-slider
-        default: 0
-        min: 0
-        max: 360
-        step: 1
     -
-        id: mu-folder-color-saturation
-        title: Folder icons color saturation
-        description: Folder icons color saturation
+        id: mu-collapse-icon-size
+        title: Editor - collapse icon size
+        description: Editor collapse icon size (live preview, source and reading modes)
         type: variable-number-slider
-        default: 1
-        min: 0
-        max: 1
-        step: 0.1
-    - 
-        id: mu-file-color-hue-value
-        title: File icons color
-        description: Select file icons color
-        type: variable-number-slider
-        default: 0
-        min: 0
-        max: 360
-        step: 1
-    -
-        id: mu-file-color-saturation
-        title: File icons color saturation
-        description: File icons color saturation
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 1
+        default: 1.2
+        min: 0.8
+        max: 2
         step: 0.1
     -
-        id: mu-hide-folders
-        title: Hide folder icons
-        description:  Toggle folder icons
-        type: class-toggle
-        addCommand: true
+        id: collapse-icon-color
+        title: Editor - collapse icon color
+        type: variable-themed-color
+        description: Editor collapse icon color (live preview, source and reading modes)
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
     -
-        id: mu-hide-file-icons
-        title: Hide file icons
-        description:  Toggle file icons
-        type: class-toggle
-        addCommand: true
+        id: collapse-icon-color-collapsed
+        title: Editor - collapse icon color collapsed
+        type: variable-themed-color
+        description: Editor collapse icon color collapsed (live preview, source and reading modes)
+        format: hex
+        opacity: false
+        default-light: '#d300ff'
+        default-dark: '#d300ff'
     -
         id: magicuser-theme-indent-guides-color
         title: Indent Guides

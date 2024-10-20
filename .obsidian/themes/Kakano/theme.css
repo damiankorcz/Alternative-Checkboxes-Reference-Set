@@ -329,9 +329,31 @@ settings:
         label: '1.618 - Golden Ratio'
         value: theme-setting-headingScaleFactorPhone1point618
   -
+    id: heading-lineWidthSettings
+    title: Line length
+    type: heading
+    level: 2
+    collapsed: false
+  -
+    id: infoText-lineWidth
+    description: "Maximum line length in characters. 50-75 characters is often recommended for readability in languages with Latin scripts. 15-35 characters may be better for Chinese, Japanese and Korean characters.
+    <br><br>
+    These settings apply when the **Readable line length** setting is enabled in **Editor**"
+    type: info-text
+    markdown: true
+  -
     id: theme-setting-lineWidth
-    title: 'Line width'
-    description: 'Maximum line width in characters. 50-75 characters is often recommended for readability in languages with Latin scripts. 15-35 characters may be better for Chinese, Japanese and Korean characters.'
+    title: 'Line length for Live Preview and Source Mode'
+    description: ''
+    type: variable-number-slider
+    default: 60
+    min: 10
+    max: 120
+    step: 5
+  -
+    id: theme-setting-lineWidthReadingView
+    title: 'Line length for Reading View'
+    description: ''
     type: variable-number-slider
     default: 60
     min: 10
@@ -4853,9 +4875,19 @@ body:not(.is-phone) .modal.mod-sync-history {
   > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
   margin: 0 auto;
   max-width: var(--file-line-width);
+  width: 100%;
+}
+.markdown-preview-view.is-readable-line-width
+  .markdown-preview-sizer
+  > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
+  max-width: calc(1ch * var(--theme-setting-lineWidthReadingView));
+}
+.markdown-source-view.mod-cm6 .cm-sizer .cm-contentContainer,
+.markdown-preview-view
+  .markdown-preview-sizer
+  > div:not(.mod-header):not(.mod-footer):not(.markdown-preview-pusher) {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 100%;
 }
 .markdown-rendered .mod-header {
   margin-bottom: 3rem;
