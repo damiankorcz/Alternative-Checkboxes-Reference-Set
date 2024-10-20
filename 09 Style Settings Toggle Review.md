@@ -29,6 +29,8 @@ Of those, 13 offer a toggle/s to disable the Alternative Checkboxes feature:
 	- `MagicUser Theme -> Checklist -> Disable theme alternative checkboxes` (Not checked by default)
 - Underwater
 	- `Underwater theme -> Options -> Disable checkboxes` (Not checked by default)
+- Border
+	- `Editor -> Checkbox -> Disable Alternative Checkbox` (Not checked by default)
 
 Option to turn off the Alternative Checkboxes feature implemented after request:
 
@@ -38,6 +40,7 @@ Option to turn off the Alternative Checkboxes feature implemented after request:
 | MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Implemented | Check above for Style Settings location |
 | Sanctum Reborn | https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15 | Implemented | Check above for Style Settings location |
 | Underwater     | https://github.com/Seniblue/Underwater/issues/13                  | Implemented | Check above for Style Settings location |
+| Border         | https://github.com/Akifyss/obsidian-border/issues/350             | Implemented | Check above for Style Settings location |
 
 
 Offer no option to turn off the Alternative Checkboxes feature:
@@ -50,12 +53,11 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open   |                                                                    |
 | Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open   |                                                                    |
 | Tokyo Night   | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8   | Open   |                                                                    |
-| Border        | https://github.com/Akifyss/obsidian-border/issues/350            | Open   |                                                                    |
 | PLN           | https://github.com/PipeItToDevNull/PLN/issues/32                 | Open   |                                                                    |
 | Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open   |                                                                    |
 | Vicious       | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20 | Open   |                                                                    |
 | Simple        | https://github.com/diegoeis/simple-obsidian/issues/2             | Open   |                                                                    |
-| Kakano        | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13  | Open   |                                                                    |
+| Kakano        | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13  | Open   | Will implement soon                                                |
 | Neo           | https://github.com/lab-do/obsidian-neo/issues/4                  | Open   | Happy to implement once they have some time                        |
 | Feather       | https://github.com/zfmohammed/obsidian-feather/issues/2          | Open   |                                                                    |
 | Yue           | https://github.com/GixoXYZ/YueObsidian/issues/4                  | Open   |                                                                    |
