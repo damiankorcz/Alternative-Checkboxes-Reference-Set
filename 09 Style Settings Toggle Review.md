@@ -17,7 +17,7 @@ Of those, 16 offer a toggle/s to disable the Alternative Checkboxes feature:
     - `Aura -> Editor -> Checkbox -> Enable Custom Checkbox` (Checked by default)
 - Listive (Partial - No option to disable icons)
     - `Listive Theme Settings -> Content Elements look and feel -> Alternate Checkboxes -> Background Option` (Checked by default)
-- Qlean
+- Qlean (Partial - No option to disable icons)
     - `Inline Elements -> Cheekbox Style -> Circle Cheekbox` (Checked by default)
 - Fancy-a-Story
 	- `Fancy-a-Story -> Features -> Alternative checkboxes` (Checked by default)
@@ -70,3 +70,5 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | Solitude      | https://github.com/KyleKlus/solitude-obsidian-theme/issues/6     | Open   |                                                                    |
 | Prime         | https://github.com/rivea0/obsidian-prime/issues/7                | Open   |                                                                    |
 | Oreo          | https://github.com/carols12352/Oreo-theme/issues/1               | Open   |                                                                    |
+| Listive       | https://github.com/efemkay/obsidian-listive-theme/issues/8       | Open   |                                                                    |
+| QLean         | https://github.com/Fro-Q/Qlean/issues/2                          | Open   |                                                                    |
