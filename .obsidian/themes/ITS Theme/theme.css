@@ -3370,9 +3370,17 @@ button.mod-cta:hover {
   --sidebar-tab-padding: 0 var(--size-4-3);
 }
 
-:is(.mod-right-split, .mod-left-split) .workspace-tab-header-container-inner {
+.workspace-split.workspace-split:is(.mod-right-split.mod-right-split,
+.mod-left-split.mod-left-split) .workspace-tab-header-container-inner {
   padding: 0;
   margin: 0;
+  gap: 0;
+}
+.workspace-split.workspace-split.mod-right-split .workspace-tab-header-container {
+  padding-left: 0;
+}
+.workspace-split.workspace-split.mod-left-split.mod-left-split .workspace-tab-header-container, .workspace-split.workspace-split.mod-right-split:not(.mod-top) .workspace-tab-header-container, .workspace-split.workspace-split.mod-root .workspace-tab-header-container {
+  padding: 0;
 }
 
 .mod-right-split .workspace-tab-header-container-inner {
@@ -3383,15 +3391,13 @@ button.mod-cta:hover {
   padding: var(--sidebar-tab-padding);
 }
 
-.workspace-ribbon.mod-left {
-  margin-top: 0;
-  gap: 0;
-}
-
 .sidebar-toggle-button {
   padding: 0;
   position: relative;
   height: var(--header-height);
+}
+.sidebar-toggle-button.mod-left {
+  right: var(--divider-width);
 }
 .sidebar-toggle-button .clickable-icon {
   padding: 10px;
@@ -3402,34 +3408,37 @@ button.mod-cta:hover {
   --icon-stroke: var(--sidebar-tab-icon-stroke);
 }
 
-:is(.mod-left-split, .mod-right-split) .workspace-tab-header-inner {
-  background-color: transparent;
-  border-bottom: var(--sidebar-tab-border-width) solid var(--sidebar-tab-border-color);
-}
-
-:is(.mod-left-split, .mod-right-split) .is-active .workspace-tab-header-inner {
-  border-color: var(--sidebar-tab-border-color-active);
-}
-
-.side-dock-settings,
-.side-dock-actions {
-  padding-top: calc(var(--ribbon-icon-gap) / 1.5);
-  padding-bottom: calc(var(--ribbon-icon-gap) / 1.5);
-  gap: var(--ribbon-icon-gap);
-}
-
 .workspace-ribbon {
   padding: 0;
   border-right: var(--ribbon-border-width) solid var(--ribbon-border-color);
 }
-
+.workspace-ribbon.mod-left {
+  margin-top: 0;
+  gap: 0;
+}
+.workspace-ribbon .side-dock-settings,
+.workspace-ribbon .side-dock-actions {
+  padding-top: calc(var(--ribbon-icon-gap) / 1.5);
+  padding-bottom: calc(var(--ribbon-icon-gap) / 1.5);
+  gap: var(--ribbon-icon-gap);
+}
 .workspace-ribbon .side-dock-ribbon-action .svg-icon {
   --icon-size: var(--ribbon-icon-size);
   --icon-stroke: var(--ribbon-icon-stroke);
 }
+.workspace-ribbon .side-dock-actions {
+  margin-top: var(--header-height);
+}
 
-:is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active,
-:is(.mod-left-split, .mod-right-split) .workspace-tab-header {
+:is(.mod-left-split, .mod-right-split) .workspace-tab-header-inner {
+  background-color: transparent;
+  border-bottom: var(--sidebar-tab-border-width) solid var(--sidebar-tab-border-color);
+}
+:is(.mod-left-split, .mod-right-split) .is-active .workspace-tab-header-inner {
+  border-color: var(--sidebar-tab-border-color-active);
+}
+
+:is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active, :is(.mod-left-split, .mod-right-split) .workspace-tab-header {
   --background-modifier-hover: var(--sidebar-tab-background-color);
   --tab-text-color: var(--text);
   --tab-text-color-active: var(--text-dl);
@@ -3437,8 +3446,7 @@ button.mod-cta:hover {
   --tab-text-color-focused-active: var(--text-dl);
   --tab-text-color-focused-active-current: var(--sidebar-icon-color-active);
 }
-:is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-:is(.mod-left-split, .mod-right-split) .workspace-tab-header .workspace-tab-header-inner-icon {
+:is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon, :is(.mod-left-split, .mod-right-split) .workspace-tab-header .workspace-tab-header-inner-icon {
   --icon-color-focused: var(--sidebar-icon-color-active);
 }
 
@@ -3449,10 +3457,6 @@ button.mod-cta:hover {
 .side-dock-ribbon .clickable-icon:hover,
 .workspace-tab-header:hover .workspace-tab-header-inner .workspace-tab-header-inner-icon {
   color: var(--sidebar-tab-color-hover);
-}
-
-.side-dock-actions {
-  margin-top: var(--header-height);
 }
 
 .workspace-tab-header-inner .workspace-tab-header-inner-icon {
@@ -4916,7 +4920,8 @@ body {
 body {
   --blockquote-border-thickness: 7px;
   --blockquote-border-color: var(--bg);
-  --blockquote-style: normal;
+  --blockquote-font-style: var(--font-default);
+  --blockquote-color: var(--text-normal);
   --blockquote-padding: var(--size-4-3) var(--size-4-6);
   --blockquote-padding-lp: 7px 0;
   --blockquote-background-color: var(--embed-bg);
@@ -5212,6 +5217,9 @@ body {
   margin-top: 0;
 }
 
+.mermaid .nodeLabel {
+  font-size: var(--font-ui-medium);
+}
 .mermaid rect:not([style]) {
   fill: var(--embed-bg) !important;
   stroke: var(--inactive) !important;
@@ -7347,25 +7355,38 @@ img[alt*=portrait],
   object-fit: cover;
 }
 
-img[alt~=portrait],
-.image-embed[alt~=portrait] img,
 .image-embed[src~="#portrait"] {
   height: var(--small-med);
   width: 40%;
 }
 
-img[alt~="portrait+small"],
-.image-embed[alt~="portrait+small"] img,
 .image-embed[src~="#portrait+small"] {
   height: var(--small);
   width: 25%;
 }
 
-img[alt~="portrait+tall"],
-.image-embed[alt~="portrait+tall"] img,
 .image-embed[src~="#portrait+tall"] {
   height: 500px;
   width: 50%;
+}
+
+img:is([alt~=portrait],
+[alt*="portrait+"]),
+.image-embed:is([alt~=portrait],
+[alt*="portrait+"]) img {
+  --img-adj-portrait-size: var(--med-small);
+  height: var(--img-adj-portrait-size);
+  width: calc(var(--img-adj-portrait-size) / 1.7);
+}
+
+img[alt~="portrait+small"],
+.image-embed[alt~="portrait+small"] img {
+  --img-adj-portrait-size: var(--small-med);
+}
+
+img[alt~="portrait+tall"],
+.image-embed[alt~="portrait+tall"] img {
+  --img-adj-portrait-size: var(--medium);
 }
 
 /*Profile*/
@@ -8891,7 +8912,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-blue],
 [data-callout-metadata~=c-blue],
 [data-callout-metadata~=background-color-blue],
-[data-callout-metadata~=bg-c-blue]) .callout-title {
+[data-callout-metadata~=bg-c-blue]) > .callout-title {
   --callout-color: var(--callout-blue);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-blue],
@@ -8907,7 +8928,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-green],
 [data-callout-metadata~=c-green],
 [data-callout-metadata~=background-color-green],
-[data-callout-metadata~=bg-c-green]) .callout-title {
+[data-callout-metadata~=bg-c-green]) > .callout-title {
   --callout-color: var(--callout-green);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-green],
@@ -8923,7 +8944,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-orange],
 [data-callout-metadata~=c-orange],
 [data-callout-metadata~=background-color-orange],
-[data-callout-metadata~=bg-c-orange]) .callout-title {
+[data-callout-metadata~=bg-c-orange]) > .callout-title {
   --callout-color: var(--callout-orange);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-orange],
@@ -8939,7 +8960,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-red],
 [data-callout-metadata~=c-red],
 [data-callout-metadata~=background-color-red],
-[data-callout-metadata~=bg-c-red]) .callout-title {
+[data-callout-metadata~=bg-c-red]) > .callout-title {
   --callout-color: var(--callout-red);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-red],
@@ -8955,7 +8976,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-purple],
 [data-callout-metadata~=c-purple],
 [data-callout-metadata~=background-color-purple],
-[data-callout-metadata~=bg-c-purple]) .callout-title {
+[data-callout-metadata~=bg-c-purple]) > .callout-title {
   --callout-color: var(--callout-purple);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-purple],
@@ -8971,7 +8992,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-gray],
 [data-callout-metadata~=c-gray],
 [data-callout-metadata~=background-color-gray],
-[data-callout-metadata~=bg-c-gray]) .callout-title {
+[data-callout-metadata~=bg-c-gray]) > .callout-title {
   --callout-color: var(--callout-gray);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-gray],
@@ -8987,7 +9008,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-yellow],
 [data-callout-metadata~=c-yellow],
 [data-callout-metadata~=background-color-yellow],
-[data-callout-metadata~=bg-c-yellow]) .callout-title {
+[data-callout-metadata~=bg-c-yellow]) > .callout-title {
   --callout-color: var(--callout-yellow);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-yellow],
@@ -9003,7 +9024,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-pink],
 [data-callout-metadata~=c-pink],
 [data-callout-metadata~=background-color-pink],
-[data-callout-metadata~=bg-c-pink]) .callout-title {
+[data-callout-metadata~=bg-c-pink]) > .callout-title {
   --callout-color: var(--callout-pink);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-pink],
@@ -9019,7 +9040,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-brown],
 [data-callout-metadata~=c-brown],
 [data-callout-metadata~=background-color-brown],
-[data-callout-metadata~=bg-c-brown]) .callout-title {
+[data-callout-metadata~=bg-c-brown]) > .callout-title {
   --callout-color: var(--callout-brown);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-brown],
@@ -9035,7 +9056,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-black],
 [data-callout-metadata~=c-black],
 [data-callout-metadata~=background-color-black],
-[data-callout-metadata~=bg-c-black]) .callout-title {
+[data-callout-metadata~=bg-c-black]) > .callout-title {
   --callout-color: var(--callout-black);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-black],
@@ -9051,7 +9072,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-white],
 [data-callout-metadata~=c-white],
 [data-callout-metadata~=background-color-white],
-[data-callout-metadata~=bg-c-white]) .callout-title {
+[data-callout-metadata~=bg-c-white]) > .callout-title {
   --callout-color: var(--callout-white);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-white],
@@ -9067,7 +9088,7 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout.callout.callout:is([data-callout-metadata~=color-plain],
 [data-callout-metadata~=c-plain],
 [data-callout-metadata~=background-color-plain],
-[data-callout-metadata~=bg-c-plain]) .callout-title {
+[data-callout-metadata~=bg-c-plain]) > .callout-title {
   --callout-color: var(--callout-plain);
 }
 .callout.callout.callout:is([data-callout-metadata~=background-plain],
@@ -9711,18 +9732,21 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
 .callout[data-callout~=cards][data-callout-metadata~=list] > .callout-content {
   display: block;
 }
+.callout[data-callout~=cards][data-callout-metadata~=list] ul li::before, .callout[data-callout~=cards][data-callout-metadata~=list] .list-collapse-indicator {
+  display: none;
+}
 .callout[data-callout~=cards][data-callout-metadata~=list] ul {
   display: grid;
   grid-template-columns: repeat(var(--callout-cards-columns), 1fr);
-  grid-gap: 7px;
+  grid-gap: 5px;
   border-radius: 0;
   padding-inline-start: 0px;
-  margin-right: 5px;
+  margin-right: 3px;
   margin-bottom: 5px;
 }
-.callout[data-callout~=cards][data-callout-metadata~=list] li {
-  padding: 10px;
-  box-shadow: 0 0 0 3px var(--outline) inset, var(--shadow-s, var(--input-shadow));
+.callout[data-callout~=cards][data-callout-metadata~=list] ul > li {
+  padding: 5px 10px;
+  box-shadow: 0 0 0 2px var(--outline) inset, var(--shadow-s, var(--input-shadow));
 }
 .callout[data-callout~=cards][data-callout-metadata~=notion] {
   --callout-cards-notion-padding: 10px;
@@ -10030,11 +10054,15 @@ body:not(.callout-no-metadata) .callout.callout[data-callout~=Metadata i]:is([da
   --callout-color: var(--text-normal);
   --callout-icon: layout-dashboard;
   --columns: 2;
+  --callout-column-gap: 10px;
   background: transparent;
   box-shadow: none;
   border: 0;
   width: auto;
   padding: 0;
+}
+.callout[data-callout*=column] > .callout-content > .callout {
+  margin: 0;
 }
 .callout[data-callout*=column] > .callout-content .callout-content {
   border: 0;
@@ -10042,15 +10070,11 @@ body:not(.callout-no-metadata) .callout.callout[data-callout~=Metadata i]:is([da
 .callout[data-callout*=column] > .callout-content {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
-  gap: 10px;
+  gap: var(--callout-column-gap);
   background: transparent;
   box-shadow: none;
   border: 0;
   padding: 0;
-}
-.callout[data-callout*=column]:is([data-callout-metadata~=slim-margins],
-[data-callout-metadata~=s-mg]) > .callout-content {
-  gap: 2px;
 }
 .callout[data-callout*=column][data-callout-metadata~="3"] .callout-content {
   --columns: 3;
@@ -10073,8 +10097,12 @@ body:not(.callout-no-metadata) .callout.callout[data-callout~=Metadata i]:is([da
 .callout[data-callout*=column][data-callout-metadata~="9"] .callout-content {
   --columns: 9;
 }
+.callout[data-callout*=column]:is([data-callout-metadata~=slim-margins],
+[data-callout-metadata~=s-mg]) > .callout-content {
+  --callout-column-gap: 2px;
+}
 .callout[data-callout*=column][data-callout-metadata~=flex] > .callout-content {
-  gap: 5px;
+  gap: var(--callout-column-gap);
   grid-template-columns: none;
   display: flex;
   flex-direction: row;
@@ -11026,10 +11054,10 @@ iframe {
   margin-right: auto;
 }
 
-.tables-wide .cm-table-widget.markdown-rendered .table-wrapper, .tables-wide table,
-.t-w .cm-table-widget.markdown-rendered .table-wrapper,
-.t-w table {
-  width: 100%;
+.tables-wide table, .tables-wide .cm-table-widget.markdown-rendered .table-wrapper,
+.t-w table,
+.t-w .cm-table-widget.markdown-rendered .table-wrapper {
+  min-width: 100%;
 }
 
 .tables-no-alt-background.tables-no-alt-background,
