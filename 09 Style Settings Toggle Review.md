@@ -35,6 +35,8 @@ Of those, 16 offer a toggle/s to disable the Alternative Checkboxes feature:
 	- `Kakano Theme -> Compatibility -> Enable built-in alternative checkboxes` (Checked by default)
 - Tokyo Night
 	- `Editor -> Checkboxes -> Enable Alternative Checkboxes` (Checked by default)
+- PLN
+	- `PLN by PipeItToDevNull -> Checkbox modifications -> Custom Checkboxes` (Checked by default)
 
 Option to turn off the Alternative Checkboxes feature implemented after request:
 
@@ -47,6 +49,7 @@ Option to turn off the Alternative Checkboxes feature implemented after request:
 | Border         | https://github.com/Akifyss/obsidian-border/issues/350             | Implemented | Check above for Style Settings location |
 | Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Implemented | Check above for Style Settings location |
 | Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location |
+| PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location |
 
 
 Offer no option to turn off the Alternative Checkboxes feature:
@@ -58,9 +61,8 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | Blue Topaz    | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625     | Open   |                                                                    |
 | Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open   |                                                                    |
 | Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open   |                                                                    |
-| PLN           | https://github.com/PipeItToDevNull/PLN/issues/32                 | Open   |                                                                    |
 | Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open   |                                                                    |
-| Vicious       | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20 | Open   |                                                                    |
+| Vicious       | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20 | Open   | Requested a PR to implement the feature                            |
 | Simple        | https://github.com/diegoeis/simple-obsidian/issues/2             | Open   |                                                                    |
 | Neo           | https://github.com/lab-do/obsidian-neo/issues/4                  | Open   | Happy to implement once they have some time                        |
 | Feather       | https://github.com/zfmohammed/obsidian-feather/issues/2          | Open   |                                                                    |
