@@ -59,7 +59,7 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | Minimal       | https://github.com/kepano/obsidian-minimal/issues/792            | Open   | Will look into it                                                  |
 | Things        | https://github.com/colineckert/obsidian-things/issues/169        | Open   |                                                                    |
 | Blue Topaz    | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625     | Open   |                                                                    |
-| Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open   |                                                                    |
+| Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open   |  The theme developer is inactive, so it is unlikely this will be implemented. We recommend using [Sanctum Reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15).                                                                   |
 | Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open   |                                                                    |
 | Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open   |                                                                    |
 | Vicious       | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20 | Open   | Requested a PR to implement the feature                            |
