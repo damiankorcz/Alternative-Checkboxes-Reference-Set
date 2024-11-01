@@ -74,3 +74,4 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | Oreo          | https://github.com/carols12352/Oreo-theme/issues/1               | Open   |                                                                    |
 | Listive       | https://github.com/efemkay/obsidian-listive-theme/issues/8       | Open   |                                                                    |
 | QLean         | https://github.com/Fro-Q/Qlean/issues/2                          | Open   |                                                                    |
+| Borealis         | https://github.com/juanchiparra/obsidian-borealis/issues/2                         | Open   |                                                                    |
