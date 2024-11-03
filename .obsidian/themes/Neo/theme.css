@@ -83,6 +83,12 @@ settings:
         description: Change background color of current active line
         type: class-toggle
         default: false
+    -
+        id: disable-alternative-checkboxes
+        title: Disable Alternative Checkboxes
+        description: Enable this if you are using your own implementation via a CSS Snippet.
+        type: class-toggle
+        default: false
 
 */
 
@@ -996,7 +1002,18 @@ body {
   color: var(--text-faint);
 }
 
-/* Checklist icons */
+/* Checkboxes icons */
+body {
+  /* Done checkbox */
+  --checklist-done-decoration: none;
+  --checklist-done-color: var(--text-faint);
+
+  /* Progress checkbox */
+  --checkbox-progress-width: 32px;
+}
+
+/* Alternative checkboxes */
+body:not(.disable-alternative-checkboxes) {
 input[data-task='"']:checked,
 li[data-task='"'] > input:checked,
 li[data-task='"'] > p > input:checked,
@@ -1064,25 +1081,20 @@ input[data-task="w"]:checked,
 li[data-task="w"] > input:checked,
 li[data-task="w"] > p > input:checked {
   --checkbox-marker-color: transparent;
-  --checkbox-image: none;
   --checkbox-position: 50% 50%;
+    --checklist-done-color: var(--text-normal);
 
+    color: transparent;
   border: none;
   border-radius: 0;
   background-image: none;
   background-color: currentColor;
   mask-size: var(--checkbox-icon);
   -webkit-mask-size: var(--checkbox-icon);
-  mask-position: var(--checkbox-image);
-  -webkit-mask-position: var(--checkbox-image);
+    mask-position: 50% 50%;
+    -webkit-mask-position: 50% 50%;
   mask-image: var(--checkbox-image);
   -webkit-mask-image: var(--checkbox-image);
-}
-
-/* Completed checkboxes */
-body {
-  --checklist-done-decoration: none;
-  --checklist-done-color: var(--text-faint);
 }
 
 /* [?] Question */
@@ -1113,8 +1125,22 @@ li[data-task="<"] > p > input:checked {
 input[data-task="/"]:checked,
 li[data-task="/"] > input:checked,
 li[data-task="/"] > p > input:checked {
-  color: var(--checkbox-color);
-  --checkbox-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 16 16"><path fill="currentColor" d="M8 15V1h6a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8zm6 1a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12z"/></svg>');
+    overflow: hidden;
+    border-radius: 3px;
+  }
+
+  input[data-task="/"]:checked:after,
+  li[data-task="/"] > input:checked:after,
+  li[data-task="/"] > p > input:checked:after {
+    top: 0;
+    left: 0;
+    content: " ";
+    display: block;
+    position: absolute;
+    background-color: var(--checkbox-color);
+    width: 50%;
+    height: 100%;
+    -webkit-mask-image: none;
 }
 
 /* [!] Important */
@@ -1144,14 +1170,9 @@ li[data-task="-"] > p > input:checked {
   --checkbox-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M1 10a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1Z" clip-rule="evenodd"/></svg>');
 }
 
-body:not(.tasks)
-  .markdown-source-view.mod-cm6
-  .HyperMD-task-line[data-task]:is([data-task="-"]),
-body:not(.tasks)
-  .markdown-preview-view
-  ul
-  li[data-task="-"].task-list-item.is-checked,
-body:not(.tasks) li[data-task="-"].task-list-item.is-checked {
+  .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
+  .markdown-preview-view ul > li[data-task="-"].task-list-item.is-checked,
+  li[data-task="-"].task-list-item.is-checked {
   color: var(--text-faint);
   text-decoration: line-through solid var(--text-faint) 1px;
 }
@@ -1270,10 +1291,6 @@ li[data-task="n"] > p > input:checked {
 }
 
 /* [0-4] Progress */
-body {
-  --checkbox-progress-width: 40px;
-}
-
 input[data-task="0"]:checked,
 li[data-task="0"] > input:checked,
 li[data-task="0"] > p > input:checked,
@@ -1312,7 +1329,9 @@ li[data-task="4"] > p > input:checked {
   content: " ";
   display: block;
   background: var(--interactive-accent);
-    width: calc(var(--checkbox-progress-width) * var(--checkbox-progress-frac));
+      width: calc(
+        var(--checkbox-progress-width) * var(--checkbox-progress-frac)
+      );
   height: 100%;
     top: 0;
   border-radius: 10px;
