@@ -370,8 +370,8 @@ Style Settings: yes
 - [W] World `- [W]`
 - [U] Universe `- [U]`
 
-| Light Theme                          | Dark Theme                           |
-| ------------------------------------ | ------------------------------------ |
+| Light Theme                     | Dark Theme                     |
+| ------------------------------- | ------------------------------ |
 | ![[Blue Topaz Light Theme.png]] | ![[Blue Topaz Dark Theme.png]] |
 
 ---
