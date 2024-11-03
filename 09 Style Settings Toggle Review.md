@@ -37,6 +37,8 @@ Of those, 16 offer a toggle/s to disable the Alternative Checkboxes feature:
 	- `Editor -> Checkboxes -> Enable Alternative Checkboxes` (Checked by default)
 - PLN
 	- `PLN by PipeItToDevNull -> Checkbox modifications -> Custom Checkboxes` (Checked by default)
+- Neo
+	- `Neo Theme -> Features -> Disable Alternative Checkboxes` (Not checked by default)
 
 Option to turn off the Alternative Checkboxes feature implemented after request:
 
@@ -50,24 +52,24 @@ Option to turn off the Alternative Checkboxes feature implemented after request:
 | Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Implemented | Check above for Style Settings location |
 | Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location |
 | PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location |
+| Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Implemented | Check above for Style Settings location |
 
 
 Offer no option to turn off the Alternative Checkboxes feature:
 
 | Theme         | Feature Request                                                  | Status | Notes                                                                                                                                                                                |
 | ------------- | ---------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Minimal       | https://github.com/kepano/obsidian-minimal/issues/792            | Open   | Will look into it                                                                                                                                                                    |
+| Minimal       | https://github.com/kepano/obsidian-minimal/issues/792            | Open   | [Submitted a PR](https://github.com/kepano/obsidian-minimal/pull/801)                                                                                                                |
 | Things        | https://github.com/colineckert/obsidian-things/issues/169        | Open   |                                                                                                                                                                                      |
-| Blue Topaz    | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625     | Open   |                                                                                                                                                                                      |
+| Blue Topaz    | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625     | Open   | [Submitted a PR](https://github.com/PKM-er/Blue-Topaz_Obsidian-css/pull/632)                                                                                                         |
 | Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open   | The theme developer is inactive, so it is unlikely this will be implemented. We recommend using [Sanctum Reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15). |
-| Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open   |                                                                                                                                                                                      |
-| Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open   |                                                                                                                                                                                      |
+| Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open   | [Submitted a PR](https://github.com/primary-theme/obsidian/pull/259)                                                                                                                 |
+| Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open   | [Submitted a PR](https://github.com/diegoeis/obsidianotion/pull/16)                                                                                                                  |
 | Vicious       | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20 | Open   | Requested a PR to implement the feature. [Submitted a PR](https://github.com/zaheralmajed/vicious-theme-obsidian/pull/21).                                                           |
-| Simple        | https://github.com/diegoeis/simple-obsidian/issues/2             | Open   |                                                                                                                                                                                      |
-| Neo           | https://github.com/lab-do/obsidian-neo/issues/4                  | Open   | Happy to implement once they have some time                                                                                                                                          |
+| Simple        | https://github.com/diegoeis/simple-obsidian/issues/2             | Open   | [Submitted a PR](https://github.com/diegoeis/simple-obsidian/pull/3)                                                                                                                 |
 | Feather       | https://github.com/zfmohammed/obsidian-feather/issues/2          | Open   |                                                                                                                                                                                      |
 | Yue           | https://github.com/GixoXYZ/YueObsidian/issues/4                  | Open   | [Submitted a PR](https://github.com/GixoXYZ/YueObsidian/pull/5)                                                                                                                      |
-| sQdthOne      | https://github.com/KeithLerner/ObsidianMDsQdthOne/issues/22      | Open   | Busy ATM. Can implement before end of year. Possibly help with PR?                                                                                                                   |
+| sQdthOne      | https://github.com/KeithLerner/ObsidianMDsQdthOne/issues/22      | Open   | [Submitted a PR](https://github.com/KeithLerner/ObsidianMDsQdthOne/pull/23)                                                                                                          |
 | Dracula Plus  | https://github.com/saket61195/Dracula_obsidian_theme/issues/13   | Open   | [Submitted a PR](https://github.com/saket61195/Dracula_obsidian_theme/pull/14)                                                                                                       |
 | Solitude      | https://github.com/KyleKlus/solitude-obsidian-theme/issues/6     | Open   |                                                                                                                                                                                      |
 | Prime         | https://github.com/rivea0/obsidian-prime/issues/7                | Open   | [Submitted a PR](https://github.com/rivea0/obsidian-prime/pull/8)                                                                                                                    |
