@@ -133,6 +133,7 @@ body {
   --checkbox-border-color: var(--color-base-70);
   --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
   --checkbox-unchecked-color-hover: hsla(var(--color-h), var(--color-s), calc(var(--color-l)), 0.5);
+  --checkbox-color: var(--color-done);
   --checklist-decoration-color: var(--text-normal);
   --checklist-decoration-line: none;
   --checklist-done-decoration-color: var(--text-muted);
@@ -622,19 +623,20 @@ body.header-level-indicator .markdown-source-view.is-live-preview .cm-line.Hyper
   color: var(--text-strong);
 }
 
-.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]),
-.markdown-rendered .task-list-item:is([data-task="-"]) [class^=cm-list],
-.style-settings-container .task-list-item:is([data-task="-"]) [class^=cm-list],
-.markdown-rendered .task-list-item:is([data-task="-"]),
-.style-settings-container .task-list-item:is([data-task="-"]) {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list],
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]),
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:is([data-task="-"]) [class^=cm-list],
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:is([data-task="-"]) [class^=cm-list],
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:is([data-task="-"]),
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:is([data-task="-"]) {
   color: var(--checklist-delete-decoration-color);
 }
 
-.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
-.markdown-rendered .task-list-item > p .task-list-item-checkbox,
-.style-settings-container .task-list-item > p .task-list-item-checkbox,
-.markdown-rendered .task-list-item > .task-list-item-checkbox,
-.style-settings-container .task-list-item > .task-list-item-checkbox {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item > .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item > .task-list-item-checkbox {
   transition: all 0.3s ease-in-out;
 }
 body.circle-checkbox .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
@@ -644,19 +646,19 @@ body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkb
 body.circle-checkbox .style-settings-container .task-list-item > .task-list-item-checkbox {
   border-radius: 50%;
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked,
-.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked,
-.style-settings-container .task-list-item > p .task-list-item-checkbox:checked,
-.markdown-rendered .task-list-item > .task-list-item-checkbox:checked,
-.style-settings-container .task-list-item > .task-list-item-checkbox:checked {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item > p .task-list-item-checkbox:checked,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item > .task-list-item-checkbox:checked,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item > .task-list-item-checkbox:checked {
   border-color: var(--color-done);
   background-color: var(--color-done);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:hover,
-.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:hover,
-.style-settings-container .task-list-item > p .task-list-item-checkbox:checked:hover,
-.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover,
-.style-settings-container .task-list-item > .task-list-item-checkbox:checked:hover {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:hover,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:hover,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item > p .task-list-item-checkbox:checked:hover,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item > .task-list-item-checkbox:checked:hover {
   border-color: var(--checkbox-border-color);
   background-color: var(--checkbox-color-hover);
 }
@@ -669,38 +671,83 @@ body.circle-checkbox .style-settings-container .task-list-item > .task-list-item
   mask-position: center center;
 }
 
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .style-settings-container .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover, .style-settings-container .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
   border-color: var(--color-done);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox {
   border-color: var(--color-error);
   background-color: var(--color-error);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox {
   border-color: var(--color-warning);
   background-color: var(--color-warning);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox {
   border-color: var(--color-ques);
   background-color: var(--color-ques);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="6.5 2 11 19" fill="none"><path d="M9.09009 9.00003 C9.32519 8.33169 9.78924 7.76813 10.4 7.40916 C11.0108 7.05019 12.079 6.94542 12.7773 7.06519C13.9093 7.25935 14.9767 8.25497 14.9748 9.49073C14.9748 11.9908 12 11.2974 12 14 M12 17 H 12.01" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > p .task-list-item-checkbox,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > .task-list-item-checkbox,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
   border-color: var(--color-info);
   background-color: var(--color-info);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
+body.enable-alternative-checkboxes .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > p .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .markdown-rendered .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > .task-list-item-checkbox:after,
+body.enable-alternative-checkboxes .style-settings-container .task-list-item:is([data-task=i],
+body.enable-alternative-checkboxes [data-task=I]) > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
@@ -3612,6 +3659,12 @@ settings:
     type: heading
     level: 1
     collapsed: true
+  -
+    id: enable-alternative-checkboxes
+    title: Enable Alternative Checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: true
+    type: class-toggle
   -
     id: circle-checkbox
     title: Circle Checkbox
