@@ -17,7 +17,7 @@ Of those, 16 offer a toggle/s to disable the Alternative Checkboxes feature:
     - `Aura -> Editor -> Checkbox -> Enable Custom Checkbox` (Checked by default)
 - Listive (Partial - No option to disable icons)
     - `Listive Theme Settings -> Content Elements look and feel -> Alternate Checkboxes -> Background Option` (Checked by default)
-- Qlean (Partial - No option to disable icons)
+- Qlean
     - `Inline Elements -> Checkbox Style -> Enable Alternative Checkboxes` (Checked by default)
 - Fancy-a-Story
 	- `Fancy-a-Story -> Features -> Alternative checkboxes` (Checked by default)
