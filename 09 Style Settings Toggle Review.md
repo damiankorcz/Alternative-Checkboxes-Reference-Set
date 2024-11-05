@@ -39,6 +39,8 @@ Of those, 16 offer a toggle/s to disable the Alternative Checkboxes feature:
 	- `PLN by PipeItToDevNull -> Checkbox modifications -> Custom Checkboxes` (Checked by default)
 - Neo
 	- `Neo Theme -> Features -> Disable Alternative Checkboxes` (Not checked by default)
+- Borealis
+	- `Borealis -> Checkboxes -> Enable alternative checkboxes` (Checked by default)
 
 Option to turn off the Alternative Checkboxes feature implemented after request:
 
@@ -53,6 +55,7 @@ Option to turn off the Alternative Checkboxes feature implemented after request:
 | Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location |
 | PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location |
 | Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Implemented | Check above for Style Settings location |
+| Borealis       | https://github.com/juanchiparra/obsidian-borealis/issues/2        | Implemented | Check above for Style Settings location                                                            |
 
 
 Offer no option to turn off the Alternative Checkboxes feature:

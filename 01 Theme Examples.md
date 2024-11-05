@@ -1947,3 +1947,19 @@ Style Settings: yes
 | --------------------------------- | ---------------------------------- |
 | ![[Fancy-a-Story Light Theme.png]] | ![[Fancy-a-Story Dark Theme.png]] |
 
+---
+# Borealis
+
+Repo: https://github.com/juanchiparra/obsidian-borealis
+Docs: https://github.com/juanchiparra/obsidian-borealis?tab=readme-ov-file#checkbox
+Code: https://github.com/juanchiparra/obsidian-borealis/blob/main/theme.css#L194
+Style Settings: yes
+
+- [ ] Nam mus fringilla risus consequat
+- [x] Lorem ipsum dolor sit amet
+- [c] Cancelled
+- [p] Postponed
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+| ![[Borealis Light Theme.png]] | ![[Borealis Dark Theme.png]] |
