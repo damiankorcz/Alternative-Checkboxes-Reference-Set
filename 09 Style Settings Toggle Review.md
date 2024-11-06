@@ -41,22 +41,25 @@ Of those, 16 offer a toggle/s to disable the Alternative Checkboxes feature:
 	- `Neo Theme -> Features -> Disable Alternative Checkboxes` (Not checked by default)
 - Borealis
 	- `Borealis -> Checkboxes -> Enable alternative checkboxes` (Checked by default)
+- Blue Topaz
+	- `Blue Topaz Theme -> 2. Detail settings -> 2.3 Element styles -> 2.3.11 Checkbox -> Enable Alternative Checkboxes` (Checked by default)
 
 Option to turn off the Alternative Checkboxes feature implemented after request:
 
-| Theme          | Feature Request                                                   | Status      | Notes                                                                                              |
-| -------------- | ----------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------- |
-| Maple          | https://github.com/subframe7536/obsidian-theme-maple/issues/98    | Implemented | Check above for Style Settings location                                                            |
-| MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Implemented | Check above for Style Settings location                                                            |
-| Sanctum Reborn | https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15 | Implemented | Check above for Style Settings location                                                            |
-| Underwater     | https://github.com/Seniblue/Underwater/issues/13                  | Implemented | Check above for Style Settings location                                                            |
-| Border         | https://github.com/Akifyss/obsidian-border/issues/350             | Implemented | Check above for Style Settings location                                                            |
-| Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Implemented | Check above for Style Settings location                                                            |
-| Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location                                                            |
-| PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location                                                            |
-| Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Implemented | Check above for Style Settings location                                                            |
-| QLean          | https://github.com/Fro-Q/Qlean/issues/2                           | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/Fro-Q/Qlean/pull/3). |
-| Borealis       | https://github.com/juanchiparra/obsidian-borealis/issues/2        | Implemented | Check above for Style Settings location                                                            |
+| Theme          | Feature Request                                                   | Status      | Notes                                                                                                                  |
+| -------------- | ----------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Maple          | https://github.com/subframe7536/obsidian-theme-maple/issues/98    | Implemented | Check above for Style Settings location                                                                                |
+| MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Implemented | Check above for Style Settings location                                                                                |
+| Sanctum Reborn | https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15 | Implemented | Check above for Style Settings location                                                                                |
+| Underwater     | https://github.com/Seniblue/Underwater/issues/13                  | Implemented | Check above for Style Settings location                                                                                |
+| Border         | https://github.com/Akifyss/obsidian-border/issues/350             | Implemented | Check above for Style Settings location                                                                                |
+| Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Implemented | Check above for Style Settings location                                                                                |
+| Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location                                                                                |
+| PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location                                                                                |
+| Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Implemented | Check above for Style Settings location                                                                                |
+| QLean          | https://github.com/Fro-Q/Qlean/issues/2                           | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/Fro-Q/Qlean/pull/3).                     |
+| Borealis       | https://github.com/juanchiparra/obsidian-borealis/issues/2        | Implemented | Check above for Style Settings location                                                                                |
+| Blue Topaz     | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625      | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/PKM-er/Blue-Topaz_Obsidian-css/pull/632) |
 
 
 Offer no option to turn off the Alternative Checkboxes feature:
@@ -65,7 +68,6 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | ------------- | ---------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Minimal       | https://github.com/kepano/obsidian-minimal/issues/792            | Open        | [Submitted a PR](https://github.com/kepano/obsidian-minimal/pull/801)                                                                                                                |
 | Things        | https://github.com/colineckert/obsidian-things/issues/169        | Open        |                                                                                                                                                                                      |
-| Blue Topaz    | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625     | Open        | [Submitted a PR](https://github.com/PKM-er/Blue-Topaz_Obsidian-css/pull/632)                                                                                                         |
 | Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open        | The theme developer is inactive, so it is unlikely this will be implemented. We recommend using [Sanctum Reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15). |
 | Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open        | [Submitted a PR](https://github.com/primary-theme/obsidian/pull/259)                                                                                                                 |
 | Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open        | [Submitted a PR](https://github.com/diegoeis/obsidianotion/pull/16)                                                                                                                  |
