@@ -968,11 +968,11 @@ body:not(.deactivate-window-border, .is-maximized, .is-mobile) .titlebar-button-
 }
 
 /* Special checkboxes */
-.HyperMD-task-line .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line .task-list-item-checkbox::after {
   color: var(--checkbox-marker-color);
 }
 
-:is(.HyperMD-task-line[data-task=A],
+body.enable-alternative-checkboxes :is(.HyperMD-task-line[data-task=A],
 .HyperMD-task-line[data-task=B],
 .HyperMD-task-line[data-task=C],
 .HyperMD-task-line[data-task=D],
@@ -985,7 +985,7 @@ body:not(.deactivate-window-border, .is-maximized, .is-mobile) .titlebar-button-
   position: relative;
 }
 
-:is(.HyperMD-task-line[data-task=">"],
+body.enable-alternative-checkboxes :is(.HyperMD-task-line[data-task=">"],
 .HyperMD-task-line[data-task="?"],
 .HyperMD-task-line[data-task="-"],
 .HyperMD-task-line[data-task=""],
@@ -998,7 +998,7 @@ body:not(.deactivate-window-border, .is-maximized, .is-mobile) .titlebar-button-
   position: relative;
 }
 
-:is(.HyperMD-task-line[data-task="!"],
+body.enable-alternative-checkboxes :is(.HyperMD-task-line[data-task="!"],
 .HyperMD-task-line[data-task="-"],
 .HyperMD-task-line[data-task="/"]) .task-list-item-checkbox::after {
   -webkit-mask-image: none;
@@ -1009,75 +1009,75 @@ body:not(.deactivate-window-border, .is-maximized, .is-mobile) .titlebar-button-
   position: relative;
 }
 
-.HyperMD-task-line[data-task=A] .task-list-item-checkbox,
-.HyperMD-task-line[data-task=A] .task-list-item-checkbox:hover,
-.HyperMD-task-line[data-task=X] .task-list-item-checkbox,
-.HyperMD-task-line[data-task=X] .task-list-item-checkbox:hover,
-.HyperMD-task-line[data-task="-"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task="-"] .task-list-item-checkbox:hover,
-.HyperMD-task-line[data-task="!"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task="!"] .task-list-item-checkbox:hover {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=A] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=A] .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=X] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=X] .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="-"] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="!"] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:hover {
   background-color: var(--color-red);
   border-color: var(--color-red);
 }
 
-.HyperMD-task-line[data-task=A] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=A] .task-list-item-checkbox::after {
   content: "A";
 }
 
-.HyperMD-task-line[data-task=B] .task-list-item-checkbox,
-.HyperMD-task-line[data-task=B] .task-list-item-checkbox:hover,
-.HyperMD-task-line[data-task="?"] .task-list-item-checkbox,
-.HyperMD-task-line[data-task="?"] .task-list-item-checkbox:hover {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=B] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=B] .task-list-item-checkbox:hover,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="?"] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:hover {
   background-color: var(--color-orange);
   border-color: var(--color-orange);
 }
 
-.HyperMD-task-line[data-task=B] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=B] .task-list-item-checkbox::after {
   content: "B";
 }
 
-.HyperMD-task-line[data-task=C] .task-list-item-checkbox,
-.HyperMD-task-line[data-task=C] .task-list-item-checkbox:hover {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=C] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=C] .task-list-item-checkbox:hover {
   background-color: var(--color-yellow);
   border-color: var(--color-yellow);
 }
 
-.HyperMD-task-line[data-task=C] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=C] .task-list-item-checkbox::after {
   content: "C";
 }
 
-.HyperMD-task-line[data-task=D] .task-list-item-checkbox,
-.HyperMD-task-line[data-task=D] .task-list-item-checkbox:hover {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=D] .task-list-item-checkbox,
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=D] .task-list-item-checkbox:hover {
   background-color: var(--color-green);
   border-color: var(--color-green);
 }
 
-.HyperMD-task-line[data-task=D] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=D] .task-list-item-checkbox::after {
   content: "D";
 }
 
-.HyperMD-task-line[data-task=X] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=X] .task-list-item-checkbox::after {
   content: "X";
 }
 
-.HyperMD-task-line[data-task="-"] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="-"] .task-list-item-checkbox::after {
   content: "-";
 }
 
-.HyperMD-task-line[data-task=">"] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task=">"] .task-list-item-checkbox::after {
   content: ">";
 }
 
-.HyperMD-task-line[data-task="!"] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="!"] .task-list-item-checkbox::after {
   content: "!";
 }
 
-.HyperMD-task-line[data-task="?"] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="?"] .task-list-item-checkbox::after {
   content: "?";
 }
 
-.HyperMD-task-line[data-task="/"] .task-list-item-checkbox::after {
+body.enable-alternative-checkboxes .HyperMD-task-line[data-task="/"] .task-list-item-checkbox::after {
   content: "/";
 }
 
@@ -1783,5 +1783,11 @@ settings:
     min: 0
     max: 50
     step: 1
+  -
+    id: enable-alternative-checkboxes
+    title: Enable Alternative Checkboxes
+    description: Disable this if you are using your own implementation via a CSS Snippet.
+    default: true
+    type: class-toggle
 */
 /* #endregion */

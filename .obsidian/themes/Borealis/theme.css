@@ -207,7 +207,6 @@ body.enable-alternative-checkboxes {
   --checkbox-border-color-hover: var(--color-primary);
   --checklist-done-decoration: none;
   --checklist-done-color: none;
-  --checkbox-margin-inline-start: none;
 
   /* Canceled */
   [data-task]:is(c)>input[type=checkbox]:checked, 
