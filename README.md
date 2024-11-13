@@ -159,3 +159,5 @@ This repository contains Themes, CSS Snippets and Plugins which were added for c
 The inclusion of the Themes / CSS Snippets / Plugins in this repository is strictly for research purposes. If you are an author of any of them and would like me to remove them from this repository, please let me know by creating an issue.
 
 The Documentation itself (Markdown files) are under the [Unlicense License](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE), unless another license is noted, especially next to code snippets from the themes.
+
+The icons used in the Reference Set CSS are [Lucide](https://lucide.dev/). Lucide is distributed under the [ISC License](https://lucide.dev/license).
