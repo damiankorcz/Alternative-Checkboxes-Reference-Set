@@ -51,7 +51,7 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 	- [ ] 📌 Allow users to fully disable the Theme's Checkbox implementation if the user prefers to use their own (likely a CSS snippet). This might include adding a Style Settings Toggle, providing the Alternative Checkbox feature as an optional CSS Snippet independent of the Theme's CSS or making sure the implementation within the Theme is easily overwritable by a CSS Snippet.
 
 ## Adaptation Guidelines / Tools
-- [ ] Reach out to Theme Developers which Alternative Checkbox implementation doesn't align with the Reference Set to see if they are willing to adapt. 
+- [ ] 📌 Reach out to Theme Developers which Alternative Checkbox implementation doesn't align with the Reference Set to see if they are willing to adapt. 
 - [ ] Create a plan for helping uses to convert their notes when a theme changes the Alternative Checkbox/es.
 	- [ ] Methods / Plugins / Tools required to convert user's existing notes to match the Reference Set or adapt to the changes which a theme implements to align with the Reference Set.
 	- [ ] Methods of effectively notifying changes by Theme devs to users: Notes in Settings, Changelogs, hovering over Help icon, etc.
@@ -77,6 +77,7 @@ At the moment, there are no direct guidelines for contributing to this repositor
 Special thanks to the following people for their direct contributions to this repository:
 - [**claremacrae** ](https://github.com/claremacrae) - For assisting in parsing through all available themes in Obsidian's Community Themes Store.
 - [**ElsaTam**](https://github.com/ElsaTam) - For reviewing the CSS in each theme to identify the patterns used to implement the feature.
+- [**sigrunixia**](https://github.com/sigrunixia) - For helping with the Repository maintenance and outward tasks like presenting the initiative to new themes.
 
 Also, big thanks to everyone that contributed feedback over in the Discord Thread.
 
