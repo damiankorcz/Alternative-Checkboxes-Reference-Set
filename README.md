@@ -32,21 +32,24 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 > 
 > You can see the breakdown for that in: [07 Impact Breakdown.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/07%20Impact%20Breakdown.md)
 
-- [ ] 📌 Review the CSS from each theme to identify the patterns used to implement the feature.
-
+- [x]  Review the CSS from each theme to identify the patterns used to implement the feature.
+> **Outcome:** We've identified the most common ways Alternative Checkboxes are implemented and have created a CSS Reset file as a temporary way to reset everything back to the default checkbox styling. This also spawned a new goal to try and get all Style Settings enabled themes to support a toggle function which allows the user to disable the theme's Alternative Checkboxes feature. 
 ## Creating a Reference Set
-- [ ] Decide on the initial set of Checkboxes.
-	- [ ] Possibly use a Tier system which rates the checkboxes based on their current popularity / percentage of use across themes.
-- [ ] Best practices / conventions.
-	- [ ] Agreed syntax / meaning.
-	- [ ] Agreed icons to represent the checkbox?
-	- [ ] Agreed colours?
+- [x] Decide on the initial set of Checkboxes.
+	- [x] Possibly use a Tier system which rates the checkboxes based on their current popularity / percentage of use across themes.
+- [x] Best practices / conventions.
+	- [x] Agreed syntax / meaning.
+	- [x] Agreed icons to represent the checkbox?
+	- [x] Agreed colours?
+> **Outcome:** Settled on the most common set of Checkboxes which turned out to be what is defined in the Minimal Theme. A large portion of themes which implement Alternative Checkboxes directly use the same Checkbox syntax in conjunction with the meaning. Some themes expand on it. As mentioned above you can see the breakdown in: [06 Syntax and Meaning Review.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/06%20Syntax%20and%20Meaning%20Review.md)
+> The general consensus was to use Lucide icon set for the Reference Set since that's what Obsidian uses for it's UI. The icons were selected to match the same representations as other Alternative Checkboxes implementations. The Reference Set won't dictate what colour each icon will use but the CSS does accommodate setting any colour you want for your Theme / CSS snippet.
+
 - [ ] Assure that all plugins which interact with Alternative Checkboxes are setup to support the Reference Set. Provide any help / adapt based on feedback.
 
 ## CSS Guidelines for Implementation
-- [ ] Barebones CSS Implementation of the Reference Set.
-	- [ ] Decide if the implementation provides example icons (likely [Lucide](https://lucide.dev/) to match existing Obsidian icons).
-	- [ ] Naming convention for CSS Variables.
+- [ ] 📌Barebones CSS Implementation of the Reference Set.
+	- [ ] 📌Decide if the implementation provides example icons (likely [Lucide](https://lucide.dev/) to match existing Obsidian icons).
+	- [ ] 📌Naming convention for CSS Variables.
 - [ ] 📌 General guidelines for Theme Developers to help users with using the Checkboxes they want to use.
 	- [ ] 📌 Allow users to fully disable the Theme's Checkbox implementation if the user prefers to use their own (likely a CSS snippet). This might include adding a Style Settings Toggle, providing the Alternative Checkbox feature as an optional CSS Snippet independent of the Theme's CSS or making sure the implementation within the Theme is easily overwritable by a CSS Snippet.
 
