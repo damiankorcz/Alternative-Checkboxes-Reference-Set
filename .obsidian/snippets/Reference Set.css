@@ -182,23 +182,42 @@ body {
 */
 .HyperMD-task-line:not([data-task="x"], [data-task=" "]),
 li:not([data-task="x"], [data-task=" "]) {
-    --icon-color: var(--text-normal);
-    --icon-background-color: transparent;
-    --icon-background-color-hover: transparent;
-
     --icon-method: mask;
-
+    
     --icon-mask-position: center;
     --icon-mask-size: contain;
-
     --icon-mask-image: unset;
     
     --icon-content: "";
     --icon-content-weight: var(--font-bold);
     --icon-content-font: var(--font-monospace);
+    --icon-content-alignment: center;
 
-    --checkbox-border: unset;
-    --checkbox-border-radius: unset;
+    --icon-color: var(--text-normal);
+    --icon-background-color: transparent;
+    --icon-background-color-hover: transparent;
+    --icon-border: unset;
+    --icon-border-radius: unset;
+
+    --line-text-color: inherit;
+    --line-background-color: unset;
+    --line-border: unset;
+    --line-border-radius: unset;
+}
+
+.HyperMD-task-line:not([data-task="x"], [data-task=" "]),
+li:not([data-task="x"], [data-task=" "]).is-checked {
+    color: var(--line-text-color);
+    background-color: var(--line-background-color);
+    border: var(--line-border);
+    border-radius: var(--line-border-radius);
+}
+
+/* Swapping margin for padding to allow background color to apply in Reading view the same
+as in Live Preview */
+.task-list-item.is-checked {
+    margin-inline-start: unset;
+    padding-inline-start: var(--list-indent);
 }
 
 div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]),
@@ -206,8 +225,8 @@ li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"],
 li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
     &:checked {
         --checkbox-marker-color: transparent;
-        border: var(--checkbox-border);
-        border-radius: var(--checkbox-border-radius);
+        border: var(--icon-border);
+        border-radius: var(--icon-border-radius);
         background-image: none;
         background-color: var(--icon-background-color);
 
@@ -241,13 +260,12 @@ li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
     li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"],
     li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
         &:checked::after {
-            text-align: center;
             -webkit-mask-image: none;
             line-height: var(--checkbox-size);
             content: var(--icon-content);
             color: var(--icon-color);
 
-            font-size: calc(var(--checkbox-size) - 2px);
+            text-align: var(--icon-content-alignment);
             font-weight: var(--icon-content-weight);
             font-family: var(--icon-content-font);
 
