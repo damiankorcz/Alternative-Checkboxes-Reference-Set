@@ -1969,3 +1969,41 @@ Style Settings: yes
 | Light Theme                       | Dark Theme                         |
 | --------------------------------- | ---------------------------------- |
 | ![[Borealis Light Theme.png]] | ![[Borealis Dark Theme.png]] |
+
+---
+# Consolas
+
+Repo: https://github.com/pinei/obsidian-consolas-theme
+Docs: https://minimal.guide/checklists (Directly refers to Minimal Guide)
+Code: https://github.com/pinei/obsidian-consolas-theme/blob/master/theme.css#L186
+Style Settings: no
+
+Based on Minimal Theme.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+| ![[Consolas Light Theme.png]] | ![[Consolas Dark Theme.png]] |
