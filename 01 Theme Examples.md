@@ -242,6 +242,12 @@
 > - [Flexoki Warm](https://github.com/ofalvai/flexoki-warm)
 > - [AMOLED Serenity](https://github.com/darthdemono/AMOLED-Serenity)
 > - [OneNice](https://github.com/Sunhaloo/OneNice)
+> - [Red-Shadow](https://github.com/DKLiberty/Red-Shadow)
+> - [Evangelion](https://github.com/xero/evangelion.obsidian)
+> - [Shadeflow](https://github.com/artorias305/obsidian-shadeflow)
+> - [Subtle Orange](https://github.com/afrangi/Obsidian-Theme-Orange)
+> - [Winter Spices](https://github.com/incantatem2/Obsidian-winter-spices)
+> - [Neutral Academia](https://github.com/incantatem2/Obsidian-neutral-academia)
 
 ---
 
