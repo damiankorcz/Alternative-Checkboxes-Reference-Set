@@ -5,10 +5,11 @@
     (https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE)
 
 
-    This snippet is not finalised yet.
+    This snippet is not intended for end users. It's goal was to identify all necessary properties
+    to disable theme implementations of the Alternative Checkboxes feature.
 
-    The following CSS Snippet should remove all styling for Alternative Checkboxes that aren't `- [ ]` or `- [x]`
-    across every theme that uses Alternative Checkboxes.
+    The following CSS Snippet should remove all styling for Alternative Checkboxes that aren't
+    `- [ ]` or `- [x]` across every theme that uses Alternative Checkboxes.
     Added some extra specificity to make sure all themes respect the code below.
 */
 
@@ -47,37 +48,9 @@ body.theme-light {
         --checkbox-marker-color: unset;
     }
 
-    /* Removes red text color (Qlean Theme) */
-    .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]), .markdown-rendered .task-list-item:is([data-task="-"]) [class^=cm-list], .style-settings-container .task-list-item:is([data-task="-"]) [class^=cm-list], .markdown-rendered .task-list-item:is([data-task="-"]),
-    .style-settings-container .task-list-item:is([data-task="-"]) {
-        color: unset;
-    }
-
     /* Removes background color (Listive Theme) */
     .HyperMD-list-line:has(> .task-list-label > [data-task])::after,
     li[data-task]::after {
-        background: unset;
-    }
-
-    /* Removes font weight change (ebullientworks theme) */
-    &:not(.ebullientworks-nix-checkbox) div[data-task],
-    &:not(.ebullientworks-nix-checkbox) li.task-list-item[data-task],
-    &:not(.ebullientworks-nix-checkbox) li.task-list-item[data-task] > p,
-    &:not(.ebullientworks-nix-checkbox) div[data-task] > label.task-list-label,
-    &:not(.ebullientworks-nix-checkbox) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
-        font-weight: inherit;
-    }
-
-    /* Removes text color (ITS Theme) */
-    &.check-color.check-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] [class^=cm-list]:not(.cm-formatting-task) /* Live Preview */,
-    &.check-color.check-color.check-color ul > li[data-task].task-list-item.is-checked /* Live Preview */,
-    .markdown-source-view.mod-cm6 .HyperMD-task-line:not([data-task="x"]) /* Reading Mode */{
-        color: unset;
-    }
-
-    /* Removes text background color - Reading Mode (ITS Theme) */
-    &.check-bg :is(ul, ol) > li:not([data-task="x"]).task-list-item.is-checked, /* Live Preview */
-    &.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line:not([data-task="x"]) /* Reading Mode */ {
         background: unset;
     }
 
@@ -86,59 +59,6 @@ body.theme-light {
     .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='M'] {
         text-decoration: unset;
         color: inherit;
-    }
-
-    /*
-        Resets Text Highlight checkboxes (AnuPpuccin)
-        - Uses important to set padding :(
-    */
-    &.anp-speech-bubble {
-        [data-task="0"],
-        [data-task="1"],
-        [data-task="2"],
-        [data-task="3"],
-        [data-task="4"],
-        [data-task="5"],
-        [data-task="6"],
-        [data-task="7"],
-        [data-task="8"],
-        [data-task="9"] {
-            background-color: unset;
-            color: inherit;
-            border-radius: unset;
-            padding-left: unset !important;
-            padding-right: unset !important;
-            padding-top: var(--list-spacing) !important;
-            padding-bottom: var(--list-spacing) !important;
-            text-indent: inherit;
-
-            .task-list-item-checkbox {
-                max-width: unset;
-                display: inline-block;
-            }
-        }
-
-        /* Fixes indentation issues in Reading Mode */
-        li.task-list-item.is-checked {
-            &[data-task="0"],
-            &[data-task="1"],
-            &[data-task="2"],
-            &[data-task="3"],
-            &[data-task="4"],
-            &[data-task="5"],
-            &[data-task="6"],
-            &[data-task="7"],
-            &[data-task="8"],
-            &[data-task="9"] {
-                margin-inline-start: var(--list-indent);
-            }
-        }
-
-        /* Uses gradients for background */
-        [data-task="8"],
-        [data-task="9"] {
-            background: unset;
-        }
     }
 
     /*
@@ -198,7 +118,7 @@ body:not(.tasks) {
     .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
     .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
     li[data-task="-"].task-list-item.is-checked {
-        text-decoration: unset !important; /* Blue Topaz uses important :( */
+        text-decoration: unset;
         color: inherit;
     }
 }
