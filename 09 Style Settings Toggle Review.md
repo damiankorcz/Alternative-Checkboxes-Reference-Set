@@ -6,7 +6,7 @@ Of those, 23 offer a toggle/s to disable the Alternative Checkboxes feature:
 - ITS Theme
     - `ITS Theme Settings -> Note -> Checkboxes -> Disable Alternate Checkboxes` (Not checked by default)
     - `ITS Theme Settings -> Note -> Checkboxes -> Colorful Task Text` (Checked by default)
-    - `ITS Theme Settings -> Note -> Checkboxes -> Colorful Task Backgrounds` (Not checked by default)
+    - `ITS Theme Settings -> Note -> Checkboxes -> Colorful Task Backgrounds` (Checked by default)
 - Cyber Glow
     - `Cyber Glow Tweakbox -> Note Controls -> Custom Checkbox` (Checked by default)
 - Shiba Inu
