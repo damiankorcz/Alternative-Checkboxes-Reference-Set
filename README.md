@@ -33,7 +33,7 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 > You can see the breakdown for that in: [07 Impact Breakdown.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/07%20Impact%20Breakdown.md)
 
 - [x]  Review the CSS from each theme to identify the patterns used to implement the feature.
-> **Outcome:** We've identified the most common ways Alternative Checkboxes are implemented and have created a CSS Reset file as a temporary way to reset everything back to the default checkbox styling. This also spawned a new goal to try and get all Style Settings enabled themes to support a toggle function which allows the user to disable the theme's Alternative Checkboxes feature. 
+> **Outcome:** We've identified the most common ways Alternative Checkboxes are implemented and have created a CSS Reset file as a temporary way to reset everything back to the default checkbox styling. This however spawned a new goal to try and get all Style Settings enabled themes to support a toggle function which allows the user to disable the theme's Alternative Checkboxes feature. So, the current priority is to have all themes mentioned in [09 Style Settings Toggle Review.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/09%20Style%20Settings%20Toggle%20Review.md) and [10 @container Style Queries Toggle Review.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/10%20%40container%20Style%20Queries%20Toggle%20Review.md) implement the appropriate ways to toggle their theme's Alternative Checkboxes, allowing us to use the Reference Set CSS snippet with ease and making it simpler to customise this feature for users.
 ## Creating a Reference Set
 - [x] Decide on the initial set of Checkboxes.
 	- [x] Possibly use a Tier system which rates the checkboxes based on their current popularity / percentage of use across themes.
@@ -47,8 +47,8 @@ https://discord.com/channels/686053708261228577/1291469509336502272
 - [ ] Assure that all plugins which interact with Alternative Checkboxes are setup to support the Reference Set. Provide any help / adapt based on feedback.
 
 ## CSS Guidelines for Implementation
-- [ ] 📌Barebones CSS Implementation of the Reference Set.
-	- [ ] 📌Decide if the implementation provides example icons (likely [Lucide](https://lucide.dev/) to match existing Obsidian icons).
+- [x] Barebones CSS Implementation of the Reference Set.
+	- [x] Decide if the implementation provides example icons (likely [Lucide](https://lucide.dev/) to match existing Obsidian icons).
 	- [ ] 📌Naming convention for CSS Variables.
 - [ ] 📌 General guidelines for Theme Developers to help users with using the Checkboxes they want to use.
 	- [ ] 📌 Allow users to fully disable the Theme's Checkbox implementation if the user prefers to use their own (likely a CSS snippet). This might include adding a Style Settings Toggle, providing the Alternative Checkbox feature as an optional CSS Snippet independent of the Theme's CSS or making sure the implementation within the Theme is easily overwritable by a CSS Snippet.
