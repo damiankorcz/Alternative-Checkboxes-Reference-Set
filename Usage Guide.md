@@ -48,7 +48,9 @@ body {
 }
 ```
 
-For the `@container style()` query to function you'd require...
+For the `@container style()` query to function, you and your users need to be using an updated Obsidian Installer version (within last 12 months should be fine). Installer version means downloading the Obsidian app again and running the installer which will update the Installer version (effectively updating the Electron version used among other things). Note that the in app updates and Installer updates are not the same.
+
+For Apple users, you will need [iOS 18](https://support.apple.com/en-gb/guide/iphone/iphe3fa5df43/ios) / [iPadOS 18](https://support.apple.com/en-gb/guide/ipad/ipad213a25b2/ipados) or newer, since this feature is available since Safari 18 (Safari versions typically match the OS versions on Apple devices).
 
 # 🌟 Creating Custom Alternative Checkbox Sets Based on the Reference Set
 
