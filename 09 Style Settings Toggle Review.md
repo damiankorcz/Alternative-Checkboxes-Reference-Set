@@ -1,6 +1,6 @@
-**33/45 Themes use Style Settings**
+**34/47 Themes use Style Settings**
 
-Of those, 22 offer a toggle/s to disable the Alternative Checkboxes feature:
+Of those, 23 offer a toggle/s to disable the Alternative Checkboxes feature:
 - AnuPpuccin
     - `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes / Enable Speech Bubbles` (Not checked by Default)
 - ITS Theme
