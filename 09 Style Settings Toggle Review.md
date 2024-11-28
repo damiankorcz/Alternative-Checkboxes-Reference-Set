@@ -49,26 +49,29 @@ Of those, 23 offer a toggle/s to disable the Alternative Checkboxes feature:
 	- `Dracula Plus Theme -> Feature Toggles -> Enable Alternative Checkboxes` (Checked by default)
 - Prime
 	- `Prime -> Tweaks -> Use alternative checkboxes` (Checked by default)
+- Vicious
+	- `Vicious -> General Settings -> Disable Alternative Checkboxes` (Not checked by default)
 
 Option to turn off the Alternative Checkboxes feature implemented after request:
 
-| Theme          | Feature Request                                                   | Status      | Notes                                                                                                                    |
-| -------------- | ----------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Maple          | https://github.com/subframe7536/obsidian-theme-maple/issues/98    | Implemented | Check above for Style Settings location                                                                                  |
-| MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Implemented | Check above for Style Settings location                                                                                  |
-| Sanctum Reborn | https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15 | Implemented | Check above for Style Settings location                                                                                  |
-| Underwater     | https://github.com/Seniblue/Underwater/issues/13                  | Implemented | Check above for Style Settings location                                                                                  |
-| Border         | https://github.com/Akifyss/obsidian-border/issues/350             | Implemented | Check above for Style Settings location                                                                                  |
-| Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Implemented | Check above for Style Settings location                                                                                  |
-| Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location                                                                                  |
-| PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location                                                                                  |
-| Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Implemented | Check above for Style Settings location                                                                                  |
-| QLean          | https://github.com/Fro-Q/Qlean/issues/2                           | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/Fro-Q/Qlean/pull/3).                       |
-| Borealis       | https://github.com/juanchiparra/obsidian-borealis/issues/2        | Implemented | Check above for Style Settings location                                                                                  |
-| Blue Topaz     | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625      | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/PKM-er/Blue-Topaz_Obsidian-css/pull/632)   |
-| Solitude       | https://github.com/KyleKlus/solitude-obsidian-theme/issues/6      | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/KyleKlus/solitude-obsidian-theme/pull/7)   |
-| Dracula Plus   | https://github.com/saket61195/Dracula_obsidian_theme/issues/13    | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/saket61195/Dracula_obsidian_theme/pull/14) |
-| Prime          | https://github.com/rivea0/obsidian-prime/issues/7                 | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/rivea0/obsidian-prime/pull/8)              |
+| Theme          | Feature Request                                                   | Status      | Notes                                                                                                                        |
+| -------------- | ----------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Maple          | https://github.com/subframe7536/obsidian-theme-maple/issues/98    | Implemented | Check above for Style Settings location                                                                                      |
+| MagicUser      | https://github.com/drbap/magicuser-theme-for-obsidian/issues/55   | Implemented | Check above for Style Settings location                                                                                      |
+| Sanctum Reborn | https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15 | Implemented | Check above for Style Settings location                                                                                      |
+| Underwater     | https://github.com/Seniblue/Underwater/issues/13                  | Implemented | Check above for Style Settings location                                                                                      |
+| Border         | https://github.com/Akifyss/obsidian-border/issues/350             | Implemented | Check above for Style Settings location                                                                                      |
+| Kakano         | https://github.com/isaacfreeman/kakano-obsidian-theme/issues/13   | Implemented | Check above for Style Settings location                                                                                      |
+| Tokyo Night    | https://github.com/tcmmichaelb139/obsidian-tokyonight/issues/8    | Implemented | Check above for Style Settings location                                                                                      |
+| PLN            | https://github.com/PipeItToDevNull/PLN/issues/32                  | Implemented | Check above for Style Settings location                                                                                      |
+| Neo            | https://github.com/lab-do/obsidian-neo/issues/4                   | Implemented | Check above for Style Settings location                                                                                      |
+| QLean          | https://github.com/Fro-Q/Qlean/issues/2                           | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/Fro-Q/Qlean/pull/3).                           |
+| Borealis       | https://github.com/juanchiparra/obsidian-borealis/issues/2        | Implemented | Check above for Style Settings location                                                                                      |
+| Blue Topaz     | https://github.com/PKM-er/Blue-Topaz_Obsidian-css/issues/625      | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/PKM-er/Blue-Topaz_Obsidian-css/pull/632)       |
+| Solitude       | https://github.com/KyleKlus/solitude-obsidian-theme/issues/6      | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/KyleKlus/solitude-obsidian-theme/pull/7)       |
+| Dracula Plus   | https://github.com/saket61195/Dracula_obsidian_theme/issues/13    | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/saket61195/Dracula_obsidian_theme/pull/14)     |
+| Prime          | https://github.com/rivea0/obsidian-prime/issues/7                 | Implemented | Check above for Style Settings location - [Submitted a PR](https://github.com/rivea0/obsidian-prime/pull/8)                  |
+| Vicious        | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20  | Implemented | Check above for Style Settings location -  [Submitted a PR](https://github.com/zaheralmajed/vicious-theme-obsidian/pull/21). |
 
 
 Offer no option to turn off the Alternative Checkboxes feature:
@@ -80,7 +83,6 @@ Offer no option to turn off the Alternative Checkboxes feature:
 | Sanctum       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232     | Open   | The theme developer is inactive, so it is unlikely this will be implemented. We recommend using [Sanctum Reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15). |
 | Primary       | https://github.com/primary-theme/obsidian/issues/255             | Open   | [Submitted a PR](https://github.com/primary-theme/obsidian/pull/259)                                                                                                                 |
 | Obsidianotion | https://github.com/diegoeis/obsidianotion/issues/15              | Open   | [Submitted a PR](https://github.com/diegoeis/obsidianotion/pull/16)                                                                                                                  |
-| Vicious       | https://github.com/zaheralmajed/vicious-theme-obsidian/issues/20 | Open   | Requested a PR to implement the feature. [Submitted a PR](https://github.com/zaheralmajed/vicious-theme-obsidian/pull/21).                                                           |
 | Simple        | https://github.com/diegoeis/simple-obsidian/issues/2             | Open   | [Submitted a PR](https://github.com/diegoeis/simple-obsidian/pull/3)                                                                                                                 |
 | Feather       | https://github.com/zfmohammed/obsidian-feather/issues/2          | Open   | [Submitted a PR](https://github.com/zfmohammed/obsidian-feather/pull/3)                                                                                                              |
 | Yue           | https://github.com/GixoXYZ/YueObsidian/issues/4                  | Open   | [Submitted a PR](https://github.com/GixoXYZ/YueObsidian/pull/5)                                                                                                                      |
