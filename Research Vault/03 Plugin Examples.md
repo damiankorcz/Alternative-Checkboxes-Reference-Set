@@ -1,3 +1,5 @@
+(Note that most of the Research work was done in October 2024 so some stats will be outdated)
+
 # Tasks
 Repo: https://github.com/obsidian-tasks-group/obsidian-tasks
 Docs: https://publish.obsidian.md/tasks/Reference/Status+Collections/About+Status+Collections

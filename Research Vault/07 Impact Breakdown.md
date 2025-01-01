@@ -1,4 +1,5 @@
-# ⚠️ This is not final. Very much WIP. Don't rely on this yet
+(Note that most of the Research work was done in October 2024 so some stats will be outdated)
+
 # Overall Summary
 Assuming the Reference Set would use the same Syntax / Meaning combo as the Minimal theme, which was identified to align with the most popular set of Checkboxes across all themes:
 - 13 of 45 Themes with Alternative Checkbox implementation would be impacted *IF* they decided to align their themes with the Reference Set (detailed breakdowns below).

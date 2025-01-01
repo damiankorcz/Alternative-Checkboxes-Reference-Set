@@ -1,4 +1,4 @@
-# ✅ Current Progress
+(Note that most of the Research work was done in October 2024 so some stats will be outdated)
 
 ## Understanding the Current State of the Ecosystem
 - [x] Round up all currently available Obsidian themes in the Theme Store and check for Alternative Checkboxes implementations. If Alternative Checkboxes present:

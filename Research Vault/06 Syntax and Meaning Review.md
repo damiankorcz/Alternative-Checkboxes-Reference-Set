@@ -1,4 +1,4 @@
-# ⚠️ This is not final. Very much WIP. Don't rely on this yet
+(Note that most of the Research work was done in October 2024 so some stats will be outdated)
 
 # Understanding the table
 - **Agreed Total** is defined by the most common usage of the given syntax in conjunction with the assigned meaning.
