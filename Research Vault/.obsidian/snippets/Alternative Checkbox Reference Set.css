@@ -1,5 +1,5 @@
 /*
-    Alternative Checkboxes Reference Set (WIP - Implementation not finalised / USE FOR TESTING ONLY) 
+    Alternative Checkboxes Reference Set (Version: 1.0.0) 
     
     Initiative Repository: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set
     Usage Guide: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Usage%20Guide.md
@@ -10,7 +10,7 @@
     which implement the feature.
 
     More on that here:
-    https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/06%20Syntax%20and%20Meaning%20Review.md
+    https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Research%20Vault/06%20Syntax%20and%20Meaning%20Review.md
 
     The icon set used for this Reference Set is Lucide (same icon set as used in the Obsidian UI). Lucide icons are
     distributed under the ISC License: https://lucide.dev/license
@@ -163,7 +163,7 @@ ul > li[data-task="d"] {
 }
 
 /*  --------------------------------------------------------------------------------------------
-    The following code should remain untouched. It serves as template for the setting options
+    The following code should remain untouched. It serves as a template for checkbox definitions
     above. It leaves the default unchecked and checked checkboxes untouched; those are styled 
     according to the theme used.
 */
@@ -248,9 +248,9 @@ li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
             
             /* Allows icons to remain scaled correctly within the checkbox when using a border */
             width: -webkit-fill-available;
-            width: fill-available; /* Creates a fallback for Safari */
+            width: fill-available; /* Fallback for Safari */
             height: -webkit-fill-available;
-            height: fill-available; /* Creates a fallback for Safari */
+            height: fill-available; /* Fallback for Safari */
         }
     }
 }
@@ -271,9 +271,9 @@ li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
 
             /* Allows icons to remain scaled correctly within the checkbox when using a border */
             width: -webkit-fill-available;
-            width: fill-available; /* Creates a fallback for Safari */
+            width: fill-available; /* Fallback for Safari */
             height: -webkit-fill-available;
-            height: fill-available; /* Creates a fallback for Safari */
+            height: fill-available; /* Fallback for Safari */
         }
     }
 }
