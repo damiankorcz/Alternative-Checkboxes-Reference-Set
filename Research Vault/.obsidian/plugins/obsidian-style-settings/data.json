@@ -3,5 +3,6 @@
   "anuppuccin-theme-settings@@anp-speech-bubble": false,
   "prime@@alternative-checkboxes": false,
   "blue-topaz-theme@@enable-alternative-checkboxes": false,
-  "vicious@@disable-alternative-checkboxes": false
+  "vicious@@disable-alternative-checkboxes": false,
+  "oreo-theme@@enable-alternative-checkboxes": false
 }
