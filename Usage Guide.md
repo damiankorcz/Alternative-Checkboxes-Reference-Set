@@ -9,7 +9,9 @@ The Reference Set CSS will work with:
 - Potentially, any theme that doesn't have it's own Alternative Checkboxes implementation (This will depend on how much the theme alters the checkboxes).
 
 # 🤔 How do I use it in my vault?
-Simply download the `Alternative Checkbox Reference Set.css` from the releases and put it inside your vault in the following path:  
+Make sure you are using one of the supported themes mentioned above. For themes with Style Settings, make sure to refer to the documentation ([08 Style Settings Toggle Review.md](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Research%20Vault/08%20Style%20Settings%20Toggle%20Review.md)) on which Style Setting options need to be toggled (opposite of default). This is essential to reset the theme; it will remove any built-in Alternative Checkbox implementation / checkbox customisation which would interfere with the snippet.
+
+Now, simply download the `Alternative Checkbox Reference Set.css` from the [Releases](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/releases) and put it inside your vault in the following path:  
 `*Your vault name*/.obsidian/snippets`.
 
 Make sure to open your vault in Obsidian and enable the newly added snippet:
