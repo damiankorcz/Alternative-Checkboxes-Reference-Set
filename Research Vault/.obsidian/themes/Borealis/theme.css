@@ -300,6 +300,7 @@ a.tag[href],
 
 .callout-content {
   padding: var(--size-4-2);
+  --list-marker-color: rgba(var(--callout-color), 1);
 }
 
 .callout-content> :first-child {
@@ -595,8 +596,18 @@ body {
   background-color: hsla(var(--color-accent-hsl), 0.04);
 }
 
-.canvas-control-item {
-  color: var(--background-primary);
+.canvas-control-item { 
+  background-color: rgba(var(--rgb-primary), 4%);
+  color: var(--color-primary); 
+}
+
+.canvas-control-item:hover { 
+  background-color: rgba(var(--rgb-primary), 10%);
+  color: var(--color-primary); 
+}
+
+.canvas-control-group {
+  box-shadow: none;
 }
 
 /*---Settings---*/

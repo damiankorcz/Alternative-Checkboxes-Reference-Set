@@ -1,12 +1,7 @@
-/*Obsidian 1.7.6 fix - https://forum.obsidian.md/t/folding-headers-not-working-correctly-in-reading-mode-1-7-6/91795*/
-.markdown-preview-view .collapse-indicator {
-  top: inherit;
-}
-
 .theme-light, .theme-dark {
 /*Font*/
-  --font-text-theme: var(--font-text-override), "Lexend", "Inter";
-  --font-interface-theme: "Inter", "Lexend";
+  --font-text-theme: var(--font-text-override), "Lexend", "Inter", sans-serif;
+  --font-interface-theme: "Inter", "Lexend", sans-serif;
   
   /*COLORS*/
   --color-red: var(--rose);
@@ -26,7 +21,7 @@
   --color-purple-rgb: var(--iris-rgb);
   --color-pink-rgb: var(--love-rgb);
 
-  /*--accent colors workspace----  */
+  /*---- workspace accent colors----  */
   --background: var(--base);
   --text-muted: var(--muted);
   --text-on-accent: var(--surface);
@@ -36,7 +31,7 @@
   --text-error: var(--color-red);
   --text-accent: var(--rose);
   --text-selection: rgb(var(--highlight-med-rgb), 0.5);
-  /*---interactive elements---*/
+  /*--- interactive elements ---*/
   --interactive-normal: var(--highlight-med);
   --interactive-hover: var(--highlight-high);
   --interactive-accent: var(--rose);
@@ -124,7 +119,7 @@
   --h5-size: 1em;
   --h6-size: 1em;
   --h6-variant: small-caps;
-  --headings-font: var(--font-text-override), var(--font-text-theme), "Inter";
+  --headings-font: var(--font-text-override), var(--font-text-theme), "Inter", sans-serif;
   --h1-font: var(--headings-font);
   --h2-font: var(--headings-font);
   --h3-font: var(--headings-font);
@@ -184,7 +179,7 @@
 
   /*status bar*/
   --status-bar-background: var(--base);
-  --status-bar-font-size: 11px;
+  --status-bar-font-size: 0.733em;
   --status-bar-radius: 12px 0 0 12px;
 
   /*Horizontal rule*/
@@ -194,7 +189,7 @@
   /*--WORKSPACE colors-----*/
   --background-primary: var(--surface);
   --background-primary-alt: var(--overlay);
-  --background-color: var(--background-primary-alt); /*custom variable*/
+  --uw-background: var(--background-primary-alt); /*custom variable*/
   --background-secondary: var(--background-primary);
   --background-secondary-alt: var(--background-primary-alt);
   --background-modifier-border: rgba(var(--highlight-med-rgb), 0.6);
@@ -204,7 +199,7 @@
   --background-modifier-error: var(--color-red);
   --background-modifier-form-field: var(--overlay);
   --divider-width: 0px;
-  --border-width: 0px;
+  --border-width: 1px;
 
   /*--tabs----*/
   --tab-background-active: var(--background-secondary);
@@ -846,7 +841,7 @@ body:not(is-mobile):not(.show-ribbon) .workspace {
   background-color: transparent;
 }
 .workspace-tabs, .horizontal-main-container {
-  background-color: var(--background-color); /*important*/
+  background-color: var(--uw-background); /*important*/
 }
 .workspace-ribbon, .workspace-ribbon.mod-left.is-collapsed {
   padding: 0px;
@@ -882,6 +877,11 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   margin: 5px 20px;
 }
 
+/*Inputs radius*/
+input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
+  border-radius: 30px;
+}
+
 .menu-separator {
   border-bottom: 1px dashed var(--background-modifier-border);
 }
@@ -894,8 +894,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 body:not(.no-justify) .cm-s-obsidian, body:not(.no-justify) .markdown-preview-view {
   text-align: justify;
 }
-.markdown-source-view ol > li, .markdown-source-view ul > li, .markdown-preview-view ol > li, .markdown-preview-view ul > li, .cm-line.HyperMD-list-line {
-  text-align: left;
+.markdown-source-view ol > li, .markdown-source-view ul > li, .markdown-preview-view ol > li, .markdown-preview-view ul > li, .cm-line.HyperMD-list-line,
+.HyperMD-codeblock {
+  text-align: start;
 }
 
 /*Rounded Highlight style*/
@@ -990,9 +991,12 @@ body:not(.is-phone) div:has(>input.prompt-input) {
 .mermaid svg {
   display: block;
   font-family: var(--font-text-theme);
-  font-size: 15px !important;
+  font-size: 1em !important;
   margin-left: auto;
   margin-right: auto;
+}
+.mermaid line {
+  stroke: var(--highlight-low) !important;
 }
 
 /*Search and backlinks styling*/
@@ -1016,18 +1020,23 @@ body:not(.is-phone) div:has(>input.prompt-input) {
 }
 
 /*-----------Rounded corners for tables--------*/
-/*By @FireIsGood : https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551*/
-:root table {
-  border-collapse: separate;
-  border-spacing: 0;
+/*By @FireIsGood : https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
+body:not(.mod-rtl) {
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  th:first-child {
+    border-top-left-radius: var(--table-border-radius);
+  }
+  th:last-child {
+    border-top-right-radius: var(--table-border-radius);
+  }
+  td, th {
+    border-width: 0 var(--table-border-width) var(--table-border-width) 0;
+  }
 }
-th:first-child {border-top-left-radius: var(--table-border-radius)}
-th:last-child {border-top-right-radius: var(--table-border-radius)}
-tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
-tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
-:root :is(td, th) {
-  border-width: 0 var(--table-border-width) var(--table-border-width) 0;
-}
+
 /*fix header color in source mode*/
 .cm-s-obsidian .HyperMD-table-row-0 {
   color: var(--text-normal);
@@ -1075,6 +1084,9 @@ th .MJX-TEX { /*no color for table headers*/
 }
 
 /*LINKS STYLING!*/
+a:focus-within {
+  box-shadow: none !important;
+}
 a, .external-link {
   transition: color 0.5s ease;
 }
@@ -1099,11 +1111,6 @@ body:not(.no-links) .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-unde
 .no-links .markdown-rendered .internal-link:hover {
   color: var(--link-color-hover);
   transition: color 0.3s ease-out;
-}
-
-/*Embeds: Remove embed icon*/
-.markdown-embed-link, .file-embed-link {
-  display: none;
 }
 
 /*scrollbar - from BORDER theme*/
@@ -1140,9 +1147,6 @@ body:not(.no-links) .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-unde
   --callout-color: var(--color-cyan-rgb);
   --callout-icon: lucide-user-2;
 }
-.callout[data-callout="note"] {
-  --callout-icon: lucide-sticker;
-}
 .callout[data-callout="media"] {
   --callout-color: var(--color-yellow-rgb);
   --callout-icon: lucide-image;
@@ -1153,6 +1157,9 @@ body:not(.no-links) .markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-unde
     justify-content: center;
   }}
 /*Default callouts*/
+.callout[data-callout="note"] {
+  --callout-icon: lucide-sticker;
+}
 .callout[data-callout="question"] {
   --callout-color: var(--color-pink-rgb);
   --callout-icon: lucide-badge-help;
@@ -1218,12 +1225,12 @@ body:not(.no-animation) img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 body:not(.no-animation) img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 body:not(.no-button) button {
   transition: all 0.5s ease-out;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }}
 
 /*==========================CSSCLASSES=================================*/
@@ -1232,7 +1239,7 @@ body:not(.no-button) button {
   display: none !important;
 }
 
-/*notebook*/ /*https://www.magicpattern.design/tools/css-backgrounds*/
+/*notebook*/
 .mod-root .workspace-tabs .workspace-leaf .notebook {
   background-image:  linear-gradient(rgba(var(--iris-rgb), 0.05) 2px, transparent 2px), linear-gradient(to right, rgba(var(--iris-rgb), 0.05) 2px, transparent 2px);
   background-size: 20px 20px;
@@ -1240,7 +1247,7 @@ body:not(.no-button) button {
 
 /*write*/
 .write p::first-letter {
-  font-size: 30px;
+  font-size: 2em;
   font-weight: bolder;
 }
 .write, .markdown-source-view.write .cm-scroller {
@@ -1254,16 +1261,35 @@ body:not(.no-button) button {
 .write hr::after {
   content: "* * *";
   color: var(--bold-color);
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
-/*no-embed - makes embeds seameless*/
+/*no-embed  (seameless embeds)*/
+.markdown-embed-link, .file-embed-link { /*Remove embed icon*/
+  display: none;
+}
 .no-embed .markdown-embed {
   --embed-padding: 0px;
   border-inline-start: none;
 }
+.no-embed .embed-title.markdown-embed-title {
+  display: none;
+}
 
-/*====active line highlight======*/
+/*Cloze (hidden bold text, revealed on hover - reading view only)*/
+.cloze strong, .cloze strong em {
+  background-color: var(--highlight-med);
+  color: transparent !important;
+  transition: color 0.6s ease-in-out, background-color 0.6s ease-in-out;
+  border-radius: 7px;
+  padding: 0px 3px;
+}
+.cloze strong:hover, .cloze strong em:hover  {
+  color: var(--text-normal) !important;
+  background-color: transparent;
+}
+
+/*======= active line highlight ======*/
 body:not(.no-activeline) .cm-active.cm-line {
   background-color: rgb(var(--rose-rgb), 0.08);
   box-shadow: -25vw 0px rgb(var(--rose-rgb), 0.08), 25vw 0 rgb(var(--rose-rgb), 0.08);
@@ -1428,8 +1454,7 @@ input[data-task="e"]:checked, li[data-task="e"]>input:checked, li[data-task="e"]
   color: var(--color-orange);
   -webkit-mask-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224px%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224px%22%20fill%3D%22%235f6368%22%3E%3Cpath%20d%3D%22M333.13-322H232.61q-37.65%200-54.41-33.02-16.77-33.02%204.06-63.55l352.7-508.91q12.13-17.26%2031.39-23.54%2019.26-6.29%2037.95%201.28%2019.27%207.56%2029.9%2025.04%2010.63%2017.48%208.06%2037.74l-36%20288.96h133.65q39.09%200%2055.57%2035.3%2016.48%2035.31-8.35%2065.27L402.87-32.78q-12.13%2015.69-31.39%2019.98-19.26%204.28-37.96-4.29-18.69-8-28.11-25.19-9.41-17.2-6.85-37.02L333.13-322Z%22%2F%3E%3C%2Fsvg%3E');
   mask-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224px%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224px%22%20fill%3D%22%235f6368%22%3E%3Cpath%20d%3D%22M333.13-322H232.61q-37.65%200-54.41-33.02-16.77-33.02%204.06-63.55l352.7-508.91q12.13-17.26%2031.39-23.54%2019.26-6.29%2037.95%201.28%2019.27%207.56%2029.9%2025.04%2010.63%2017.48%208.06%2037.74l-36%20288.96h133.65q39.09%200%2055.57%2035.3%2016.48%2035.31-8.35%2065.27L402.87-32.78q-12.13%2015.69-31.39%2019.98-19.26%204.28-37.96-4.29-18.69-8-28.11-25.19-9.41-17.2-6.85-37.02L333.13-322Z%22%2F%3E%3C%2Fsvg%3E');
-}
-}
+}}
 
 /*unordered list styling
 author: sailKite
@@ -1448,8 +1473,7 @@ body {
 }
 .empty-state-container::before {
   content: var(--tab-img);
-}
-/*Styling*/
+}/*Styling*/
 .empty-state-container {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -1479,7 +1503,7 @@ body {
 /*Vault icon*/
 .workspace-drawer-vault-name::after {
   background-color: var(--iris);
-  margin-left: 10px;
+  margin-inline-start: 10px;
   color: var(--iris);
   content: " ";
   display: inline-block;
@@ -1503,7 +1527,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   align-items: center;
   align-content: center;
 }
-
 body { /*moon*/
   --vault-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%235f6368'%3E%3Cpath d='M240-400q48 0 88 26t59 71l10 23h25q42 0 70 29.5t28 70.5q0 42-29 71t-71 29H240q-66 0-113-47T80-240q0-67 47-113.5T240-400Zm321-81q60 60 138.5 90.5T863-366q11-1 19.5 3t14.5 12q6 8 8 17t-1 19q-35 121-140.5 197T533-40q32-26 49.5-62.5T600-180q0-68-42.5-117.5T449-357q-32-57-87.5-90T240-480q-32 0-62.5 8T120-448q2-131 76.5-232T394-822q10-3 19.5-1t17.5 8q8 6 12.5 14.5T447-781q-5 86 24 162.5T561-481Z'/%3E%3C/svg%3E");
 }
@@ -1529,7 +1552,7 @@ body { /*moon*/
   --vault-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjNWY2MzY4Ij48cGF0aCBkPSJtMzUzLTQ4MCA1OS01OXExMi0xMiAxMi0yOHQtMTItMjhxLTEyLTEyLTI4LjUtMTJUMzU1LTU5NWwtODcgODdxLTYgNi04LjUgMTN0LTIuNSAxNXEwIDggMi41IDE1dDguNSAxM2w4NyA4N3ExMiAxMiAyOC41IDEydDI4LjUtMTJxMTItMTIgMTItMjh0LTEyLTI4bC01OS01OVptMjU0IDAtNTkgNTlxLTEyIDEyLTEyIDI4dDEyIDI4cTEyIDEyIDI4LjUgMTJ0MjguNS0xMmw4Ny04N3E2LTYgOC41LTEzdDIuNS0xNXEwLTgtMi41LTE1dC04LjUtMTNsLTg3LTg3cS02LTYtMTMuNS05dC0xNS0zcS03LjUgMC0xNSAzdC0xMy41IDlxLTEyIDEyLTEyIDI4dDEyIDI4bDU5IDU5Wk0yMDAtMTIwcS0zMyAwLTU2LjUtMjMuNVQxMjAtMjAwdi01NjBxMC0zMyAyMy41LTU2LjVUMjAwLTg0MGg1NjBxMzMgMCA1Ni41IDIzLjVUODQwLTc2MHY1NjBxMCAzMy0yMy41IDU2LjVUNzYwLTEyMEgyMDBaIi8+PC9zdmc+");
 }
 
-/*=========================================PLUGINS SUPPORT==============================================*/
+/*========================================= PLUGINS SUPPORT ==============================================*/
 /*MAKE.MD*/
 /*hide vault title*/
 body:not(.no-mk) .mk-main-menu-container {
@@ -1547,7 +1570,7 @@ body {
 }
 
 /*KANBAN*/
-/*columns color*/
+/*Styling 1 : colorful*/
 .kanban-plugin__lane-wrapper:nth-child(1)>div {
   background-color: rgba(var(--foam-rgb), 0.25);
 }
@@ -1597,7 +1620,7 @@ button.kanban-plugin__new-item-button {
   text-decoration-color: var(--text-muted);
   color: var(--text-muted);
 }
-/*Modern Kanban style*/
+/*2. Modern Kanban*/
 .kanban-modern .kanban-plugin__lane {
   background-color: var(--background-primary) !important;
 }
@@ -1659,7 +1682,7 @@ body:not(.no-widgets) .Clock_Divider {
   margin: 10px 0px;
 }
 body:not(.no-widgets) .Clock_Face {
-  font-size: 45px;
+  font-size: 3em;
 }
 body:not(.no-widgets) .Clock_Date {
   color: var(--subtle);
@@ -1720,7 +1743,7 @@ body:not(.no-widgets) .Countdown_Item {
   border-radius: 5px;
 }
 .oz-nav-file-title {
-  --oz-fta-file-font-size: 13px;
+  --oz-fta-file-font-size: 0.85em;
   color: var(--text-normal);
 }
 .oz-nav-file {
@@ -1738,40 +1761,29 @@ body:not(.no-widgets) .Countdown_Item {
 }
 
 /*Todoist sync styling*/
-ul.todoist-task-list {
-  padding-inline-start: 0px;
-}.markdown-source-view  ul.todoist-task-list > li.task-list-item {
-  margin-inline-start: 0
-}/*tasks description*/
-.task-metadata-item {
+/*tasks description*/
+.todoist-task-container .todoist-task .todoist-task-metadata {
   font-size: var(--font-smallest);
-  color: var(--text-muted)
 }
-.task-metadata-item svg.svg-icon {
-  height: 14px;
-}/*remove "new task" button*/
-.markdown-reading-view .todoist-add-button {
-  display: none;
+/*new/refresh buttons styling*/
+.todoist-query-header .todoist-query-controls .todoist-query-control-button {
+  border-radius: 50px;
+  background-color: var(--base);
+  &:hover {
+    border-color: var(--highlight-high);
+    color: var(--color-yellow);
+  }
 }
-.edit-block-button.todoist-refresh-button, .markdown-reading-view .todoist-refresh-button, .is-live-preview .todoist-refresh-button {
-  color: var(--color-yellow) !important;
-  cursor: pointer;
-  border-radius: 30px !important;
-  padding: var(--size-2-2) var(--size-2-3);
-}/*Sub-projects title styling*/
+.theme-dark, .theme-light {
+  --todoist-task-separator-color: var(--background-modifier-border);
+  --todoist-p4-border: var(--checkbox-border-color);
+  --todoist-p4-border-hover: var(--checkbox-border-color-hover);
+}
+/*Sub-projects title styling*/
 .todoist-group-title {
   color: var(--color-purple);
   font-variant: small-caps;
   font-size: var(--h3-size);
-}/*error message*/
-.todoist-error {
-  border-radius: 10px;
-  border: transparent;
-  padding: 5px 20px;
-  background-color: rgb(var(--background-modifier-error-rgb), 0.1);
-}/*No tasks*/
-.todoist-success.todoist-no-tasks {
-  color: var(--color-green);
 }
 
 /*IMPORTANT - ICONIZE v.2.12.1 fix*/
@@ -1787,10 +1799,9 @@ ul.todoist-task-list {
 /*Meta Bind*/
 .mb-card {
 	background-color: var(--overlay);
-  --mb-border-width: 1px;
 }
 
-/*Note toolbar - fixes*/
+/*Note toolbar - fix*/
 .cg-note-toolbar-fab-container {
   top: calc(var(--cg-nt-fab-pos-y-desktop) - 6em);
 }
@@ -1815,14 +1826,15 @@ ul.todoist-task-list {
 }
 
 /*Dataview*/
-th.svelte-pcimu8 { /*Dataview calendar header*/
-  color: var(--table-header-color) !important;
+.cm-html-embed thead tr > th, .markdown-rendered thead tr > th { /*Dataview calendar header*/
+  color: var(--table-header-color);
 }
 /*dataview tables like markdown tables */
 .seamless-dataview .dataview.table-view-table th, .seamless-dataview .dataview.table-view-table :is(td, th) {
   border: 1px solid var(--table-border-color);
   font-size: var(--font-text-size);
 }
+/*dataview inline fields*/
 .dataview.inline-field-key {
   background-color: var(--base);
   color: var(--bold-color);
@@ -1844,6 +1856,46 @@ th.svelte-pcimu8 { /*Dataview calendar header*/
   color: var(--iris);
   border: 1px solid var(--highlight-med);
   font-variant: small-caps;
+}
+
+/*Cardboard plugin*/
+.card-board-column {
+  background-color: var(--background-primary-alt);
+  border-radius: 8px;
+}
+.card-board-card {
+  border-radius: 8px;
+}
+.card-board-card-content-area {
+  text-align: start;
+}
+.workspace-leaf-content[data-type='card-board-view'] {
+  .workspace-tab-header-inner {
+    border-radius: 0;
+  }
+  .card-board-view .workspace-tab-header {
+    background-color: var(--overlay);
+    border-bottom: 3px solid var(--background-modifier-border);
+    border-radius: 0;
+    margin-left: 20px;
+      &.is-active  {
+        border-color: rgba(var(--color-purple-rgb), 0.5);
+        color: rgba(var(--color-purple-rgb), 0.5);
+      }
+  }
+  .workspace-tab-header-inner-title {
+    text-align: center;
+  }    
+  .workspace-tab-header-container {
+    background-color: var(--overlay);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 100px;
+    margin: 5px 15px;
+    height: 35px;
+  }
+}
+.card-board-view .sidebar-toggle-button{
+  padding-top: 0;
 }
 
 /*STYLE SETTINGS*/
@@ -1888,14 +1940,12 @@ th.svelte-pcimu8 { /*Dataview calendar header*/
 /*=============================PDF STYLING - WIP =====================================*/
 @media print {
   body {
-    --print-font-size: 14px;
-
+    --print-font-size: 0.9em;
     --text-normal: black;
     --bold-weight: 750;
     text-align: justify;
     font-size: var(--print-font-size) !important;
     --font-text-size: var(--print-font-size) !important;
-  
     --table-header-background: transparent !important;
     --table-header-color: var(--text-normal) !important;
     --table-row-alt-background: transparent !important;
@@ -1908,17 +1958,17 @@ th.svelte-pcimu8 { /*Dataview calendar header*/
   }
   h2 {
     font-size: 17px;
-    margin-left: 15px;
+    margin-inline-start: 15px;
     page-break-after: avoid;
   }
   h3 {
     font-size: 16px;
-    margin-left: 30px;
+    margin-inline-start: 30px;
     page-break-after: avoid;
   }
   h4 {
     font-size: var(--print-font-size);
-    margin-left: 50px;
+    margin-inline-start: 50px;
     page-break-after: avoid;
   }
   h5 {
@@ -1951,9 +2001,9 @@ th.svelte-pcimu8 { /*Dataview calendar header*/
     margin: 0 0px;
   }
   .markdown-source-view.mod-cm6 .cm-hmd-internal-link, .markdown-rendered .internal-link {
-  background-color: transparent !important;
-  padding: 0px !important;
-  border: 0px !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    border: 0px !important;
 }}
 
 /*========================Style settings options==========================*/
@@ -1967,18 +2017,18 @@ th.svelte-pcimu8 { /*Dataview calendar header*/
   margin-top: 14px;
 }
 
-/*Alternative callout styles*/
-.callout-solid {
+/*Alt callout styles*/
+.callout-solid, [data-callout-metadata="solid"], [data-callout="solid"] {
   --callout-border-width: 2px 6px 6px 2px;
 }
-.callout-outlined {
+.callout-outlined, [data-callout-metadata="outlined"], [data-callout="outlined"] {
   --callout-border-width: 1px;
   --callout-content-background: var(--background-primary);
   --callout-content-padding: 0px var(--size-4-6);
   --callout-padding: 0px;
   --callout-title-padding: 7px 15px;
 }
-.callout-math .callout {
+.callout-math .callout, [data-callout-metadata="math"], [data-callout="math"] {
   border-width: 2px;
   border-color: rgba(var(--callout-color));
   border-radius: 0px;
@@ -2026,8 +2076,8 @@ li[data-task]:not(li[data-task=" "], li[data-task="x"])>p>input:checked,
 .workspace-bg .app-container::before {
   background-image: var(--bg-url);
   opacity: var(--bg-opacity, 0.8);
-  filter: blur(var(--bg-blur, 4px));
-  background-color: var(--background-color);
+  filter: blur(var(--bg-blur, 0px));
+  background-color: var(--uw-background);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2043,13 +2093,17 @@ li[data-task]:not(li[data-task=" "], li[data-task="x"])>p>input:checked,
   &.workspace, .workspace-tabs, .workspace-split, .horizontal-main-container {
   background-color: transparent;
 }}
-.workspace-bg .mod-right-split, .workspace-bg .mod-left-split, .workspace-bg .workspace-leaf, .workspace-bg .workspace-sidedock-vault-profile  {
+.workspace-bg .mod-right-split, .workspace-bg .mod-left-split, .workspace-bg .workspace-leaf {
   --background-primary: rgba(var(--surface-rgb),var(--layout-opacity, 0.8));
   background-color: var(--background-primary);
+}
+.workspace-sidedock-vault-profile {
+  background-color: var(--background-primary) !important; 
 }
 .workspace-bg .workspace-split.mod-left-split, .workspace-bg .workspace-split.mod-right-split, .workspace-bg .workspace-split.mod-root .view-content, .workspace-bg .workspace-leaf.mod-active .view-header, .view-header {
   background-color: transparent;
 }
+
 
 /* @settings
 
@@ -2314,7 +2368,7 @@ settings:
         default: var(--gold)
     -
         id: latex-color
-        title: Latex
+        title: Math
         type: variable-text
         default: var(--gold)
     -
@@ -2329,7 +2383,7 @@ settings:
         default: var(--iris)
         description: Doesn't apply to "minimal" table
     -
-        id: background-color
+        id: uw-background
         title: Workspace background color
         type: variable-text
         default: var(--overlay)
@@ -2432,7 +2486,7 @@ settings:
     -
         id: tab-img
         title: New tab image
-        description: It is better when the image is small
+        description: Looks better with a small image
         type: variable-text
         default: url("")
     -
@@ -2535,9 +2589,15 @@ settings:
         default: false
     -
         id: no-justify
-        title: Left align text (disable justified text)
+        title: Disable justified text
         type: class-toggle
         default: false
+    -
+        id: my-info-text
+        title:
+        type: info-text
+        description: "💡 You can assign a hotkey to *Full focus mode* by going to **`Hotkeys`** (in the app settings), looking for **`Style settings: Toggle 🎯 Full focus mode`** and assigning your custom hotkey!"
+        markdown: true
     -
         id: focus-mode
         title: 🎯 Full focus mode
@@ -2545,12 +2605,6 @@ settings:
         type: class-toggle
         default: false
         addCommand: true
-    -
-        id: my-info-text
-        title:
-        type: info-text
-        description: "💡 You can assign a hotkey to *Full focus mode* by going to **`Hotkeys`** (in the app settings), looking for **`Style settings: Toggle 🎯 Full focus mode`** and assigning your custom hotkey!"
-        markdown: true
 
 # 🖼️ Background image
     - 
@@ -2563,7 +2617,7 @@ settings:
         id: my-info-text
         title:
         type: info-text
-        description: "🎨 If you prefer to apply a custom color to the background, you can go to *`✏️ Editor colors`* → *`Workspace background color`*. </br> You can also enable the background image and reduce the background opacity in order to lower the saturation of your custom color."
+        description: "🎨 If you prefer a **custom background color**, you can go to *`✏️ Editor colors`* → *`Workspace background color`*. </br> You can also enable the background image setting below and reduce the background opacity in order to lower the saturation of your custom color."
         markdown: true
     -
         id: workspace-bg
@@ -2587,7 +2641,7 @@ settings:
         id: bg-blur
         title: Background blur
         type: variable-number-slider
-        default: 4
+        default: 0
         min: 0
         max: 10
         step: 1

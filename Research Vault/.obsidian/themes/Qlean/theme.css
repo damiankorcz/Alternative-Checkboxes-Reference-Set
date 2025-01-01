@@ -20,7 +20,7 @@ body:is(.theme-light, .theme-dark) {
   --font-file-tree-size: 0.95em;
   --font-vault-name-size: 1.25em;
   --font-source-view-size: 1em;
-  --font-text-weight: 100;
+  --font-text-weight: 400;
   --font-tag-weight: 400;
   --font-latex-weight: 400;
   --font-monospace-weight: 400;
@@ -3554,12 +3554,14 @@ body.full-width-table .style-settings-container div:has(> table) > table {
 body.top-bottom-table-border .markdown-source-view.is-live-preview .cm-table-widget .table-wrapper:has(> table) table,
 body.top-bottom-table-border .markdown-rendered div:has(> table) table,
 body.top-bottom-table-border .style-settings-container div:has(> table) table {
-  border-top: 1.5px solid var(--text-normal);
-  border-bottom: 1.5px solid var(--text-normal);
+  border-top: 2px solid var(--text-normal);
+  border-bottom: 1px solid var(--text-normal);
 }
-.markdown-source-view.is-live-preview .cm-table-widget .table-wrapper:has(> table) table *,
-.markdown-rendered div:has(> table) table *,
-.style-settings-container div:has(> table) table * {
+.markdown-source-view.is-live-preview .cm-table-widget .table-wrapper:has(> table) table td, .markdown-source-view.is-live-preview .cm-table-widget .table-wrapper:has(> table) table th,
+.markdown-rendered div:has(> table) table td,
+.style-settings-container div:has(> table) table td,
+.markdown-rendered div:has(> table) table th,
+.style-settings-container div:has(> table) table th {
   border-color: var(--text-muted);
   border-left-color: transparent;
   border-right-color: transparent;
@@ -3826,14 +3828,14 @@ body.tag-outline .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.
   box-shadow: none;
 }
 
-.markdown-source-view.is-live-preview :is(.cm-link, .cm-hmd-internal-link),
+.markdown-source-view.is-live-preview :is(.cm-link, .cm-url, .cm-hmd-internal-link),
 .markdown-rendered a:not(.tag),
 .style-settings-container a:not(.tag) {
   text-underline-offset: var(--link-decoration-offset);
 }
-.markdown-source-view.is-live-preview :is(.cm-link, .cm-hmd-internal-link):hover,
-.markdown-rendered a:not(.tag):hover,
-.style-settings-container a:not(.tag):hover {
+.markdown-source-view.is-live-preview :is(.cm-link, .cm-url, .cm-hmd-internal-link) a.cm-underline:hover,
+.markdown-rendered a:not(.tag) a.cm-underline:hover,
+.style-settings-container a:not(.tag) a.cm-underline:hover {
   color: var(--link-color);
 }
 
@@ -3844,9 +3846,9 @@ body.tag-outline .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.
   text-decoration: none;
 }
 
-.markdown-source-view.is-live-preview .is-unresolved:hover a,
-.markdown-rendered a.internal-link.is-unresolved:hover a,
-.style-settings-container a.internal-link.is-unresolved:hover a {
+.markdown-source-view.is-live-preview .is-unresolved a.cm-underline:hover,
+.markdown-rendered a.internal-link.is-unresolved a.cm-underline:hover,
+.style-settings-container a.internal-link.is-unresolved a.cm-underline:hover {
   color: var(--link-color);
 }
 
@@ -3989,7 +3991,14 @@ body.file-tree-icons .workspace .nav-folder .nav-folder-title .nav-folder-title-
 }
 .workspace .tree-item-inner {
   padding-left: 0.3em;
-  height: 1.5em;
+}
+body:not(.always-show-full-header-in-outline) .workspace .tree-item-inner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body.always-show-full-header-in-outline .workspace .tree-item-inner {
+  min-height: 1.2em;
 }
 
 .tree-item-self:not(.nav-folder-title) {
@@ -4360,13 +4369,16 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   text-decoration: none;
   color: var(--color-link);
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-url) {
+.markdown-source-view:not(.is-live-preview) span.cm-url {
+  color: var(--color-link);
+}
+.markdown-source-view:not(.is-live-preview) :is(.cm-string.cm-url) {
   color: var(--text-muted);
   -webkit-text-decoration: underline solid 1px var(--text-muted);
           text-decoration: underline solid 1px var(--text-muted);
   text-underline-offset: 4px;
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-url):hover {
+.markdown-source-view:not(.is-live-preview) :is(.cm-string.cm-url):hover {
   color: var(--color-link);
   text-decoration-color: var(--color-link);
 }
@@ -4377,9 +4389,6 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   color: var(--color-text);
 }
 .markdown-source-view:not(.is-live-preview) span.cm-formatting-link.cm-url {
-  color: var(--text-muted);
-}
-.markdown-source-view:not(.is-live-preview) span.cm-formatting-link.cm-url:hover {
   color: var(--color-link);
 }
 .markdown-source-view:not(.is-live-preview) .cm-highlight {
@@ -4719,7 +4728,7 @@ settings:
     collapsed: true
   -
     id: font-text
-    title: Text Font
+    title: Text Font Family
     title.zh: 文本字体
     description: This will be the default font for most of the text in editor except for math and code.
     description.zh: 将会影响编辑器中除了数学公式和代码外的几乎所有文字。
@@ -4778,6 +4787,24 @@ settings:
     type: variable-text
     default: ''
     allowEmpty: true
+  -
+    id: font-common-style
+    title: Common Style
+    title.zh: 通用样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: font-text-weight
+    title: Common Font Weight
+    title.zh: 通用字体粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
   -
     id: strong-style
     title: Strong Style
@@ -5387,8 +5414,8 @@ settings:
   -
 */
 /* @settings
-name: File Tree
-id: file-tree
+name: Tree
+id: tree
 settings:
   -
     id: static-style
@@ -5415,6 +5442,12 @@ settings:
     title.zh: 当前文件边框
     type: class-toggle
     default: true
+  -
+    id: always-show-full-header-in-outline
+    title: Always Show Full Header in Outline
+    title.zh: 大纲中始终显示完整标题
+    type: class-toggle
+    default: false
   -
     id: Dynamic Style
     title: Dynamic Style

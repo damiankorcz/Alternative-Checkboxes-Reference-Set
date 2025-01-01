@@ -44,12 +44,15 @@ core:
 community:
 - calendar
 - dataview
+- obsidian-columns
+- obsidian-jira-issue
 - obsidian-kanban
 - obsidian-map-view
 - obsidian-style-settings
 - obsidian-tasks-plugin
 - oz-clear-unused-images
 - recent-files-obsidian
+- table-editor-obsidian
 */
 
 /* #endregion */
@@ -329,6 +332,12 @@ settings:
         label: '1.618 - Golden Ratio'
         value: theme-setting-headingScaleFactorPhone1point618
   -
+    id: theme-setting-differentiateBulletLevels
+    title: 'Style nested bullet levels differently'
+    description: "Show different bullets for different levels of nesting"
+    type: class-toggle
+    default: true
+  -
     id: heading-lineWidthSettings
     title: Line length
     type: heading
@@ -419,6 +428,22 @@ settings:
     > The [Alternative Checkboxes Reference Set project](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set) is working on standardising alternative checkboxes."
     type: info-text
     markdown: true
+  -
+    id: heading-communityPlugins
+    title: Community Plugins
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: infoText-communityPlugins
+    description: "By default, Kakano changes the appearance of many community plugins to provide a more consistent appearance. If you prefer the standard appearance for a plugin you can disable Kakano's changes."
+    type: info-text
+    markdown: true
+  -
+    id: theme-setting-overrideJiraIssue
+    title: 'Jira Issue'
+    type: class-toggle
+    default: true
 */
 
 /* #endregion */
@@ -435,7 +460,6 @@ body {
   --checkbox-color: var(--interactive-accent);
   --code-normal: var(--text-normal);
   --divider-width: 0;
-  --embed-background: var(--theme-color-baseTransparent12);
   --embed-border-bottom: none;
   --embed-border-left: none;
   --embed-border-right: none;
@@ -447,6 +471,10 @@ body {
   --header-height: calc(var(--icon-size) + 1rem);
   --heading-spacing: 0.67em;
   --input-border-width: 2px;
+  --list-marker-color: var(--text-normal);
+  --list-bullet-radius: 50%;
+  --list-bullet-size: 0.25em;
+  --list-bullet-transform: none;
   --list-marker-color-collapsed: var(--list-marker-color);
   --metadata-divider-width: 0;
   --metadata-gap: 0.5em;
@@ -702,12 +730,6 @@ body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
   --base-s: 2%;
   --base-l: 50%;
 }
-body,
-body .metadata-property:not([data-property-key="tags"]),
-body .metadata-property[data-property-key="tags"] {
-  --pill-padding-x: 1em;
-  --pill-padding-y: 0.125em;
-}
 
 /* Hues derived from base color */
 .theme-light,
@@ -728,6 +750,76 @@ body .metadata-property[data-property-key="tags"] {
   );
   --theme-color-redLightened: hsl(
     356,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 1.5)
+  );
+  --theme-color-orangeDarkened: hsl(
+    27,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-orangeLightened: hsl(
+    27,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 1.5)
+  );
+  --theme-color-yellowDarkened: hsl(
+    57,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-yellowLightened: hsl(
+    57,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 1.5)
+  );
+  --theme-color-greenDarkened: hsl(
+    124,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-greenLightened: hsl(
+    124,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 1.5)
+  );
+  --theme-color-cyanDarkened: hsl(
+    179,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-cyanLightened: hsl(
+    179,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 1.5)
+  );
+  --theme-color-blueDarkened: hsl(
+    219,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-blueLightened: hsl(
+    219,
+    calc(var(--base-s) * 1.75),
+    calc(var(--base-l) * 1.75)
+  );
+  --theme-color-purpleDarkened: hsl(
+    253,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-purpleLightened: hsl(
+    253,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 1.5)
+  );
+  --theme-color-pinkDarkened: hsl(
+    331,
+    calc(var(--base-s) * 1.5),
+    calc(var(--base-l) * 0.5)
+  );
+  --theme-color-pinkLightened: hsl(
+    331,
     calc(var(--base-s) * 1.5),
     calc(var(--base-l) * 1.5)
   );
@@ -801,6 +893,7 @@ body .metadata-property[data-property-key="tags"] {
   );
   --collapse-icon-color: var(--theme-color-base);
   --collapse-icon-color-collapsed: var(--theme-color-base);
+  --embed-background: var(--theme-color-baseTransparent12);
   --empty-pane-color: var(--theme-color-baseDarkened70);
   --icon-color-focused: white;
   --icon-color-hover: hsl(
@@ -869,9 +962,14 @@ body .metadata-property[data-property-key="tags"] {
   --tag-color: hsl(
     var(--accent-h),
     calc(var(--accent-s)),
-    calc(var(--accent-l) * 0.8)
+    calc(var(--accent-l) * 0.9)
   );
-  --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --tag-background: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.15
+  );
   --text-normal: var(--theme-color-baseDarkened90);
   --text-faint: var(--theme-color-baseDarkened70);
   --background-prompt: var(--theme-color-baseLightened95);
@@ -911,6 +1009,7 @@ body .metadata-property[data-property-key="tags"] {
   --theme-color-controlContentArea: var(--theme-color-base);
   --theme-color-controlContentAreaHover: var(--theme-color-baseLightened80);
   --theme-color-controlUIHover: var(--theme-color-baseLightened60);
+  --theme-color-controlUISelected: var(--theme-color-baseLightened80);
   --theme-color-controlHover: var(--theme-color-baseLightened95);
   --theme-color-controlSetBg: var(--theme-color-baseLightened80);
   --theme-color-controlText: var(--theme-color-baseDarkened70);
@@ -922,6 +1021,15 @@ body .metadata-property[data-property-key="tags"] {
   --theme-color-inputBorder: var(--theme-color-baseLightened25);
   --theme-color-inputPlaceholder: var(--theme-color-base);
   --theme-color-interactiveActive: var(--theme-color-baseLightened25);
+  --theme-color-jiraIssueInfoBg: var(--theme-color-blueLightened);
+  --theme-color-jiraIssueWarningBg: var(--theme-color-yellowLightened);
+  --theme-color-jiraIssueSuccessBg: var(--theme-color-greenLightened);
+  --theme-color-jiraIssueStatusBg: var(--theme-color-baseDarkened90);
+  --theme-color-jiraIssueStatus: var(--theme-color-baseLightened95);
+  --theme-color-jiraIssueDangerBg: var(--theme-color-redVeryTransparent);
+  --theme-color-jiraIssueDanger: white;
+  --theme-color-jiraIssueDeleteBg: var(--color-red);
+  --theme-color-jiraIssueTableStripe: var(--theme-color-lightenTransparent50);
   --theme-color-kanbanLaneBg: var(--theme-color-baseLightened80);
   --theme-color-log: var(--theme-color-baseDarkened80);
   --theme-color-logBg: var(--theme-color-baseLightened25);
@@ -941,16 +1049,38 @@ body .metadata-property[data-property-key="tags"] {
   --theme-color-suggestionBg: var(--theme-color-baseLightened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
   --theme-color-tabNavBg: var(--theme-color-baseLightened70);
+  --theme-color-tagHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.035)
+  );
+  --theme-color-tagBgHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.035),
+    0.1
+  );
   --theme-color-tagBgSidebar: hsla(
     var(--accent-h),
-    calc(var(--accent-s) * 1.5),
+    calc(var(--accent-s) * 1.2),
     calc(var(--accent-l) * 1),
-    0.4
+    0.15
+  );
+  --theme-color-tagBgSidebarHover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.22),
+    calc(var(--accent-l) * 1.15),
+    0.15
   );
   --theme-color-tagSidebar: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.5),
+    calc(var(--accent-s) * 1),
     calc(var(--accent-l) * 0.4)
+  );
+  --theme-color-tagSidebarHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 0.46)
   );
   --theme-color-textMeta: var(--theme-color-base);
   --theme-color-textSelected: var(--theme-color-baseLightened80);
@@ -1058,8 +1188,7 @@ body.theme-light.theme-setting-customGradient {
   );
 }
 .theme-light,
-.theme-light .metadata-property:not([data-property-key="tags"]),
-.theme-light .metadata-property[data-property-key="tags"] {
+.theme-light .metadata-property:not([data-property-key="tags"]) {
   --pill-background: var(--theme-color-baseTransparent75);
   --pill-background-hover: var(--theme-color-base);
   --pill-color: white;
@@ -1093,6 +1222,7 @@ body.theme-light.theme-setting-customGradient {
   );
   --collapse-icon-color: var(--theme-color-base);
   --collapse-icon-color-collapsed: var(--theme-color-base);
+  --embed-background: var(--theme-color-baseTransparent25);
   --empty-pane-color: var(--theme-color-baseDarkened70);
   --icon-color-focused: var(--theme-color-baseLightened80);
   --icon-color-hover: hsl(
@@ -1157,8 +1287,8 @@ body.theme-light.theme-setting-customGradient {
       );
   --tag-color: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.5),
-    calc(var(--accent-l) * 1.2)
+    calc(var(--accent-s) * 1.2),
+    calc(var(--accent-l))
   );
   --tag-background: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
   --tab-background-active: var(--background-primary);
@@ -1206,6 +1336,7 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-controlContentArea: var(--theme-color-baseLightened60);
   --theme-color-controlContentAreaHover: var(--theme-color-baseDarkened80);
   --theme-color-controlUIHover: var(--theme-color-baseDarkened70);
+  --theme-color-controlUISelected: var(--theme-color-baseDarkened70);
   --theme-color-controlHover: var(--theme-color-baseDarkened90);
   --theme-color-controlSetBg: var(--theme-color-baseDarkened80);
   --theme-color-controlText: var(--theme-color-baseLightened60);
@@ -1217,6 +1348,15 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-inputBorder: var(--theme-color-baseLightened25);
   --theme-color-inputPlaceholder: var(--theme-color-base);
   --theme-color-interactiveActive: var(--theme-color-baseDarkened25);
+  --theme-color-jiraIssueInfoBg: var(--theme-color-blueDarkened);
+  --theme-color-jiraIssueWarningBg: var(--theme-color-yellowDarkened);
+  --theme-color-jiraIssueSuccessBg: var(--theme-color-greenDarkened);
+  --theme-color-jiraIssueStatusBg: var(--theme-color-baseDarkened90);
+  --theme-color-jiraIssueStatus: var(--theme-color-baseLightened95);
+  --theme-color-jiraIssueDangerBg: var(--theme-color-redVeryTransparent);
+  --theme-color-jiraIssueDanger: white;
+  --theme-color-jiraIssueDeleteBg: var(--color-red);
+  --theme-color-jiraIssueTableStripe: var(--theme-color-darkenTransparent50);
   --theme-color-kanbanLaneBg: var(--theme-color-baseDarkened80);
   --theme-color-log: var(--theme-color-baseLightened80);
   --theme-color-logBg: var(--theme-color-baseDarkened25);
@@ -1236,17 +1376,40 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-suggestionBg: var(--theme-color-baseDarkened85);
   --theme-color-switcherBgActive: var(--theme-color-base);
   --theme-color-tabNavBg: var(--theme-color-baseDarkened70);
+  --theme-color-tagHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29)
+  );
+  --theme-color-tagBgHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.161),
+    0.1
+  );
   --theme-color-tagBgSidebar: hsla(
     var(--accent-h),
-    calc(var(--accent-s) * 1.5),
+    calc(var(--accent-s) * 1.2),
     calc(var(--accent-l) * 1),
-    0.4
+    0.15
+  );
+  --theme-color-tagBgSidebarHover: hsla(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15),
+    0.15
   );
   --theme-color-tagSidebar: hsl(
     var(--accent-h),
-    calc(var(--accent-s) * 1.5),
-    calc(var(--accent-l) * 1.3)
+    calc(var(--accent-s) * 1.2),
+    calc(var(--accent-l) * 1)
   );
+  --theme-color-tagSidebarHover: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) * 1.224),
+    calc(var(--accent-l) * 1.15)
+  );
+
   --theme-color-textMeta: var(--theme-color-base);
   --theme-color-textSelected: var(--theme-color-baseDarkened80);
   --theme-color-textTabInactive: var(--theme-color-baseLightened25);
@@ -1332,8 +1495,7 @@ body.theme-dark.theme-setting-customGradient {
   );
 }
 .theme-dark,
-.theme-dark .metadata-property:not([data-property-key="tags"]),
-.theme-dark .metadata-property[data-property-key="tags"] {
+.theme-dark .metadata-property:not([data-property-key="tags"]) {
   --pill-background: var(--theme-color-baseTransparent75);
   --pill-background-hover: var(--theme-color-base);
   --pill-color: black;
@@ -1791,6 +1953,7 @@ li.is-collapsed .list-bullet:after,
 .markdown-reading-view h6 a.is-unresolved {
   --link-decoration-thickness: max(calc(var(--h6-weight) / 400 * 2px), 1px);
 }
+
 /* #endregion */
 /* #region     Tables */
 
@@ -2099,6 +2262,49 @@ body.theme-setting-highlightActiveLine {
 }
 /* #endregion */
 /* #region   Live Preview mode */
+/* #region     Lists */
+.list-bullet:after {
+  border: solid 1px var(--list-marker-color);
+}
+body.theme-setting-differentiateBulletLevels {
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
+  .markdown-preview-view .el-ul > ul > li > .list-bullet:after {
+    background-color: var(--list-marker-color);
+  }
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after,
+  .markdown-preview-view .el-ul > ul > li > ul > li > .list-bullet:after {
+    background-color: transparent;
+  }
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
+  .markdown-preview-view
+    .el-ul
+    > ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > .list-bullet:after {
+    border-radius: 0;
+    background-color: var(--list-marker-color);
+  }
+  .markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after,
+  .markdown-preview-view
+    .el-ul
+    > ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > .list-bullet:after {
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+/* #endregion */
 /* #region     Footnotes */
 .cm-s-obsidian span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote,
 .cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting,
@@ -2132,7 +2338,6 @@ body.theme-setting-highlightActiveLine {
     background-color: var(--theme-color-controlContentAreaHover);
   }
 }
-/* TODO: why doesn't this nesting work? */
 body.theme-setting-enableBuiltInAlternativeCheckboxes {
   /* Alternate incomplete states */
   & input.task-list-item-checkbox[data-task="/"]:checked,
@@ -3594,10 +3799,13 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   width: var(--theme-length-closeButtonWidth);
   height: var(--theme-length-closeButtonWidth);
   display: flex;
+  flex-shrink: 0;
   align-content: center;
-}
-.workspace-tab-header-inner-close-button .svg-icon {
-  stroke: var(--theme-color-control);
+  justify-content: center;
+
+  .svg-icon {
+    stroke: var(--theme-color-control);
+  }
 }
 @media (hover: hover) {
   .mod-close:hover,
@@ -3611,14 +3819,14 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
   .workspace-tab-header-inner-close-button:hover,
   .slides-close-btn:hover,
   .clickable-icon.kanban-plugin__search-cancel-button:hover,
-  .clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"]:hover {
-    color: var(--theme-color-control);
+  .clickable-icon.kanban-plugin__lane-settings-button[aria-label="Close"]:hover,
+  .multi-select-pill-remove-button:hover {
+    color: var(--theme-color-controlHover);
     background-color: var(--theme-color-navigationButtonBgHover);
-  }
-  .workspace-tab-header:hover
-    .workspace-tab-header-inner-close-button
+
     .svg-icon {
-    stroke: var(--theme-color-controlHover);
+      stroke: var(--theme-color-controlHover);
+    }
   }
 }
 
@@ -3883,10 +4091,15 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
 .suggestion-item.is-selected {
   background-color: var(--nav-item-background-hover);
   color: var(--nav-item-color-hover);
+
+  .suggestion-flair {
+    color: var(--nav-item-color-active);
+  }
 }
-.suggestion-item.is-selected .suggestion-flair {
-  color: var(--nav-item-color-active);
+.suggestion-item.mod-complex.is-selected .suggestion-action {
+  color: var(--theme-color-controlUISelected);
 }
+
 /* #endregion */
 /* #region Hotkeys */
 
@@ -4262,7 +4475,8 @@ select:focus,
 .graph-controls:not(.is-close),
 .canvas-card-menu,
 .canvas-menu,
-.canvas-submenu {
+.canvas-submenu,
+.advanced-tables-buttons {
   background: var(--theme-color-controlSetBg);
   border: none;
   padding: 0.25rem;
@@ -4273,7 +4487,10 @@ select:focus,
 }
 .canvas-control-item,
 .graph-controls-button,
-.canvas-card-menu .canvas-card-menu-button {
+.canvas-card-menu .canvas-card-menu-button,
+[data-type="advanced-tables-toolbar"]
+  .nav-buttons-container
+  .nav-action-button {
   --icon-size: var(--icon-s);
   --icon-stroke: var(--icon-s-stroke-width);
   border-radius: var(--clickable-icon-radius);
@@ -4282,6 +4499,7 @@ select:focus,
   background-color: transparent;
   border: none;
 }
+
 /* Active state */
 .canvas-control-item.has-active-menu {
   opacity: var(--icon-opacity-hover);
@@ -4295,7 +4513,10 @@ select:focus,
   }
   .canvas-control-item:hover,
   .graph-controls-button:not(.mod-close):hover,
-  .canvas-card-menu .canvas-card-menu-button:hover {
+  .canvas-card-menu .canvas-card-menu-button:hover,
+  [data-type="advanced-tables-toolbar"]
+    .nav-buttons-container
+    .nav-action-button:hover {
     color: var(--theme-color-controlHover);
     background-color: var(--background-modifier-hover);
   }
@@ -4520,6 +4741,61 @@ input[type="radio"]:focus {
   content: none;
 }
 /* #endregion */
+/* #region Pills (including tags) */
+body,
+body .metadata-property:not([data-property-key="tags"]),
+body .metadata-property[data-property-key="tags"] {
+  --pill-padding-x: 1em;
+  --pill-padding-y: 0.25em;
+  --tag-padding-x: 1em;
+  --tag-padding-y: 0.25em;
+}
+body .metadata-property[data-property-key="tags"] .multi-select-pill {
+  border-radius: var(--tag-radius);
+  border: var(--tag-border-width) solid var(--tag-border-color);
+  font-weight: var(--tag-weight);
+  padding: var(--tag-padding-y) var(--tag-padding-x);
+  vertical-align: baseline;
+  line-height: var(--line-height-tight);
+}
+body
+  .metadata-property[data-property-key="tags"]
+  .multi-select-pill-content:before {
+  content: "#";
+  display: inline;
+}
+
+.metadata-property:not([data-property-key="tags"]) .multi-select-pill {
+  line-height: var(--line-height-tight);
+  padding: var(--pill-padding-y) var(--pill-padding-x);
+}
+@media (hover: hover) {
+  .cm-hashtag:hover,
+  .cm-hashtag-begin:hover + .cm-hashtag-end,
+  .cm-hashtag-begin:has(+ .cm-hashtag-end:hover) {
+    background-color: var(--theme-color-tagBgHover);
+    color: var(--theme-color-tagHover);
+    text-decoration: underline;
+    text-decoration-color: var(--theme-color-tagHover);
+  }
+}
+
+/* Tags in sidebar or metadata have adjusted colours because they sit on a different background */
+body .metadata-property[data-property-key="tags"] .multi-select-pill,
+.tag-pane-tag > .tree-item-inner {
+  background-color: var(--theme-color-tagBgSidebar);
+  color: var(--theme-color-tagSidebar);
+}
+@media (hover: hover) {
+  body .metadata-property[data-property-key="tags"] .multi-select-pill:hover,
+  .tag-pane-tag > .tree-item-inner:hover {
+    background-color: var(--theme-color-tagBgSidebarHover);
+    color: var(--theme-color-tagSidebarHover);
+    text-decoration: underline;
+  }
+}
+
+/* #endregion */
 /* #region Tooltips */
 
 .tooltip {
@@ -4641,6 +4917,10 @@ input[type="text"].prompt-input::placeholder {
   /* Allow space for input borders */
   padding: var(--input-border-width) 2em;
   overflow: auto;
+}
+.modal-header:has(.modal-title:empty) {
+  /* The built-in styles always apply a bottom margin */
+  margin-bottom: 0;
 }
 .modal-content p {
   margin: 0 0 0.5em 0;
@@ -5323,6 +5603,9 @@ body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
   .nav-folder .nav-folder .nav-folder-title-content {
     padding-left: 0;
   }
+  .nav-folder-title-content {
+    font-weight: var(--font-bold);
+  }
 }
 .mod-sidedock {
   .workspace-leaf-content {
@@ -5737,13 +6020,16 @@ body {
 }
 /* #endregion */
 /* #region   Core Plugin: Tags view */
-
+@media (hover: hover) {
+  /* Don't use heavy bacground for hovering over rows */
+  body:not(.is-grabbing) .tag-container .tree-item-self.is-clickable:hover {
+    background: inherit;
+  }
+}
 .tag-pane-tag > .tree-item-inner {
   /* Tags in sidebar styled the same as in notes, but ligher/darker to sit on colored background */
-  background-color: var(--theme-color-tagBgSidebar);
   border-radius: var(--tag-radius);
   border: var(--tag-border-width) solid var(--tag-border-color);
-  color: var(--theme-color-tagSidebar);
   font-weight: var(--tag-weight);
   padding: var(--tag-padding-y) var(--tag-padding-x);
   vertical-align: baseline;
@@ -5755,32 +6041,73 @@ body {
 .tag-pane-tag > .tree-item-inner > .tree-item-inner-text {
   display: inline;
 }
-.tag-pane-tag:hover {
-  cursor: var(--cursor-link);
+@media (hover: hover) {
+  .tag-pane-tag > .tree-item-inner:hover,
+  .cm-hashtag:hover,
+  .cm-hashtag-begin:hover + .cm-hashtag-end,
+  .cm-hashtag-begin:has(+ .cm-hashtag-end:hover) {
+    cursor: var(--cursor-link);
+  }
 }
 /* #endregion */
 /* #endregion */
 /* #region Community plugins */
+/* #region   Community Plugin: Advanced Tables */
+/* a.k.a. table-editor-obsidian */
+.workspace-leaf-content[data-type="advanced-tables-toolbar"] .view-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+[data-type="advanced-tables-toolbar"]
+  .nav-buttons-container
+  .nav-action-button
+  > svg {
+  fill: currentColor;
+  --text-muted: currentColor; /* For some reason the CSV button specifies text-muted as stroke color */
+}
+.advanced-tables-buttons > div > .title {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding-top: 0.5em;
+}
+.advanced-tables-row-label {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+}
+[data-type="advanced-tables-toolbar"]
+  .nav-buttons-container
+  .nav-action-button {
+  margin-right: 0.25em;
+}
+/* #endregion */
 /* #region   Community Plugin: Calendar */
 .container:has(> .calendar) {
   margin: 0;
   padding: 0 !important;
-}
-.container:has(> .calendar) .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end !important;
-  margin: 0 !important;
-  padding: 1em 0.5em 0.5em 0.5em !important;
-}
-.container:has(> .calendar) .nav .title {
-  cursor: default;
-  line-height: 1;
-  padding: 0;
-}
-.container:has(> .calendar) .nav .right-nav {
-  margin: 0;
-  padding: 0;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end !important;
+    margin: 0 !important;
+    padding: 1em 0.5em 0.5em 0.5em !important;
+
+    .title {
+      cursor: default;
+      line-height: 1;
+      padding: 0;
+    }
+    .right-nav {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 .mod-right-split .container:has(> .calendar) {
   background-color: var(--theme-color-calendarBg);
@@ -5799,20 +6126,32 @@ body {
   padding: 0;
   vertical-align: top;
 }
-.container > .calendar tbody td:not(:has(.adjacent-month)) .day {
-  background-color: var(--theme-color-calendarDayBg);
-  border-radius: 0.5em;
-  margin: 1px;
+.container > .calendar tbody td:not(:has(.adjacent-month)) {
+  .day {
+    background-color: var(--theme-color-calendarDayBg);
+    border-radius: 0.5em;
+    margin: 1px;
+  }
+  .day.today {
+    background-color: var(--theme-color-tabNavBg);
+    color: var(--text-normal);
+    font-weight: bold;
+  }
+  .day.active {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+  }
 }
 @media (hover: hover) {
   .container > .calendar tbody td .day:hover {
     background: transparent;
   }
   .container > .calendar tbody td:not(:has(.adjacent-month)) .day:hover {
-    background-color: var(--theme-color-calendarDayBg);
+    background-color: var(--theme-color-controlBgHover);
+    color: var(--theme-color-controlHover);
   }
 }
-/*   #endregion */
+/* #endregion */
 /* #region   Community Plugin: Clear Unused Images */
 
 .modal:has(.unused-images-logs) {
@@ -6312,6 +6651,216 @@ body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
   }
 }
 /*   #endregion */
+/* #region   Community Plugin: Jira Issue */
+/* TODO: search */
+/* TODO: search wizard modal */
+body.theme-setting-overrideJiraIssue {
+  .jira-issue-container {
+    margin: 0 0 0.5em 0;
+  }
+  .jira-issue-container a {
+    text-decoration-line: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+  }
+  @media (hover: hover) {
+    .jira-issue-container a:hover {
+      color: var(--link-color-hover);
+      text-decoration-line: var(--link-decoration-hover);
+    }
+  }
+  .jira-issue-container .ji-tags {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-left: var(--embed-border-left);
+    border-radius: 0.5rem;
+    border-right: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+    padding: 0;
+
+    .ji-tag,
+    .ji-tag.is-link {
+      background-color: transparent;
+      color: inherit;
+      margin: 0;
+    }
+    .ji-tag.is-link {
+      color: var(--link-color);
+      font-weight: var(--link-weight);
+      text-decoration-line: var(--link-decoration);
+      text-decoration-thickness: var(--link-decoration-thickness);
+      cursor: var(--cursor-link);
+      transition: opacity 0.15s ease-in-out;
+    }
+    .ji-tag {
+      padding: 0.25em;
+    }
+    .ji-tag:last-child {
+      border-radius: var(--tag-radius);
+      border: var(--tag-border-width) solid var(--tag-border-color);
+      font-weight: var(--tag-weight);
+      padding: var(--tag-padding-y) var(--tag-padding-x);
+      vertical-align: baseline;
+      line-height: var(--line-height-tight);
+      margin: 0.5em 0.5em 0.5em 0;
+      background-color: var(--theme-color-jiraIssueStatusBg);
+      color: var(--theme-color-jiraIssueStatus);
+    }
+    .ji-tag.is-info {
+      background-color: var(--theme-color-jiraIssueInfoBg);
+      color: var(--text-normal);
+    }
+    .ji-tag.is-warning {
+      background-color: var(--theme-color-jiraIssueWarningBg);
+      color: var(--text-normal);
+    }
+    .ji-tag.is-success {
+      background-color: var(--theme-color-jiraIssueSuccessBg);
+      color: var(--text-normal);
+    }
+  }
+
+  .ji-inline-issue.jira-issue-container .ji-tag.ji-band,
+  .jira-issue-container .ji-tags .ji-tag.ji-band,
+  .jira-issue-container .ji-tags.has-addons .ji-tag.ji-band {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 0 0.5em;
+    border-radius: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0;
+  }
+  .jira-issue-container {
+    .ji-tags:has(.ji-tag.is-danger) {
+      background-color: var(--theme-color-jiraIssueDangerBg);
+      .ji-tag.is-danger {
+        color: inherit;
+        flex-grow: 1;
+
+        &:last-child {
+          flex-grow: 0;
+          color: var(--theme-color-jiraIssueDanger);
+          background-color: var(--color-red);
+          border-radius: var(--tag-radius);
+          border: var(--tag-border-width) solid var(--tag-border-color);
+          font-weight: var(--tag-weight);
+          padding: var(--tag-padding-y) var(--tag-padding-x);
+          vertical-align: baseline;
+          line-height: var(--line-height-tight);
+          margin: 0.5em 0.5em 0.5em 0;
+        }
+      }
+      .ji-tag.is-danger.is-delete {
+        background-color: var(--theme-color-jiraIssueDeleteBg);
+        width: 1em;
+        height: 1em;
+        margin: 0 0 0 0.5em;
+        border-radius: 1em;
+        border-top-right-radius: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+        padding: 0;
+        color: var(--theme-color-jiraIssueDanger);
+      }
+    }
+  }
+  .block-language-jira-search {
+    background-color: var(--embed-background);
+    border-bottom: var(--embed-border-bottom);
+    border-left: var(--embed-border-left);
+    border-radius: 0.5rem;
+    border-right: var(--embed-border-right);
+    border-top: var(--embed-border-top);
+    overflow-x: auto;
+
+    .jira-issue-container .table {
+      color: inherit;
+      background-color: transparent;
+    }
+    .jira-issue-container .table td {
+      border-top: none;
+      border-bottom: none;
+      font-size: small;
+      padding: 0.5em;
+      border-color: var(--table-border-color);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+    .jira-issue-container .table th {
+      background: transparent;
+      border-top: none;
+      border-bottom: none;
+      padding: 0.5em;
+      color: var(--text-normal);
+      border-color: var(--table-border-color);
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(odd),
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(odd):hover {
+      background-color: var(--theme-color-jiraIssueTableStripe);
+    }
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(even),
+    .jira-issue-container
+      .table.is-striped
+      tbody
+      tr:not(.is-selected):nth-child(even):hover {
+      background-color: transparent;
+    }
+    .jira-issue-container .search-footer {
+      margin-top: 0.5em;
+      padding: 0 0.5em 0 1em;
+      font-size: small;
+      align-items: center;
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+    }
+  }
+  .block-language-jira-count {
+    .jira-issue-container .ji-tags {
+      width: auto;
+      padding-right: 0.5em;
+
+      .ji-tag,
+      .ji-tag.is-link {
+        text-decoration: none;
+        color: var(--text-normal);
+        cursor: default;
+      }
+    }
+  }
+}
+/* #endregion */
 /* #region   Community Plugin: Kanban */
 .kanban-plugin {
   gap: 0.5rem;

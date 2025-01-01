@@ -9,8 +9,7 @@ GitHub Repository:
 https://github.com/drbap/magicuser-theme-for-obsidian
 
 MIT License
-
-Copyright (c) 2023 Bernardo Pires (@drbap)
+Copyright (c) 2023-2024 Bernardo Pires (@drbap)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +32,7 @@ Icons License and Attribution
 
 Most of the icons for the checkboxes and the quote icon were created by me (Bernardo Pires - @drbap - MIT License). You can find the comment in the embedded SVG.
 
-The icons used by the file icon, some callouts and checkboxes icons are from Lucide icons used by Obsidian. Lucide is totally free for commercial use and personal use, the Lucide icon library is licensed under the ISC License. You can find more information below:
+The icons used by the file icon, folders, some callouts and checkboxes icons are from Lucide icons used by Obsidian. Lucide is totally free for commercial use and personal use, the Lucide icon library is licensed under the ISC License. You can find more information below:
 
 Lucide Icons Link:
 https://lucide.dev/
@@ -126,7 +125,7 @@ body {
   /* Collapse icons */
   --mu-collapse-icon-size: 1.2;
   --collapse-icon-color: #0072d3;
-  --collapse-icon-color-collapsed: #d300ff;
+  --collapse-icon-color-collapsed: #0072d3;
 
   /* Cursor */
   --cursor: default;
@@ -135,8 +134,10 @@ body {
   /* Dividers */
   --divider-color: var(--mu-divider-color);
   --divider-color-hover: var(--mu-divider-color-hover);
-  --divider-width: 1px;
-  --divider-width-hover: 3px;
+  --mu-divider-width-value: 1;
+  --mu-divider-hover-width-value: 3;
+  --divider-width: calc(var(--mu-divider-width-value) * 1px);
+  --divider-width-hover: calc(var(--mu-divider-hover-width-value) * 1px);
   --divider-vertical-height: calc(100% - var(--header-height));
 
   /* Dragging */
@@ -386,7 +387,7 @@ body {
   --metadata-label-background-active: var(--mu-background-color-1);
   --metadata-label-font-size: var(--font-small);
   --metadata-label-font-weight: inherit;
-  --metadata-label-text-color: var(--mu-h1);
+  --metadata-label-text-color: var(--mu-property-color);
   --metadata-label-text-color-hover: #00bfff;
   --metadata-label-width: 9em;
   --metadata-input-height: calc(var(--font-text-size) * 1.75);
@@ -405,7 +406,9 @@ body {
   --modal-max-width: 1100px;
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
-  --modal-border-width: var(--border-width);
+  --mu-border-width-value: 1;
+  --mu-border-width: calc(var(--mu-border-width-value) * 1px);
+  --modal-border-width: var(--mu-border-width);
   --modal-border-color: #007fff30;
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
@@ -422,8 +425,8 @@ body {
   --prompt-width: 700px;
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
-  --prompt-border-width: var(--border-width);
-  --prompt-border-color: #007fff30;
+  --prompt-border-width: var(--modal-border-width);
+  --prompt-border-color: var(--modal-border-color);
 
   /* Radiuses */
   --radius-s: 4px;
@@ -504,7 +507,7 @@ body {
   --tab-container-background: var(--background-secondary);
   --tab-divider-color: #007fff20;
   --tab-outline-color: var(--divider-color);
-  --tab-outline-width: 1px;
+  --tab-outline-width: 0;
   --tab-curve: 6px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
@@ -645,8 +648,11 @@ body {
   --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
   --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
   --mu-global-font: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
+  --mu-global-font-stylistic-set: normal;
+  --mu-global-font-letter-spacing: normal;
+  --mu-max-letter-spacing: 2px;
 
-  /* UI Settings */
+  /* UI Settings - User Interface */
   --ui-status-bar: 1;
   --ui-side-dock-actions: 1;
   --ui-side-dock-settings: 1;
@@ -678,10 +684,18 @@ body {
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
   --mu-line-highlight-border: transparent;
   --mu-line-highlight-background: transparent;
-  --mu-folder: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
-  --mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
-  --mu-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
-  --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
+
+  --mu-folder-icon-opened-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
+  --mu-folder-icon-closed-default: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
+
+  --mu-folder-icon-opened-unfilled: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
+  --mu-folder-icon-opened-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>');
+
+  --mu-folder-icon-closed-unfilled: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>');
+  --mu-folder-icon-closed-op3: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="M2 10h20"/></svg>');
+
+  --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-default);
+  --mu-folder-icon-closed-selected: var(--mu-folder-icon-closed-default);
 
   --mu-gallery-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z" fill="#00a3ffcf" stroke="none" stroke-width="0"/><path d="m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z" fill="currentColor" stroke="none" stroke-width="0"/></svg>';
 
@@ -705,15 +719,6 @@ body {
   --mu-style-settings-indent-color-1: #007fff7f;
   --mu-style-settings-indent-color-2: #d372ff7f;
   --mu-style-settings-indent-color-3: #ff7f007f;
-
-  --mu-folder-color-hue-value: 0;
-  --mu-folder-color-hue: calc(var(--mu-folder-color-hue-value) * 1deg);
-
-  --mu-file-color-hue-value: 0;
-  --mu-file-color-hue: calc(var(--mu-file-color-hue-value) * 1deg);
-
-  --mu-folder-color-saturation: 1;
-  --mu-file-color-saturation: 1;
 
   --mu-header-title-drag: no-drag;
   --mu-dark-sidebar-color: #001122;
@@ -810,10 +815,34 @@ body {
   --mu-divider-color-hover: #007fff;
   --mu-modal-background: #000;
 
+  --mu-folder-icon-color: #0048a3;
+  --mu-folder-icon-color-active: #00a3ff;
+  --mu-file-icon-color: #0072d3;
+
+  /* Hues */
+  --mu-rainbow-hue-start-value: 0;
+  --mu-rainbow-hue-1: var(--mu-rainbow-hue-start-value);
+  --mu-rainbow-hue-2: calc(var(--mu-rainbow-hue-1) + 30);
+  --mu-rainbow-hue-3: calc(var(--mu-rainbow-hue-1) + 60);
+  --mu-rainbow-hue-4: calc(var(--mu-rainbow-hue-1) + 90);
+  --mu-rainbow-hue-5: calc(var(--mu-rainbow-hue-1) + 120);
+  --mu-rainbow-hue-6: calc(var(--mu-rainbow-hue-1) + 150);
+  --mu-rainbow-hue-7: calc(var(--mu-rainbow-hue-1) + 180);
+  --mu-rainbow-hue-8: calc(var(--mu-rainbow-hue-1) + 210);
+  --mu-rainbow-hue-9: calc(var(--mu-rainbow-hue-1) + 240);
+  --mu-rainbow-hue-10: calc(var(--mu-rainbow-hue-1) + 270);
+
+  --mu-properties-container-color: #007fff10;
+
   --mu-tags-hashtag-padding-value: 2;
   --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value)*1px);
   --tag-radius-value: 1;
   --tag-radius: calc(var(--tag-radius-value)*1em);
+
+  /* Sidebar */
+  --mu-sidebar-top-buttons-container-bg-color: var(--background-secondary);
+  --mu-sidebar-bottom-vault-profile-bg-color: var(--background-secondary);
+  --mu-suggestion-search-panel-bg-color: var(--background-secondary);
   --mu-sidebar-pane-numbers: #007fff;
 
   --mu-cards-border: var(--mu-background-color-1);
@@ -843,6 +872,100 @@ body::before {
 .modal-bg {
   opacity: 0.3 !important;
   background-color: var(--mu-modal-background);
+}
+
+.prompt,
+.modal {
+  border: 0;
+  box-shadow: 0 0 0 var(--modal-border-width) var(--modal-border-color), 0 0 0 var(--modal-border-width) var(--modal-border-color), 0 0 0 var(--modal-border-width) var(--modal-border-color), var(--shadow-l) !important;
+}
+
+/* Files and folders */
+body:not(.mu-hide-folders) .nav-folder-title-content:not(:nth-child(1))::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: var(--size-4-2);
+  vertical-align: middle;
+  background-position: center;
+  background-color: currentColor;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mask-image: var(--mu-folder-icon-opened-selected);
+  -webkit-mask-image: var(--mu-folder-icon-opened-selected);
+  color: var(--mu-folder-icon-color-active);
+}
+
+body:not(.mu-disable-folder-style) .nav-folder-title-content:not(:nth-child(1)) {
+  font-weight: var(--font-semibold);
+  color: var(--mu-folder-text-color);
+}
+
+body:not(.mu-hide-folders) .is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
+  mask-image: var(--mu-folder-icon-closed-selected);
+  -webkit-mask-image: var(--mu-folder-icon-closed-selected);
+  color: var(--mu-folder-icon-color);
+}
+
+/* File */
+body:not(.mu-hide-file-icons) .nav-file-title-content:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  margin-right: var(--size-4-2);
+  vertical-align: middle;
+  padding: 1px;
+  background-position: center;
+  background-color: currentColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>');
+  color: var(--mu-file-icon-color);
+}
+
+body:not(.mu-hide-file-icons) .tree-item-self[data-path*=".canvas"] .nav-file-title-content::before {
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>');
+}
+
+body.mu-folder-icon-opened-unfilled {
+  --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-unfilled);
+}
+
+body.mu-folder-icon-opened-op3 {
+  --mu-folder-icon-opened-selected: var(--mu-folder-icon-opened-op3);
+}
+
+body.mu-folder-icon-closed-unfilled {
+  --mu-folder-icon-closed-selected: var(--mu-folder-icon-closed-unfilled);
+}
+
+body.mu-folder-icon-closed-op3 {
+  --mu-folder-icon-closed-selected: var(--mu-folder-icon-closed-op3);
+}
+
+/* Folder/File Dragging */
+.is-being-dragged .nav-folder-title-content,
+.is-being-dragged .nav-folder-title-content:not(:nth-child(1))::before,
+.is-being-dragged .nav-file-title-content:before {
+  color: var(--text-on-accent) !important;
+}
+
+body.mu-disable-folder-style {
+  --nav-item-color: currentColor;
+  --nav-item-color-hover: currentColor;
+  --nav-item-color-active: currentColor;
+  --nav-item-color-selected: currentColor;
+  --nav-item-color-highlighted: currentColor;
 }
 
 span.is-flashing {
@@ -891,16 +1014,6 @@ span.is-flashing {
   font-size: var(--font-text-size);
 }
 
-.mu-hide-folders {
-  --mu-folder: none;
-  --mu-folder-open: none;
-}
-
-.mu-hide-file-icons {
-  --mu-file-icon: none;
-  --mu-canvas-icon: none;
-}
-
 .search-result-file-matched-text {
   color: var(--text-normal);
   background-color: var(--text-highlight-bg);
@@ -933,15 +1046,6 @@ span.is-flashing {
   background-color: #00a3ff48 !important;
 }
 
-.tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-being-dragged {
-  color: var(--text-on-accent) !important;
-}
-
-.tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-being-dragged svg {
-  color: var(--text-on-accent) !important;
-  stroke: var(--text-on-accent) !important;
-}
-
 .nav-folder.mod-root>.nav-folder-title:hover,
 .nav-folder.mod-root>.nav-folder-title {
   font-weight: var(--font-semibold);
@@ -949,44 +1053,8 @@ span.is-flashing {
   display: var(--ui-display-vault-title);
 }
 
-.nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
-  content: var(--mu-folder-open);
-  padding-right: 8px;
-  zoom: var(--mu-folder-icon-zoom);
-  vertical-align: middle;
-  filter: hue-rotate(var(--mu-folder-color-hue)) saturate(var(--mu-folder-color-saturation));
-}
-
-.nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
-  content: var(--mu-folder);
-  padding-right: 8px;
-  zoom: var(--mu-folder-icon-zoom);
-  vertical-align: middle;
-  filter: hue-rotate(var(--mu-folder-color-hue)) saturate(var(--mu-folder-color-saturation));
-}
-
-.nav-file-title-content::before {
-  content: var(--mu-file-icon);
-  padding-right: 8px;
-  zoom: var(--mu-notes-icon-zoom);
-  vertical-align: middle;
-  filter: hue-rotate(var(--mu-file-color-hue)) saturate(var(--mu-file-color-saturation));
-}
-
-.tree-item-self[data-path*=".canvas"] .nav-file-title-content::before {
-  content: var(--mu-canvas-icon);
-  padding-right: 8px;
-  zoom: var(--mu-notes-icon-zoom);
-  vertical-align: middle;
-}
-
 .canvas-card-menu {
   background-color: var(--background-modifier-hover);
-}
-
-::placeholder {
-  color: #a3a3a3 !important;
-  opacity: 1;
 }
 
 .suggestion-item.mod-complex.search-suggest-item .suggestion-content>div>span:nth-child(1) {
@@ -1027,6 +1095,81 @@ span.obsidian-search-match-highlight {
   border-top: 0;
 }
 
+* {
+  caret-color: var(--mu-caret-color) !important;
+}
+
+input[type="text"],
+input[type="search"] {
+  background-color: var(--mu-input-bg-color);
+  color: var(--mu-caret-color);
+}
+
+.inline-title {
+  font-family: var(--mu-font-mono);
+  font-size: var(--mu-inline-title-font-size);
+  font-weight: bold;
+  color: var(--mu-text-title);
+}
+
+.dropdown {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  outline: 2px solid var(--background-modifier-hover);
+}
+
+.dropdown:hover {
+  color: var(--text-normal) !important;
+  outline: 2px solid var(--mu-icon-active);
+}
+
+::selection {
+  background-color: var(--mu-text-selection) !important;
+}
+
+::placeholder {
+  color: #a3a3a3 !important;
+  opacity: 1;
+}
+
+.mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
+.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
+.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  opacity: var(--icon-opacity-active);
+  color: var(--mu-icon-focused) !important;
+}
+
+button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-hover);
+}
+
+button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+
+.CodeMirror-cursor,
+.cm-cursor,
+.cm-dropCursor {
+  border-color: var(--mu-caret-color) !important;
+}
+
+.cm-layer.cm-layer-above.cm-cursorLayer {
+  animation: none !important;
+}
+
+.cm-cursor,
+.cm-dropCursor {
+  border-left-width: 3px !important;
+}
+
+.suggestion-highlight {
+  color: var(--mu-suggestion-color);
+}
+
 .theme-dark {
   --mu-background-color-1: #002248;
   --mu-background-color-2: #001122;
@@ -1059,13 +1202,13 @@ span.obsidian-search-match-highlight {
   --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: var(--mu-purple-2);
-  --mu-sidebar-folder: #72a3ff;
+  --mu-folder-text-color: #72a3ff;
   --mu-link: #d372ff;
   --mu-link-hover: #db8fff;
   --mu-external-link: #00a9dd;
   --mu-external-link-hover: #00c3ff;
   --tab-divider-color: #003364;
-  --mu-folder-icon-zoom: 82%;
+  --mu-folder-zoom: 82%;
   --mu-notes-icon-zoom: 72%;
   --interactive-normal: var(--mu-background-color-2);
   --interactive-hover: var(--background-modifier-hover);
@@ -1078,7 +1221,7 @@ span.obsidian-search-match-highlight {
   --mu-label-h5: #a35fbf;
   --mu-label-h6: #a35fbf;
   --mu-text-selection: #0051f1a3;
-  --mu-special-folder-color: #f1f1f1a3;
+  --mu-special-folder-color: #000;
   --mu-suggestion-color: #00d3ff;
   --mu-caret-color: #00cfff;
   /* highlight blend mode */
@@ -1086,6 +1229,8 @@ span.obsidian-search-match-highlight {
   --background-primary-alt: #212121;
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
+  --mu-property-color: #00a3ff;
+  --mu-property-title-color: #00a3ff;
 
   --mu-modal-background: #000;
   --mu-column-stripped-background: #00000082;
@@ -1096,76 +1241,6 @@ span.obsidian-search-match-highlight {
 
 /* Dark theme settings */
 /* ======================================================== */
-
-.theme-dark * {
-  caret-color: var(--mu-caret-color) !important;
-}
-
-.theme-dark .dropdown {
-  color: #f1f1f1;
-  background-color: var(--background-primary);
-  outline: 2px solid var(--background-modifier-hover);
-}
-
-.theme-dark .dropdown:hover {
-  color: #f1f1f1;
-  outline: 2px solid var(--mu-icon-active);
-}
-
-.theme-dark button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
-  color: #f1f1f1;
-  background-color: var(--background-primary);
-  border: 1px solid var(--background-modifier-hover);
-}
-
-.theme-dark button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
-  color: #f1f1f1;
-  background-color: var(--background-modifier-hover);
-}
-
-.theme-dark input[type="text"],
-.theme-dark input[type="search"] {
-  background-color: var(--mu-input-bg-color);
-  color: var(--mu-caret-color);
-}
-
-.theme-dark .inline-title {
-  font-family: var(--mu-font-mono);
-  font-size: var(--mu-inline-title-font-size);
-  font-weight: bold;
-  color: var(--mu-text-title);
-}
-
-.theme-dark .mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-  opacity: var(--icon-opacity-active);
-  color: var(--mu-icon-focused) !important;
-}
-
-.theme-dark .suggestion-highlight {
-  color: var(--mu-suggestion-color);
-}
-
-.theme-dark ::selection {
-  background-color: var(--mu-text-selection) !important;
-}
-
-.theme-dark .nav-folder-title {
-  font-weight: var(--font-semibold);
-  color: var(--mu-sidebar-folder);
-}
-
-.theme-dark .nav-folder-title:hover {
-  font-weight: var(--font-semibold);
-  color: var(--mu-sidebar-folder) !important;
-}
-
-.theme-dark .tree-item-self.is-clickable.mod-collapsible.nav-folder-title {
-  font-weight: var(--font-semibold);
-  color: var(--mu-sidebar-folder);
-}
 
 .theme-dark .workspace-tabs.workspace-leaf {
   background-color: var(--mu-background-color-2);
@@ -1181,12 +1256,6 @@ span.obsidian-search-match-highlight {
 
 .theme-dark .setting-item.setting-item-heading>.setting-item-info>.setting-item-name {
   color: #00a3ff;
-}
-
-.theme-dark .CodeMirror-cursor,
-.theme-dark .cm-cursor,
-.theme-dark .cm-dropCursor {
-  border-color: var(--mu-caret-color) !important;
 }
 
 /* Light theme settings */
@@ -1224,7 +1293,7 @@ span.obsidian-search-match-highlight {
   --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: #a300cf;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-link: #a200ff;
   --mu-link-hover: #c300ff;
   --mu-external-link: #0033ff;
@@ -1254,7 +1323,7 @@ span.obsidian-search-match-highlight {
   --code-tag: #c300f1;
   --code-value: #f18f00;
   --tab-divider-color: #003364;
-  --mu-folder-icon-zoom: 82%;
+  --mu-folder-zoom: 82%;
   --mu-notes-icon-zoom: 72%;
   --text-normal: #000;
   --text-muted: #353535;
@@ -1269,76 +1338,14 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #ffffff;
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
+  --mu-property-color: #0072d3;
+  --mu-property-title-color: #0072d3;
 
   --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484848;
   --mu-scrollbar-track-bg-hover: #82828221;
-}
-
-.theme-light * {
-  caret-color: var(--mu-caret-color) !important;
-}
-
-.theme-light .dropdown {
-  color: #000;
-  background-color: var(--background-primary);
-  outline: 2px solid var(--background-modifier-hover);
-}
-
-.theme-light .dropdown:hover {
-  color: #000;
-  outline: 2px solid var(--mu-icon-active);
-}
-
-.theme-light button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
-  color: #000;
-  background-color: var(--background-primary);
-  border: 1px solid var(--background-modifier-hover);
-}
-
-.theme-light button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
-  color: #000;
-  background-color: var(--background-modifier-hover);
-}
-
-.theme-light .inline-title {
-  font-family: var(--mu-font-mono);
-  font-size: var(--mu-inline-title-font-size);
-  font-weight: bold;
-  color: var(--mu-text-title);
-}
-
-.theme-light .mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
-.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
-.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-  opacity: var(--icon-opacity-active);
-  color: var(--mu-icon-focused) !important;
-}
-
-.theme-light .suggestion-highlight {
-  color: var(--mu-suggestion-color);
-}
-
-.theme-light ::selection {
-  background-color: var(--mu-text-selection) !important;
-}
-
-.theme-light .nav-folder-title {
-  font-weight: var(--font-semibold);
-  color: var(--mu-sidebar-folder);
-}
-
-.theme-light .nav-folder-title:hover {
-  font-weight: var(--font-semibold);
-  color: var(--mu-sidebar-folder) !important;
-}
-
-.theme-light .tree-item-self.is-clickable.mod-collapsible.nav-folder-title {
-  font-weight: var(--font-semibold);
-  color: var(--mu-sidebar-folder);
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
@@ -1350,33 +1357,12 @@ input.slider {
   border: 1px solid var(--background-modifier-hover);
 }
 
-.theme-light input[type="text"],
-.theme-light input[type="search"] {
-  background-color: var(--mu-input-bg-color);
-  color: var(--mu-caret-color);
-}
-
 .theme-light .vertical-tab-header-group-title {
   color: #0048f1;
 }
 
 .theme-light .setting-item.setting-item-heading>.setting-item-info>.setting-item-name {
   color: #0048f1;
-}
-
-.theme-light .CodeMirror-cursor,
-.theme-light .cm-cursor,
-.theme-light .cm-dropCursor {
-  border-color: var(--mu-caret-color) !important;
-}
-
-.cm-layer.cm-layer-above.cm-cursorLayer {
-  animation: none !important;
-}
-
-.cm-cursor,
-.cm-dropCursor {
-  border-left-width: 3px !important;
 }
 
 /* Extra checkboxes */
@@ -3869,7 +3855,7 @@ input[type=date] {
   color: var(--mu-code-attribute);
 }
 
-/* Excalidraw adjustments */
+/* Excalidraw */
 
 .excalidraw .HelpDialog__shortcut {
   color: var(--text-primary);
@@ -3899,10 +3885,12 @@ input[type=date] {
 }
 
 .metadata-container {
-  font-size: .8em;
+  font-size: 1em;
   font-family: var(--mu-font-mono);
+  padding: var(--size-4-2) var(--size-4-1);
   border-top: 1px solid #007fff20;
   border-bottom: 1px solid #007fff20;
+  background-color: var(--mu-properties-container-color);
 }
 
 .multi-select-input {
@@ -3911,7 +3899,7 @@ input[type=date] {
 
 .metadata-property-key-input {
   background-color: transparent !important;
-  color: var(--mu-h1) !important;
+  color: var(--mu-property-color) !important;
 }
 
 .metadata-add-button {
@@ -3919,8 +3907,10 @@ input[type=date] {
 }
 
 .metadata-properties-title {
-  color: #a3a3a388;
+  color: var(--mu-property-title-color);
   padding: 0;
+  font-size: 0.9em;
+  font-weight: var(--font-bold);
 }
 
 /* Line highlight */
@@ -4021,6 +4011,7 @@ body:not(.is-mobile) .workspace-ribbon.mod-left:before {
 
 body:not(.is-mobile) .workspace-ribbon.mod-left {
   transition: none;
+  border-right: 0;
 }
 
 /* Distraction-free mode */
@@ -4096,6 +4087,16 @@ body:not(.is-mobile).mu-hide-nav-buttons-container {
 
 body:not(.is-mobile) .nav-buttons-container {
   display: var(--ui-nav-buttons-container);
+}
+
+/* Sidebar top bar - new adjustments */
+
+body:not(.is-mobile) .nav-header {
+  background-color: var(--mu-sidebar-top-buttons-container-bg-color);
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--mu-sidebar-bottom-vault-profile-bg-color);
 }
 
 /* Top left titlebar buttons */
@@ -4278,7 +4279,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-titlebar-background: #250035;
   --mu-vault-title: #a300cf;
   --code-background: #e8e8e8;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-h1: #0048a3;
   --mu-h2: #0048a3;
   --mu-h3: #0048a3;
@@ -4336,7 +4337,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff7f00;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-sidebar-folder: #4f573c;
+  --mu-folder-text-color: #4f573c;
   --mu-text-title: #727d57;
   --mu-titlebar-background: #3a3f2c;
   --mu-vault-title: #727d57;
@@ -4358,7 +4359,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff7f00;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-sidebar-folder: #a0ac82;
+  --mu-folder-text-color: #a0ac82;
   --mu-text-title: #727d57;
   --mu-titlebar-background: #3a3f2c;
   --mu-vault-title: #727d57;
@@ -4410,7 +4411,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #d3148d;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-text-title: #ac3f5d;
   --mu-titlebar-background: #461828;
   --mu-vault-title: #ac3f5d;
@@ -4432,7 +4433,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-sidebar-folder: #97bff1;
+  --mu-folder-text-color: #97bff1;
   --mu-text-title: #ac3f5d;
   --mu-titlebar-background: #461828;
   --mu-vault-title: #ac3f5d;
@@ -4454,7 +4455,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #d300ff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-text-title: #a300cf;
   --mu-titlebar-background: #001a33;
   --mu-vault-title: #a300cf;
@@ -4478,7 +4479,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #d300ff;
   --mu-divider-color: #dfc1c100;
   --mu-input-bg-color: #001836;
-  --mu-sidebar-folder: #729fd8;
+  --mu-folder-text-color: #729fd8;
   --mu-text-title: #a300cf;
   --mu-titlebar-background: #001a33;
   --mu-vault-title: #a300cf;
@@ -4508,7 +4509,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #58586f;
   --code-background: #c0c0cf;
   --code-punctuation: #797995;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-h1: #0048a3;
   --mu-h2: #0048a3;
   --mu-h3: #0048a3;
@@ -4534,7 +4535,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-background: #282833;
   --code-punctuation: #797995;
   --mu-suggestion-color: #00a3ff;
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-h1: #f1d743;
   --mu-h2: #f1d743;
   --mu-h3: #f1d743;
@@ -4558,7 +4559,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #a348a3;
   --code-background: #fff1f5;
   --code-punctuation: #cf22cf;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-h1: #0048a3;
   --mu-h2: #0048a3;
   --mu-h3: #0048a3;
@@ -4584,7 +4585,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-background: #4c283f;
   --code-punctuation: #cf72cf;
   --mu-suggestion-color: #00a3ff;
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-text-selection: #0088ff7f;
   --mu-icon-focused: #cf22cf;
   --mu-table-th-background: #3d1f33;
@@ -4602,7 +4603,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #50886a;
   --code-background: hsl(146, 28%, 88%);
   --code-punctuation: #50886a;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-h1: #007fff;
   --mu-h2: #cf22ff;
   --mu-h3: #ff9300;
@@ -4629,7 +4630,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-background: #1f3528;
   --code-punctuation: #2fb86f;
   --mu-suggestion-color: #00a3ff;
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-text-selection: #0ed89455;
   --mu-h1: #72b1ff;
   --mu-h2: #e897ff;
@@ -4654,9 +4655,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #727272;
   --code-background: #f1f1f1;
   --code-punctuation: #727272;
-  --mu-sidebar-folder: #000;
-  --mu-folder-color-saturation: 0;
-  --mu-file-color-saturation: 0;
+  --mu-folder-text-color: #000;
   --nav-collapse-icon-color: #727272;
   --mu-h1: #000;
   --mu-h2: #000;
@@ -4702,9 +4701,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #575757;
   --code-background: #000;
   --code-punctuation: #727272;
-  --mu-sidebar-folder: #727272;
-  --mu-folder-color-saturation: 0;
-  --mu-file-color-saturation: 0;
+  --mu-folder-text-color: #727272;
   --nav-collapse-icon-color: #727272;
   --mu-h1: #979797;
   --mu-h2: #979797;
@@ -4752,7 +4749,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: var(--amulet-title-color);
   --code-background: #f1f1f1;
   --code-punctuation: var(--amulet-title-color);
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-h1: #0048a3;
   --mu-h2: #0048a3;
   --mu-h3: #0048a3;
@@ -4784,7 +4781,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: var(--amulet-title-color);
   --code-background: #000;
   --code-punctuation: var(--amulet-title-color);
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-h1: #00a3ff;
   --mu-h2: #00a3ff;
   --mu-h3: #00a3ff;
@@ -4818,7 +4815,10 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #0072d3;
   --code-background: #f1f1f1;
   --code-punctuation: var(--mu-accent-icons);
-  --mu-sidebar-folder: #000;
+  --mu-folder-text-color: #000;
+  --mu-file-icon-color: var(--mu-accent-light-mode);
+  --mu-folder-icon-color: #828282;
+  --mu-folder-icon-color-active: var(--mu-accent-light-mode);
   --mu-h1: var(--mu-accent-light-mode);
   --mu-h2: var(--mu-accent-light-mode);
   --mu-h3: var(--mu-accent-light-mode);
@@ -4844,8 +4844,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-blockquote-border: var(--mu-accent-color);
   --mu-hr-color: var(--mu-accent-color);
   --list-marker-color: var(--mu-accent-light-mode);
-  --mu-folder-color-saturation: 0;
-  --mu-file-color-saturation: 0;
   --nav-collapse-icon-color: #a3a3a3;
   --background-modifier-hover: var(--mu-accent-details);
   --nav-item-background-active: var(--mu-accent-details);
@@ -4886,7 +4884,10 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #0072d3;
   --code-background: #000;
   --code-punctuation: var(--mu-accent-color);
-  --mu-sidebar-folder: #979797;
+  --mu-folder-text-color: #979797;
+  --mu-file-icon-color: var(--mu-accent-color);
+  --mu-folder-icon-color: #484848;
+  --mu-folder-icon-color-active: var(--mu-accent-color);
   --mu-h1: hsl(var(--accent-h), 78%, 72%);
   --mu-h2: hsl(var(--accent-h), 78%, 72%);
   --mu-h3: hsl(var(--accent-h), 78%, 72%);
@@ -4913,8 +4914,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-blockquote-border: var(--mu-accent-color);
   --mu-hr-color: var(--mu-accent-color);
   --list-marker-color: var(--mu-accent-color);
-  --mu-folder-color-saturation: 0;
-  --mu-file-color-saturation: 0;
   --nav-collapse-icon-color: #484848;
   --background-modifier-hover: var(--mu-accent-details);
   --nav-item-background-active: var(--mu-accent-details);
@@ -4976,7 +4975,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #bf48ff;
   --code-background: #f1f1f1;
-  --mu-sidebar-folder: #0048a3;
+  --mu-folder-text-color: #0048a3;
   --mu-h1: #0048a3;
   --mu-h2: #0048a3;
   --mu-h3: #0048a3;
@@ -5017,7 +5016,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-text-title: #00a378;
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #00a378;
-  --mu-sidebar-folder: #00cf95;
+  --mu-folder-text-color: #00cf95;
   --code-background: #000;
   --code-punctuation: hsl(164, 100%, 32%);
   --tab-text-color-focused-active-current: #00f0b0;
@@ -5036,8 +5035,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-icon-focused: #00f0b0;
   --hr-color: #00f0b0;
   --list-marker-color: #00f0b0;
-  --mu-folder-color-hue: 300deg;
-  --mu-file-color-hue: 300deg;
 }
 
 /* Night */
@@ -5133,52 +5130,52 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 
 /* Sidebar adjustment - light mode */
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
-  --mu-sidebar-folder: #97bff1 !important;
+  --mu-folder-text-color: #97bff1 !important;
   --mu-bg-search-results: #2f0f18;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-moon-theme {
-  --mu-sidebar-folder: #729fd8 !important;
+  --mu-folder-text-color: #729fd8 !important;
   --mu-bg-search-results: #001122;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
-  --mu-sidebar-folder: #a0ac82 !important;
+  --mu-folder-text-color: #a0ac82 !important;
   --mu-bg-search-results: #24281c;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-gray-theme {
-  --mu-sidebar-folder: #72a3ff;
+  --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #1f1f1f;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teal-theme {
-  --mu-sidebar-folder: #72a3ff;
+  --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #002828;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-purple-theme {
-  --mu-sidebar-folder: #72a3ff;
+  --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #330048;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-concentration-theme {
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #1b1b21;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-creativity-theme {
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #291522;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teacher-theme {
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: #28392f;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-stealth-theme {
-  --mu-sidebar-folder: #727272;
+  --mu-folder-text-color: #727272;
   --mu-bg-search-results: #181818;
   --mu-folder-area-background: #bfbfbf11;
   --mu-folder-area-border: #bfbfbf28;
@@ -5186,13 +5183,13 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-stealth-them
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-accent-theme {
-  --mu-sidebar-folder: #979797;
+  --mu-folder-text-color: #979797;
   --mu-bg-search-results: #181818;
   --nav-collapse-icon-color: #484848;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
-  --mu-sidebar-folder: #72b1ff;
+  --mu-folder-text-color: #72b1ff;
   --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
   --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
 }
@@ -5205,7 +5202,7 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-night-the
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-slide-theme,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
-  --mu-sidebar-folder: #72a3ff;
+  --mu-folder-text-color: #72a3ff;
   --mu-bg-search-results: #000;
 }
 
@@ -5403,36 +5400,8 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-hide-ui-elements"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12s2.545-5 7-5c4.454 0 7 5 7 5s-2.546 5-7 5c-4.455 0-7-5-7-5z'/%3E%3Cpath d='M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'/%3E%3Cpath d='M21 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2'/%3E%3Cpath d='M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-laser"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 4V2'/%3E%3Cpath d='M15 16v-2'/%3E%3Cpath d='M8 9h2'/%3E%3Cpath d='M20 9h2'/%3E%3Cpath d='M17.8 11.8 19 13'/%3E%3Cpath d='M15 9h0'/%3E%3Cpath d='M17.8 6.2 19 5'/%3E%3Cpath d='m3 21 9-9'/%3E%3Cpath d='M12.2 6.2 11 5'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-hover-underline"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2'/%3E%3Cpath d='M7 8h10'/%3E%3Cpath d='M7 12h10'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-glow"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 3v1'/%3E%3Cpath d='M12 20v1'/%3E%3Cpath d='M3 12h1'/%3E%3Cpath d='M20 12h1'/%3E%3Cpath d='m18.364 5.636-.707.707'/%3E%3Cpath d='m6.343 17.657-.707.707'/%3E%3Cpath d='m5.636 5.636.707.707'/%3E%3Cpath d='m17.657 17.657.707.707'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-indicator"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6'/%3E%3Cpath d='m12 12 4 10 1.7-4.3L22 16Z'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -5503,6 +5472,20 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-modals"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 21h10'/%3E%3Crect width='20' height='14' x='2' y='3' rx='2'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-syntax-highlighting"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 7.5 8 10l2 2.5'/%3E%3Cpath d='m14 7.5 2 2.5-2 2.5'/%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -5580,16 +5563,17 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 /* Custom sidebar - light mode */
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark {
-  --mu-sidebar-folder: #72a3ff;
+  --mu-folder-text-color: #72a3ff;
   --nav-item-color: #a3a3a3;
   --nav-item-color-hover: #a3a3a3;
   --nav-item-color-active: #a3a3a3;
   --nav-item-color-selected: #cfcfcf;
-  --mu-special-folder-color: #f1f1f1a3;
+  --mu-special-folder-color: #000;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content {
   background-color: var(--mu-dark-sidebar-color);
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] .month {
@@ -5624,11 +5608,11 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-conten
   color: #0072d3;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
-body:not(.mu-cards-interface).outgoing-link-pane>.tree-item-self {
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).outgoing-link-pane>.tree-item-self {
   color: #bfbfbf !important;
 }
 
@@ -5677,132 +5661,407 @@ div.workspace-tab-container>div:nth-child(n)>div>div.nav-files-container.node-in
   --mu-folder-area-background: transparent !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/001"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/01"],
-.mu-rainbow-folders .nav-folder-title[data-path^="001"],
-.mu-rainbow-folders .nav-folder-title[data-path^="01"] {
-  background-color: #f1000057 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/01"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/001"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/01"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="001"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="01"] {
+  background-color: hsl(0, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/001"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/01"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="001"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="01"]:hover {
-  background-color: #f1000088 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/01"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/001"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/01"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="001"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="01"]:hover {
+  background-color: hsl(0, 100%, 72%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/002"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/02"],
-.mu-rainbow-folders .nav-folder-title[data-path^="002"],
-.mu-rainbow-folders .nav-folder-title[data-path^="02"] {
-  background-color: #f18f0057 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/02"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/002"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/02"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="002"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="02"] {
+  background-color: hsl(20, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/002"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/02"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="002"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="02"]:hover {
-  background-color: #f18f0088 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/02"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/002"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/02"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="002"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="02"]:hover {
+  background-color: hsl(20, 100%, 72%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/003"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/03"],
-.mu-rainbow-folders .nav-folder-title[data-path^="003"],
-.mu-rainbow-folders .nav-folder-title[data-path^="03"] {
-  background-color: #f1f10057 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/03"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/003"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/03"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="003"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="03"] {
+  background-color: hsl(55, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/003"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/03"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="003"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="03"]:hover {
-  background-color: #f1f10088 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/03"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/003"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/03"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="003"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="03"]:hover {
+  background-color: hsl(60, 100%, 72%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/004"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/04"],
-.mu-rainbow-folders .nav-folder-title[data-path^="004"],
-.mu-rainbow-folders .nav-folder-title[data-path^="04"] {
-  background-color: #00f10057 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/04"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/004"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/04"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="004"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="04"] {
+  background-color: hsl(120, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/004"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/04"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="004"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="04"]:hover {
-  background-color: #00f10088 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/04"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/004"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/04"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="004"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="04"]:hover {
+  background-color: hsl(120, 100%, 82%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/005"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/05"],
-.mu-rainbow-folders .nav-folder-title[data-path^="005"],
-.mu-rainbow-folders .nav-folder-title[data-path^="05"] {
-  background-color: #0000f157 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/05"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/005"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/05"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="005"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="05"] {
+  background-color: hsl(200, 70%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/005"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/05"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="005"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="05"]:hover {
-  background-color: #0000f188 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/05"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/005"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/05"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="005"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="05"]:hover {
+  background-color: hsl(200, 100%, 82%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/006"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/06"],
-.mu-rainbow-folders .nav-folder-title[data-path^="006"],
-.mu-rainbow-folders .nav-folder-title[data-path^="06"] {
-  background-color: #83008357 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/06"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/006"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/06"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="006"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="06"] {
+  background-color: hsl(230, 89%, 82%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/006"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/06"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="006"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="06"]:hover {
-  background-color: #83008388 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/06"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/006"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/06"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="006"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="06"]:hover {
+  background-color: hsl(230, 100%, 87%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/007"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/07"],
-.mu-rainbow-folders .nav-folder-title[data-path^="007"],
-.mu-rainbow-folders .nav-folder-title[data-path^="07"] {
-  background-color: #f100f157 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/07"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/007"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/07"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="007"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="07"] {
+  background-color: hsl(280, 90%, 80%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/007"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/07"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="007"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="07"]:hover {
-  background-color: #f100f188 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/07"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/007"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/07"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="007"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="07"]:hover {
+  background-color: hsl(280, 100%, 87%) !important;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/008"],
-.mu-rainbow-folders .nav-folder-title[data-path*="/08"],
-.mu-rainbow-folders .nav-folder-title[data-path^="008"],
-.mu-rainbow-folders .nav-folder-title[data-path^="08"] {
-  background-color: #82828257 !important;
-  color: var(--mu-special-folder-color) !important;
+
+body.mu-rainbow-folders .nav-folder-title[data-path*="/08"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/008"],
+body.mu-rainbow-folders .nav-folder-title[data-path*="/08"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="008"],
+body.mu-rainbow-folders .nav-folder-title[data-path^="08"] {
+  background-color: hsl(0, 0%, 72%);
+  --mu-folder-text-color: #000;
+  --mu-folder-icon-color: #000;
 }
 
-.mu-rainbow-folders .nav-folder-title[data-path*="/008"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path*="/08"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="008"]:hover,
-.mu-rainbow-folders .nav-folder-title[data-path^="08"]:hover {
-  background-color: #82828288 !important;
-  color: var(--mu-special-folder-color) !important;
+body.mu-rainbow-folders .nav-folder-title[data-path*="/08"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/008"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path*="/08"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="008"]:hover,
+body.mu-rainbow-folders .nav-folder-title[data-path^="08"]:hover {
+  background-color: hsl(0, 0%, 82%) !important;
+}
+
+/* Automatic rainbow folders */
+body:not(.mu-cards-interface).theme-light.mu-automatic-rainbow-folders.mu-sidebar-dark .workspace-leaf-content,
+body.mu-automatic-rainbow-folders {
+  --mu-folder-icon-color: #000 !important;
+  --mu-file-icon-color: #000 !important;
+  --mu-folder-text-color: #000 !important;
+  --nav-item-color: #000 !important;
+  --nav-item-color-hover: #000;
+  --nav-item-color-active: #000;
+  --nav-item-color-selected: #000;
+  --nav-item-color-highlighted: #000;
+  --nav-item-background-selected: #000;
+  --mu-indent-color-level-1: #000;
+  --mu-indent-color-level-2: #000;
+  --mu-indent-color-level-3: #000;
+  --mu-indent-color-level-4: #000;
+  --mu-indent-color-level-5: #000;
+  --mu-indent-color-level-6: #000;
+  --nav-collapse-icon-color: #000;
+}
+
+body.mu-automatic-rainbow-folders .nav-files-container.node-insert-event>div>.nav-file {
+  --mu-file-icon-color: var(--text-normal) !important;
+  --mu-folder-text-color: var(--text-normal) !important;
+  --nav-item-color: var(--text-normal) !important;
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-normal);
+  --nav-item-background-selected: var(--text-normal);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+1) {
+  background-color: #cfcfcf;
+  --mu-folder-area-border: #cfcfcf;
+  --mu-folder-area-background: #cfcfcf;
+  --mu-vault-title: #000;
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+2) {
+  background-color: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-1), 70%, 82%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+3) {
+  background-color: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-2), 70%, 82%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+4) {
+  background-color: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-3), 70%, 82%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+5) {
+  background-color: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-4), 70%, 82%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+6) {
+  background-color: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-5), 70%, 82%);
+
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+7) {
+  background-color: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-6), 70%, 82%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+8) {
+  background-color: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-7), 70%, 82%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+9) {
+  background-color: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-8), 70%, 86%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+10) {
+  background-color: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-9), 70%, 86%);
+}
+
+body.mu-automatic-rainbow-folders .tree-item.nav-folder:nth-child(10n+11) {
+  background-color: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+  --mu-folder-area-border: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+  --mu-folder-area-background: hsl(var(--mu-rainbow-hue-10), 70%, 86%);
+}
+
+/* Rainbow icons, folders and text */
+body.mu-automatic-folder-name-rainbow-colors .nav-files-container.node-insert-event>div>.nav-file {
+  --mu-file-icon-color: var(--text-normal) !important;
+  --mu-folder-text-color: var(--text-normal) !important;
+  --nav-item-color: var(--text-normal) !important;
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-normal);
+  --nav-item-background-selected: var(--text-normal);
+}
+
+body.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+1) {
+  --mu-folder-icon-color: var(--text-normal);
+  --mu-file-icon-color: var(--text-normal);
+  --mu-folder-text-color: var(--text-normal);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+2) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+3) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+4) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+5) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+6) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+7) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+8) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+9) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+10) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 90%, 73%);
+}
+
+body.theme-dark.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+11) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-10), 90%, 73%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+2) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-1), 100%, 38%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+3) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-2), 100%, 38%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+4) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-3), 100%, 30%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+5) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-4), 100%, 28%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+6) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-5), 100%, 28%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+7) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-6), 100%, 28%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+8) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-7), 100%, 28%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+9) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-8), 100%, 28%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+10) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-9), 100%, 28%);
+}
+
+body.theme-light.mu-automatic-folder-name-rainbow-colors .tree-item.nav-folder:nth-child(10n+11) {
+  --mu-folder-icon-color-active: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  --mu-folder-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  --mu-file-icon-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
+  --mu-folder-text-color: hsl(var(--mu-rainbow-hue-10), 100%, 28%);
 }
 
 /* Neon Mode */
@@ -6608,13 +6867,21 @@ table tr>td>i.muc:hover>span {
 /* Breadcrumbs */
 .view-header-breadcrumb {
   background-color: var(--mu-folder-area-background);
-  color: var(--mu-sidebar-folder);
+  color: var(--mu-folder-text-color);
   font-weight: var(--font-semibold);
   border: 1px solid var(--mu-folder-area-border);
 }
 
 .view-header-breadcrumb:hover {
-  color: var(--mu-sidebar-folder) !important;
+  color: var(--mu-folder-text-color) !important;
+}
+
+body.mu-automatic-rainbow-folders .view-header-breadcrumb {
+  color: var(--text-muted);
+}
+
+body.mu-automatic-rainbow-folders .view-header-breadcrumb:hover {
+  color: var(--text-accent) !important;
 }
 
 .view-header-breadcrumb-separator {
@@ -6878,9 +7145,9 @@ body.is-mobile .workspace-drawer-header-name-text {
   color: var(--mu-icon);
 }
 
-/* Extra Mobile Adjustments */
+/* Mobile */
 body.is-mobile {
-  --mu-folder-icon-zoom: 100%;
+  --mu-folder-zoom: 100%;
   --mu-notes-icon-zoom: 100%;
 }
 
@@ -6996,6 +7263,7 @@ body:not(.is-mobile).mu-cards-interface {
   --mu-titlebar-background: var(--mu-background-color-2) !important;
   --divider-color: transparent !important;
   --ribbon-background: var(--mu-background-color-2) !important;
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
 }
 
 body:not(.is-mobile).mu-cards-interface .workspace-tab-header::before,
@@ -7135,7 +7403,7 @@ body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .ob
 /* Suggestion note */
 .suggestion-item.mod-complex .suggestion-flair,
 .suggestion-item.mod-complex .suggestion-note {
-  color: var(--mu-sidebar-folder);
+  color: var(--mu-folder-text-color);
 }
 
 /* Scrollbars */
@@ -7359,7 +7627,7 @@ body.mu-tags-hide-hashtag .cm-hashtag.cm-hashtag-end {
 .mu-tags-colored a.tag[href="#todo"],
 .mu-tags-colored .cm-tag-todo {
   background-color: #ff7f00;
-  color: #f1f1f1;
+  color: #000;
 }
 
 .mu-tags-colored a.tag[href="#inprogress"],
@@ -7761,7 +8029,7 @@ a.tag[href="#magic"]::after,
   content: ' ✨';
 }
 
-/* 1.6.2 adjustments */
+/* 1.6.2 */
 .workspace-drawer-vault-name {
   --vault-profile-font-weight: var(--font-semibold);
   color: var(--vault-name-color);
@@ -7867,6 +8135,8 @@ body.mu-global-font-mode {
   --h4-font: var(--mu-global-font);
   --h5-font: var(--mu-global-font);
   --h6-font: var(--mu-global-font);
+  font-feature-settings: var(--mu-global-font-stylistic-set);
+  letter-spacing: calc(min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing)));
 }
 
 /* Indicator size */
@@ -7877,6 +8147,23 @@ body.mu-global-font-mode {
 
 .mu-hide-reading-indicator {
   --mu-reading-indicator-width: 0;
+}
+
+body.mu-hide-indent-guides {
+  --indentation-guide-width: 0;
+  --indentation-guide-color: transparent;
+  --indentation-guide-color-active: transparent;
+  --mu-indent-color-level-1: transparent;
+  --mu-indent-color-level-2: transparent;
+  --mu-indent-color-level-3: transparent;
+  --mu-indent-color-level-4: transparent;
+  --mu-indent-color-level-5: transparent;
+  --mu-indent-color-level-6: transparent;
+}
+
+/* Suggestion - search panel */
+body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
+  background-color: var(--mu-suggestion-search-panel-bg-color);
 }
 
 /* Style Settings */
@@ -8015,13 +8302,8 @@ settings:
         default-light: '#0072d3'
         default-dark: '#0072d3'
     -
-        id: mu-sidebar-dark
-        title: Dark sidebar (light mode)
-        description: Turn on dark sidebar (light mode - normal UI)
-        type: class-toggle
-    -
         id: magicuser-theme-ui
-        title: UI Settings
+        title: User Interface (UI)
         type: heading
         description: Background colors, caret and other settings
         level: 2
@@ -8096,6 +8378,12 @@ settings:
         default-light: '#cf00ff'
         default-dark: '#00cfff'
     -
+        id: magicuser-theme-vault-title
+        title: Vault Title and Inline Title
+        type: heading
+        level: 4
+        collapsed: true
+    -
         id: mu-vault-title
         title: Vault title color
         type: variable-themed-color
@@ -8123,32 +8411,11 @@ settings:
         max: 2
         step: 0.01
     -
-        id: mu-file-header-border-color
-        title: File header border color
-        type: variable-themed-color
-        description: Select file header border color
-        format: hex
-        opacity: true
-        default-light: '#007fff20'
-        default-dark: '#007fff20'
-    - 
-        id: mu-file-header-border-value
-        title: File header border width
-        description: Set file header border width (0 = no border)
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 5
-        step: 1
-    -
-        id: mu-hr-color
-        title: Horizontal rule color
-        type: variable-themed-color
-        description: Select horizontal rule color
-        format: hex
-        opacity: false
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
+        id: magicuser-theme-blockquote
+        title: Blockquote
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: mu-blockquote-background
         title: Blockquote background color
@@ -8173,6 +8440,12 @@ settings:
         description: Turn on outline blockquote border 
         type: class-toggle
     -
+        id: magicuser-theme-lists
+        title: Lists
+        type: heading
+        level: 4
+        collapsed: true
+    -
         id: list-marker-color
         title: Lists color
         type: variable-themed-color
@@ -8191,6 +8464,57 @@ settings:
         default-light: '#f100f1'
         default-dark: '#f100f1'
     -
+        id: magicuser-theme-hr
+        title: Horizontal Rule and Dividers
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: mu-hr-color
+        title: Horizontal rule color
+        type: variable-themed-color
+        description: Select horizontal rule color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-file-header-border-color
+        title: File header border color
+        type: variable-themed-color
+        description: Select file header border color
+        format: hex
+        opacity: true
+        default-light: '#007fff20'
+        default-dark: '#007fff20'
+    - 
+        id: mu-file-header-border-value
+        title: File header border width
+        description: Set file header border width (0 = no border)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1
+    -
+        id: mu-divider-color
+        title: Divider color
+        type: variable-themed-color
+        description: Select panel divider color
+        format: hex
+        opacity: false
+        default-light: '#007fff10'
+        default-dark: '#007fff10'
+    -
+        id: mu-divider-width-value
+        title: Divider width
+        description: Set the divider width (0 =  no divider)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 8
+        step: 1 
+    -
         id: mu-divider-color-hover
         title: Divider hover color
         type: variable-themed-color
@@ -8200,14 +8524,14 @@ settings:
         default-light: '#007fff'
         default-dark: '#007fff'
     -
-        id: mu-sidebar-pane-numbers
-        title: Sidebar numbers color
-        type: variable-themed-color
-        description: Tags count, search results and other sidebar numbers color
-        format: hex
-        opacity: false
-        default-light: '#007fff'
-        default-dark: '#007fff'
+        id: mu-divider-hover-width-value
+        title: Divider hover width
+        description: Set the divider hover width (0 =  no divider)
+        type: variable-number-slider
+        default: 3
+        min: 0
+        max: 8
+        step: 1 
     -
         id: mu-menu-separator-color
         title: Menu and settings separators color
@@ -8218,14 +8542,68 @@ settings:
         default-light: '#0072d322'
         default-dark: '#0072d322'
     -
+        id: magicuser-theme-frontmatter
+        title: Frontmatter Properties
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: mu-properties-container-color
+        title: Frontmatter properties container background color
+        type: variable-themed-color
+        description: Frontmatter properties container background color
+        format: hex
+        opacity: true
+        default-light: '#007fff10'
+        default-dark: '#007fff10'
+    -
+        id: mu-property-title-color
+        title: Frontmatter properties title color
+        type: variable-themed-color
+        description: Frontmatter properties title color (top container title)
+        format: hex
+        opacity: true
+        default-light: '#0072d3'
+        default-dark: '#00a3ff'
+    -
+        id: mu-property-color
+        title: Frontmatter property name color
+        type: variable-themed-color
+        description: Frontmatter property name color
+        format: hex
+        opacity: true
+        default-light: '#0072d3'
+        default-dark: '#00a3ff'
+    -
         id: magicuser-theme-folders-icons
-        title: Icons and Folders
+        title: Icons, Folders and Sidebars
         type: heading
         level: 3
         collapsed: true
     -
+        id: mu-automatic-rainbow-folders
+        title: Automatic rainbow colored folders
+        description: Automatic rainbow colored folders and subfolders
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-automatic-folder-name-rainbow-colors
+        title: Automatic rainbow-colored folder names and icons
+        description: Automatic rainbow colors for folder/subfolder names and icons
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-rainbow-hue-start-value
+        title: Initial color for automatic rainbow folders
+        description: Select the initial color (0 =  red color)
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 360
+        step: 30 
+    -
         id: mu-rainbow-folders
-        title: Rainbow colored folders
+        title: Numbered rainbow colored folders
         description: Special rainbow colored folders (001-,01- to 008-,08-) 
         type: class-toggle
         addCommand: true
@@ -8240,52 +8618,88 @@ settings:
         title: Hide file icons
         description:  Toggle file icons
         type: class-toggle
-        addCommand: true
+        addCommand: true    
     -
-        id: mu-sidebar-folder
+        id: mu-folder-text-color
         title: Folder name color
         type: variable-themed-color
-        description: Folder name color
+        description: Folder text color
         format: hex
         opacity: false
         default-light: '#0048a3'
         default-dark: '#72a3ff'
-    - 
-        id: mu-folder-color-hue-value
-        title: Folder icons color
-        description: Select folder icons color
-        type: variable-number-slider
-        default: 0
-        min: 0
-        max: 360
-        step: 1
     -
-        id: mu-folder-color-saturation
-        title: Folder icons color saturation
-        description: Folder icons color saturation
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 1
-        step: 0.1
-    - 
-        id: mu-file-color-hue-value
-        title: File icons color
-        description: Select file icons color
-        type: variable-number-slider
-        default: 0
-        min: 0
-        max: 360
-        step: 1
+        id: mu-closed-folders-design-style
+        title: Closed folder icon
+        type: class-select
+        description: Select closed folder icon
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default
+                value: none
+            - 
+                label: Unfilled folder
+                value: mu-folder-icon-closed-unfilled
+            - 
+                label: Closed folder 2
+                value: mu-folder-icon-closed-op3
     -
-        id: mu-file-color-saturation
-        title: File icons color saturation
-        description: File icons color saturation
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 1
-        step: 0.1
+        id: mu-folder-icon-color
+        title: Closed folder icon color
+        type: variable-themed-color
+        description: Closed folder icon color
+        format: hex
+        opacity: false
+        default-light: '#0048a3'
+        default-dark: '#0048a3'
+    -
+        id: mu-opened-folders-design-style
+        title: Opened folder icon
+        type: class-select
+        description: Select opened folder icon
+        allowEmpty: false
+        default: none
+        options:
+            -
+                label: Default
+                value: none
+            - 
+                label: Unfilled folder
+                value: mu-folder-icon-opened-unfilled
+            - 
+                label: Traditional
+                value: mu-folder-icon-opened-op3
+    -
+        id: mu-folder-icon-color-active
+        title: Opened folder icon color
+        type: variable-themed-color
+        description: Opened folder icon color
+        format: hex
+        opacity: false
+        default-light: '#00a3ff'
+        default-dark: '#00a3ff'
+    -
+        id: mu-file-icon-color
+        title: File icon color
+        type: variable-themed-color
+        description: File icon color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-disable-folder-style
+        title: Disable sidebar files and folders styles
+        description:  Activate this option to use plugins for coloring files and folders
+        type: class-toggle
+    -
+        id: magicuser-theme-ui-icons
+        title: UI Icons
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: mu-icon
         title: Icon color
@@ -8350,6 +8764,44 @@ settings:
         default-light: '#007fff30'
         default-dark: '#007fff40'
     -
+        id: magicuser-theme-sidebar
+        title: Sidebars
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: mu-sidebar-dark
+        title: Dark sidebar (light mode)
+        description: Turn on dark sidebar (light mode - normal UI)
+        type: class-toggle
+    -
+        id: mu-sidebar-top-buttons-container-bg-color
+        title: Sidebar top buttons container background color
+        type: variable-themed-color
+        description: Select sidebar top buttons container background color
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'    
+    -
+        id: mu-sidebar-bottom-vault-profile-bg-color
+        title: Sidebar vault profile background color
+        type: variable-themed-color
+        description: Select sidebar vault profile background color (bottom container)
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'    
+    -
+        id: mu-suggestion-search-panel-bg-color
+        title: Sidebar search panel background color
+        type: variable-themed-color
+        description: Select sidebar search/suggestions panel background color
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'
+    -
         id: mu-folder-area-border
         title: Sidebar open folder area border
         type: variable-themed-color
@@ -8373,10 +8825,31 @@ settings:
         description: Hide sidebar open folder area
         type: class-toggle
     -
+        id: mu-sidebar-pane-numbers
+        title: Sidebar numbers color
+        type: variable-themed-color
+        description: Tags count, search results and other sidebar numbers color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: magicuser-theme-breadcrumb
+        title: Breadcrumb
+        type: heading
+        level: 4
+        collapsed: true
+    -
         id: mu-slanted-breadcrumb
         title: Slanted breadcrumb layout
         description: Slanted breadcrumb (view header breadcrumb)
         type: class-toggle
+    -
+        id: magicuser-theme-collapse-icons
+        title: Collapse Icons
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: nav-collapse-icon-color
         title: Sidebars collapse icon color
@@ -8419,6 +8892,11 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    -
+        id: mu-hide-indent-guides
+        title: Hide indent guides
+        description: Hide indent guides
+        type: class-toggle
     -
         id: mu-indent-color-level-1
         title: Indent guide - color 1
@@ -9015,54 +9493,54 @@ settings:
         type: class-toggle
     -
         id: tag-color
-        title: Tag text foreground color
+        title: Tags text color
         type: variable-themed-color
-        description: Select tag text foreground color
+        description: Select tags text foreground color
         format: hex
         opacity: false
         default-light: '#8b6cef'
         default-dark: '#8b6cef'  
     -
         id: tag-color-hover
-        title: Tag text foreground hover color
+        title: Tags text hover color
         type: variable-themed-color
-        description: Select tag text foreground hover color
+        description: Select tags text foreground hover color
         format: hex
         opacity: false
         default-light: '#a994f3'
         default-dark: '#a994f3'  
     -
         id: tag-background
-        title: Tag background color
+        title: Tags background color
         type: variable-themed-color
-        description: Select tag background color
+        description: Select tags background color
         format: hex
         opacity: true
         default-light: '#8b6cef82'
         default-dark: '#8b6cef82'  
     -
         id: tag-background-hover
-        title: Tag background hover color
+        title: Tags background hover color
         type: variable-themed-color
-        description: Select tag background hover color
+        description: Select tags background hover color
         format: hex
         opacity: true
         default-light: '#a994f382'
         default-dark: '#a994f382'
     -
         id: tag-border-color
-        title: Tag border color
+        title: Tags border color
         type: variable-themed-color
-        description: Select tag border color
+        description: Select tags border color
         format: hex
         opacity: true
         default-light: '#0072d3'
         default-dark: '#0072d3'
     -
         id: tag-border-color-hover
-        title: Tag border hover color
+        title: Tags border hover color
         type: variable-themed-color
-        description: Select tag border hover color
+        description: Select tags border hover color
         format: hex
         opacity: true
         default-light: '#00bfff'
@@ -9221,6 +9699,60 @@ settings:
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
+        id: magicuser-theme-modals
+        title: Modals and Prompts
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: modal-border-color
+        title: Modals and prompts border color
+        type: variable-themed-color
+        description: Select modals border color
+        format: hex
+        opacity: true
+        default-light: '#007fff30'
+        default-dark: '#007fff30'
+    -
+        id: mu-border-width-value
+        title: Modals and prompts border width
+        description: Set modals border width (0 =  no border)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 8
+        step: 1
+    -
+        id: mu-transparent-prompts-menus
+        title: Transparent menus, modals and prompts
+        description: Activate transparency (menus, modals and prompts)
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-transparency-menus-level
+        title: Transparency level
+        description: Adjust the opacity (transparent menus, modals and prompts)
+        type: variable-number-slider
+        default: 0.5
+        min: 0.1
+        max: 1
+        step: 0.05
+    -
+        id: mu-transparency-blur-level-value
+        title: Transparent elements - blur level
+        description: Adjust the blur level of transparent menus, modals and prompts
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 20
+        step: 1
+    -  
+        id: mu-compact-prompt
+        title: Compact prompts
+        description: Activate compact version of command palette and prompts
+        type: class-toggle
+        addCommand: true
+    -
         id: magicuser-theme-scrollbars
         title: Scrollbars
         type: heading
@@ -9282,7 +9814,7 @@ settings:
         default-dark: '#84848448'
     -
         id: magicuser-theme-ui-advanced
-        title: UI Advanced Settings
+        title: UI Advanced
         type: heading
         level: 3
         collapsed: true
@@ -9315,36 +9847,6 @@ settings:
         default: 700
         min: 500
         max: 2560
-        step: 1
-    -  
-        id: mu-compact-prompt
-        title: Compact prompts
-        description: Activate compact version of command palette and prompts
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-transparent-prompts-menus
-        title: Transparent menus, modals and prompts
-        description: Activate transparency (menus, modals and prompts)
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-transparency-menus-level
-        title: Transparency level
-        description: Adjust the opacity (transparent menus, modals and prompts)
-        type: variable-number-slider
-        default: 0.5
-        min: 0.1
-        max: 1
-        step: 0.05
-    -
-        id: mu-transparency-blur-level-value
-        title: Transparent elements - blur level
-        description: Adjust the blur level of transparent menus, modals and prompts
-        type: variable-number-slider
-        default: 8
-        min: 0
-        max: 20
         step: 1
     -
         id: magicuser-theme-hide-ui-elements
@@ -9722,6 +10224,18 @@ settings:
         description: Select global font (global font mode)
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
     -
+        id: mu-global-font-stylistic-set
+        title: Global font stylistic sets
+        type: variable-text
+        description: Select global font stylistic sets (when supported by the selected font). Advanced typographic features in OpenType fonts.
+        default: normal
+    -
+        id: mu-global-font-letter-spacing
+        title: Global font letter spacing
+        type: variable-text
+        description: Set a value in pixels to customize spacing between characters (e.g. 0.5px). Use normal to restore the font's default letter spacing. Maximum is 2px.
+        default: normal
+    -
         id: text-normal
         title: Theme text color
         type: variable-themed-color
@@ -9919,6 +10433,42 @@ settings:
         description: Font used for source mode
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace
     -
+        id: mu-outline-inline-code
+        title: Outline inline code
+        description: Turn on outline inline code
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-inline-code-border
+        title: Inline code border color
+        type: variable-themed-color
+        description: Inline code border color (outline code on)
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-outline-code
+        title: Outline code block
+        description: Turn on outline code blocks
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-code-block-border
+        title: Code block border color
+        description: Code block border color (outline code on)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: magicuser-theme-syntax-highlighting
+        title: Syntax Highlighting
+        type: heading
+        level: 3
+        collapsed: true
+    -
         id: code-background
         title: Code background color
         type: variable-themed-color
@@ -9976,7 +10526,7 @@ settings:
         default-dark: '#0088f1'
     -
         id: code-tag
-        title: Tag color
+        title: HTML tag color
         type: variable-themed-color
         format: hex
         opacity: false
@@ -10006,36 +10556,6 @@ settings:
         opacity: false
         default-light: '#c300f1'
         default-dark: '#d372ff'
-    -
-        id: mu-outline-inline-code
-        title: Outline inline code
-        description: Turn on outline inline code
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-outline-code
-        title: Outline code block
-        description: Turn on outline code blocks
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-inline-code-border
-        title: Inline code border color
-        type: variable-themed-color
-        description: Inline code border color (outline code on)
-        format: hex
-        opacity: false
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
-    -
-        id: mu-code-block-border
-        title: Code block border color
-        description: Code block border color (outline code on)
-        type: variable-themed-color
-        format: hex
-        opacity: false
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
     - 
         id: magicuser-theme-about
         title: MagicUser Theme
