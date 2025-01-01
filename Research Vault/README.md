@@ -1,6 +1,6 @@
-# Research Vault
+This repository serves as a central place for all the research relevant to creating the Reference Set CSS. It's intended to be used directly as an Obsidian Vault. Note that most of the Research work was done in October 2024 so some stats will be outdated. At the moment, there are no intention to keep this vault updated (besides [[08 Style Settings Toggle Review]] and [[09 @container Style Queries Toggle Review]]). It serves as a record for what information was used to create the Reference Set CSS.
 
-This repository serves as a central place for all the research relevant to creating the Reference set. It's intended to be used directly as an Obsidian Vault. All themes and snippets that include Alternative Checkboxes are pre-installed for ease of testing. The following Community plugins are also included:
+All themes and snippets that include Alternative Checkboxes are pre-installed for ease of testing. The following Community plugins are also included:
 - `Style Settings` - Required for some themes.
 - `Code Editor Shortcuts` - Easier multiline editing.
 
