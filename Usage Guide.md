@@ -1,3 +1,8 @@
+# 🗒️ Reference Set CSS
+The Reference Set CSS snippet was designed to make creating and modifying Alternative Checkboxes as simple as possible. It's divided into 2 sections:
+- First section for definining each Alternative Checkbox with a simple selector and a set of CSS Variables.
+- Second section for "Behind the scenes" CSS which handles all the setup. The user only has to worry about defining what they want to change using CSS Variables in the prior section; everything has a default value set to it in order to reduce the code needed.
+
 
 # ✅ Supported Themes
 The Reference Set CSS will work with:
@@ -174,7 +179,7 @@ Only used when `--icon-method: mask;` is set. Used to change the size of icon wi
 ```css
 --icon-mask-image: url("data:image/svg+xml;base64,PHN2Z...");
 ```
-Only used when `--icon-method: mask;` is set. Used to input the Base64 embedded icon.  
+Only used when `--icon-method: mask;` is set. Used to input the Base64 embedded icon. The Reference Set makes use of the [Lucide](https://lucide.dev/) icon set (same icon set as the Obsidian UI). You can use other Base64 embedded SVG icons here. For converting other SVG icons, you can use this: https://yoksel.github.io/url-encoder/  
 **CSS Reference:** https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image
 
 ---
