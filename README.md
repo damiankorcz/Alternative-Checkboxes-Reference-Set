@@ -2,7 +2,11 @@
 
 ## 🎯 Objective
 
-This is an initiative to help standardize the Alternative Checkboxes feature commonly used by the community in Obsidian.md. The result is a Reference Set CSS and supporting Usage Guide which is there to serve as a foundation for customisation, creating other Alternative Checkbox sets and encouraging theme developers to implement toggle options for their built in Alternative Checkboxes. This allows users to use their own snippets without hacky overwrites. We achieved this by analyzing all publicly available implementations of Alternative Checkboxes within Obsidian be it as a Theme, CSS Snippet or Plugin and creating an easy to customise snippet.
+This is an initiative to help standardize the Alternative Checkboxes feature commonly used by the community in Obsidian.md.
+
+The result is a Reference Set CSS and supporting Usage Guide which is there to serve as a foundation for customisation, creating other Alternative Checkbox sets and encouraging theme developers to implement toggle options for their built in Alternative Checkboxes. This allows users to use their own snippets without hacky overwrites.
+
+We achieved this by analyzing all publicly available implementations of Alternative Checkboxes within Obsidian be it as a Theme, CSS Snippet or Plugin and creating an easy to customise snippet.
 
 | Light / Dark Theme |
 | -------------------|
@@ -11,14 +15,14 @@ This is an initiative to help standardize the Alternative Checkboxes feature com
 
 ## 🗃️ Usage
 
-Please refer to the [Usage Guide](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Usage%20Guide.md) for information on how to use the Reference Set snippet, implement toggles in your theme for your current Alternative Checkboxes implementation as well as how to make your own set based on the reference.
+Please refer to the [Usage Guide](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Usage%20Guide.md) for information on how to use the Reference Set snippet, implement toggles in your theme for your current Alternative Checkboxes implementation, as well as, how to make your own set based on the reference.
 
 ## 🗣️ Discussion
 
 Previously, all discussion regarding this initiative was carried out in a thread within the Official Obsidian Discord. To see the archive visit here:
 https://discord.com/channels/686053708261228577/1291469509336502272
 
-Going forward please use the Issues section in this repository to report any issues, ask for help with implementing toggles in your theme or creating your own Alternative Checkbox sets, etc.
+Going forward, please use the Issues section in this repository to report any issues, ask for help with implementing toggles in your theme or creating your own Alternative Checkbox sets, etc.
 
 ## 🛠 Contributing
 
