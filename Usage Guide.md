@@ -1,7 +1,7 @@
 # 🗒️ Reference Set CSS
 The Reference Set CSS snippet was designed to make creating and modifying Alternative Checkboxes as simple as possible. It's divided into 2 sections:
-- First section for definining each Alternative Checkbox with a simple selector and a set of CSS Variables.
-- Second section for "Behind the scenes" CSS which handles all the setup. The user only has to worry about defining what they want to change using CSS Variables in the prior section; everything has a default value set to it in order to reduce the code needed.
+- Section 1: Definining each Alternative Checkbox with a simple selectors and a set of CSS Variables.
+- Section 2: The following code should remain untouched. It serves as a template for checkbox definitions above. It leaves the default unchecked and checked checkboxes untouched; those are styled according to the theme used.
 
 
 # ✅ Supported Themes

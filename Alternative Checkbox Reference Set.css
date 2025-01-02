@@ -22,6 +22,11 @@
     - Absolute Stroke width = on
 */
 
+/*  --------------------------------------------------------------------------------------------
+    Section 1
+    Definining each Alternative Checkbox with a simple selectors and a set of CSS Variables.
+*/
+
 /* - [/] Incomplete */
 div.HyperMD-task-line[data-task="/"],
 ul > li[data-task="/"] {
@@ -163,6 +168,7 @@ ul > li[data-task="d"] {
 }
 
 /*  --------------------------------------------------------------------------------------------
+    Section 2
     The following code should remain untouched. It serves as a template for checkbox definitions
     above. It leaves the default unchecked and checked checkboxes untouched; those are styled 
     according to the theme used.
