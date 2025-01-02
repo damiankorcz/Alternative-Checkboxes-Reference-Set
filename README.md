@@ -16,6 +16,8 @@ The result is a Reference Set CSS and supporting Usage Guide which is there to s
 
 We achieved this by analyzing all publicly available implementations of Alternative Checkboxes within Obsidian be it as a Theme, CSS Snippet or Plugin and creating an easy to customise snippet.
 
+You can review the research that went into this by downloading the [Research Vault from the Releases section](https://github.com/damiankorczAlternative-Checkboxes-Reference-Set/releases) and opening the folder in Obsidian.
+
 | Light / Dark Theme |
 | -------------------|
 | ![Light / Dark Theme Reference Set Alternative Checkboxes](https://github.com/user-attachments/assets/b749cb4e-2d9e-4600-b2c8-004de9ca49bd) |
@@ -119,11 +121,11 @@ The Research Vault contains Themes, CSS Snippets and Plugins which were added fo
 - [ToggleList](https://github.com/thingnotok/obsidian-toggle-list) - Distributed under the [MIT License](https://github.com/thingnotok/obsidian-toggle-list/blob/master/LICENSE)
 
 </details>
-<br>
+
 The inclusion of the Themes / CSS Snippets / Plugins in the vault are strictly for research purposes. If you are an author of any of them and would like me to remove them from this repository, please let me know by creating an issue.  
 
 The Documentation itself (Markdown files) are under the [Unlicense License](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE), unless another license is noted, especially next to code snippets from the themes.  
 
-The Alternative Checkbox Reference Set CSS file is also under the [Unlicense License](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE) to prevent any issues with creative derivative works based on it.
+The Alternative Checkbox Reference Set CSS file is also under the [Unlicense License](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE) to prevent any issues with creating derivative works based on it.
 
 The icons used in the Reference Set CSS are [Lucide](https://lucide.dev/). Lucide is distributed under the [ISC License](https://lucide.dev/license).
