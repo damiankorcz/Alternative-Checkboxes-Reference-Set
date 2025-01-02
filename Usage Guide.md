@@ -3,7 +3,6 @@ The Reference Set CSS snippet was designed to make creating and modifying Altern
 - Section 1: Definining each Alternative Checkbox with a simple selectors and a set of CSS Variables.
 - Section 2: The following code should remain untouched. It serves as a template for checkbox definitions above. It leaves the default unchecked and checked checkboxes untouched; those are styled according to the theme used.
 
-
 # ✅ Supported Themes
 The Reference Set CSS will work with:
 - The default Obsidian theme.
@@ -132,7 +131,7 @@ ul >li[data-task="/"] {
 ```
 **This example includes all available variables. You don't need to include all of them per checkbox since there are defaults set in the Reference Set CSS. Only include the ones you want to overwrite e.g. change the icon with the `--icon-mask-image` variable.**
 
-**As in the Reference Set CSS, you want to add all of your Alternative Checkbox code above the comment mentioned above in case a future update is required and to clearly separate the setup code and Alternative Checkbox code.**
+**As in the Reference Set CSS, you want to add all of your Alternative Checkbox code above the comment mentioned above (so in Section 1). In case a future update is required keeping a clear separation of the setup code and Alternative Checkbox code will make it easier to maintain.**
 
 ## Breakdown
 Each line has a specific function:
