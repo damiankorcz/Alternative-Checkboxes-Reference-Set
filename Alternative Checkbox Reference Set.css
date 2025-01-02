@@ -1,12 +1,14 @@
 /*
     Alternative Checkboxes Reference Set (Version: 1.0.0) 
+    Initiative created by Damian Korcz <https://github.com/damiankorcz>.
     
     Initiative Repository: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set
     Usage Guide: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Usage%20Guide.md
+    Research Vault: https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/tree/main/Research%20Vault
 
     The following CSS Snippet is designed to serve as a Reference for how to implement the commonly used
     Alternative Checkboxes feature in themes and CSS Snippets. The Checkbox syntax in conjunction with the
-    meaning are based on the same set as the Minimal theme since that is the most common set among all themes
+    meaning are based on the same set as the Minimal theme, since that is the most common set among all themes
     which implement the feature.
 
     More on that here:
@@ -20,6 +22,9 @@
     - Stroke width = 1.75px
     - Size = 16px
     - Absolute Stroke width = on
+
+    This snippet's code is distributed under the Unlicense License.
+    See https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/LICENSE for more information.
 */
 
 /*  --------------------------------------------------------------------------------------------
