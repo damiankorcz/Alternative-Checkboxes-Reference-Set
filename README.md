@@ -1,29 +1,29 @@
-# Alternative Checkboxes Reference Set
+# ✅ Alternative Checkboxes Reference Set
 
-# 🎯 Objective
+## 🎯 Objective
 
-This is an initiative to help standardize the Alternative Checkboxes feature commonly used by the community in Obsidian.md. The result is a Reference Set CSS and supporting Usage Guide which is there to serve as a foundation for creating other Alternative Checkbox sets and encouraging theme developers to implement toggle options for their built in Alternative Checkboxes. This allows users to use their own snippets without hacky overwrites. We achieved this by analyzing all publicly available implementations of Alternative Checkboxes within Obsidian be it as a Theme, CSS Snippet or Plugin and creating an easy to customise snippet.
+This is an initiative to help standardize the Alternative Checkboxes feature commonly used by the community in Obsidian.md. The result is a Reference Set CSS and supporting Usage Guide which is there to serve as a foundation for customisation, creating other Alternative Checkbox sets and encouraging theme developers to implement toggle options for their built in Alternative Checkboxes. This allows users to use their own snippets without hacky overwrites. We achieved this by analyzing all publicly available implementations of Alternative Checkboxes within Obsidian be it as a Theme, CSS Snippet or Plugin and creating an easy to customise snippet.
 
 | Light Theme                          | Dark Theme                           |
 | ------------------------------------ | ------------------------------------ |
 | ![Light Theme Reference Set Alternative Checkboxes](https://github.com/user-attachments/assets/51c32229-9f10-40fc-8e8e-f898c721dc26) | ![Dark Theme Reference Set Alternative Checkboxes](https://github.com/user-attachments/assets/3cfdf816-a0f5-4a50-b231-cd16ec0fbec9) |
 
-# 🗃️ Usage
+## 🗃️ Usage
 
 Please refer to the [Usage Guide](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/blob/main/Usage%20Guide.md) for information on how to use the Reference Set snippet, implement toggles in your theme for your current Alternative Checkboxes implementation as well as how to make your own set based on the reference.
 
-# 🗣️ Discussion
+## 🗣️ Discussion
 
 Previously, all discussion regarding this initiative was carried out in a thread within the Official Obsidian Discord. To see the archive visit here:
 https://discord.com/channels/686053708261228577/1291469509336502272
 
 Going forward please use the Issues section in this repository to report any issues, ask for help with implementing toggles in your theme or creating your own Alternative Checkbox sets, etc.
 
-# 🛠 Contributing
+## 🛠 Contributing
 
 At the moment, there are no direct guidelines for contributing to this repository. Ideally, any contributions should be discussed in an Issue first.
 
-# 📣 Acknowledgments
+## 📣 Acknowledgments
 
 Special thanks to the following people for their direct contributions to this repository:
 - [**claremacrae** ](https://github.com/claremacrae) - For assisting in parsing through all available themes in Obsidian's Community Themes Store.
@@ -32,7 +32,7 @@ Special thanks to the following people for their direct contributions to this re
 
 Also, big thanks to everyone that contributed feedback over in the Discord Thread.
 
-# 📝 Licenses
+## 📝 Licenses
 
 The Research Vault contains Themes, CSS Snippets and Plugins which were added for convenience of previewing the relevant documentation. Here are the licenses which they are distributed under:
 
