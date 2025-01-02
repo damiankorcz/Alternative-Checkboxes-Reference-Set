@@ -4,9 +4,10 @@
 
 This is an initiative to help standardize the Alternative Checkboxes feature commonly used by the community in Obsidian.md. The result is a Reference Set CSS and supporting Usage Guide which is there to serve as a foundation for customisation, creating other Alternative Checkbox sets and encouraging theme developers to implement toggle options for their built in Alternative Checkboxes. This allows users to use their own snippets without hacky overwrites. We achieved this by analyzing all publicly available implementations of Alternative Checkboxes within Obsidian be it as a Theme, CSS Snippet or Plugin and creating an easy to customise snippet.
 
-| Light Theme                          | Dark Theme                           |
-| ------------------------------------ | ------------------------------------ |
-| ![Light Theme Reference Set Alternative Checkboxes](https://github.com/user-attachments/assets/51c32229-9f10-40fc-8e8e-f898c721dc26) | ![Dark Theme Reference Set Alternative Checkboxes](https://github.com/user-attachments/assets/3cfdf816-a0f5-4a50-b231-cd16ec0fbec9) |
+| Light / Dark Theme |
+| -------------------|
+| ![Light / Dark Theme Reference Set Alternative Checkboxes](https://github.com/user-attachments/assets/b749cb4e-2d9e-4600-b2c8-004de9ca49bd) |
+
 
 ## 🗃️ Usage
 
