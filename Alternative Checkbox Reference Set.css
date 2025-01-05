@@ -192,26 +192,23 @@ body {
     If you want different defaults for all Alternative Checkboxes you can change them here. 
 */
 .HyperMD-task-line:not([data-task="x"], [data-task=" "]),
-li:not([data-task="x"], [data-task=" "]) {
-    --icon-method: mask;
-    
-    --icon-mask-position: center;
-    --icon-mask-size: contain;
+li:not([data-task="x"], [data-task=" "]) {  
     --icon-mask-image: unset;
-    
-    --icon-content: "";
-    --icon-content-weight: var(--font-bold);
-    --icon-content-font: var(--font-monospace);
-    --icon-content-alignment: center;
+    --icon-mask-color: var(--text-normal);
 
-    --icon-color: var(--text-normal);
-    --icon-background-color: transparent;
-    --icon-background-color-hover: transparent;
+    --icon-content: "";
+    --icon-content-font: var(--font-monospace);
+    --icon-content-weight: var(--font-bold);
+    --icon-content-color: var(--text-normal);
+    
+    --icon-background: transparent;
+    --icon-background-hover: transparent;
+
     --icon-border: unset;
     --icon-border-radius: unset;
-
+    
     --line-text-color: inherit;
-    --line-background-color: unset;
+    --line-background: unset;
     --line-border: unset;
     --line-border-radius: unset;
 }
@@ -219,7 +216,7 @@ li:not([data-task="x"], [data-task=" "]) {
 .HyperMD-task-line:not([data-task="x"], [data-task=" "]),
 li:not([data-task="x"], [data-task=" "]).is-checked {
     color: var(--line-text-color);
-    background-color: var(--line-background-color);
+    background: var(--line-background);
     border: var(--line-border);
     border-radius: var(--line-border-radius);
 }
@@ -238,53 +235,40 @@ li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
         --checkbox-marker-color: transparent;
         border: var(--icon-border);
         border-radius: var(--icon-border-radius);
-        background-image: none;
-        background-color: var(--icon-background-color);
+        background: var(--icon-background);
 
         &:hover {
-            background-color: var(--icon-background-color-hover);
+            background: var(--icon-background-hover);
         }
     }
-}
 
-@container style(--icon-method: mask) {
-    div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]),
-    li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"],
-    li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
-        &:checked::after {
-            background-color: var(--icon-color);
-            -webkit-mask-image: var(--icon-mask-image);
-            -webkit-mask-size: var(--icon-mask-size);
-            -webkit-mask-position: var(--icon-mask-position);
-            
-            /* Allows icons to remain scaled correctly within the checkbox when using a border */
-            width: -webkit-fill-available;
-            width: fill-available; /* Fallback for Safari */
-            height: -webkit-fill-available;
-            height: fill-available; /* Fallback for Safari */
-        }
-    }
-}
+    &:checked::after {
+        background-color: var(--icon-mask-color);
+        -webkit-mask-image: var(--icon-mask-image);
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center;
+        color: var(--icon-content-color);
 
-@container style(--icon-method: content) {
-    div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]),
-    li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"],
-    li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
-        &:checked::after {
-            -webkit-mask-image: none;
-            line-height: var(--checkbox-size);
-            content: var(--icon-content);
-            color: var(--icon-color);
+        background-image: var(--icon-image);
+        background-repeat: no-repeat;
+        background-position: center;
 
-            text-align: var(--icon-content-alignment);
-            font-weight: var(--icon-content-weight);
-            font-family: var(--icon-content-font);
+        content: var(--icon-content);
 
-            /* Allows icons to remain scaled correctly within the checkbox when using a border */
-            width: -webkit-fill-available;
-            width: fill-available; /* Fallback for Safari */
-            height: -webkit-fill-available;
-            height: fill-available; /* Fallback for Safari */
-        }
+        
+        text-align: center;
+        font-weight: var(--icon-content-weight);
+        font-family: var(--icon-content-font);
+        font-size: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        /* Allows icons to remain scaled correctly within the checkbox when using a border */
+        width: -webkit-fill-available;
+        width: fill-available; /* Fallback for Safari */
+        height: -webkit-fill-available;
+        height: fill-available; /* Fallback for Safari */
     }
 }
