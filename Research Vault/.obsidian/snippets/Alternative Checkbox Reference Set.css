@@ -51,6 +51,7 @@ div.HyperMD-task-line[data-task=">"],
 ul > li[data-task=">"] {
     /* Icon used: https://lucide.dev/icons/send-horizontal */
     --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZW5kLWhvcml6b250YWwiPjxwYXRoIGQ9Ik0zLjcxNCAzLjA0OGEuNDk4LjQ5OCAwIDAgMC0uNjgzLjYyN2wyLjg0MyA3LjYyN2EyIDIgMCAwIDEgMCAxLjM5NmwtMi44NDIgNy42MjdhLjQ5OC40OTggMCAwIDAgLjY4Mi42MjdsMTgtOC41YS41LjUgMCAwIDAgMC0uOTA0eiIvPjxwYXRoIGQ9Ik02IDEyaDE2Ii8+PC9zdmc+");
+    --line-background: red;
 }
 
 /* - [<] Scheduling */
@@ -225,7 +226,7 @@ li:not([data-task="x"], [data-task=" "]).is-checked {
 as in Live Preview */
 .task-list-item.is-checked {
     margin-inline-start: unset;
-    padding-inline-start: var(--list-indent);
+    padding-inline-start: 3ch;
 }
 
 div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]),
