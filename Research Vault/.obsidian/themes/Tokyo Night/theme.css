@@ -5,6 +5,7 @@
 }
 
 .theme-dark {
+  color-scheme: dark;
   /* --accent-h: 261; /* magenta */
   /* --accent-s: 85%; */
   /* --accent-l: 79%; */
@@ -41,6 +42,9 @@
   --magent_hsl: 261 85% 79%;
   --magenta_x: 187, 154, 247;
   --magenta: rgb(var(--magenta_x));
+  --pink_hsl: 331 100% 43%;
+  --pink_x: 217, 0, 105;
+  --pink: rgb(var(--pink_x));
   --orange_x: 255, 158, 100;
   --orange: rgb(var(--orange_x));
   --yellow_x: 224, 175, 104;
@@ -94,6 +98,9 @@
   --magent_hsl: 261 24% 38%;
   --magenta_x: 90, 74, 120;
   --magenta: rgb(var(--magenta_x));
+  --pink_hsl: 286 24% 38%;
+  --pink_x: 109, 74, 120;
+  --pink: rgb(var(--pink_x));
   --orange_x: 150, 80, 39;
   --orange: rgb(var(--orange_x));
   --yellow_x: 143, 94, 21;
@@ -159,7 +166,7 @@
   --text-error-hover: var(--red);
   --text-selection: var(--unknown);
   --text-on-accent: var(--bg);
-  --text-highlight-bg: rgba(var(--orange_x), 0.4);
+  --text-highlight-bg: rgba(var(--orange_x), 0.25);
   --text-selection: rgba(var(--blue0_x), 0.6);
   --bold-color: var(--cyan);
   --italic-color: var(--cyan);
@@ -261,6 +268,11 @@
   --canvas-color: var(--bg_highlight_x);
 
   --toggle-thumb-color: var(--bg);
+
+  --image-radius: 0px;
+
+  --date-color: var(--blue);
+  --date-background-color: var(--bg_highlight);
 }
 
 
@@ -380,6 +392,12 @@ a.external-link::after {
   position: relative;
 }
 
+/* Images  */
+
+.image-embed {
+  border-radius: var(--image-radius);
+}
+
 /* tables credit: Akifyss/border */
 body {
   --table-width: 88cqw;
@@ -393,11 +411,6 @@ body {
 body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
 body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
   width: 100% !important;
-}
-
-.markdown-source-view,
-.markdown-reading-view {
-  container-type: inline-size;
 }
 
 .table-width-customized .markdown-source-view.mod-cm6.is-live-preview .cm-content>.cm-table-widget,
@@ -414,9 +427,14 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 /* callouts */
-.callout[data-callout="quote"],
-.callout[data-callout="cite"] {
+.callout[data-callout="quote"] {
   background-color: rgba(var(--bg_highlight_dark_x), 0.5);
+}
+
+
+.callout[data-callout="cite"] {
+  --callout-color: var(--pink_x);
+  background-color: rgba(var(--pink_x), 0.15);
 }
 
 /* the following callouts are from Border (https://github.com/Akifyss/obsidian-border/blob/18607ee208d56e1d4faff7419efb9cf7c9cc726e/theme.css#L7710C1-L7799C2) */
@@ -560,9 +578,6 @@ span.cm-hmd-frontmatter.cm-meta {
 }
 
 /* checkboxes (credit: border) */
-
-
-
 
 body:not(.disable-alternative-checkboxes) input[data-task="<"]:checked,
 body:not(.disable-alternative-checkboxes) li[data-task="<"]>input:checked,
@@ -807,6 +822,16 @@ body:not(.disable-alternative-checkboxes) li[data-task="<"]>p>input:checked {
   border-left: 1px solid var(--divider-color);
 }
 
+/* printing */
+
+@media print {
+  .theme-light {
+    --blockquote-background-color: rgba(var(--bg_dark_x), 0.25);
+    --code-background: rgba(var(--bg_highlight_dark_x), 0.25);
+    --table-header-background: rgba(var(--bg_dark2_x), 0.25);
+  }
+}
+
 
 /* @settings
 
@@ -897,7 +922,15 @@ settings:
     opacity: false 
     default-light: 'rgb(90, 74, 120)' 
     default-dark: 'rgb(187, 154, 247)' 
-  -  
+  - 
+    id: pink 
+    title: Pink 
+    type: variable-themed-color 
+    format: rgb 
+    opacity: false 
+    default-light: 'rgb(109, 74, 120)'
+    default-dark: 'rgb(217, 0, 105)'
+  - 
     id: Background-colors 
     title: Background Colors 
     type: heading 
@@ -910,7 +943,7 @@ settings:
     format: rgb 
     opacity: false 
     default-light: 'rgb(213, 214, 219)' 
-    default-dark: 'rgb(26, 27, 38)'  
+    default-dark: 'rgb(26, 27, 38)' 
   - 
     id: bg_dark 
     title: Background Dark 
@@ -930,7 +963,7 @@ settings:
   -  
     id: bg_highlight_dark 
     title: Background Highlight Dark 
-    description: 'Used for code bg and cite callout color'
+    description: 'Used for code bg'
     type: variable-themed-color 
     format: rgb 
     opacity: false 
@@ -1090,6 +1123,28 @@ settings:
 name: Editor
 id: Editor
 settings: 
+  - 
+    id: headings 
+    title: Tabs 
+    type: heading 
+    level: 1 
+    collapsed: true 
+  - 
+    id: tab-text-color-focused-active 
+    title: Tab Focus Color 
+    type: variable-themed-color 
+    format: rgb 
+    opacity: false 
+    default-light: '#'
+    default-dark: '#'
+  - 
+    id: tab-text-color-focused-active-current
+    title: Current Tab Focus Color 
+    type: variable-themed-color 
+    format: rgb 
+    opacity: false 
+    default-light: '#'
+    default-dark: '#'
   - 
     id: headings 
     title: Headings
@@ -1501,7 +1556,6 @@ settings:
   - 
     id: Tags
     title: Tags
-    title.zh: 标签
     type: heading
     collapsed: true
     level: 2
@@ -1530,6 +1584,26 @@ settings:
 		default-light: '#'
 		default-dark: '#'
   - 
+    id: Dates 
+    title: Dates 
+    type: heading 
+    collapsed: true 
+    level: 2
+  - 
+    id: date-color 
+		title: Tag text color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+  - 
+		id: date-background-color
+		title: Date background color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+  - 
     id: table-heading 
     title: Tables 
     type: heading  
@@ -1553,7 +1627,7 @@ settings:
     default-light: '#'
     default-dark: '#'
   - 
-    id: code-heading 
+    id: code-headigeng 
     title: Code 
     type: heading  
     level: 2 
@@ -1989,4 +2063,16 @@ settings:
     type: variable-text
     default: ''
   - 
+    id: image-heading 
+    title: Images
+    type: heading 
+    level: 2
+    collapsed: true 
+  - 
+    id: image-radius 
+    title: Image Radius 
+    description: Any CSS border-radius value 
+    type: variable-text 
+    default: ''
+  -
 */

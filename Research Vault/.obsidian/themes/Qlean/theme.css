@@ -665,7 +665,7 @@ body.header-hovering-underline-fade .markdown-source-view.is-live-preview .cm-li
   text-underline-offset: var(--link-decoration-offset);
 }
 
-.markdown-source-view.is-live-preview span.cm-url {
+.markdown-source-view.is-live-preview span.cm-url.cm-formatting-link-string {
   text-decoration: none;
 }
 
@@ -3840,7 +3840,7 @@ body.tag-outline .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.
 }
 
 .markdown-source-view.is-live-preview .cm-hmd-internal-link {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .markdown-source-view.is-live-preview .cm-hmd-internal-link:hover {
   text-decoration: none;
@@ -4372,15 +4372,17 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 .markdown-source-view:not(.is-live-preview) span.cm-url {
   color: var(--color-link);
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-string.cm-url) {
+.markdown-source-view:not(.is-live-preview) .cm-string.cm-url {
   color: var(--text-muted);
-  -webkit-text-decoration: underline solid 1px var(--text-muted);
-          text-decoration: underline solid 1px var(--text-muted);
-  text-underline-offset: 4px;
+  -webkit-text-decoration: underline solid 1px;
+          text-decoration: underline solid 1px;
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-string.cm-url):hover {
+.markdown-source-view:not(.is-live-preview) .cm-string.cm-url:hover {
   color: var(--color-link);
   text-decoration-color: var(--color-link);
+}
+.markdown-source-view:not(.is-live-preview) .cm-string.cm-url.cm-formatting-link-string:hover {
+  color: inherit;
 }
 .markdown-source-view:not(.is-live-preview) span.cm-formatting-link {
   color: var(--color-text);
@@ -4388,8 +4390,9 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 .markdown-source-view:not(.is-live-preview) span.cm-formatting-link:hover {
   color: var(--color-text);
 }
-.markdown-source-view:not(.is-live-preview) span.cm-formatting-link.cm-url {
+.markdown-source-view:not(.is-live-preview) span.cm-url {
   color: var(--color-link);
+  text-underline-offset: 4px;
 }
 .markdown-source-view:not(.is-live-preview) .cm-highlight {
   background-color: var(--text-normal);
@@ -4472,6 +4475,19 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
 .embedded-backlinks .search-input-container {
   width: calc(100% - 200px);
   margin-left: 0;
+}
+
+.markdown-source-view.mod-cm6 :is(.cm-link, .cm-url) span.data-link-text > a.cm-underline {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.markdown-source-view:not(.is-live-preview) .cm-string.cm-url:hover span {
+  -webkit-text-decoration: underline solid 1px !important;
+          text-decoration: underline solid 1px !important;
+}
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link) span.data-link-text {
+  text-decoration: none !important;
 }
 
 #calendar-container .nav .right-nav .reset-button {

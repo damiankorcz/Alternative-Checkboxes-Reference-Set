@@ -574,6 +574,9 @@ body {
   --titlebar-text-color: var(--mu-titlebar-text);
   --titlebar-text-color-focused: var(--mu-titlebar-text);
   --titlebar-text-weight: var(--font-semibold);
+  --mu-new-window-border-value: 1;
+  --mu-new-window-border-width: calc(var(--mu-new-window-border-value) * 1px);
+  --mu-new-window-border-color: #007fff;
 
   /* Toggles */
   --toggle-border-width: 2px;
@@ -6908,6 +6911,12 @@ body.mu-automatic-rainbow-folders .view-header-breadcrumb:hover {
   margin-left: -4px;
 }
 
+
+body.mu-hide-tabs-icons .workspace-tabs.mod-stacked .workspace-tab-header-inner-icon,
+body.mu-hide-tabs-icons .workspace-split.mod-vertical.mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header-inner-icon {
+  display:none !important;
+}
+
 /* Tabs */
 .workspace .mod-root .workspace-tab-header[data-type="markdown"] .workspace-tab-header-inner-icon,
 .workspace .mod-root .workspace-tab-header[data-type="empty"] .workspace-tab-header-inner-icon {
@@ -8166,6 +8175,17 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
   background-color: var(--mu-suggestion-search-panel-bg-color);
 }
 
+/* Window */
+body.is-popout-window {
+  border: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color);
+}
+
+body.is-popout-window .titlebar {
+  border-top: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+  border-left: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+  border-right: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -8619,6 +8639,11 @@ settings:
         description:  Toggle file icons
         type: class-toggle
         addCommand: true    
+    -
+        id: mu-hide-tabs-icons
+        title: Hide tabs icons
+        description:  Toggle tab icons in normal and stacked tabs
+        type: class-toggle
     -
         id: mu-folder-text-color
         title: Folder name color
@@ -9704,6 +9729,24 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    -
+        id: mu-new-window-border-color
+        title: New window border color
+        type: variable-themed-color
+        description: Select the border color for content opened in a new window
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: mu-new-window-border-value
+        title: New window border width
+        description: Select the border width for content opened in a new window (0 = no border)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1
     -
         id: modal-border-color
         title: Modals and prompts border color

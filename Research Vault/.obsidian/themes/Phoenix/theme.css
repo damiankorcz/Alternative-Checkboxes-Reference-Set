@@ -880,6 +880,11 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
   text-decoration: none;
 }
 
+/* try to fix issue with external link icons being misaligned */
+.external-link {
+  background-position: center right !important;
+}
+
 /* format links in callout titles like header links */
 .admonition-title-markdown a.internal-link,
 .callout-title-inner a.internal-link,
@@ -892,11 +897,12 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
     color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
   );
-  background-position: 0.5em 1.04em;
+  background-position: 0.5em 1.04em !important;
   background-repeat: repeat-x;
   background-size: 4px 2px;
   --font-weight: var(--callout-title-weight) !important;
   font-weight: var(--font-weight) !important;
+  padding-inline-end: 0px;
 }
 
 .admonition-title-markdown a.external-link,
@@ -910,8 +916,8 @@ but that doesn't seem to be necessary now, so I'm disabling it but keeping it he
       color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%, 
       color-mix(in srgb, currentColor var(--hx-link-ul-transparency-pct), transparent) 75%
     );
-  background-position:  center right, 0.5em 1.04em;
-  background-position-y: 3px, 1.04em;
+  background-position:  center right, 0.5em 1.04em !important;
+  background-position-y: 3px, 1.04em !important;
   background-repeat: no-repeat, repeat-x;
   background-size: 13px, 4px 2px;
 }
