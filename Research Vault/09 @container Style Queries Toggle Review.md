@@ -10,7 +10,6 @@ This list is for themes which implement Alternative Checkboxes but don't use the
 | [Sparkling Night](https://github.com/isax785/obsidian-sparkling-night)            |              | Open   |       |
 | [Nightingale](https://github.com/frank0713/nightingale-obsidian)                  |              | Open   |       |
 | [Reshi](https://github.com/contrapasso3/Reshi)                                    |              | Open   |       |
-| [Shade Sanctuary](https://github.com/Elevict/Shade-Sanctuary)                     |              | Open   |       |
 | [Sparkling Day](https://github.com/isax785/obsidian-sparkling-day)                |              | Open   |       |
 | [Gummy Revived](https://github.com/WinnerWind/gummy-revived)                      |              | Open   |       |
 | [Lorens](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme)               |              | Open   |       |
