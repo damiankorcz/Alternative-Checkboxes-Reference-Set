@@ -23,6 +23,7 @@ Of those, 28 offer a toggle/s to disable the Alternative Checkboxes feature:
     - `ITS Theme Settings -> Note -> Checkboxes -> Disable Alternate Checkboxes` (Not checked by default)
     - `ITS Theme Settings -> Note -> Checkboxes -> Colorful Task Text` (Checked by default)
     - `ITS Theme Settings -> Note -> Checkboxes -> Colorful Task Backgrounds` (Checked by default)
+    - `ITS Theme Settings -> Note -> Lists -> Lists / Bullet Adjustments -> Remove Spaced List Styling` (Not checked by default)
 - Kakano
 	- `Kakano Theme -> Compatibility -> Enable built-in alternative checkboxes` (Checked by default)
 - Listive (Partial - No option to disable icons)
@@ -30,21 +31,22 @@ Of those, 28 offer a toggle/s to disable the Alternative Checkboxes feature:
 - MagicUser
 	- `MagicUser Theme -> Checklist -> Disable theme alternative checkboxes` (Not checked by default)
 - Maple
-	- `Maple Editor -> List -> Enable Alternative Checkboxes` (Not checked by default)
+	- `Maple Editor -> List -> Task List (checkbox) -> Enable Alternative Checkboxes` (Not checked by default)
 - Neo
 	- `Neo Theme -> Features -> Disable Alternative Checkboxes` (Not checked by default)
 - Obsidianotion
 	- `Obsidianotion visual control settings -> Structure of components and areas -> Enable Alternative Checkboxes` (Checked by default)
 - Oreo
-	- `Oreo Theme -> Alternative Checkboxes Enable Alternative Checkboxes` (Checked by default)
+	- `Oreo Theme -> Alternative Checkboxes -> Enable Alternative Checkboxes` (Not checked by default)
 - PLN
 	- `PLN by PipeItToDevNull -> Checkbox modifications -> Custom Checkboxes` (Checked by default)
 - Prime
-	- `Prime -> Tweaks -> Use alternative checkboxes` (Checked by default)
+	- `Prime -> Tweaks -> Use alternative checkboxes` (Not checked by default)
 - Qlean
-    - `Inline Elements -> Checkbox Style -> Enable Alternative Checkboxes` (Checked by default)
+    - `Elements -> Checkboxs -> Enable Alternative Checkboxes` (Checked by default)
+    - `Elements -> Checkboxs -> Circle Checkboxes` (Checked by default)
 - Sanctum Reborn
-	- `Sanctum -> Checkboxes -> Enable Alternative Checkboxes` (Checked by default)
+	- `Sanctum -> Checkboxes -> Checkbox shape` (Checked by default)
 - Shiba Inu
     - `Shiba Inu Theme -> Editor -> Checkboxes -> Enable Custom Checkboxes` (Checked by default)
 - Simple
@@ -54,7 +56,7 @@ Of those, 28 offer a toggle/s to disable the Alternative Checkboxes feature:
 - sQdthOne
 	- `sQdthOne Extras -> Disable Alternative Checkboxes` (Not checked by default) 
 - Tokyo Night
-	- `Editor -> Checkboxes -> Enable Alternative Checkboxes` (Checked by default)
+	- `Editor -> Checkboxes -> Disable Alternative Checkboxes` (Not Checked by default)
 - Underwater
 	- `Underwater theme -> Options -> Disable checkboxes` (Not checked by default)
 - Vicious
