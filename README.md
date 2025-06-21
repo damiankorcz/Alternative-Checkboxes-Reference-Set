@@ -97,6 +97,16 @@ The Research Vault contains Themes, CSS Snippets and Plugins which were added fo
 - [Lorens](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme) - Distributed under the [MIT License](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme/blob/master/LICENSE)
 - [Fancy-a-Story](https://github.com/ElsaTam/obsidian-fancy-a-story) - Distributed under the [MIT License](https://github.com/ElsaTam/obsidian-fancy-a-story/blob/main/LICENSE)
 - [Borealis](https://github.com/juanchiparra/obsidian-borealis) - Distributed under the [MIT License](https://github.com/juanchiparra/obsidian-borealis/blob/main/LICENSE)
+- [Origami](https://github.com/7368697661/Origami) - Distributed under the [MIT License](https://github.com/7368697661/Origami/blob/main/LICENSE)
+- [Sei](https://github.com/iwa/Sei) - Distributed under the [MIT License](https://github.com/iwa/Sei/blob/main/LICENSE)
+- [Composer](https://github.com/vran-dev/obsidian-composer) - Distributed under the [MIT License](https://github.com/vran-dev/obsidian-composer/blob/master/LICENSE)
+- [Flexcyon](https://github.com/bladeacer/flexcyon) - Distributed under the [MIT License](https://github.com/bladeacer/flexcyon/blob/master/LICENSE)
+- [FastPpuccin](https://github.com/LostViking09/obsidian-fastppuccin) - Distributed under the [GPL-3.0 License](https://github.com/LostViking09/obsidian-fastppuccin/blob/master/LICENSE)
+- [Things 3](https://github.com/MrParalloid/obsidian-things) - Distributed under the [MIT License](https://github.com/MrParalloid/obsidian-things/blob/main/LICENSE)
+- [SpectrumPlus](https://github.com/anotherlusitano/SpectrumPlus) - Distributed under the [MIT License](https://github.com/anotherlusitano/SpectrumPlus/blob/main/LICENSE)
+- [Pomme Notes](https://github.com/MrParalloid/pomme-notes/) - Distributed under the [MIT License](https://github.com/MrParalloid/pomme-notes/blob/main/LICENSE)
+- [Ribbons](https://github.com/ddspog/obsidian-ribbons-theme) - Distributed under the [Unlicense License](https://github.com/ddspog/obsidian-ribbons-theme/blob/master/LICENSE)
+
 
 </details>
 
