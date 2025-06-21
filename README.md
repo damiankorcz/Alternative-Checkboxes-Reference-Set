@@ -29,7 +29,10 @@ Please refer to the [Usage Guide](https://github.com/damiankorcz/Alternative-Che
 Previously, all discussion regarding this initiative was carried out in a thread within the Official Obsidian Discord. To see the archive visit here:
 https://discord.com/channels/686053708261228577/1291469509336502272
 
-Going forward, please use the [Issues](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/issues) section in this repository to report any issues, ask for help with implementing toggles in your theme or creating your own Alternative Checkbox sets, etc.
+Current thread for discussion:
+https://discord.com/channels/686053708261228577/1382776035195490353
+
+Please use the [Issues](https://github.com/damiankorcz/Alternative-Checkboxes-Reference-Set/issues) section in this repository to report any issues, ask for help with implementing toggles in your theme or creating your own Alternative Checkbox sets, etc.
 
 ## 🛠 Contributing
 
