@@ -1,4 +1,4 @@
-(Note that most of the Research work was done in October 2024 so some stats will be outdated)
+Theme List last updated: [20/06/25](https://github.com/obsidianmd/obsidian-releases/commit/8a315e2c23db92a1e8e74fe76e16177fac247ee2)
 
 > [!INFO]- Themes without Alternative Checkboxes
 > - [Obsidian Nord](https://github.com/insanum/obsidian_nord)
@@ -28,7 +28,7 @@
 > - [Mando Miniflow](https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow)
 > - [Encore](https://github.com/carbonateb/obsidian-encore-theme)
 > - [Royal Velvet](https://github.com/caro401/royal-velvet)
-> - [Ukiyo](https://github.com/kinmury/obsidian-ukiyo)
+> - [Ukiyo](https://github.com/technerium/obsidian-ukiyo)
 > - [Material Gruvbox](https://github.com/AllJavi/material_gruvbox_obsidian)
 > - [Dark Moss](https://github.com/sergey900553/obsidian_githublike_theme)
 > - [Discordian](https://github.com/radekkozak/discordian) Unmaintained (Pre 1.0 Release)
@@ -51,12 +51,12 @@
 > - [Dracula + LYT](https://github.com/xRyul/ObsidianMD_Dracula_x_LYT) Unmaintained (Pre 1.0 Release)
 > - [Pisum](https://github.com/GuangluWu/obsidian-pisum) Unmaintained (Pre 1.0 Release)
 > - [Comfort color dark](https://github.com/obsidian-ezs/obsidian-comfort-color-dark)
-> - [Chime](https://github.com/Bluemoondragon07/chime-theme)
-> - [Nebula](https://github.com/dlccyes/obsidian-nebula)
+> - [Chime](https://github.com/Bluemoondragon07/chime-theme) **REMOVED**
+> - [Nebula](https://github.com/dlccyes/obsidian-nebula) **REMOVED**
 > - [Flexoki](https://github.com/kepano/flexoki-obsidian)
 > - [Dune](https://github.com/Jopp-gh/Obsidian-Dune84)
 > - [Everforest Enchanted](https://github.com/FireIsGood/obsidian-everforest-enchanted)
-> - [Sparkling Wisdom](https://github.com/learnerfvs/Sparkling-Wisdom-obsidian-theme-) Unmaintained (Pre 1.0 Release)
+> - [Sparkling Wisdom](https://github.com/learnerfvs/Sparkling-Wisdom-obsidian-theme-) Unmaintained (Pre 1.0 Release) **REMOVED**
 > - [Vanilla AMOLED](https://github.com/SakuraIsayeki/vanilla-amoled-theme)
 > - [Material Flat](https://github.com/threethan/obsidian-material-flat-theme)
 > - [Dawn](https://github.com/ds-package/Dawn)
@@ -71,7 +71,7 @@
 > - [Mammoth](https://github.com/Wittionary/mammoth-obsidian-theme)
 > - [Ursa](https://github.com/obsidian-ezs/obsidian-ursa) Unmaintained (Pre 1.0 Release)
 > - [Fusion](https://github.com/zamsyt/obsidian-fusion)
-> - [WiseLight](https://github.com/learnerfvs/WiseLight) Unmaintained (Pre 1.0 Release)
+> - [WiseLight](https://github.com/learnerfvs/WiseLight) Unmaintained (Pre 1.0 Release) **REMOVED**
 > - [Kanagawa](https://github.com/sspaeti/obsidian_kanagawa)
 > - [Aurora](https://github.com/auroral-ui/aurora-obsidian-md) Unmaintained (Pre 1.0 Release)
 > - [Hipstersmoothie](https://github.com/hipstersmoothie/hipstersmoothie-obsidian-theme) Unmaintained (Pre 1.0 Release)
@@ -86,7 +86,7 @@
 > - [Dayspring](https://github.com/erykwalder/dayspring-theme)
 > - [Darkyan](https://github.com/johackim/obsidian-darkyan)
 > - [Dracula Gemini](https://github.com/clbn/dracula-gemini)
-> - [Big & Bold](https://github.com/Bluemoondragon07/obsidian-big-and-bold)
+> - [Big & Bold](https://github.com/Bluemoondragon07/obsidian-big-and-bold) **REMOVED**
 > - [Hulk](https://github.com/pgalliford/Obsidian-theme-Incredible-Hulk) Unmaintained (Pre 1.0 Release)
 > - [Jotter](https://github.com/lnbgc/obsidian-jotter)
 > - [Autotape](https://github.com/rmvdesign/autotape-theme)
@@ -101,7 +101,7 @@
 > - [Oliver's Theme](https://github.com/OlivierPS/Olivier-s-Theme)
 > - [Violet Evening](https://github.com/aitaDev/Violet-Evening-for-Obsidian) Unmaintained (Pre 1.0 Release)
 > - [Dracula Slim](https://github.com/bLaCkwEw/Dracula-Slim)
-> - [Christmas](https://github.com/deathau/obsidian-christmas-theme) Unmaintained (Pre 1.0 Release)
+> - [Christmas](https://github.com/deathau/obsidian-christmas-theme) Unmaintained (Pre 1.0 Release) **REMOVED**
 > - [Ayu Mirage](https://github.com/bcdavasconcelos/Obsidian-Ayu_Mirage)
 > - [Vauxhall](https://github.com/CyanVoxel/vauxhall-obsidian)
 > - [Apatheia](https://github.com/AmadeusWM/Obsidian-Apatheia)
@@ -115,7 +115,7 @@
 > - [Micro Mike](https://github.com/ThisTheThe/MicroMike)
 > - [monochroYou](https://github.com/GuiMar10/monochroYou)
 > - [Panic Mode](https://github.com/bcdavasconcelos/Obsidian-Panic_Mode)
-> - [Creature](https://github.com/marcusolsson/obsidian-creature-theme) Unmaintained (Pre 1.0 Release)
+> - [Creature](https://github.com/marcusolsson/obsidian-creature-theme) Unmaintained (Pre 1.0 Release) **ARCHIVED**
 > - [Charcoal](https://github.com/bcdavasconcelos/Obsidian-Charcoal) Unmaintained (Pre 1.0 Release)
 > - [Apex](https://github.com/clearlysid/apex)
 > - [halcyon](https://github.com/dbarenholz/halcyon-obsidian)
@@ -138,7 +138,7 @@
 > - [Cybertron Shifted](https://github.com/JorgEdmundo/cybertron-shifted)
 > - [Iceberg](https://github.com/izumin5210/obsidian-iceberg) Unmaintained (Pre 1.0 Release)
 > - [LaTeX](https://github.com/benf2004/Obsidian-LaTeX-Theme)
-> - [WilcoxOne](https://github.com/MattWilcox/obsidian-wilcox-one) Unmaintained (Pre 1.0 Release)
+> - [WilcoxOne](https://github.com/MattWilcox/obsidian-wilcox-one) Unmaintained (Pre 1.0 Release) **REMOVED**
 > - [Tokyo Night Storm](https://github.com/arozx/obsidian_tokyo-night-storm)
 > - [Rosé Pine](https://github.com/sspaeti/obsidian_rose_pine)
 > - [Lemons Theme](https://github.com/mProjectsCode/obsidian-lemons-theme)
@@ -177,7 +177,7 @@
 > - [Minimal-Resources](https://github.com/jonsnow231/Minimal-Resources)
 > - [Sandover](https://github.com/eliz-abeth/sandover)
 > - [Ethereon](https://github.com/ethereontheme/obsidian)
-> - [Ayu Light & Mirage](https://github.com/taronull/ayu-obsidian)
+> - [Ayu Light & Mirage](https://github.com/taronull/ayu-obsidian) **REMOVED**
 > - [Penumbra](https://github.com/jbisits/penumbra-obsidian-theme)
 > - [Serika](https://github.com/Warrobot10/Serika-for-obsidian)
 > - [Covert](https://github.com/schrunchee/obsidian-covert-theme)
@@ -185,11 +185,11 @@
 > - [Nier](https://github.com/exloseur3d/nier-theme)
 > - [Allium](https://github.com/nulglyph/Allium)
 > - [EvilRed](https://github.com/tu2-atmanand/EvilRed-ObsidianTheme)
-> - [Venom](https://github.com/fatiger92/obsidian_venom_theme)
+> - [Venom](https://github.com/fatiger92/obsidian_venom_theme) **REMOVED**
 > - [Sea Glass](https://github.com/KStew1017/obsidian-sea-glass-theme)
 > - [Poimandres](https://github.com/yoGhastly/poimandres-obsidian)
 > - [mono black (monochrome, charcoal)](https://github.com/ZeChArtiahSaher/obsidian-mono-black)
-> - [Lumines](https://github.com/Avesend/obsidian-lumines)
+> - [Lumines](https://github.com/danielkhmara/obsidian-lumines)
 > - [Creme brulee](https://github.com/anareaty/creme-brulee-obsidian-theme)
 > - [Strict](https://github.com/Nikolai2038/strict-obsidian-theme)
 > - [Improved Potato](https://github.com/DMeurer/improved-potato)
@@ -215,7 +215,7 @@
 > - [Neon Synthwave](https://github.com/grjsmith/Neon-Synthwave)
 > - [Pxld](https://github.com/Lina674/Pxld-Obsidian-Theme)
 > - [Kiwi Mono](https://github.com/c-sooyoung/kiwi-mono-obsidian-theme)
-> - [Midnight](https://github.com/SemiCirkle/Midnight-obsidian-theme)
+> - [Midnight](https://github.com/SemiCirkle/Midnight-obsidian-theme) **REMOVED**
 > - [Eldritch](https://github.com/eldritch-theme/eldritch-obsidian)
 > - [Rift](https://github.com/NoahBoos/Obsidian-Theme-Rift)
 > - [Blossom](https://github.com/BlossomTheme/Obsidian)
@@ -249,10 +249,50 @@
 > - [Subtle Orange](https://github.com/afrangi/Obsidian-Theme-Orange)
 > - [Winter Spices](https://github.com/incantatem2/Obsidian-winter-spices)
 > - [Neutral Academia](https://github.com/incantatem2/Obsidian-neutral-academia)
-
----
-
-Themes are ordered from most popular to least popular at the time of writing.
+> - [Playground](https://github.com/benjaminezequiel/playground-theme)
+> - [Minimal Dracula](https://github.com/druxorey/minimal-dracula-for-obsidian)
+> - [Zen](https://github.com/laughmaker/Zen)
+> - [OLED.Black](https://github.com/Inc44/OLED.Black)
+> - [Sunbather](https://github.com/babidisrc/obsidian-sunbather)
+> - [MinimalRed](https://github.com/AfonsoMiranda02/MinimalRed-Obsidian-Theme)
+> - [Rose Pine](https://github.com/rose-pine/obsidian/)
+> - [Old World](https://github.com/double-tilde/old-world-obsidian)
+> - [Material 3](https://github.com/HarmfulBreeze/obsidian-material-3-theme)
+> - [Serif](https://github.com/GodlyMan-bit/Serif)
+> - [Sad Machine Druid](https://github.com/Halftroll0/Sad-Machine-Druid)
+> - [Retro Windows](https://github.com/codeisconfusing/retro-windows-obsidian)
+> - [LessWrong](https://github.com/outsidetext/lesswrong-obsidian)
+> - [Vercel Geist](https://github.com/en3sis/vercel-obsidian)
+> - [Aged Whisky](https://github.com/incantatem2/Obsidian-aged-whisky)
+> - [Minimal-Dark-Coder](https://github.com/Krishna-Sen-Programming-World/Minimal-Dark-Coder)
+> - [Enhanced File Explorer Tree](https://github.com/LennZone/enhanced-file-explorer-tree)
+> - [Planetary](https://github.com/ninetyfive666/Planetary)
+> - [Neumorphism](https://github.com/LennZone/Neumorphism)
+> - [Cocoa](https://github.com/incantatem2/Obsidian-cocoa)
+> - [Parfait](https://github.com/incantatem2/Obsidian-parfait)
+> - [Camena](https://github.com/splendidissimemendax/Camena)
+> - [Dust](https://github.com/ph17/Dust)
+> - [Deep Submerge](https://github.com/incantatem2/Obsidian-deep-submerge)
+> - [Mono High Contrast](https://github.com/manuelcoca/obsidian-mono-high-contrast-theme)
+> - [Publisher](https://github.com/aidanastridge/Publisher)
+> - [TerraFlow](https://github.com/dubefab/obsidian-TerraFlow)
+> - [RetroOS 98](https://github.com/ThePharaohArt/Obsidian-RetroOS98)
+> - [Quillcode](https://github.com/theaayushpatel/quillcode)
+> - [Myst](https://github.com/mulder3062/Myst)
+> - [Soli Deo Gloria](https://github.com/GodlyMan-bit/SoliDeoGloria)
+> - [Hojicha](https://github.com/pr0methevs/Hojicha)
+> - [Marathon](https://github.com/Spekulucius/obsidian-marathon)
+> - [Handwriting (Kalam)](https://github.com/kmranrg/obsidian-handwriting-theme)
+> - [Vesper](https://github.com/omarrashad/obsidian-vesper)
+> - [Powered by Lancer](https://github.com/SourTarte/Powered-By-Lancer)
+> - [Terminal2K](https://github.com/isax785/Terminal2K)
+> - [Meridian](https://github.com/mvahaste/meridian)
+> - [Modern GenZ Vibedose](https://github.com/omkar-4/Modern-GenZ-Vibedose)
+> - [Duality](https://github.com/CascadeThemes/Duality)
+> - [Minimalists Paradise](https://github.com/BelleBasso/MinimalistsParadise)
+> - [Dashboard](https://github.com/incantatem2/Obsidian-dashboard)
+> - [Radiance](https://github.com/JabariD/obsidian-radiance)
+> - [Iridium](https://github.com/kyffa/Iridium)
 
 ---
 
@@ -629,7 +669,7 @@ Style Settings: yes
 
 ---
 
-# Spectrum (Unmaintained Pre-1.0 Release)
+# Spectrum (Unmaintained Pre-1.0 Release) REMOVED
 
 Repo: https://github.com/wiktoriavh/Spectrum
 Docs: https://github.com/wiktoriavh/Spectrum/wiki/Different-Task-Checkboxes
@@ -652,9 +692,9 @@ Style Settings: no
 
 # Cyber Glow
 
-Repo: https://github.com/ArtexJay/Obsidian-CyberGlow
-Docs: https://github.com/ArtexJay/Obsidian-CyberGlow?tab=readme-ov-file#what-to-expect
-Code: https://github.com/ArtexJay/Obsidian-CyberGlow/blob/main/theme.css#L3436
+Repo: https://github.com/ThePharaohArt/Obsidian-CyberGlow
+Docs: https://github.com/ThePharaohArt/Obsidian-CyberGlow?tab=readme-ov-file#what-to-expect
+Code: https://github.com/ThePharaohArt/Obsidian-CyberGlow/blob/main/theme.css#L3076
 Style Settings: yes
 
 - [x] Checkmark `- [x]`
@@ -1072,7 +1112,7 @@ Uses the same set as Things / Minimal themes.
 
 ---
 
-# Elegance
+# Elegance REMOVED
 
 Repo: https://github.com/Victologo/elegance-theme
 Docs: https://github.com/Victologo/elegance-theme?tab=readme-ov-file#checboxes-minimal-theme-by-kepano
@@ -1169,9 +1209,9 @@ Style Settings: yes
 
 # Neo
 
-Repo: https://github.com/lab-do/obsidian-neo
-Docs: https://github.com/lab-do/obsidian-neo?tab=readme-ov-file#alternate-checkboxes
-Code: https://github.com/lab-do/obsidian-neo/blob/0955f59136e498461a2de78655eef42cbcf66606/theme.css#L999
+Repo: https://github.com/x0aa7i/obsidian-neo
+Docs: https://github.com/x0aa7i/obsidian-neo?tab=readme-ov-file#alternate-checkboxes
+Code: https://github.com/x0aa7i/obsidian-neo/blob/0955f59136e498461a2de78655eef42cbcf66606/theme.css#L999
 Style Settings: yes
 
 - [ ] Checkbox `- [ ]`
@@ -1746,7 +1786,7 @@ Style Settings: no
 Repo: https://github.com/Elevict/Shade-Sanctuary
 Docs: None
 Code: https://github.com/Elevict/Shade-Sanctuary/blob/8aa1fcde7b3ab7be6475dc0bb978bf156d617779/theme.css#L614
-Style Settings: no
+Style Settings: yes
 
 Mentions using Minimal but has the Git parts from Things.
 
@@ -1959,13 +1999,13 @@ Style Settings: yes
 
 Repo: https://github.com/juanchiparra/obsidian-borealis
 Docs: https://github.com/juanchiparra/obsidian-borealis?tab=readme-ov-file#checkbox
-Code: https://github.com/juanchiparra/obsidian-borealis/blob/main/theme.css#L194
+Code: https://github.com/juanchiparra/obsidian-borealis/blob/main/theme.css#L201
 Style Settings: yes
 
-- [ ] Nam mus fringilla risus consequat
-- [x] Lorem ipsum dolor sit amet
-- [c] Cancelled
-- [p] Postponed
+- [ ] To-Do `- [ ]`
+- [x] Done `- [x]`
+- [c] Cancelled `- [c]`
+- [p] Postponed `- [p]`
 
 | Light Theme                       | Dark Theme                         |
 | --------------------------------- | ---------------------------------- |
@@ -2008,3 +2048,322 @@ Based on Minimal Theme.
 | Light Theme                       | Dark Theme                         |
 | --------------------------------- | ---------------------------------- |
 | ![[Consolas Light Theme.png]] | ![[Consolas Dark Theme.png]] |
+
+---
+
+# Origami
+
+Repo: https://github.com/7368697661/Origami
+Docs: N/A
+Code: https://github.com/7368697661/Origami/blob/main/theme.css#L4299
+Style Settings: yes
+
+- [!] Important `- [!]`
+- [?] Question `- [?]`
+- [/] Progress `- [/]`
+- [-] Cancelled `- [-]`
+- [>] Deferred `- [>]`
+- [<] Schedule `- [<]`
+- [X] Failed `- [X]`
+- [i] Idea `- [i]`
+- [b] Brainstorm `- [b]`
+- [B] Bookmark `- [B]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Sei
+
+Repo: https://github.com/iwa/Sei
+Docs: https://github.com/AnubisNekhet/AnuPpuccin?tab=readme-ov-file#custom-checkboxes--speech-bubbles
+Code: https://github.com/iwa/Sei/blob/main/theme.css#L1681
+Style Settings: yes
+
+Based on AnuPpuccin.
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [!] Important `- [!]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [n] Note `- [n]`
+- [l] Location `- [l]`
+- [i] Information `- [i]`
+- [I] Idea `- [I]`
+- [S] Amount `- [S]`
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+- [b] Bookmark `- [b]`
+- ["] Quote `- ["]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [w] Win `- [w]`
+- [k] Key `- [k]`
+- [f] Fire `- [f]`
+
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Composer
+
+Repo: https://github.com/vran-dev/obsidian-composer
+Docs: https://github.com/kepano/obsidian-minimal?tab=readme-ov-file#alternate-checkboxes
+Code: https://github.com/vran-dev/obsidian-composer/blob/master/theme.css#L2374
+Style Settings: yes
+
+Based on Minimal Theme.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Flexcyon
+
+Repo: https://github.com/bladeacer/flexcyon
+Docs: https://flexcyon-docs.readthedocs.io/en/latest/Styling/Style-Settings/Editor/Checkboxes/
+Code: https://github.com/bladeacer/flexcyon/blob/master/theme.css#L1061
+Style Settings: yes
+
+- [!] Important / Warning `- [!] `
+- [>] Fast Forward / Do after `- [>] `
+- [<] Back Date / Do before `- [<] `
+- [i] Info `- [i] `
+- [?] Question / Help `- [?] `
+- [#] Tag / Summary `- [#] `
+- [.] Partially Completed Task /  Needs Expansion `- [.] `
+- [*] Higher Priority / Importance `- [*] `
+- [$] Cost `- [$] `
+- ["] Double Quote `- ["] `
+- ['] Single Quote `- ['] `
+- [@] Email `- [@] `
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# FastPpuccin
+
+Repo: https://github.com/LostViking09/obsidian-fastppuccin/
+Docs: https://github.com/AnubisNekhet/AnuPpuccin?tab=readme-ov-file#custom-checkboxes--speech-bubbles
+Code: https://github.com/LostViking09/obsidian-fastppuccin/blob/master/theme.css#L1264
+Style Settings: yes
+
+Based on AnuPpuccin.
+
+- [ ] Unchecked `- [ ]`
+- [x] Checked `- [x]`
+- [>] Rescheduled `- [>]`
+- [<] Scheduled `- [<]`
+- [!] Important `- [!]`
+- [-] Cancelled `- [-]`
+- [/] In Progress `- [/]`
+- [?] Question `- [?]`
+- [*] Star `- [*]`
+- [n] Note `- [n]`
+- [l] Location `- [l]`
+- [i] Information `- [i]`
+- [I] Idea `- [I]`
+- [S] Amount `- [S]`
+- [p] Pro `- [p]`
+- [c] Con `- [c]`
+- [b] Bookmark `- [b]`
+- ["] Quote `- ["]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+- [w] Win `- [w]`
+- [k] Key `- [k]`
+- [f] Fire `- [f]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Things 3
+
+Repo: https://github.com/MrParalloid/obsidian-things
+Docs: https://minimal.guide/Block+types/Checklists#Checkbox+styling
+Code: https://github.com/MrParalloid/obsidian-things/blob/main/theme.css#L1560
+Style Settings: yes
+
+Based on Minimal Theme.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Pomme Notes
+Repo: https://github.com/MrParalloid/pomme-notes/
+Docs: https://minimal.guide/Block+types/Checklists#Checkbox+styling
+Code: https://github.com/MrParalloid/pomme-notes/blob/main/theme.css#L1129
+Style Settings: yes
+
+Based on Minimal Theme.
+
+- [ ] To-Do `- [ ]`
+- [/] Incomplete `- [/]`
+- [x] Done `- [x]`
+- [-] Cancelled `- [-]`
+- [>] Forwarded `- [>]`
+- [<] Scheduling `- [<]`
+
+- [?] Question `- [?]`
+- [!] Important `- [!]`
+- [*] Star `- [*]`
+- ["] Quote `- ["]`
+- [l] Location `- [l]`
+- [b] Bookmark `- [b]`
+- [i] Information `- [i]`
+- [S] Savings `- [S]`
+- [I] Idea `- [I]`
+- [p] Pros `- [p]`
+- [c] Cons `- [c]`
+- [f] Fire `- [f]`
+- [k] Key `- [k]`
+- [w] Win `- [w]`
+- [u] Up `- [u]`
+- [d] Down `- [d]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Ribbons
+Repo: https://github.com/ddspog/obsidian-ribbons-theme
+Docs: https://publish.obsidian.md/slrvb-docs/ITS+Theme/Alternate+Checkboxes
+Code: https://github.com/ddspog/obsidian-ribbons-theme/blob/master/src/tasks/_index.scss
+Style Settings: yes
+
+Based on ITS Theme.
+
+- [ ] Unchecked `- [ ]`
+- [x] Regular `- [x]`
+- [X] Checked `- [X]`
+- [-] Dropped `- [-]`
+- [>] Forward `- [>]`
+- [<] Migrated `- [<]`
+- [D] Date `- [D]`
+- [?] Question `- [?]`
+- [/] Half Done `- [/]`
+- [+] Add `- [+]`
+- [R] Research `- [R]`
+- [!] Important `- [!]`
+- [i] Idea `- [i]`
+- [B] Brainstorm `- [B]`
+- [P] Pro `- [P]`
+- [C] Con `- [C]`
+- [Q] Quote `- [Q]`
+- [N] Note `- [N]`
+- [b] Bookmark `- [b]`
+- [I] Information `- [I]`
+- [p] Paraphrase `- [p]`
+- [L] Location `- [L]`
+- [E] Example `- [E]`
+- [A] Answer `- [A]`
+- [r] Reward `- [r]`
+- [c] Choice `- [c]`
+- [d] Doing `- [d]`
+- [T] Time `- [T]`
+- [@] Character / Person `- [@]`
+- [t] Talk `- [t]`
+- [O] Outline / Plot `- [O]`
+- [~] Conflict `- [~]`
+- [W] World `- [W]`
+- [f] Clue / Find `- [f]`
+- [F] Foreshadow `- [F]`
+- [H] Favorite / Health `- [H]`
+- [&] Symbolism `- [&]`
+- [s] Secret `- [s]`
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |
+
+---
+
+# Spectrum Plus
+Repo: https://github.com/anotherlusitano/SpectrumPlus
+Docs: https://github.com/wiktoriavh/Spectrum/wiki/Different-Task-Checkboxes
+Code: https://github.com/anotherlusitano/SpectrumPlus/blob/main/SCSS/_blocks/_listings/_task-list.scss
+Style Settings: no?
+
+Based on Spectrum Theme.
+
+- [>] Forward
+- [+] Plus
+- [-] Minus
+- [!] Exclamation
+- [?] Question
+- [x] Normal
+
+| Light Theme                       | Dark Theme                         |
+| --------------------------------- | ---------------------------------- |
+|  |  |

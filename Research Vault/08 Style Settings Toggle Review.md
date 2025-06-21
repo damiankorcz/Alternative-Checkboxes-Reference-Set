@@ -1,6 +1,4 @@
-**35/47 Themes use Style Settings**
-
-Of those, 28 offer a toggle/s to disable the Alternative Checkboxes feature:
+30 Themes offer a toggle/s to disable the Alternative Checkboxes feature:
 - AnuPpuccin
     - `AnuPpuccin -> File Editor & Markdown Elements -> Checkboxes -> Enable Custom Checkboxes / Enable Speech Bubbles` (Not checked by Default)
 - Aura
@@ -19,6 +17,10 @@ Of those, 28 offer a toggle/s to disable the Alternative Checkboxes feature:
     - `Ebullientworks theme settings -> Suppress/Remove this theme's checkbox styles` (Not checked by default)
 - Fancy-a-Story
 	- `Fancy-a-Story -> Features -> Alternative checkboxes` (Checked by default)
+- FastPpuccin
+	- `FastPpuccin Theme settings -> Features -> Custom Checkboxes` (Checked by default)
+- Flexcyon
+	- `Flexcyon Style Settings -> Editor -> Checkboxes -> Enable ASCII checkboxes` (Checked by default)
 - ITS Theme
     - `ITS Theme Settings -> Note -> Checkboxes -> Disable Alternate Checkboxes` (Not checked by default)
     - `ITS Theme Settings -> Note -> Checkboxes -> Colorful Task Text` (Checked by default)
@@ -90,14 +92,17 @@ Option to turn off the Alternative Checkboxes feature implemented after request:
 
 Offer no option to turn off the Alternative Checkboxes feature:
 
-| Theme           | Feature Request                                              | Status          | Notes                                                                                                                                                                                |
-| --------------- | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Minimal         | https://github.com/kepano/obsidian-minimal/issues/792        | Open            | [Submitted a PR](https://github.com/kepano/obsidian-minimal/pull/801)                                                                                                                |
-| Things          | https://github.com/colineckert/obsidian-things/issues/169    | Open            |                                                                                                                                                                                      |
-| Sanctum         | https://github.com/jdanielmourao/obsidian-sanctum/issues/232 | Use Fork        | The theme developer is inactive, so it is unlikely this will be implemented. We recommend using [Sanctum Reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15). |
-| Primary         | https://github.com/primary-theme/obsidian/issues/255         | Open            | [Submitted a PR](https://github.com/primary-theme/obsidian/pull/259)                                                                                                                 |
-| Feather         | https://github.com/zfmohammed/obsidian-feather/issues/2      | Open            | [Submitted a PR](https://github.com/zfmohammed/obsidian-feather/pull/3)                                                                                                              |
-| Yue             | https://github.com/GixoXYZ/YueObsidian/issues/4              | Open            | [Submitted a PR](https://github.com/GixoXYZ/YueObsidian/pull/5)                                                                                                                      |
-| Listive         | https://github.com/efemkay/obsidian-listive-theme/issues/8   | Open            | [Submitted a PR](https://github.com/efemkay/obsidian-listive-theme/pull/9)                                                                                                           |
-| Shade Sanctuary |                                                              | Need to request |                                                                                                                                                                                      |
+| Theme                                                         | Feature Request                                              | Status          | Notes                                                                                                                                                                                |
+| ------------------------------------------------------------- | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Minimal                                                       | https://github.com/kepano/obsidian-minimal/issues/792        | Open            | [Submitted a PR](https://github.com/kepano/obsidian-minimal/pull/801)                                                                                                                |
+| Things                                                        | https://github.com/colineckert/obsidian-things/issues/169    | Open            |                                                                                                                                                                                      |
+| Sanctum                                                       | https://github.com/jdanielmourao/obsidian-sanctum/issues/232 | Use Fork        | The theme developer is inactive, so it is unlikely this will be implemented. We recommend using [Sanctum Reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn/issues/15). |
+| Primary                                                       | https://github.com/primary-theme/obsidian/issues/255         | Open            | [Submitted a PR](https://github.com/primary-theme/obsidian/pull/259)                                                                                                                 |
+| Feather                                                       | https://github.com/zfmohammed/obsidian-feather/issues/2      | Open            | [Submitted a PR](https://github.com/zfmohammed/obsidian-feather/pull/3)                                                                                                              |
+| Yue                                                           | https://github.com/GixoXYZ/YueObsidian/issues/4              | Open            | [Submitted a PR](https://github.com/GixoXYZ/YueObsidian/pull/5)                                                                                                                      |
+| Listive                                                       | https://github.com/efemkay/obsidian-listive-theme/issues/8   | Open            | [Submitted a PR](https://github.com/efemkay/obsidian-listive-theme/pull/9)                                                                                                           |
+| [Shade Sanctuary](https://github.com/Elevict/Shade-Sanctuary) |                                                              | Need to request |                                                                                                                                                                                      |
+| [Sei](https://github.com/iwa/Sei)                             |                                                              | Need to request |                                                                                                                                                                                      |
+| [Composer](https://github.com/vran-dev/obsidian-composer)     |                                                              | Need to request |                                                                                                                                                                                      |
+| [Ribbons](https://github.com/ddspog/obsidian-ribbons-theme)   |                                                              | Need to request |                                                                                                                                                                                      |
 
