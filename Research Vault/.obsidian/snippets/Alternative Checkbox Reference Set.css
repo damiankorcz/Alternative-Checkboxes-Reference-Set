@@ -51,7 +51,6 @@ div.HyperMD-task-line[data-task=">"],
 ul > li[data-task=">"] {
     /* Icon used: https://lucide.dev/icons/send-horizontal */
     --icon-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjYyNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZW5kLWhvcml6b250YWwiPjxwYXRoIGQ9Ik0zLjcxNCAzLjA0OGEuNDk4LjQ5OCAwIDAgMC0uNjgzLjYyN2wyLjg0MyA3LjYyN2EyIDIgMCAwIDEgMCAxLjM5NmwtMi44NDIgNy42MjdhLjQ5OC40OTggMCAwIDAgLjY4Mi42MjdsMTgtOC41YS41LjUgMCAwIDAgMC0uOTA0eiIvPjxwYXRoIGQ9Ik02IDEyaDE2Ii8+PC9zdmc+");
-    --line-background: red;
 }
 
 /* - [<] Scheduling */
@@ -192,8 +191,8 @@ body {
     Custom Default Variables - Reduces repetition and simplifies the implementation above.
     If you want different defaults for all Alternative Checkboxes you can change them here. 
 */
-.HyperMD-task-line:not([data-task="x"], [data-task=" "]),
-li:not([data-task="x"], [data-task=" "]) {  
+.HyperMD-task-line:not([data-task="x"], [data-task="X"], [data-task=" "]),
+li:not([data-task="x"], [data-task="X"], [data-task=" "]) {
     --icon-mask-image: unset;
     --icon-mask-color: var(--text-normal);
 
@@ -214,8 +213,8 @@ li:not([data-task="x"], [data-task=" "]) {
     --line-border-radius: unset;
 }
 
-.HyperMD-task-line:not([data-task="x"], [data-task=" "]),
-li:not([data-task="x"], [data-task=" "]).is-checked {
+.HyperMD-task-line:not([data-task="x"], [data-task="X"], [data-task=" "]),
+li:not([data-task="x"], [data-task="X"], [data-task=" "]).is-checked {
     color: var(--line-text-color);
     background: var(--line-background);
     border: var(--line-border);
@@ -229,9 +228,9 @@ as in Live Preview */
     padding-inline-start: 3ch;
 }
 
-div.is-live-preview input[type="checkbox"]:not([data-task="x"], [data-task=" "]),
-li:not([data-task="x"], [data-task=" "]) > input[type="checkbox"],
-li:not([data-task="x"], [data-task=" "]) > p > input[type="checkbox"] {
+div.is-live-preview label > input[type="checkbox"]:not([data-task="x"], [data-task="X"], [data-task=" "]),
+li:not([data-task="x"], [data-task="X"], [data-task=" "]) > input[type="checkbox"],
+li:not([data-task="x"], [data-task="X"], [data-task=" "]) > p > input[type="checkbox"] {
     &:checked {
         --checkbox-marker-color: transparent;
         border: var(--icon-border);
